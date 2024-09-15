@@ -30,7 +30,7 @@ const SignUp = () => {
 
 
 
-        try {const response = await fetch('https://silken-glamour.vercel.app/api/auth/register', {
+        try {const response = await fetch(`https://silken-glamour.vercel.app/api/auth/register`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
