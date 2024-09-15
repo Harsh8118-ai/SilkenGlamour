@@ -28,7 +28,7 @@ const SignUp = () => {
         // Logic to send formData to the backend
         console.log(formData);
 
-        try {const response = await fetch('http://localhost:5000/api/auth/register', {
+        try {const response = await fetch('https://silken-glamour.vercel.app/register', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
