@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "image": "/BridalMakeup.JPG",
+      "name": "Eyebrow Threading",
+      "price": 50,
+      "offerprice": 80,
+      "features": ["Shapes and Defines Eyebrows", "Removes Unwanted Hair", "Creates Clean, Precise Lines"],
+      "href" : "/"
+    },
+    {
+      "id": 2,
+      "image": "/BridalMakeup.JPG",
+      "name": "Upper Lips Threading",
+      "price": 50,
+      "offerprice": 80,
+      "features": ["Removes Upper Lip Hair", "Provides Smooth Finish", "Defines Lip Contour"],
+      "href" : "/"
+    },
+    {
+      "id": 3,
+      "image": "/BridalMakeup.JPG",
+      "name": "Chin Threading",
+      "price": 50,
+      "offerprice": 80,
+      "features": ["Removes Chin Hair", "Provides Smooth, Clean Finish", "Defines Chin Contour"],
+      "href" : "/"
+    },
+    {
+      "id": 4,
+      "image": "/BridalMakeup.JPG",
+      "name": "Forehead Threading",
+      "price": 50,
+      "offerprice": 80,
+      "features": ["Removes Forehead Hair", "Creates Smooth Appearance", "Defines Forehead Shape"],
+      "href" : "/"
+    }
+  ]

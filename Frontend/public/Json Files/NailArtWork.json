@@ -1,0 +1,37 @@
+[{
+    "id": 1,
+    "image": "/NailArt/Chrome.JPG",
+    "name": "Chrome",
+    "price": 500,
+    "offerprice": 700,
+    "features": ["Shiny Metallic Finish", "Adds Sleek Modern Look", "Provides Reflective Shine"],
+    "href" : "/"
+  },
+  {
+    "id": 2,
+    "image": "/NailArt/3D Art.JPG",
+    "name": "3D Art",
+    "price": 300,
+    "offerprice": 400,
+    "features": ["Adds Texture and Depth", "Creates Eye-Catching Designs", "Enhances Nail Art with Dimension"],
+    "href" : "/"
+  },
+  {
+    "id": 3,
+    "image": "/NailArt/Marble Art.JPG",
+    "name": "Marble Art",
+    "price": 500,
+    "offerprice": 700,
+    "features": ["Elegant Swirling Patterns", "Creates Unique Designs", "Adds Sophisticated Touch"],
+    "href" : "/"
+  },
+  {
+    "id": 4,
+    "image": "/NailArt/Spider Art.JPG",
+    "name": "Spider Design",
+    "price": 200,
+    "offerprice": 300,
+    "features": ["Intricate Web Patterns", "Adds Bold, Unique Look", "Creates Eye-Catching Detail"],
+    "href" : "/"
+  }
+]

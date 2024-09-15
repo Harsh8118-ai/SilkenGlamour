@@ -1,0 +1,40 @@
+[
+    {
+      "id": 1,
+      "image": "/NailArt/Nail Extension Gel.JPG",
+      "name": "Nail Extension Gel",
+      "price": 999,
+      "offerprice": 1250,
+      "features": ["Creates Natural-Looking Length", "Provides Strong, Durable Nails", "Offers Flexible and Long-Lasting Wear"],
+      "href" : "/"
+    },
+    {
+      "id": 2,
+      "image": "/NailArt/Nail Extension Acrylic.JPG",
+      "name": "Nail Extension Acrylic",
+      "price": 1199,
+      "offerprice": 1599,
+      "features": ["Strong and Durable", "Provides Long-Lasting Length", "Creates a Natural-Looking Finish"],
+      "href" : "/"
+    },
+    {
+      "id": 3,
+      "image": "/NailArt/Soft Gel Tip Ext.JPG",
+      "name": "Soft Gel Tip Ext.",
+      "price": 999,
+      "offerprice": 1280,
+      "features": ["Flexible and Lightweight", "Creates Natural-Length Nails", "Provides Comfortable Wear"],
+      "href" : "/"
+    },
+    {
+      "id": 4,
+      "image": "/NailArt/Gel Polish.JPG",
+      "name": "Gel Polish",
+      "price": 500,
+      "offerprice": 700,
+      "features": ["Long-Lasting Shine", "Chip-Resistant Finish", "Provides Glossy, Vibrant Color"],
+      "href" : "/"
+    }
+    
+  ]
+  

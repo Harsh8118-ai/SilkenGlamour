@@ -1,0 +1,41 @@
+[
+    {
+      "id": 1,
+      "image": "/ManiPedi.JPG",
+      "name": "Padifai Pedicure",
+      "price": 700,
+      "offerprice": 850,
+      "features": ["Revitalizes Tired Feet", "Softens and Exfoliates", "Enhances Nail and Skin Health"],
+      "href" : "/"
+    },
+      {
+        "id": 2,
+        "image": "/ManiPedi.JPG",
+        "name": "VLCC Pedicure",
+        "price": 500,
+        "offerprice": 700,
+        "features": ["Deep Cleanses Feet", "Nourishes and Softens Skin", "Improves Nail Health and Appearance"],
+        "href" : "/"
+      },
+      {
+        "id": 3,
+        "image": "/ManiPedi.JPG",
+        "name": "Aroma Pedicure",
+        "price": 600,
+        "offerprice": 800,
+        "features": ["Relaxing Aromatherapy", "Softens and Hydrates Feet", "Enhances Nail and Skin Health"],
+        "href" : "/"
+      },
+      {
+        "id": 4,
+        "image": "/ManiPedi.JPG",
+        "name": "O3 Pedicure",
+        "price": 800,
+        "offerprice": 900,
+        "features": ["Deep Cleanses and Exfoliates", "Nourishes and Hydrates Feet", "Revitalizes and Refreshes Skin"],
+        "href" : "/"
+      }
+     
+      
+    ]
+    

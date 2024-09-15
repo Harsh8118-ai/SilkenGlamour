@@ -1,0 +1,31 @@
+[
+    {
+      "id": 1,
+      "image": "/Facial&Cleanup.JPG",
+      "name": "Roka Makeup",
+      "price": 9999,
+      "offerprice": 15000,
+      "features": ["Including Lenses & Lashes", "Elegant and Refined", "Long-Lasting Finish"],
+      "href" : "/"
+    },
+    {
+      "id": 2,
+      "image": "/Facial&Cleanup.JPG",
+      "name": "HD Engagemant Makeup",
+      "price": 11999,
+      "offerprice": 16000,
+      "features": ["Including Lenses & Lashes", "Flawless High-Definition Coverage", "Enhances Natural Beauty"],
+      "href" : "/"
+    },
+    {
+      "id": 3,
+      "image": "/Facial&Cleanup.JPG",
+      "name": "Airbrush Makeup" ,
+      "price": 14999,
+      "offerprice": 20000,
+      "features": ["Including Lenses & Lashes", "Flawless, Smooth Finish", "Long-Lasting Wear"],
+      "href" : "/"
+    }
+  ]
+    
+  

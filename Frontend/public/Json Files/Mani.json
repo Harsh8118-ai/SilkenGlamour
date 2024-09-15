@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "image": "/ManiPedi.JPG",
+    "name": "Regular Manicure",
+    "price": 500,
+    "offerprice": 600,
+    "features": ["Shapes and Smooths Nails", "Softens Hands and Cuticles", "Enhances Nail Appearance"],
+    "href" : "/"
+  },
+    {
+      "id": 2,
+      "image": "/ManiPedi.JPG",
+      "name": "VLCC  Manicure",
+      "price": 400,
+      "offerprice": 500,
+      "features": ["Hydrates and Softens Hands", "Nourishes Cuticles", "Enhances Nail Appearance"],
+      "href" : "/"
+    },
+    {
+      "id": 3,
+      "image": "/ManiPedi.JPG",
+      "name": "Aroma  Manicure",
+      "price": 500,
+      "offerprice": 700,
+      "features": ["Relaxing Aromatherapy", "Softens and Nourishes Hands", "Enhances Nail Health"],
+      "href" : "/"
+    },
+    {
+      "id": 4,
+      "image": "/ManiPedi.JPG",
+      "name": "O3  Manicure",
+      "price": 700,
+      "offerprice": 900,
+      "features": ["Deep Cleanses and Exfoliates", "Nourishes and Hydrates", "Revitalizes Nail Health"],
+      "href" : "/"
+    }
+   
+    
+  ]
+  

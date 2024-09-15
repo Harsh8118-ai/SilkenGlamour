@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "image": "/Bleach-Dtan.JPG",
+    "name": "Face + Neck Oxy Bleach",
+    "price": 450,
+    "offerprice": 550,
+    "features": ["Brightens Dull Complexion", "Evens Skin Tone", "Reduces Dark Spots"],
+    "href" : "/"
+  },
+  {
+    "id": 2,
+    "image": "/Bleach-Dtan.JPG",
+    "name": "Full Body Oxy Bleach",
+    "price": 1000,
+    "offerprice": 1500,
+    "features": ["Brightens Full Body", "Evens Skin Tone", "Reduces Uneven Pigmentation"],
+    "href" : "/"
+  },
+  {
+    "id": 3,
+    "image": "/Bleach-Dtan.JPG",
+    "name": "Full Arms Oxy Bleach",
+    "price": 400,
+    "offerprice": 550,
+    "features": ["Brightens Arm Skin", "Evens Skin Tone", "Reduces Dark Spots"],
+    "href" : "/"
+  },
+  {
+    "id": 4,
+    "image": "/Bleach-Dtan.JPG",
+    "name": "Full Legs Oxy Bleach",
+    "price": 550,
+    "offerprice": 700,
+    "features": ["Brightens Leg Skin", "Evens Out Skin Tone", "Reduces Dark Spots"],
+    "href" : "/"
+  },
+  {
+    "id": 5,
+    "image": "/Bleach-Dtan.JPG",
+    "name": "Full Back Oxy Bleach",
+    "price": 500,
+    "offerprice": 750,
+    "features": ["Brightens Back Skin", "Evens Skin Tone", "Reduces Acne Marks"],
+    "href" : "/"
+  },
+  {
+      "id": 6,
+      "image": "/Bleach-Dtan.JPG",
+      "name": "Face + Neck O3 Bleach",
+      "price": 500,
+      "offerprice": 700,
+      "features": ["Brightens Face and Neck", "Evens Skin Tone", "Reduces Dark Spots"],
+      "href" : "/"
+    },
+    {
+      "id": 7,
+      "image": "/Bleach-Dtan.JPG",
+      "name": "Full Body O3 Bleach",
+      "price": 1500,
+      "offerprice": 2000,
+      "features": ["Brightens Full Body", "Evens Out Skin Tone", "Reduces Hyperpigmentation"],
+      "href" : "/"
+    },
+    {
+      "id": 8,
+      "image": "/Bleach-Dtan.JPG",
+      "name": "Full Arms O3 Bleach",
+      "price": 500,
+      "offerprice": 650,
+      "features": ["Brightens Arm Skin", "Evens Skin Tone", "Reduces Dark Spots"],
+      "href" : "/"
+    },
+    {
+      "id": 9,
+      "image": "/Bleach-Dtan.JPG",
+      "name": "Full Legs O3 Bleach",
+      "price": 700,
+      "offerprice": 900,
+      "features": ["Brightens Leg Skin", "Evens Out Skin Tone", "Reduces Uneven Pigmentation"],
+      "href" : "/"
+    },
+    {
+      "id": 10,
+      "image": "/Bleach-Dtan.JPG",
+      "name": "Full Back O3 Bleach",
+      "price": 700,
+      "offerprice": 1000,
+      "features": ["Brightens Back Skin", "Evens Out Skin Tone", "Reduces Acne Marks"],
+      "href" : "/"
+    }
+]

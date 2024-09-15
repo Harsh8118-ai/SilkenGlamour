@@ -1,0 +1,59 @@
+[
+    {
+      "id": 1,
+      "image": "/BridalMakeup.JPG",
+      "name": "Upper Lips Brazilian Wax",
+      "price": 80,
+      "offerprice": 100,
+      "features": ["Removes Hair Smoothly", "Reduces Hair Growth", "Provides Long-Lasting Results"],
+      "href" : "/"
+    },
+    {
+      "id": 2,
+      "image": "/BridalMakeup.JPG",
+      "name": "Chin Brazilian Wax",
+      "price": 80,
+      "offerprice": 150,
+      "features": ["Removes Hair Smoothly", "Reduces Regrowth", "Ensures Smooth Skin"],
+      "href" : "/"
+    },
+    {
+      "id": 3,
+      "image": "/BridalMakeup.JPG",
+      "name": "Side Locks Brazilian Wax",
+      "price": 150,
+      "offerprice": 200,
+      "features": ["Removes Side Hair Smoothly", "Reduces Hair Regrowth", "Provides Long-Lasting Smoothness"],
+      "href" : "/"
+    },
+    {
+      "id": 4,
+      "image": "/BridalMakeup.JPG",
+      "name": "Forehead Brazilian Wax",
+      "price": 80,
+      "offerprice": 100,
+      "features": ["Removes Forehead Hair", "Provides Smooth, Hair-Free Skin", "Reduces Hair Regrowth"],
+      "href" : "/"
+    },
+    {
+      "id": 5,
+      "image": "/BridalMakeup.JPG",
+      "name": "Full Face Brazilian Wax",
+      "price": 500,
+      "offerprice": 600,
+      "features": ["Removes Forehead Hair", "Reduces Regrowth", "Ensures Smooth Skin"],
+      "href" : "/"
+    },
+    {
+      "id": 6,
+      "image": "/BridalMakeup.JPG",
+      "name": "Bikini Brazilian Wax",
+      "price": 1600,
+      "offerprice": 1800,
+      "features": ["Removes Hair Smoothly", "Reduces Ingrown Hairs", "Provides Long-Lasting Smoothness"],
+      "href" : "/"
+    }
+  ]
+
+
+  

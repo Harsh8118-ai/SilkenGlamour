@@ -1,0 +1,49 @@
+[
+    {
+      "id": 1,
+      "image": "/Facial&Cleanup.JPG",
+      "name": "Sara Gold Facial",
+      "price": 1200,
+      "offerprice": 1500,
+      "features": ["Boosts Skin Elasticity", "Enhances Glow and Shine", "Rejuvenates Tired Skin"],
+      "href" : "/"
+    },
+    {
+      "id": 2,
+      "image": "/Facial&Cleanup.JPG",
+      "name": "Cheryl's Facial",
+      "price": 1400,
+      "offerprice": 1600,
+      "features": ["Brightens Dull Skin", "Deeply Moisturizes", "Reduces Blemishes and Spots"],
+      "href" : "/"
+    },
+    {
+      "id": 3,
+      "image": "/Facial&Cleanup.JPG",
+      "name": "O3 Facial",
+      "price": 2000,
+      "offerprice": 3500,
+      "features": [ "Deeply Cleanses Skin", "Boosts Skin Radiance", "Reduces Fine Lines"],
+      "href" : "/"
+    },
+    {
+      "id": 4,
+      "image": "/Facial&Cleanup.JPG",
+      "name": "Casmara Facial",
+      "price": 3000,
+      "offerprice": 4500,
+      "features": ["Nourishes and Rejuvenates", "Balances Skin Hydration", "Promotes Firmness and Glow"],
+      "href" : "/"
+    },
+    {
+      "id": 5,
+      "image": "/Facial&Cleanup.JPG",
+      "name": "Bridal Glow Facial",
+      "price": 2500,
+      "offerprice": 3000,
+      "features": [ "Enhances Natural Radiance", "Evens Skin Tone", "Boosts Long-Lasting Glow"],
+      "href" : "/"
+    }
+  ]
+    
+  

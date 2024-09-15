@@ -1,0 +1,66 @@
+[
+    {
+      "id": 1,
+      "image": "/Waxing/Underarms Wax.JPG",
+      "name": "Under Arms Wax (Normal)",
+      "price": 50,
+      "offerprice": 80,
+      "features": ["Removes Underarm Hair", "Provides Smooth Skin", "Reduces Hair Regrowth"],
+      "href" : "/"
+    },
+    {
+      "id": 2,
+      "image": "/Waxing/Full Arms Wax.JPG",
+      "name": "Full Arms Wax (Normal)",
+      "price": 300,
+      "offerprice": 500,
+      "features": ["Removes Full Arm Hair", "Provides Smooth, Hair-Free Skin", "Reduces Hair Regrowth"],
+      "href" : "/"
+    },
+    {
+      "id": 3,
+      "image": "/Waxing/Full Legs Wax.JPG",
+      "name": "Full Legs Wax (Normal)",
+      "price": 400,
+      "offerprice": 450,
+      "features": ["Removes Full Leg Hair", "Provides Smooth, Hair-Free Skin", "Reduces Hair Regrowth"],
+      "href" : "/"
+    },
+    {
+      "id": 4,
+      "image": "/Waxing/Back Wax.JPG",
+      "name": "Full Back Wax (Normal)",
+      "price": 400,
+      "offerprice": 700,
+      "features": ["Removes Full Back Hair", "Provides Smooth, Hair-Free Skin", "Reduces Hair Regrowth"],
+      "href" : "/"
+    },
+    {
+      "id": 5,
+      "image": "/Waxing/Bikini Wax.JPG",
+      "name": "Bikini Wax (Normal)",
+      "price": 800,
+      "offerprice": 1000,
+      "features": ["Removes Bikini Area Hair", "Provides Smooth, Clean Finish", "Reduces Hair Regrowth"],
+      "href" : "/"
+    },
+    {
+      "id": 6,
+      "image": "/About/Waxing/Wax.JPG",
+      "name": "Stomach Wax (Normal)",
+      "price": 400,
+      "offerprice": 600,
+      "features": ["Removes Stomach Hair", "Provides Smooth Skin", "Reduces Hair Regrowth"],
+      "href" : "/"
+    },
+    {
+      "id": 7,
+      "image": "/Waxing/Full Body Wax.JPG",
+      "name": "Full Body Wax (Normal)",
+      "price": 1300,
+      "offerprice": 2000,
+      "features": ["Removes Hair from Entire Body", "Provides Smooth, Hair-Free Skin", "Reduces Overall Hair Regrowth"],
+      "href" : "/"
+    }
+  ]
+  

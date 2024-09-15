@@ -1,0 +1,49 @@
+[
+    {
+      "id": 1,
+      "image": "/Facial&Cleanup.JPG",
+      "name": "Kanpeki Cleanup",
+      "price": 1500,
+      "offerprice": 2000,
+      "features": ["Kanpeki Gel Cleanup", "Leaves no Residue Behind", "Quick and Efficient Process"],
+      "href" : "/"
+    },
+    {
+      "id": 2,
+      "image": "/Facial&Cleanup.JPG",
+      "name": "Lotus Cleanup",
+      "price": 800,
+      "offerprice": 1000,
+      "features": ["Suitable for All Skin",  "Gentle on Skin", "Rich in natural extracts"],
+      "href" : "/"
+    },
+    {
+      "id": 3,
+      "image": "/Facial&Cleanup.JPG",
+      "name": "Aroma Cleanup",
+      "price": 700,
+      "offerprice": 900,
+      "features": ["Aroma Cleanup", "Hydrates and Refreshes", "Soothes with Calming Fragrance"],
+      "href" : "/"
+    },
+    {
+      "id": 4,
+      "image": "/Facial&Cleanup.JPG",
+      "name": "O3 Cleanup",
+      "price": 1400,
+      "offerprice": 1500,
+      "features": ["O3 Glow Cleanup", "Brightens and Rejuvenates", "Revitalizes with Oxygen Therapy"],
+      "href" : "/"
+    },
+    {
+      "id": 5,
+      "image": "/Facial&Cleanup.JPG",
+      "name": "Vedic Line Cleanup",
+      "price": 1100,
+      "offerprice": 1300,
+      "features": ["Suitable for All Skin",  "Infused with Ayurvedic Ingredients", "Deep Cleanses & Nourishes"],
+      "href" : "/"
+    }
+  ]
+    
+  

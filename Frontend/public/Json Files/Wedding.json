@@ -1,0 +1,75 @@
+[
+    {
+      "id": 1,
+      "image": "/WeddingPackage.JPG",
+      "name": "Product 1",
+      "price": 100,
+      "offerprice": 80,
+      "features": ["Blossom Kochhar Fuve Step Glow", "Enhancement of Natural", "Suitable for Dry Skin Types"],
+      "href" : "/"
+    },
+    {
+      "id": 2,
+      "image": "/WeddingPackage.JPG",
+      "name": "Product 1",
+      "price": 100,
+      "offerprice": 80,
+      "features": ["Blossom Kochhar Fuve Step Glow", "Enhancement of Natural", "Suitable for Dry Skin Types"],
+      "href" : "/"
+    },
+    {
+      "id": 3,
+      "image": "/WeddingPackage.JPG",
+      "name": "Product 1",
+      "price": 100,
+      "offerprice": 80,
+      "features": ["Blossom Kochhar Fuve Step Glow", "Enhancement of Natural", "Suitable for Dry Skin Types"],
+      "href" : "/"
+    },
+    {
+      "id": 4,
+      "image": "/WeddingPackage.JPG",
+      "name": "Product 1",
+      "price": 100,
+      "offerprice": 80,
+      "features": ["Blossom Kochhar Fuve Step Glow", "Enhancement of Natural", "Suitable for Dry Skin Types"],
+      "href" : "/"
+    },
+    {
+      "id": 5,
+      "image": "/WeddingPackage.JPG",
+      "name": "Product 1",
+      "price": 100,
+      "offerprice": 80,
+      "features": ["Blossom Kochhar Fuve Step Glow", "Enhancement of Natural", "Suitable for Dry Skin Types"],
+      "href" : "/"
+    },
+    {
+      "id": 6,
+      "image": "/WeddingPackage.JPG",
+      "name": "Product 1",
+      "price": 100,
+      "offerprice": 80,
+      "features": ["Blossom Kochhar Fuve Step Glow", "Enhancement of Natural", "Suitable for Dry Skin Types"],
+      "href" : "/"
+    },
+    {
+      "id": 7,
+      "image": "/WeddingPackage.JPG",
+      "name": "Product 1",
+      "price": 100,
+      "offerprice": 80,
+      "features": ["Blossom Kochhar Fuve Step Glow", "Enhancement of Natural", "Suitable for Dry Skin Types"],
+      "href" : "/"
+    },
+    {
+      "id": 8,
+      "image": "/WeddingPackage.JPG",
+      "name": "Product 1",
+      "price": 100,
+      "offerprice": 80,
+      "features": ["Blossom Kochhar Fuve Step Glow", "Enhancement of Natural", "Suitable for Dry Skin Types"],
+      "href" : "/"
+    }
+  ]
+  

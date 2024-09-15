@@ -1,0 +1,47 @@
+[
+    {
+      "id": 1,
+      "image": "/Facial&Cleanup.JPG",
+      "name": "Full Body Massage",
+      "price": 1200,
+      "offerprice": 1500,
+      "features": ["Relieves Muscle Tension", "Promotes Relaxation", "Improves Blood Circulation"],
+      "href" : "/"
+    },
+    {
+      "id": 2,
+      "image": "/Facial&Cleanup.JPG",
+      "name": "Hair Massage",
+      "price": 500,
+      "offerprice": 700,
+      "features": ["Stimulates Scalp Circulation", "Strengthens Hair Roots", "Promotes Relaxation and Growth"],
+      "href" : "/"
+    },
+    {
+      "id": 3,
+      "image": "/Facial&Cleanup.JPG",
+      "name": "Back Massage",
+      "price": 600,
+      "offerprice": 800,
+      "features": ["Relieves Back Tension", "Eases Muscle Stiffness", "Improves Posture and Flexibility"],
+      "href" : "/"
+    },
+    {
+        "id": 4,
+        "image": "/Facial&Cleanup.JPG",
+        "name": "Foot Massage",
+        "price": 300,
+        "offerprice": 500,
+        "features": ["Relieves Foot Tension", "Improves Circulation", "Promotes Overall Relaxation"],
+        "href" : "/"
+      },{
+        "id": 5,
+        "image": "/Facial&Cleanup.JPG",
+        "name": "Hand Massage",
+        "price": 300,
+        "offerprice": 500,
+        "features": ["Relieves Hand Tension", "Soothes Sore Muscles", "Improves Circulation and Flexibility"],
+        "href" : "/"
+      }
+  ]
+  

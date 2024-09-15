@@ -1,0 +1,105 @@
+[
+    {
+      "id": 1,
+      "image": "/HairCare/Keratin.JPG",
+      "name": "Keratin",
+      "price": 2000,
+      "offerprice": 5000,
+      "features": ["Smooths and Tames Hair", "Reduces Frizz", "Adds Long-Lasting Shine"],
+      "href" : "/"
+    },
+    {
+      "id": 2,
+      "image": "/HairCare/Hair Botox.JPG",
+      "name": "Hair Botox",
+      "price": 3000,
+      "offerprice": 5000,
+      "features": ["Repairs Damaged Hair", "Restores Shine and Softness", "Reduces Frizz and Breakage"],
+      "href" : "/"
+    },
+    {
+      "id": 3,
+      "image": "/HairCare/Smoothning.JPG",
+      "name": "Smoothning",
+      "price": 3000,
+      "offerprice": 4000,
+      "features": ["Reduces Frizz", "Enhances Shine", "Creates Sleek Texture"],
+      "href" : "/"
+    },
+    {
+      "id": 4,
+      "image": "/HairCare/Hair SPA.JPG",
+      "name": "Hair SPA",
+      "price": 1200,
+      "offerprice": 1500,
+      "features": ["Deeply Nourishes Hair", "Enhances Shine and Softness", "Promotes Scalp Health"],
+      "href" : "/"
+    },
+    {
+      "id": 5,
+      "image": "/HairCare/Touchup (Majirel).JPG",
+      "name": "Touchup (Majirel)",
+      "price": 1100,
+      "offerprice": 1200,
+      "features": ["Refreshes Hair Color", "Covers Gray Roots", "Maintains Vibrant Hue"],
+      "href" : "/"
+    },
+    {
+      "id": 6,
+      "image": "/HairCare/Touchup (Inoa).JPG",
+      "name": "Touchup (Inoa)",
+      "price": 1300,
+      "offerprice": 1400,
+      "features": ["Revives Hair Color", "Covers Gray Roots", "Provides Long-Lasting Color"],
+      "href" : "/"
+    },
+    {
+      "id": 7,
+      "image": "/HairCare/Global (Base).JPG",
+      "name": "Global (Base)",
+      "price": 2500,
+      "offerprice": 3000,
+      "features": ["Full Hair Color Change", "Uniform Color Application", "Provides Consistent Hue"],
+      "href" : "/"
+    },
+    {
+      "id": 8,
+      "image": "/HairCare/Global (Fashion).JPG",
+      "name": "Global (Fashion)",
+      "price": 3500,
+      "offerprice": 4000,
+      "features": ["Bold Color Change", "Enhances Hair with Trendy Tones", "Provides Uniform Fashionable Hue"],
+      "href" : "/"
+    },
+    {
+        "id": 9,
+        "image": "/HairCare/Balayage.JPG",
+        "name": "Balayage",
+        "price": 4000,
+        "offerprice": 5000,
+        "features": ["Creates Natural Highlights", "Adds Dimension and Depth", "Provides Sun-Kissed Look"],
+        "href" : "/"
+      },
+      
+    {
+        "id": 10,
+        "image": "/HairCare/Highlight Crown.JPG",
+        "name": "Highlight (Crown)",
+        "price": 1700,
+        "offerprice": 2000,
+        "features": ["Brightens Crown Area", "Adds Dimension and Shine", "Creates Subtle Contrast"],
+        "href" : "/"
+      }
+      ,
+    {
+        "id": 11,
+        "image": "/HairCare/Global highlight.JPG",
+        "name": "Global Highlight",
+        "price": 3500,
+        "offerprice": 4000,
+        "features": ["Uniform Hair Lightening", "Adds Overall Dimension", "Creates Bright, Consistent Highlights"],
+        "href" : "/"
+      }
+     
+  ]
+  
