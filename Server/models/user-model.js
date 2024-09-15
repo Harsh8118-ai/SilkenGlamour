@@ -7,15 +7,18 @@ const userSchema = new mongoose.Schema({
   fullname: {
     type: String,
     required: true,
+    trim: true,
   },
   email: {
     type: String,
     required: true,
     unique: true,
+    trim: true,
   },
   mobileNumber: {
     type: String,
     required: true,
+    unique: true, // Added uniqueness for mobile numbers
   },
   password: {
     type: String,
@@ -47,17 +50,17 @@ const userSchema = new mongoose.Schema({
 userSchema.pre("save", async function (next) {
   const user = this;
 
+  // Only hash the password if it has been modified (or is new)
   if (!user.isModified("password")) {
     return next();
   }
 
   try {
-    const saltRound = await bcrypt.genSalt(10);
-    const hashedPassword = await bcrypt.hash(user.password, saltRound);
-    user.password = hashedPassword;
+    const salt = await bcrypt.genSalt(10);
+    user.password = await bcrypt.hash(user.password, salt);
     next();
   } catch (error) {
-    return next(error);
+    next(error);
   }
 });
 
@@ -76,7 +79,7 @@ userSchema.methods.generateToken = function () {
     },
     process.env.JWT_SECRET_KEY,
     {
-      expiresIn: "30d",
+      expiresIn: "30d", // Token expires in 30 days
     }
   );
 };

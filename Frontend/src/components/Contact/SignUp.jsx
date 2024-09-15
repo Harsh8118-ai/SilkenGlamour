@@ -28,20 +28,20 @@ const SignUp = () => {
         // Logic to send formData to the backend
         console.log(formData);
 
-        try {const response = await fetch('http://localhost:5000/api/auth/register', {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(formData),
-        });
+        try {
+            const response = await fetch('https://silken-glamour-backend.vercel.app/api/auth/register', {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData),
+            });
 
-        console.log(response);
-    }
-    catch(error) {
-        console.log("register", error);
-    }
-        
+            const data = await response.json();
+            console.log(data);
+        } catch (error) {
+            console.log("register", error);
+        }
     };
 
     return (
@@ -148,6 +148,7 @@ const SignUp = () => {
                                         type="text"
                                         placeholder="Pincode"
                                         required
+                                        autoComplete="postal-code"
                                         className="w-full p-3 border border-gray-700 bg-gray-900 text-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-600 transition duration-300 ease-in-out transform hover:scale-105"
                                     />
                                 </div>
@@ -169,7 +170,7 @@ const SignUp = () => {
                                 className="w-full p-3 text-gray-300 bg-gray-900 rounded-lg focus:outline-none focus:ring focus:ring-yellow-500 transition duration-300 ease-in-out transform hover:scale-105"
                                 placeholder="Enter your password"
                                 required // Required field
-                                autocomplete="new-password"
+                                autoComplete="new-password"
                             />
                             <button
                                 type="button"
@@ -210,20 +211,17 @@ const SignUp = () => {
                     {/* Submit Button */}
                     <button
                         type="submit"
-                        className="w-full p-3 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-600 "
+                        className="w-full p-3 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-600"
                     >
                         Sign Up
                     </button>
                 </form>
 
-                <Link to="/contact/login">
-                    <button
-                        type="button"
-                        className="mt-5 w-full p-3 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-600 transition duration-300 ease-in-out transform hover:scale-105 animate-pulse"
-                    >
-                        Log In
-                    </button>
-                </Link>
+                <div className="mt-4 text-center text-gray-400">
+                    <Link to="/contact/login" className="text-yellow-500 hover:text-yellow-400">
+                        Already have an account? Log In
+                    </Link>
+                </div>
             </div>
         </div>
     );

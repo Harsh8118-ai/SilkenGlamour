@@ -9,7 +9,7 @@ const connectDb = require("./utils/db");
 const errorMiddleware = require("./middlewares/error-middleware");
 
 const corsOptions = {
-  origin: "http://localhost:5173",
+  origin: "https://silken-glamour-frontend.vercel.app", // Update to your actual frontend URL
   methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
   credentials: true,
 };
@@ -31,14 +31,14 @@ app.use(errorMiddleware);
 app.use((error, req, res, next) => {
   const statusCode = error.status || 500;
   res.status(statusCode).json({
-      message: error.message || 'Internal Server Error',
-      extraDetails: error.extraDetails || 'No additional information',
+    message: error.message || 'Internal Server Error',
+    extraDetails: error.extraDetails || 'No additional information',
   });
 });
 
 // Connect to DB and start the server
 connectDb().then(() => {
-  const PORT = 5000;
+  const PORT = process.env.PORT || 5000;
   app.listen(PORT, () => {
     console.log(`Server is running at port: ${PORT}`);
   });
