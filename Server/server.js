@@ -11,7 +11,7 @@ const errorMiddleware = require("./middlewares/error-middleware");
 const corsOptions = {
   origin: "https://silken-glamour-frontend.vercel.app",
   methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
-  credentials: true,
+  
 };
 
 // Use CORS with proper options
