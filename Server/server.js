@@ -11,7 +11,7 @@ const errorMiddleware = require("./middlewares/error-middleware");
 const corsOptions = {
   origin: "https://silken-glamour-frontend.vercel.app", 
   methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
-  
+  credentials: true, // Include this if you need to allow credentials (cookies, headers)
 };
 
 // Use CORS with proper options
@@ -19,6 +19,11 @@ app.use(cors(corsOptions));
 
 // Middleware for parsing JSON bodies
 app.use(express.json());
+
+// Health-check route
+app.get('/health', (req, res) => {
+  res.status(200).json({ message: 'Server is running smoothly!' });
+});
 
 // Mount the Router: To use the router in your main Express app
 app.use("/api/auth", authRoute);
