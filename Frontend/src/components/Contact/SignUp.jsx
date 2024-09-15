@@ -28,24 +28,16 @@ const SignUp = () => {
         // Logic to send formData to the backend
         console.log(formData);
 
-<<<<<<< HEAD
-        try {
-            const response = await fetch('https://silken-glamour-backend.vercel.app/api/auth/register', {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(formData),
-            });
-=======
-        try {const response = await fetch('https://silken-glamour.vercel.app/register', {
+
+
+        try {const response = await fetch('https://silken-glamour.vercel.app/api/auth/register', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify(formData),
         });
->>>>>>> d7d6cce68c799bdc04d78ae199b559d82c1d51c9
+
 
             const data = await response.json();
             console.log(data);

@@ -9,11 +9,10 @@ const connectDb = require("./utils/db");
 const errorMiddleware = require("./middlewares/error-middleware");
 
 const corsOptions = {
-<<<<<<< HEAD
+
   origin: "https://silken-glamour-frontend.vercel.app", // Update to your actual frontend URL
-=======
-  origin: "https://silken-glamour-frontend.vercel.app",
->>>>>>> d7d6cce68c799bdc04d78ae199b559d82c1d51c9
+
+
   methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
   
 };
