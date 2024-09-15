@@ -9,12 +9,9 @@ const connectDb = require("./utils/db");
 const errorMiddleware = require("./middlewares/error-middleware");
 
 const corsOptions = {
-
   origin: "https://silken-glamour-frontend.vercel.app", // Update to your actual frontend URL
-
-
   methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
-  
+  credentials: true, // Allow credentials (cookies, headers) to be included in requests
 };
 
 // Use CORS with proper options
