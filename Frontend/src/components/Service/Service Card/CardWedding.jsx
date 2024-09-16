@@ -44,7 +44,7 @@ const CardWedding = () => {
   const toggleSelect3 = ()=> {
     setIsSelect(false);
     setIsSelect2(false);
-    setIsSelect3(ture);
+    setIsSelect3(true);
     window.scrollTo({ top: 0, behavior: 'smooth' });
 
   };
