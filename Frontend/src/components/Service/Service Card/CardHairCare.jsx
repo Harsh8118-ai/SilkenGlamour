@@ -64,20 +64,20 @@ const CardHairCare = () => {
         <div className="w-fit max-w-xl h-fit m-3 sm:mx-auto ">
         <div className="grid grid-cols-1 sm:grid-cols-2 w-full gap-3">
         {products.map(product => (
-      <div className={`shadow  border-gray-700 rounded-lg bg-gray-200`}>
+      <div className={`shadow  border-gray-700 rounded-lg mx-7 sm:mx-0 m-5 sm:m-0 bg-gray-200`}>
       <a href={product.href}>
-          <img className="p-8 rounded-t-lg" src={product.image} alt={product.image} />
+          <img className="p-8 rounded-t-lg object-cover" src={product.image} alt={product.image} />
       </a>
       <div className="px-5 pb-5">
           <a href={product.href}>
-              <h5 className={`text-xl font-semibold tracking-tight  ${GoldenColor}`}>
+              <h5 className={`text-xl tracking-tight text-center mb-3 -mt-5 font-bold ${GoldenColor}`}>
               {product.name}
               </h5>
           </a>
           
           <div className="flex items-center justify-between">
-              <span className={`text-3xl font-bold ${PriceColor}`}>₹{product.price}</span>
-            <span className='text-red-500 m-2 text-xl font-bold line-through'>₹{product.offerprice}</span><span> </span>
+              <span className={`text-2xl font-bold ${PriceColor}`}>₹{product.price}</span>
+            <span className='text-red-500 m-2 mx-1 text-sm font-bold line-through'>₹{product.offerprice}</span><span> </span>
 
               <a
                   href={product.href}

@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "image": "/BridalMakeup.JPG",
+      "image": "/Services/Service Card/Threading & Wax/Upper Lips Brazilian Wax.JPG",
       "name": "Upper Lips Brazilian Wax",
       "price": 80,
       "offerprice": 100,
@@ -10,7 +10,7 @@
     },
     {
       "id": 2,
-      "image": "/BridalMakeup.JPG",
+      "image": "/Services/Service Card/Threading & Wax/Chin Brazilian Wax.JPG",
       "name": "Chin Brazilian Wax",
       "price": 80,
       "offerprice": 150,
@@ -19,7 +19,7 @@
     },
     {
       "id": 3,
-      "image": "/BridalMakeup.JPG",
+      "image": "/Services/Service Card/Threading & Wax/Side Locks Brazilian Wax.JPG",
       "name": "Side Locks Brazilian Wax",
       "price": 150,
       "offerprice": 200,
@@ -28,7 +28,7 @@
     },
     {
       "id": 4,
-      "image": "/BridalMakeup.JPG",
+      "image": "/Services/Service Card/Threading & Wax/Forehead Brazilian Wax.JPG",
       "name": "Forehead Brazilian Wax",
       "price": 80,
       "offerprice": 100,
@@ -37,7 +37,7 @@
     },
     {
       "id": 5,
-      "image": "/BridalMakeup.JPG",
+      "image": "/Services/Service Card/Threading & Wax/Full Face Brazilian Wax.JPG",
       "name": "Full Face Brazilian Wax",
       "price": 500,
       "offerprice": 600,
@@ -46,7 +46,7 @@
     },
     {
       "id": 6,
-      "image": "/BridalMakeup.JPG",
+      "image": "/Services/Service Card/Threading & Wax/Bikini Brazilian Wax.JPG",
       "name": "Bikini Brazilian Wax",
       "price": 1600,
       "offerprice": 1800,

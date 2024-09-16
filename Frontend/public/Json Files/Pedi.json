@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "image": "/ManiPedi.JPG",
+      "image": "/Services/Service Card/Mani-Pedi/Padifai Pedicure.JPG",
       "name": "Padifai Pedicure",
       "price": 700,
       "offerprice": 850,
@@ -10,7 +10,7 @@
     },
       {
         "id": 2,
-        "image": "/ManiPedi.JPG",
+        "image": "/Services/Service Card/Mani-Pedi/VLCC Pedicure.JPG",
         "name": "VLCC Pedicure",
         "price": 500,
         "offerprice": 700,
@@ -19,7 +19,7 @@
       },
       {
         "id": 3,
-        "image": "/ManiPedi.JPG",
+        "image": "/Services/Service Card/Mani-Pedi/Aroma Pedicure.JPG",
         "name": "Aroma Pedicure",
         "price": 600,
         "offerprice": 800,
@@ -28,7 +28,7 @@
       },
       {
         "id": 4,
-        "image": "/ManiPedi.JPG",
+        "image": "/Services/Service Card/Mani-Pedi/O3 Pedicure.JPG",
         "name": "O3 Pedicure",
         "price": 800,
         "offerprice": 900,

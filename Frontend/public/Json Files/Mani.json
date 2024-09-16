@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "/ManiPedi.JPG",
+    "image": "/Services/Service Card/Mani-Pedi/Regular Manicure.JPG",
     "name": "Regular Manicure",
     "price": 500,
     "offerprice": 600,
@@ -10,7 +10,7 @@
   },
     {
       "id": 2,
-      "image": "/ManiPedi.JPG",
+      "image": "/Services/Service Card/Mani-Pedi/VLCC Manicure.JPG",
       "name": "VLCC  Manicure",
       "price": 400,
       "offerprice": 500,
@@ -19,16 +19,16 @@
     },
     {
       "id": 3,
-      "image": "/ManiPedi.JPG",
-      "name": "Aroma  Manicure",
+      "image": "/Services/Service Card/Mani-Pedi/Aroma Manicure.JPG",
+      "name": "Aroma Manicure",
       "price": 500,
       "offerprice": 700,
-      "features": ["Relaxing Aromatherapy", "Softens and Nourishes Hands", "Enhances Nail Health"],
+      "features": ["Relaxing therapy", "Softens and Nourishes Hands", "Enhances Nail Health"],
       "href" : "/"
     },
     {
       "id": 4,
-      "image": "/ManiPedi.JPG",
+      "image": "/Services/Service Card/Mani-Pedi/O3 Manicure.JPG",
       "name": "O3  Manicure",
       "price": 700,
       "offerprice": 900,

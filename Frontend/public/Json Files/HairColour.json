@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "image": "/HairCare/Keratin.JPG",
+      "image": "/Services/Service Card/Hair Care/Keratin.JPG",
       "name": "Keratin",
       "price": 2000,
       "offerprice": 5000,
@@ -10,7 +10,7 @@
     },
     {
       "id": 2,
-      "image": "/HairCare/Hair Botox.JPG",
+      "image": "/Services/Service Card/Hair Care/Hair Botox.JPG",
       "name": "Hair Botox",
       "price": 3000,
       "offerprice": 5000,
@@ -19,7 +19,7 @@
     },
     {
       "id": 3,
-      "image": "/HairCare/Smoothning.JPG",
+      "image": "/Services/Service Card/Hair Care/Smoothning.JPG",
       "name": "Smoothning",
       "price": 3000,
       "offerprice": 4000,
@@ -28,7 +28,7 @@
     },
     {
       "id": 4,
-      "image": "/HairCare/Hair SPA.JPG",
+      "image": "/Services/Service Card/Hair Care/Hair SPA.JPG",
       "name": "Hair SPA",
       "price": 1200,
       "offerprice": 1500,
@@ -37,7 +37,7 @@
     },
     {
       "id": 5,
-      "image": "/HairCare/Touchup (Majirel).JPG",
+      "image": "/Services/Service Card/Hair Care/Touchup (Majirel).JPG",
       "name": "Touchup (Majirel)",
       "price": 1100,
       "offerprice": 1200,
@@ -46,7 +46,7 @@
     },
     {
       "id": 6,
-      "image": "/HairCare/Touchup (Inoa).JPG",
+      "image": "/Services/Service Card/Hair Care/Touchup (Inoa).JPG",
       "name": "Touchup (Inoa)",
       "price": 1300,
       "offerprice": 1400,
@@ -55,7 +55,7 @@
     },
     {
       "id": 7,
-      "image": "/HairCare/Global (Base).JPG",
+      "image": "/Services/Service Card/Hair Care/Global (Base).JPG",
       "name": "Global (Base)",
       "price": 2500,
       "offerprice": 3000,
@@ -64,7 +64,7 @@
     },
     {
       "id": 8,
-      "image": "/HairCare/Global (Fashion).JPG",
+      "image": "/Services/Service Card/Hair Care/Global (Fashion).JPG",
       "name": "Global (Fashion)",
       "price": 3500,
       "offerprice": 4000,
@@ -73,7 +73,7 @@
     },
     {
         "id": 9,
-        "image": "/HairCare/Balayage.JPG",
+        "image": "/Services/Service Card/Hair Care/Balayage.JPG",
         "name": "Balayage",
         "price": 4000,
         "offerprice": 5000,
@@ -83,7 +83,7 @@
       
     {
         "id": 10,
-        "image": "/HairCare/Highlight Crown.JPG",
+        "image": "/Services/Service Card/Hair Care/Highlight Crown.JPG",
         "name": "Highlight (Crown)",
         "price": 1700,
         "offerprice": 2000,
@@ -93,7 +93,7 @@
       ,
     {
         "id": 11,
-        "image": "/HairCare/Global highlight.JPG",
+        "image": "/Services/Service Card/Hair Care/Global highlight.JPG",
         "name": "Global Highlight",
         "price": 3500,
         "offerprice": 4000,

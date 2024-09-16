@@ -68,46 +68,46 @@
         </div>
 
         {products.length > 0 && (
-          <div className="w-fit max-w-xl h-fit m-3 sm:mx-auto ">
-          <div className="grid grid-cols-1 sm:grid-cols-2 w-full gap-3">
-          {products.map(product => (
-        <div className={`shadow  border-gray-700 rounded-lg bg-gray-200`}>
-        <a href={product.href}>
-            <img className="p-8 rounded-t-lg" src={product.image} alt={product.image} />
-        </a>
-        <div className="px-5 pb-5">
-            <a href={product.href}>
-                <h5 className={`text-xl font-semibold tracking-tight  ${GoldenColor}`}>
-                {product.name}
-                </h5>
-            </a>
-            
-            <div className="flex items-center justify-between">
-                <span className={`text-3xl font-bold ${PriceColor}`}>₹{product.price}</span>
-              <span className='text-red-500 m-2 text-xl font-bold line-through'>₹{product.offerprice}</span><span> </span>
+        <div className="w-fit max-w-xl h-fit m-3 sm:mx-auto ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 w-full gap-3">
+        {products.map(product => (
+      <div className={`shadow  border-gray-700 rounded-lg mx-7 sm:mx-0 m-5 sm:m-0 bg-gray-200`}>
+      <a href={product.href}>
+          <img className="p-8 rounded-t-lg object-cover" src={product.image} alt={product.image} />
+      </a>
+      <div className="px-5 pb-5">
+          <a href={product.href}>
+              <h5 className={`text-xl tracking-tight text-center mb-3 -mt-5 font-bold ${GoldenColor}`}>
+              {product.name}
+              </h5>
+          </a>
+          
+          <div className="flex items-center justify-between">
+              <span className={`text-2xl font-bold ${PriceColor}`}>₹{product.price}</span>
+            <span className='text-red-500 m-2 mx-1 text-sm font-bold line-through'>₹{product.offerprice}</span><span> </span>
 
-                <a
-                    href={product.href}
-                    className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                >
-                    Add to cart
-                </a>
-            </div>
-
-
-            {product.features.map((feature, index) => (
-            <div className=''>
-            <div className='flex gap-2 w-full'>
-              <img src="/Services/Tick.svg" alt="" />
-              <span className='text-lg text-black' key={index}>{feature}</span>
-            </div>
-          </div>))}
-        </div>
-        </div>
-          ))}
-    </div>
+              <a
+                  href={product.href}
+                  className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                  Add to cart
+              </a>
           </div>
-        )}
+
+
+          {product.features.map((feature, index) => (
+          <div className=''>
+          <div className='flex gap-2 w-full'>
+            <img src="/Services/Tick.svg" alt="" />
+            <span className='text-lg text-black' key={index}>{feature}</span>
+          </div>
+        </div>))}
+      </div>
+      </div>
+        ))}
+  </div>
+        </div>
+      )}
       </div>
       
 

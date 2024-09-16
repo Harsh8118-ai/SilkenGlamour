@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "image": "/Facial&Cleanup.JPG",
+      "image": "/Services/Service Card/Wedding Package/Engagemant & Bridal/HD Bridal Makeup.JPG",
       "name": "HD Bridal Makeup",
       "price": 17999,
       "offerprice": 20000,
@@ -10,7 +10,7 @@
     },
     {
       "id": 2,
-      "image": "/Facial&Cleanup.JPG",
+      "image": "/Services/Service Card/Wedding Package/Engagemant & Bridal/Airbrush Bridal Makeup.JPG",
       "name": "Airbrush Bridal Makeup",
       "price": 19999,
       "offerprice": 24000,
@@ -19,7 +19,7 @@
     },
     {
       "id": 3,
-      "image": "/Facial&Cleanup.JPG",
+      "image": "/Services/Service Card/Wedding Package/Engagemant & Bridal/Celebrity Makeup.JPG",
       "name": "Celebrity Makeup",
       "price": 24999,
       "offerprice": 30000,
@@ -29,7 +29,7 @@
     ,
     {
         "id": 3,
-        "image": "/Facial&Cleanup.JPG",
+        "image": "/Services/Service Card/Wedding Package/Engagemant & Bridal/Bridal Package.jpg",
         "name": "Bridal Package",
         "price": 31999,
         "offerprice": 35000,
@@ -38,7 +38,7 @@
       },
     {
       "id": 5,
-      "image": "/Facial&Cleanup.JPG",
+      "image": "/Services/Service Card/Wedding Package/Engagemant & Bridal/Only Hairdo.JPG",
       "name": "Only Hairdo",
       "price": 749,
       "offerprice": 900,
@@ -48,7 +48,7 @@
     ,
     {
       "id": 6,
-      "image": "/Facial&Cleanup.JPG",
+      "image": "/Services/Service Card/Wedding Package/Engagemant & Bridal/Saree Rapping.JPG",
       "name": "Saree Rapping",
       "price": 299,
       "offerprice": 500,

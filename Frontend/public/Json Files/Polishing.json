@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "image": "/Facial&Cleanup.JPG",
+      "image": "/Services/Service Card/Polish & Massage/Polish/Full Body Polishing.JPG",
       "name": "Full Body Polishing",
       "price": 2000,
       "offerprice": 3000,
@@ -10,7 +10,7 @@
     },
     {
       "id": 2,
-      "image": "/Facial&Cleanup.JPG",
+      "image": "/Services/Service Card/Polish & Massage/Polish/Full Arms + Legs Polishing.JPG",
       "name": "Full Arms + Legs Polishing",
       "price": 1300,
       "offerprice": 1600,
@@ -19,7 +19,7 @@
     },
     {
       "id": 3,
-      "image": "/Facial&Cleanup.JPG",
+      "image": "/Services/Service Card/Polish & Massage/Polish/Full Back + Arms Polishing.JPG",
       "name": "Full Back + Arms Polishing",
       "price": 1000,
       "offerprice": 1200,

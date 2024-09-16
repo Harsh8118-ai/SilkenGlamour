@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "image": "/HairCare/Hair Wash.JPG",
+      "image": "/Services/Service Card/Hair Care/Hair Wash.JPG",
       "name": "Hair Wash",
       "price": 250,
       "offerprice": 300,
@@ -10,7 +10,7 @@
     },
     {
       "id": 2,
-      "image": "/HairCare/Hair Cut.JPG",
+      "image": "/Services/Service Card/Hair Care/Hair Cut.JPG",
       "name": "Hair Cut",
       "price": 400,
       "offerprice": 600,
@@ -19,7 +19,7 @@
     },
     {
       "id": 3,
-      "image": "/HairCare/Hair Straight.JPG",
+      "image": "/Services/Service Card/Hair Care/Hair Straight.JPG",
       "name": "Hair Straight",
       "price": 300,
       "offerprice": 350,
@@ -28,7 +28,7 @@
     },
     {
       "id": 4,
-      "image": "/HairCare/Outcurls.jpg",
+      "image": "/Services/Service Card/Hair Care/Outcurls.jpg",
       "name": "Out Curls",
       "price": 350,
       "offerprice": 400,
@@ -37,7 +37,7 @@
     },
     {
       "id": 5,
-      "image": "/HairCare/Ironing.JPG",
+      "image": "/Services/Service Card/Hair Care/Ironing.JPG",
       "name": "Ironing",
       "price": 500,
       "offerprice": 600,
@@ -46,7 +46,7 @@
     },
     {
       "id": 6,
-      "image": "/HairCare/Ironing Curls.JPG",
+      "image": "/Services/Service Card/Hair Care/Ironing Curls.JPG",
       "name": "Ironing Curls",
       "price": 600,
       "offerprice": 750,
@@ -55,7 +55,7 @@
     },
     {
       "id": 7,
-      "image": "/HairCare/Splends.JPG",
+      "image": "/Services/Service Card/Hair Care/Splends.JPG",
       "name": "Splends",
       "price": 500,
       "offerprice": 600,

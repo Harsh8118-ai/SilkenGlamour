@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "/Bleach-Dtan.JPG",
+    "image": "/Services/Service Card/Bleach & D-Tan/Bleach/Face + Neck Oxy Bleach.JPG",
     "name": "Face + Neck Oxy Bleach",
     "price": 450,
     "offerprice": 550,
@@ -10,7 +10,7 @@
   },
   {
     "id": 2,
-    "image": "/Bleach-Dtan.JPG",
+    "image": "/Services/Service Card/Bleach & D-Tan/Bleach/Full Body Oxy Bleach.JPG",
     "name": "Full Body Oxy Bleach",
     "price": 1000,
     "offerprice": 1500,
@@ -19,7 +19,7 @@
   },
   {
     "id": 3,
-    "image": "/Bleach-Dtan.JPG",
+    "image": "/Services/Service Card/Bleach & D-Tan/Bleach/Full Arms Oxy Bleach.JPG",
     "name": "Full Arms Oxy Bleach",
     "price": 400,
     "offerprice": 550,
@@ -28,7 +28,7 @@
   },
   {
     "id": 4,
-    "image": "/Bleach-Dtan.JPG",
+    "image": "/Services/Service Card/Bleach & D-Tan/Bleach/Full Legs Oxy Bleach.JPG",
     "name": "Full Legs Oxy Bleach",
     "price": 550,
     "offerprice": 700,
@@ -37,7 +37,7 @@
   },
   {
     "id": 5,
-    "image": "/Bleach-Dtan.JPG",
+    "image": "/Services/Service Card/Bleach & D-Tan/Bleach/Full Back Oxy Bleach.JPG",
     "name": "Full Back Oxy Bleach",
     "price": 500,
     "offerprice": 750,
@@ -46,7 +46,7 @@
   },
   {
       "id": 6,
-      "image": "/Bleach-Dtan.JPG",
+      "image": "/Services/Service Card/Bleach & D-Tan/Bleach/Face + Neck O3 Bleach.JPG",
       "name": "Face + Neck O3 Bleach",
       "price": 500,
       "offerprice": 700,
@@ -55,7 +55,7 @@
     },
     {
       "id": 7,
-      "image": "/Bleach-Dtan.JPG",
+      "image": "/Services/Service Card/Bleach & D-Tan/Bleach/Full Body O3 Bleach.JPG",
       "name": "Full Body O3 Bleach",
       "price": 1500,
       "offerprice": 2000,
@@ -64,7 +64,7 @@
     },
     {
       "id": 8,
-      "image": "/Bleach-Dtan.JPG",
+      "image": "/Services/Service Card/Bleach & D-Tan/Bleach/Full Arms O3 Bleach.JPG",
       "name": "Full Arms O3 Bleach",
       "price": 500,
       "offerprice": 650,
@@ -73,7 +73,7 @@
     },
     {
       "id": 9,
-      "image": "/Bleach-Dtan.JPG",
+      "image": "/Services/Service Card/Bleach & D-Tan/Bleach/Full Legs O3 Bleach.JPG",
       "name": "Full Legs O3 Bleach",
       "price": 700,
       "offerprice": 900,
@@ -82,7 +82,7 @@
     },
     {
       "id": 10,
-      "image": "/Bleach-Dtan.JPG",
+      "image": "/Services/Service Card/Bleach & D-Tan/Bleach/Full Back O3 Bleach.JPG",
       "name": "Full Back O3 Bleach",
       "price": 700,
       "offerprice": 1000,

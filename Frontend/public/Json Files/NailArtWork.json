@@ -1,6 +1,6 @@
 [{
     "id": 1,
-    "image": "/NailArt/Chrome.JPG",
+    "image": "/Services/Service Card/Nail Art/Chrome.JPG",
     "name": "Chrome",
     "price": 500,
     "offerprice": 700,
@@ -9,7 +9,7 @@
   },
   {
     "id": 2,
-    "image": "/NailArt/3D Art.JPG",
+    "image": "/Services/Service Card/Nail Art/3D Art.JPG",
     "name": "3D Art",
     "price": 300,
     "offerprice": 400,
@@ -18,7 +18,7 @@
   },
   {
     "id": 3,
-    "image": "/NailArt/Marble Art.JPG",
+    "image": "/Services/Service Card/Nail Art/Marble Art.JPG",
     "name": "Marble Art",
     "price": 500,
     "offerprice": 700,
@@ -27,7 +27,7 @@
   },
   {
     "id": 4,
-    "image": "/NailArt/Spider Art.JPG",
+    "image": "/Services/Service Card/Nail Art/Spider Art.JPG",
     "name": "Spider Design",
     "price": 200,
     "offerprice": 300,

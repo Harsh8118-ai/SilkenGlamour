@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "image": "/Facial&Cleanup.JPG",
+      "image": "/Services/Service Card/Facial & Cleanup/Kanpeki Cleanup.JPG",
       "name": "Kanpeki Cleanup",
       "price": 1500,
       "offerprice": 2000,
@@ -10,7 +10,7 @@
     },
     {
       "id": 2,
-      "image": "/Facial&Cleanup.JPG",
+      "image": "/Services/Service Card/Facial & Cleanup/Lotus Cleanup.JPG",
       "name": "Lotus Cleanup",
       "price": 800,
       "offerprice": 1000,
@@ -19,16 +19,16 @@
     },
     {
       "id": 3,
-      "image": "/Facial&Cleanup.JPG",
+      "image": "/Services/Service Card/Facial & Cleanup/Aroma Cleanup.JPG",
       "name": "Aroma Cleanup",
       "price": 700,
       "offerprice": 900,
-      "features": ["Aroma Cleanup", "Hydrates and Refreshes", "Soothes with Calming Fragrance"],
+      "features": [" Cleanup", "Hydrates and Refreshes", "Soothes with Calming Fragrance"],
       "href" : "/"
     },
     {
       "id": 4,
-      "image": "/Facial&Cleanup.JPG",
+      "image": "/Services/Service Card/Facial & Cleanup/O3 Cleanup.JPG",
       "name": "O3 Cleanup",
       "price": 1400,
       "offerprice": 1500,
@@ -37,7 +37,7 @@
     },
     {
       "id": 5,
-      "image": "/Facial&Cleanup.JPG",
+      "image": "/Services/Service Card/Facial & Cleanup/Vedic Line Cleanup.JPG",
       "name": "Vedic Line Cleanup",
       "price": 1100,
       "offerprice": 1300,
