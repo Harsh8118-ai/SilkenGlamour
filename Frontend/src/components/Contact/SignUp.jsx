@@ -25,24 +25,26 @@ const SignUp = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        // Logic to send formData to the backend
         console.log(formData);
 
+        try {
+            
+            const response = await fetch('https://silken-glamour-backend.vercel.app/api/auth/register', {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json", // Indicating that JSON is being sent
+                },
+                body: JSON.stringify(formData), // Converting formData object to JSON string
+            });
 
-
-        try {const response = await fetch(`https://silken-glamour.vercel.app/api/auth/register`, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(formData),
-        });
-
-
-            const data = await response.json();
-            console.log(data);
+            const data = await response.json(); // Parsing the response data
+            if (response.ok) {
+                console.log('User registered successfully:', data); // Success message
+            } else {
+                console.error('Failed to register user:', data); // Error message from the server
+            }
         } catch (error) {
-            console.log("register", error);
+            console.error('Error:', error); // Logging any error from fetch
         }
     };
 

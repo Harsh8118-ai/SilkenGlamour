@@ -9,30 +9,26 @@ const connectDb = require("./utils/db");
 const errorMiddleware = require("./middlewares/error-middleware");
 
 const corsOptions = {
-  origin: "https://silken-glamour-frontend.vercel.app", 
+  origin: [
+    "https://silken-glamour-frontend.vercel.app",
+    "http://192.168.1.8:5173"
+  ], 
   methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
-  credentials: true, // Include this if you need to allow credentials (cookies, headers)
+  credentials: true,
 };
 
-// Use CORS with proper options
 app.use(cors(corsOptions));
-
-// Middleware for parsing JSON bodies
 app.use(express.json());
 
-// Health-check route
+// Root route to display a message
 app.get('/', (req, res) => {
-  res.status(200).json({ message: 'Server is running smoothly!' });
+  res.status(200).send('Welcome to Silken Glamour Backend!');
 });
 
-// Mount the Router: To use the router in your main Express app
 app.use("/api/auth", authRoute);
 app.use("/api/form", contactRoute);
-
-// Error middleware for handling all errors
 app.use(errorMiddleware);
 
-// Custom error handler
 app.use((error, req, res, next) => {
   const statusCode = error.status || 500;
   res.status(statusCode).json({
@@ -41,7 +37,6 @@ app.use((error, req, res, next) => {
   });
 });
 
-// Connect to DB and start the server
 connectDb().then(() => {
   const PORT = process.env.PORT || 5000;
   app.listen(PORT, () => {
