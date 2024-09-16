@@ -1,5 +1,9 @@
-[[redirects]]
+[build]
+  base    = "Frontend"          # Path to your frontend folder
+  publish = "Frontend/dist"     # Or 'Frontend/build' for Create React App
+  command = "npm run build"     # Build command to generate the production build
 
-from="/*"
-to = "/index.html"
-status = 200
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
