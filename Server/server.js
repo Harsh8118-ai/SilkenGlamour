@@ -10,8 +10,8 @@ const errorMiddleware = require("./middlewares/error-middleware");
 
 const corsOptions = {
   origin: [
-    "https://silken-glamour-frontend.vercel.app",
-    "http://192.168.1.8:5173"
+    "https://silkenglamour.netlify.app",
+    "http://localhost:5173"
   ], 
   methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
   credentials: true,
