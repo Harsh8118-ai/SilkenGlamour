@@ -30,6 +30,8 @@ const SignUp = () => {
         e.preventDefault();
         console.log(formData);
 
+        
+
         try {
             const response = await fetch(`${BASE_URL}/auth/register`, {
                 method: "POST",
