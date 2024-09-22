@@ -14,6 +14,9 @@ const SignUp = () => {
     });
 
     const [showPassword, setShowPassword] = useState(false);
+    
+    // Access environment variable using import.meta.env
+    const BASE_URL = import.meta.env.VITE_BACKEND_URL;
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -28,8 +31,7 @@ const SignUp = () => {
         console.log(formData);
 
         try {
-            
-            const response = await fetch(`http://localhost:5000/api/auth/register`, {
+            const response = await fetch(`${BASE_URL}/auth/register`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json", // Indicating that JSON is being sent
@@ -47,6 +49,7 @@ const SignUp = () => {
             console.error('Error:', error); // Logging any error from fetch
         }
     };
+
 
     return (
         <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-black via-gray-800 to-gray-900 p-5">
