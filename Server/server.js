@@ -10,7 +10,8 @@ const errorMiddleware = require("./middlewares/error-middleware");
 
 const corsOptions = {
   origin: [
-    "https://silken-glamour.vercel.app"
+    "https://silken-glamour.vercel.app",
+    "http://192.168.173.15:5173"
   
   ], 
   methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
