@@ -22,12 +22,15 @@ import Login from './components/Contact/LogIn';
 import ChatBotLayout from './components/FAQ/ChatBotLayout';
 import CardThreading from './components/Service/Service Card/CardThreading';
 import CardBodyPolishing from './components/Service/Service Card/CardBodyPolishing';
+import Profile from './components/Profile/Profile';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout />}>
       <Route path='' element={<Home />} />
       <Route path='about' element={<About />} />
+      <Route path='profile' element={<Profile />} />
+
 
       {/* ......CONTACT..... */}
       <Route path='contact' element={<ContactLayout />}>

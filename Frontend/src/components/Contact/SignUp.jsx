@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const SignUp = () => {
     const [formData, setFormData] = useState({
@@ -17,6 +17,8 @@ const SignUp = () => {
     
     // Access environment variable using import.meta.env
     const BASE_URL = import.meta.env.VITE_BACKEND_URL;
+
+    const navigate = useNavigate();
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -43,7 +45,11 @@ const SignUp = () => {
             });
 
             const data = await response.json(); // Parsing the response data
+
+            console.log(response);
+            
             if (response.ok) {
+                navigate('/contact/login');
                 console.log('User registered successfully:', data); // Success message
             } else {
                 console.error('Failed to register user:', data); // Error message from the server
