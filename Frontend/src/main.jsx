@@ -52,6 +52,7 @@ const router = createBrowserRouter(
         <Route path='threading' element={<CardThreading />} />
         <Route path='facial-cleanup' element={<CardFacial />} />
       </Route>
+      
 
       {/* <Route path='user/:userid' element={<User />} /> */}
       <Route path='faq' element={<ChatBotLayout />} />

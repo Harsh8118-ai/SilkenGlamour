@@ -51,3 +51,6 @@ jsconfig.json
 
 # Ignore Netlify config (optional, only if you don't want to commit it)
 netlify.toml
+
+# Ignore Vercel config (optional, only if you don't want to commit it)
+vercel.json
