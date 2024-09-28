@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 export default function LeftCard() {
   return (
     <>
-    <div className="hidden sm:block w-[20%] sticky top-20 h-screen bg-gray-100 p-4">
+    <div className="hidden sm:block w-[20%] sticky top-16 h-screen bg-gray-100 p-4">
           <div className='bg-MainBGColorYellow h-screen'>
             <h1 className={`text-center text-3xl font-bold p-3 ${LogoColor}`}>Services</h1>
             <div className='flex justify-center items-center p-3x '>
