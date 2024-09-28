@@ -87,10 +87,10 @@ export default function Service() {
 
 
                         <Link to="facial-cleanup">
-                            <div className='shadow-lg rounded-xl p-1 text-center
-                    lg:flex lg:justify-center lg:items-center lg:flex-col bg-BGColorYellow hover:scale-125 shadow-gray-900'>
-                                {/* <img src="/Services/Service Main/Facial&Cleanup.JPG" alt="Image 9" className="sm:object-cover sm:w-32 sm:h-32 sm:rounded-xl  h-40 w-40 rounded-xl object-cover" /> */}
-                    <img src="/Temp/Facial.webp" alt="Image 4" className="sm:object-cover sm:w-32 sm:h-32 sm:rounded-xl  h-40 w-40 rounded-xl object-cover " />
+                        <div className='shadow-lg rounded-xl p-1 flex flex-col bg-BGColorYellow justify-center items-center hover:scale-125 shadow-gray-900'>
+                                {/* <img src="/Services/Service Main/WeddingPackage.JPG" alt="Image 1" className="sm:object-cover sm:w-32 sm:h-32 sm:rounded-xl  h-40 w-40 rounded-xl object-cover " />\ */}
+                                <img src="/Temp/Facial.webp" alt="Image 4" className="sm:object-cover sm:w-32 sm:h-32 sm:rounded-xl  h-40 w-40 rounded-xl object-cover " />
+
 
                                 <p className={`font-bold pt-1.5 text-gray-900`}>Facial & Cleanup</p>
                             </div></Link>
