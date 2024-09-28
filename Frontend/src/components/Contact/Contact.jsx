@@ -4,19 +4,19 @@ import { Link } from 'react-router-dom';
 export default function Contact() {
     return (
         <>
-        <div className="relative flex items-start  sm:items-center sm:-mt-20 justify-center h-screen sm:min-h-[750px]  bg-white sm:pt-0">
+        <div className="relative flex items-start  sm:items-center sm:-mt-20 justify-center h-screen sm:min-h-[750px]  bg-MainBGColorYellow sm:pt-0">
             <div className="max-w-6xl mx-3 sm:px-6 lg:px-8 ">
                 <div className="mt-20 overflow-hidden">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div className="p-6 bg-gradient-to-t from-black via-gray-800 to-gray-900 sm:rounded-lg">
-                            <h1 className="text-3xl sm:text-4xl text-gray-600 font-extrabold tracking-tight">
+                        <div className="p-6 bg-gradient-to-b from-[#2E2117] via-[#796855] to-[#2E2117] sm:rounded-lg">
+                            <h1 className="text-3xl sm:text-4xl text-MainBGColorYellow font-extrabold tracking-tight">
                                 Get in touch:
                             </h1>
-                            <p className="text-normal text-lg sm:text-xl font-medium text-gray-400 mt-2">
+                            <p className="text-normal text-lg sm:text-xl text-MainBGColorYellow font-bold mt-2">
                                 Fill in the form to start a conversation
                             </p>
 
-                            <div className="flex items-center mt-8 text-gray-400">
+                            <div className="flex items-center mt-8 text-MainBGColorYellow font-bold">
                                 <svg
                                     fill="none"
                                     stroke="currentColor"
@@ -24,7 +24,7 @@ export default function Contact() {
                                     strokeLinejoin="round"
                                     strokeWidth="1.5"
                                     viewBox="0 0 24 24"
-                                    className="w-8 h-8 text-gray-500"
+                                    className="w-8 h-8 text-MainBGColorYellow"
                                 >
                                     <path
                                         strokeLinecap="round"
@@ -44,7 +44,7 @@ export default function Contact() {
                                 </div>
                             </div>
 
-                            <div className="flex items-center mt-4 text-gray-400">
+                            <div className="flex items-center mt-4 text-MainBGColorYellow font-bold">
                                 <svg
                                     fill="none"
                                     stroke="currentColor"
@@ -52,7 +52,7 @@ export default function Contact() {
                                     strokeLinejoin="round"
                                     strokeWidth="1.5"
                                     viewBox="0 0 24 24"
-                                    className="w-8 h-8 text-gray-500"
+                                    className="w-8 h-8 text-MainBGColorYellow"
                                 >
                                     <path
                                         strokeLinecap="round"
@@ -66,7 +66,7 @@ export default function Contact() {
                                 </div>
                             </div>
 
-                            <div className="flex items-center mt-2 text-gray-400">
+                            <div className="flex items-center mt-2 text-MainBGColorYellow font-bold">
                                 <svg
                                     fill="none"
                                     stroke="currentColor"
@@ -74,7 +74,7 @@ export default function Contact() {
                                     strokeLinejoin="round"
                                     strokeWidth="1.5"
                                     viewBox="0 0 24 24"
-                                    className="w-8 h-8 text-gray-500"
+                                    className="w-8 h-8 text-MainBGColorYellow"
                                 >
                                     <path
                                         strokeLinecap="round"
@@ -94,14 +94,14 @@ export default function Contact() {
                         <div className='flex flex-col justify-center items-center sm:items-stretch mt-7 sm:mt-0'>
                         <Link to="signup"><button
                             type="submit"
-                            className="p-3 sm:w-full px-8 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-600"
+                            className="p-3 sm:w-full px-8 bg-BGColorYellow text-black font-bold rounded-lg hover:bg-white"
                         >
                             Sign Up
                         </button></Link>
 
                         <Link to="login"><button
                             type="submit"
-                            className="mt-5 p-3 sm:w-full px-8  bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-600"
+                            className="mt-5 p-3 sm:w-full px-8  bg-BGColorYellow text-black font-bold rounded-lg hover:bg-white"
                         >
                             Log In
                         </button></Link></div>

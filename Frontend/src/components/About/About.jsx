@@ -7,7 +7,7 @@ export default function About() {
   return (
     
     <>
-    <div className='m-0 h-full w-full'>
+    <div className='m-0 h-full w-full bg-MainBGColorYellow'>
     <div className="flex flex-col xl:mx-7 items-center justify-center "> 
       <h2 className={`text-2xl font-bold text-center m-3 ${LogoColor}`}>Pick Your Favorite Salon & Parlour at Home Service</h2>
       <p className="text-center text-sm mb-8 font-bold">
@@ -18,7 +18,7 @@ export default function About() {
         <div title='UPPER ABOUT BOX'>
           <div className="flex flex-col-reverse lg:flex-row sm:mb-5 mb-8
         sm:hover:shadow-gray-400 sm:hover:shadow sm:shadow-none shadow-gray-400 shadow sm:text-right m-3 text-center lg:-mr-4">
-            <div>
+            <div className='shadow-sm shadow-gray-900 rounded-xl'>
               <h3 className="font-bold sm:items-end sm:text-center lg:text-right text-xl">Head & Body Massage</h3>
               <p id='About-P'>
                 Pamper your inner and outer body at home with our soothing and relaxing body massage services because In & out beauty matters! Get personalized salon services brought to your doorstep with our Salon at Home.
@@ -30,7 +30,7 @@ export default function About() {
 
           <div className="flex flex-col-reverse lg:flex-row sm:mb-5 mb-8 sm:mr-8
         sm:hover:shadow-gray-400 sm:hover:shadow sm:shadow-none shadow-gray-400 shadow sm:text-right m-3 text-center">
-            <div>
+            <div className='shadow-sm shadow-gray-900 rounded-xl'>
               <h3 className="font-bold sm:items-end sm:text-center lg:text-right text-xl ">Facial & Cleanup</h3>
               <p id='About-P'>
                 Let your beautiful face talk. Enjoy the best offers on facial massage in your own comfort space to revamp the quality of your facial skin with our Salon at Home services.
@@ -42,7 +42,7 @@ export default function About() {
 
           <div className="flex flex-col-reverse lg:flex-row sm:mb-5 mb-8
         sm:hover:shadow-gray-400 sm:hover:shadow sm:shadow-none shadow-gray-400 shadow sm:text-right m-3 text-center lg:-mr-3">
-            <div>
+            <div className='shadow-sm shadow-gray-900 rounded-xl'>
               <h3 className="font-bold sm:items-end sm:text-center lg:text-right text-xl">Waxing at home</h3>
               <p id='About-P'>
                 Don't have time to go to the salon? Don’t worry! Get rid of unwanted hair at home with our personalized salon services brought to your comfort and privacy. Save your precious time with our Salon at Home services.
@@ -80,7 +80,7 @@ export default function About() {
             <div className='h-full w-full sm:align-top flex justify-center mt-2'>
               <img src="About\Mani.jpg" alt="Head & Body Massage" /></div>
 
-            <div>
+            <div className='shadow-sm shadow-gray-900 rounded-xl'>
               <h3 className="font-bold lg:text-left sm:text-center text-xl sm:text-lg">Manicure & Pedicure</h3>
 
               <p id='About-P'>
@@ -95,7 +95,7 @@ export default function About() {
             <div className='h-full w-full sm:align-top flex justify-center mt-2'>
               <img src="About\Bleach.jpg" alt="Head & Body Massage" /></div>
 
-            <div>
+            <div className='shadow-sm shadow-gray-900 rounded-xl'>
               <h3 className="font-bold lg:text-left text-xl sm:text-center sm:text-lg">Bleach & D-tan</h3>
 
               <p id='About-P'>

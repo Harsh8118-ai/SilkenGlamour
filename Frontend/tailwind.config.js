@@ -16,6 +16,10 @@ export default {
           500: '#D4AF37',
           600: '#C09630',
         },
+
+        MainBGColorYellow : '#C6B198',
+        BGColorYellow : '#796855',
+        LightBGColor : '#E3DBD0'
     },
   
   },

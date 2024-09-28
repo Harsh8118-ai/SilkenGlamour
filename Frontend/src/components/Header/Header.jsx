@@ -11,28 +11,28 @@ export default function Header() {
 
     return (
         <>
-            <header className="hidden sm:block shadow sticky z-50 top-0 bg-gradient-to-r from-black via-gray-900 to-black">
+            <header className="hidden sm:block shadow sticky z-50 top-0 bg-gradient-to-r from-[#2E2117] via-[#796855] to-[#2E2117]">
                 <nav className="border-gray-600 sm:py-2 lg:px-6 ">
                     <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
 
                         <Link to="/">
                             <div className="flex items-center justify-center sm:flex-col lg:flex-col    ">
-                                <img src="/Services/SG Logo.png" alt='LOGO' className="hidden sm:inline ml-6 h-6 rounded-md object-cover bg-transparent" />
-                                <span className={`${LogoColor} hidden sm:inline text-center ml-6 mt-1 text-sm font-bold`} id='logo'>SilkenGlamour</span>
+                                <img src="/Services/SG Logo.png" alt='LOGO' className="hidden sm:inline ml-8 h-8 rounded-md object-cover bg-transparent" />
+                                <span className={`text-MainBGColorYellow hidden sm:inline text-center ml-6 mt-1 text-sm font-bold`} id='logo'>SilkenGlamour</span>
                             </div>
                         </Link>
 
                         <div className="items-center sm:order-2 hidden sm:flex">
                             <Link
                                 to="contact/login"
-                                className="text-white hover:bg-yellow-600 focus:ring-4 bg-yellow-500 focus:ring-gray-600 font-medium rounded-lg text-sm px-4 sm:px-5 py-2 sm:py-2.5 mr-2 lg:mr-4 focus:outline-none
+                                className="text-MainBGColorYellow hover:bg-MainBGColorYellow focus:ring-4 bg-gray-900 focus:ring-gray-600 font-medium rounded-lg text-sm px-4 sm:px-3 py-2 sm:py-1.5 mr-2 lg:mr-4 focus:outline-none
                             "
                             >
                                 Log in
                             </Link>
                             <Link
                                 to="contact/signup"
-                                className="text-white bg-yellow-500 hover:bg-yellow-600 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5  focus:outline-none"
+                                className="text-MainBGColorYellow bg-gray-900 hover:bg-MainBGColorYellow font-medium rounded-lg text-sm px-4 lg:px-3 py-2 lg:py-1.5  focus:outline-none"
                             >
                                 Sign Up
                             </Link>
@@ -50,7 +50,7 @@ export default function Header() {
                                     <NavLink
                                         to="/"
                                         className={({ isActive }) =>
-                                            `block py-2 pr-4 pl-3 sm:-ml-5 lg:-ml-0 duration-200 ${isActive ? "text-yellow-500" : "text-gray-300"}  border-gray-600 hover:bg-gray-60 lg:hover:bg-transparent hover:text-yellow-500 lg:p-0`
+                                            `block py-2 pr-4 pl-3 sm:-ml-5 lg:-ml-0 duration-200 ${isActive ? "text-gray-900" : "text-MainBGColorYellow"}  border-gray-600  lg:hover:bg-transparent hover:text-black font-bold lg:p-0`
                                         }
                                     >
                                         Home
@@ -60,7 +60,7 @@ export default function Header() {
                                     <NavLink
                                         to="/about"
                                         className={({ isActive }) =>
-                                            `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-yellow-500" : "text-gray-300"}  border-gray-600 hover:bg-gray-60 lg:hover:bg-transparent hover:text-yellow-500 lg:p-0`
+                                            `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-gray-900" : "text-MainBGColorYellow"}  border-gray-600  lg:hover:bg-transparent hover:text-black font-bold lg:p-0`
                                         }
                                     >
                                         About
@@ -70,7 +70,7 @@ export default function Header() {
                                     <NavLink
                                         to="/service"
                                         className={({ isActive }) =>
-                                            `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-yellow-500" : "text-gray-300"}  border-gray-600 hover:bg-gray-60 lg:hover:bg-transparent hover:text-yellow-500 lg:p-0`
+                                            `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-gray-900" : "text-MainBGColorYellow"}  border-gray-600  lg:hover:bg-transparent hover:text-black font-bold lg:p-0`
                                         }
                                     >
                                         Service
@@ -80,7 +80,7 @@ export default function Header() {
                                     <NavLink
                                         to="/contact"
                                         className={({ isActive }) =>
-                                            `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-yellow-500" : "text-gray-300"}  border-gray-600 hover:bg-gray-60 lg:hover:bg-transparent hover:text-yellow-500 lg:p-0`
+                                            `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-gray-900" : "text-MainBGColorYellow"}  border-gray-600  lg:hover:bg-transparent hover:text-black font-bold lg:p-0`
                                         }
                                     >
                                         Contact
@@ -90,7 +90,7 @@ export default function Header() {
                                     <NavLink
                                         to="/faq"
                                         className={({ isActive }) =>
-                                            `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-yellow-500" : "text-gray-300"}  border-gray-600 hover:bg-gray-60 lg:hover:bg-transparent  hover:text-yellow-500 lg:p-0`
+                                            `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-gray-900" : "text-MainBGColorYellow"}  border-gray-600  lg:hover:bg-transparent  hover:text-black font-bold lg:p-0`
                                         }
                                     >
                                         FAQ
@@ -102,14 +102,14 @@ export default function Header() {
                 </nav>
             </header>
 
-            <header className="sm:hidden shadow sticky z-50 top-0 bg-gradient-to-r from-black via-gray-800 to-black h-full">
+            <header className="sm:hidden shadow sticky z-50 top-0 bg-gradient-to-r from-[#2E2117] via-[#796855] to-[#2E2117] h-full">
                     <div className="flex items-center justify-center ">
                         <div className='absolute left-0 h-full'>
                 <Link to="/">
                         <img src="/Services/SG Logo.png" alt='LOGO' className="ml-6 m-2 h-6 rounded-md object-cover bg-transparent left-0" />
                 </Link>
                         </div>
-                        <span className={`${LogoColor} text-center ml-6 text-lg font-bold my-1.5`} id='logo'>Silken Glamour</span>
+                        <span className={`text-MainBGColorYellow text-center ml-6 text-lg font-bold my-1.5`} id='logo'>Silken Glamour</span>
                 <div className='absolute right-0'>
                 
                 <Link to="/profile">
