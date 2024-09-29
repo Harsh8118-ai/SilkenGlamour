@@ -3,6 +3,7 @@ import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import { Outlet } from 'react-router-dom'
 import { useLocation } from 'react-router-dom';
+import { CartProvider } from './components/Service/Service Nav/CartContext';
 
 
 function Layout({ children }) {
@@ -14,10 +15,10 @@ function Layout({ children }) {
 
   return (
     <><div>
-
+<CartProvider>
     <Header/>
     <Outlet />
-    <Footer />
+    <Footer /></CartProvider>
     
     {children}
     </div>

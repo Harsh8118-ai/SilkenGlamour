@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import { GoldenColor, PriceColor, BGColor, LogoColor } from '../../../Style';
-import LeftCard from '../Service Nav/LeftCard';
+import React, { useState, useEffect, useContext } from 'react';
 import RightCard from '../Service Nav/RightCard';
+import LeftCard from '../Service Nav/LeftCard';
+import { CartContext, CartProvider } from '../Service Nav/CartContext'; 
+import RightCart from '../Service Nav/RightCard';
 
 const CardHairCare = () => {
   const [products, setProducts] = useState([]);
@@ -12,6 +13,9 @@ const CardHairCare = () => {
   
   // Track which card's details are shown
   const [expandedCard, setExpandedCard] = useState(null);
+
+  // Import the CartContext to access cart functionalities
+  const { addToCart } = useContext(CartContext);
 
   useEffect(() => {
     if (type) {
@@ -44,8 +48,8 @@ const CardHairCare = () => {
     setExpandedCard(expandedCard === productId ? null : productId);
   };
 
-  return (
-    <>
+  return (    
+    <CartProvider>
       <div className="flex justify-between w-full h-full bg-MainBGColorYellow">
 
         {/* Left Sticky Container */}
@@ -69,7 +73,7 @@ const CardHairCare = () => {
                 <button
                   className={`px-4 py-2 ${IsSelect2 ? "bg-BGColorYellow" : "bg-gray-400"} ${IsSelect2 ? "border-2" : "border-none"} border-black text-white rounded`}
                   onClick={() => {
-                    setType('HairColour'); toggleActive();
+                    setType('HairColour'); toggleActive(); 
                     toggleSelect2();
                   }}
                 >
@@ -79,43 +83,47 @@ const CardHairCare = () => {
             </div>
 
             {products.length > 0 && (
-                <div className="w-full h-full mt-6 hidden sm:block">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-8 ">
-                    {products.map((product) => (
-                      <div key={product.id} className="shadow border-gray-700 rounded-lg bg-BGColorYellow sm:p-4 p-2">
+              <div className="w-full h-full mt-6 hidden sm:block">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-8 ">
+                  {products.map((product) => (
+                    <div key={product.id} className="shadow border-gray-700 rounded-lg bg-BGColorYellow sm:p-4 p-2">
+                      <a href={product.href}>
+                        <img className="rounded-lg h-fit w-fit object-cover" src={product.image} alt={product.image} />
+                      </a>
+                      <div className="px-5 pb-5">
                         <a href={product.href}>
-                          <img className="rounded-lg h-fit w-fit object-cover" src={product.image} alt={product.image} />
+                          <h5 className={`text-2xl tracking-tight text-center mb-1 font-bold text-MainBGColorYellow`}>
+                            {product.name}
+                          </h5>
                         </a>
-                        <div className="px-5 pb-5">
-                          <a href={product.href}>
-                            <h5 className={`text-2xl tracking-tight text-center mb-1 font-bold text-MainBGColorYellow`}>
-                              {product.name}
-                            </h5>
-                          </a>
-                          <div className="flex items-center justify-between">
-                            <span className={`text-2xl font-bold text-black`}>₹{product.price}</span>
-                            <span className="text-red-500 m-2 mx-1 text-sm font-bold line-through">₹{product.offerprice}</span>
-                            <a
-                              href={product.href}
-                              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-1 sm:px-5 py-2.5 text-center"
-                            >
-                              Add to cart
-                            </a>
-                          </div>
-                          {product.features.map((feature, index) => (
-                            <div key={index} className="flex gap-2 w-full mt-2">
-                              <img src="/Services/Tick.svg" alt="tick" />
-                              <span className="text-sm font-bold text-black">{feature}</span>
-                            </div>
-                          ))}
+                        <div className="flex items-center justify-between">
+                          <span className={`text-2xl font-bold text-black`}>₹{product.price}</span>
+                          <span className="text-red-500 m-2 mx-1 text-sm font-bold line-through">₹{product.offerprice}</span>
+                          <CartContext.Consumer>
+                            {({ addToCart }) => (
+                              <button
+                                onClick={() => addToCart(product)}
+                                className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-1 sm:px-5 py-2.5 text-center"
+                              >
+                                Add to cart
+                              </button>
+                            )}
+                          </CartContext.Consumer>
                         </div>
+                        {product.features.map((feature, index) => (
+                          <div key={index} className="flex gap-2 w-full mt-2">
+                            <img src="/Services/Tick.svg" alt="tick" />
+                            <span className="text-sm font-bold text-black">{feature}</span>
+                          </div>
+                        ))}
                       </div>
-                    ))}
-                  </div>
+                    </div>
+                  ))}
                 </div>
-              )}
+              </div>
+            )}
 
-{/* ............. MOBILE VIEW CARD ............. */}
+            {/* ............. MOBILE VIEW CARD ............. */}
 
             {products.length > 0 && (
               <div className="w-full h-full mt-4 sm:hidden">
@@ -133,28 +141,30 @@ const CardHairCare = () => {
                         </a>
                         <div className="flex flex-col items-center justify-between gap-2">
                           <div className='flex gap-3'>
-                          <div className='flex flex-col text-center'>
-                          <span className={`text-lg sm:text-2xl font-bold tracking-wider text-black `}>₹{product.price}</span>
-                          <span className="text-red-500 sm:m-2 sm:mx-1 text-sm font-bold line-through tracking-wider">₹{product.offerprice}</span>
+                            <div className='flex flex-col text-center'>
+                              <span className={`text-lg sm:text-2xl font-bold tracking-wider text-black `}>₹{product.price}</span>
+                              <span className="text-red-500 sm:m-2 sm:mx-1 text-sm font-bold line-through tracking-wider">₹{product.offerprice}</span>
+                            </div>
+                            {/* Mobile "Add to Cart" button */}
+                            <button
+                              onClick={() => addToCart(product)}
+                              className="sm:hidden block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-xs mx-auto p-1 text-center"
+                            >
+                              Add to Cart
+                            </button>
                           </div>
-                          <button
-                            className="sm:hidden block text-white bg-blue-300 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-xs mx-auto p-0.5 text-center"
-                          >
-                            Add to Cart
-                          </button></div>
 
                           <div className=''>
-                          <button
-                            onClick={() => toggleDetails(product.id)}
-                            className="bg-MainBGColorYellow text-black text-xs rounded sm:hidden text-center px-1"
-                          >
-                            {expandedCard === product.id ? 'Hide Details' : 'Show Details'}
-                          </button>
-                        </div>
+                            <button
+                              onClick={() => toggleDetails(product.id)}
+                              className="bg-MainBGColorYellow text-black text-xs rounded sm:hidden text-center px-1"
+                            >
+                              {expandedCard === product.id ? 'Hide Details' : 'Show Details'}
+                            </button>
+                          </div>
                         </div>
 
                         {/* Mobile View Button */}
-                        
 
                         {/* Features - Handle Mobile and Desktop with Conditional Classes */}
                         {product.features.map((feature, index) => (
@@ -172,11 +182,10 @@ const CardHairCare = () => {
           </div>
         </div>
 
-        {/* Right Sticky Container */}
-        <RightCard />
-
+        {/* Right Sticky Cart */}
+        <RightCart/>
       </div>
-    </>
+    </CartProvider>
   );
 };
 
