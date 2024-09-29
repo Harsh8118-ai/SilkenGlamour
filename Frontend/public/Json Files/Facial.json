@@ -1,6 +1,6 @@
 [
     {
-      "id": 1,
+      "id": "Facial1",
       "image": "/Services/Service Card/Facial & Cleanup/Sara Gold Facial.JPG",
       "name": "Sara Gold Facial",
       "price": 1200,
@@ -9,7 +9,7 @@
       "href" : "/"
     },
     {
-      "id": 2,
+      "id": "Facial2",
       "image": "/Services/Service Card/Facial & Cleanup/Cheryl's Facial.JPG",
       "name": "Cheryl's Facial",
       "price": 1400,
@@ -18,7 +18,7 @@
       "href" : "/"
     },
     {
-      "id": 3,
+      "id": "Facial3",
       "image": "/Services/Service Card/Facial & Cleanup/O3 Facial.JPG",
       "name": "O3 Facial",
       "price": 2000,
@@ -27,7 +27,7 @@
       "href" : "/"
     },
     {
-      "id": 4,
+      "id": "Facial4",
       "image": "/Services/Service Card/Facial & Cleanup/Casmara Facial.JPG",
       "name": "Casmara Facial",
       "price": 3000,
@@ -36,7 +36,7 @@
       "href" : "/"
     },
     {
-      "id": 5,
+      "id": "Facial5",
       "image": "/Services/Service Card/Facial & Cleanup/Bridal Glow Facial.JPG",
       "name": "Bridal Glow Facial",
       "price": 2500,

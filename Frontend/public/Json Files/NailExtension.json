@@ -2,7 +2,7 @@
     {
       "id": "NailExtension1",
       "image": "/Services/Service Card/Nail Art/Nail Extension Gel.JPG",
-      "name": "Nail Extension Gel",
+      "name": "Nail Ext. Gel",
       "price": 999,
       "offerprice": 1250,
       "features": ["Creates Natural-Looking Length", "Provides Strong, Durable Nails", "Offers Flexible and Long-Lasting Wear"],
@@ -11,7 +11,7 @@
     {
       "id": "NailExtension2",
       "image": "/Services/Service Card/Nail Art/Nail Extension Acrylic.JPG",
-      "name": "Nail Extension Acrylic",
+      "name": "Nail Ext. Acrylic",
       "price": 1199,
       "offerprice": 1599,
       "features": ["Strong and Durable", "Provides Long-Lasting Length", "Creates a Natural-Looking Finish"],

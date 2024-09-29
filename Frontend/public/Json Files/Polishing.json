@@ -1,6 +1,6 @@
 [
     {
-      "id": 1,
+      "id": "Polishing1",
       "image": "/Services/Service Card/Polish & Massage/Polish/Full Body Polishing.JPG",
       "name": "Full Body Polishing",
       "price": 2000,
@@ -9,7 +9,7 @@
       "href" : "/"
     },
     {
-      "id": 2,
+      "id": "Polishing2",
       "image": "/Services/Service Card/Polish & Massage/Polish/Full Arms + Legs Polishing.JPG",
       "name": "Full Arms + Legs Polishing",
       "price": 1300,
@@ -18,7 +18,7 @@
       "href" : "/"
     },
     {
-      "id": 3,
+      "id": "Polishing3",
       "image": "/Services/Service Card/Polish & Massage/Polish/Full Back + Arms Polishing.JPG",
       "name": "Full Back + Arms Polishing",
       "price": 1000,

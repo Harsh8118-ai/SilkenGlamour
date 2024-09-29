@@ -1,6 +1,6 @@
 [
     {
-      "id": 1,
+      "id": "FaceWax1",
       "image": "/Services/Service Card/Threading & Wax/Upper Lips Brazilian Wax.JPG",
       "name": "Upper Lips Brazilian Wax",
       "price": 80,
@@ -9,7 +9,7 @@
       "href" : "/"
     },
     {
-      "id": 2,
+      "id": "FaceWax2",
       "image": "/Services/Service Card/Threading & Wax/Chin Brazilian Wax.JPG",
       "name": "Chin Brazilian Wax",
       "price": 80,
@@ -18,7 +18,7 @@
       "href" : "/"
     },
     {
-      "id": 3,
+      "id": "FaceWax3",
       "image": "/Services/Service Card/Threading & Wax/Side Locks Brazilian Wax.JPG",
       "name": "Side Locks Brazilian Wax",
       "price": 150,
@@ -27,7 +27,7 @@
       "href" : "/"
     },
     {
-      "id": 4,
+      "id": "FaceWax4",
       "image": "/Services/Service Card/Threading & Wax/Forehead Brazilian Wax.JPG",
       "name": "Forehead Brazilian Wax",
       "price": 80,
@@ -36,7 +36,7 @@
       "href" : "/"
     },
     {
-      "id": 5,
+      "id": "FaceWax5",
       "image": "/Services/Service Card/Threading & Wax/Full Face Brazilian Wax.JPG",
       "name": "Full Face Brazilian Wax",
       "price": 500,
@@ -45,7 +45,7 @@
       "href" : "/"
     },
     {
-      "id": 6,
+      "id": "FaceWax6",
       "image": "/Services/Service Card/Threading & Wax/Bikini Brazilian Wax.JPG",
       "name": "Bikini Brazilian Wax",
       "price": 1600,

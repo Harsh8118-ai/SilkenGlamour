@@ -1,6 +1,6 @@
 [
     {
-      "id": 1,
+      "id": "Massage1",
       "image": "/Services/Service Card/Polish & Massage/Masage/Full Body Massage.JPG",
       "name": "Full Body Massage",
       "price": 1200,
@@ -9,7 +9,7 @@
       "href" : "/"
     },
     {
-      "id": 2,
+      "id": "Massage2",
       "image": "/Services/Service Card/Polish & Massage/Masage/Hair Massage.JPG",
       "name": "Hair Massage",
       "price": 500,
@@ -18,7 +18,7 @@
       "href" : "/"
     },
     {
-      "id": 3,
+      "id": "Massage3",
       "image": "/Services/Service Card/Polish & Massage/Masage/Back Massage.JPG",
       "name": "Back Massage",
       "price": 600,
@@ -27,7 +27,7 @@
       "href" : "/"
     },
     {
-        "id": 4,
+        "id": "Massage4",
         "image": "/Services/Service Card/Polish & Massage/Masage/Foot Massage.JPG",
         "name": "Foot Massage",
         "price": 300,
@@ -35,7 +35,7 @@
         "features": ["Relieves Foot Tension", "Improves Circulation", "Promotes Overall Relaxation"],
         "href" : "/"
       },{
-        "id": 5,
+        "id": "Massage5",
         "image": "/Services/Service Card/Polish & Massage/Masage/Hand Massage.JPG",
         "name": "Hand Massage",
         "price": 300,

@@ -1,6 +1,6 @@
 [
     {
-      "id": 1,
+      "id": "Threading1",
       "image": "/Services/Service Card/Threading & Wax/Eyebrow Threading.JPG",
       "name": "Eyebrow Threading",
       "price": 50,
@@ -9,7 +9,7 @@
       "href" : "/"
     },
     {
-      "id": 2,
+      "id": "Threading2",
       "image": "/Services/Service Card/Threading & Wax/Upper Lips Threading.JPG",
       "name": "Upper Lips Threading",
       "price": 50,
@@ -18,7 +18,7 @@
       "href" : "/"
     },
     {
-      "id": 3,
+      "id": "Threading3",
       "image": "/Services/Service Card/Threading & Wax/Chin Threading.JPG",
       "name": "Chin Threading",
       "price": 50,
@@ -27,7 +27,7 @@
       "href" : "/"
     },
     {
-      "id": 4,
+      "id": "Threading4",
       "image": "/Services/Service Card/Threading & Wax/Forehead Threading.JPG",
       "name": "Forehead Threading",
       "price": 50,

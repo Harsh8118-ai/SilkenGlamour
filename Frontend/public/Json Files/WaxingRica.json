@@ -1,6 +1,6 @@
 [
     {
-      "id": 1,
+      "id": "WaxingRica1",
       "image": "/Services/Service Card/Waxing/Underarms Wax.JPG",
       "name": "Under Arms Wax",
       "price": 100,
@@ -9,7 +9,7 @@
       "href" : "/"
     },
     {
-      "id": 2,
+      "id": "WaxingRica2",
       "image": "/Services/Service Card/Waxing/Full Arms Wax.JPG",
       "name": "Full Arms Wax",
       "price": 450,
@@ -18,7 +18,7 @@
       "href" : "/"
     },
     {
-      "id": 3,
+      "id": "WaxingRica3",
       "image": "/Services/Service Card/Waxing/Full Legs Wax.JPG",
       "name": "Full Legs Wax",
       "price": 500,
@@ -27,7 +27,7 @@
       "href" : "/"
     },
     {
-      "id": 4,
+      "id": "WaxingRica4",
       "image": "/Services/Service Card/Waxing/Back Wax.JPG",
       "name": "Full Back Wax",
       "price": 500,
@@ -36,7 +36,7 @@
       "href" : "/"
     },
     {
-      "id": 5,
+      "id": "WaxingRica5",
       "image": "/Services/Service Card/Waxing/Bikini Wax.JPG",
       "name": "Bikini Wax",
       "price": 1000,
@@ -45,7 +45,7 @@
       "href" : "/"
     },
     {
-      "id": 6,
+      "id": "WaxingRica6",
       "image": "/Services/Service Card/Waxing/Stomach Wax.jpg",
       "name": "Stomach Wax",
       "price": 500,
@@ -54,7 +54,7 @@
       "href" : "/"
     },
     {
-      "id": 7,
+      "id": "WaxingRica7",
       "image": "/Services/Service Card/Waxing/Full Body Wax.JPG",
       "name": "Full Body Wax",
       "price": 2000,

@@ -1,6 +1,6 @@
 [
     {
-      "id": 1,
+      "id": "HairCare1",
       "image": "/Services/Service Card/Hair Care/Hair Wash.JPG",
       "name": "Hair Wash",
       "price": 250,
@@ -9,7 +9,7 @@
       "href" : "/"
     },
     {
-      "id": 2,
+      "id": "HairCare2",
       "image": "/Services/Service Card/Hair Care/Hair Cut.JPG",
       "name": "Hair Cut",
       "price": 400,
@@ -18,7 +18,7 @@
       "href" : "/"
     },
     {
-      "id": 3,
+      "id": "HairCare3",
       "image": "/Services/Service Card/Hair Care/Hair Straight.JPG",
       "name": "Hair Straight",
       "price": 300,
@@ -27,7 +27,7 @@
       "href" : "/"
     },
     {
-      "id": 4,
+      "id": "HairCare4",
       "image": "/Services/Service Card/Hair Care/Outcurls.jpg",
       "name": "Out Curls",
       "price": 350,
@@ -36,7 +36,7 @@
       "href" : "/"
     },
     {
-      "id": 5,
+      "id": "HairCare5",
       "image": "/Services/Service Card/Hair Care/Ironing.JPG",
       "name": "Ironing",
       "price": 500,
@@ -45,7 +45,7 @@
       "href" : "/"
     },
     {
-      "id": 6,
+      "id": "HairCare6",
       "image": "/Services/Service Card/Hair Care/Ironing Curls.JPG",
       "name": "Ironing Curls",
       "price": 600,
@@ -54,7 +54,7 @@
       "href" : "/"
     },
     {
-      "id": 7,
+      "id": "HairCare7",
       "image": "/Services/Service Card/Hair Care/Splends.JPG",
       "name": "Splends",
       "price": 500,

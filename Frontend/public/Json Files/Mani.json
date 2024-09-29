@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": "Mani1",
     "image": "/Services/Service Card/Mani-Pedi/Regular Manicure.JPG",
     "name": "Regular Manicure",
     "price": 500,
@@ -9,7 +9,7 @@
     "href" : "/"
   },
     {
-      "id": 2,
+      "id": "Mani2",
       "image": "/Services/Service Card/Mani-Pedi/VLCC Manicure.JPG",
       "name": "VLCC  Manicure",
       "price": 400,
@@ -18,7 +18,7 @@
       "href" : "/"
     },
     {
-      "id": 3,
+      "id": "Mani3",
       "image": "/Services/Service Card/Mani-Pedi/Aroma Manicure.JPG",
       "name": "Aroma Manicure",
       "price": 500,
@@ -27,7 +27,7 @@
       "href" : "/"
     },
     {
-      "id": 4,
+      "id": "Mani4",
       "image": "/Services/Service Card/Mani-Pedi/O3 Manicure.JPG",
       "name": "O3  Manicure",
       "price": 700,

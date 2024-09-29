@@ -1,6 +1,6 @@
 [
     {
-      "id": 1,
+      "id": "HairColour1",
       "image": "/Services/Service Card/Hair Care/Keratin.JPG",
       "name": "Keratin",
       "price": 2000,
@@ -9,7 +9,7 @@
       "href" : "/"
     },
     {
-      "id": 2,
+      "id": "HairColour2",
       "image": "/Services/Service Card/Hair Care/Hair Botox.JPG",
       "name": "Hair Botox",
       "price": 3000,
@@ -18,7 +18,7 @@
       "href" : "/"
     },
     {
-      "id": 3,
+      "id": "HairColour3",
       "image": "/Services/Service Card/Hair Care/Smoothning.JPG",
       "name": "Smoothning",
       "price": 3000,
@@ -27,7 +27,7 @@
       "href" : "/"
     },
     {
-      "id": 4,
+      "id": "HairColour4",
       "image": "/Services/Service Card/Hair Care/Hair SPA.JPG",
       "name": "Hair SPA",
       "price": 1200,
@@ -36,7 +36,7 @@
       "href" : "/"
     },
     {
-      "id": 5,
+      "id": "HairColour5",
       "image": "/Services/Service Card/Hair Care/Touchup (Majirel).JPG",
       "name": "Touchup (Majirel)",
       "price": 1100,
@@ -45,7 +45,7 @@
       "href" : "/"
     },
     {
-      "id": 6,
+      "id": "HairColour6",
       "image": "/Services/Service Card/Hair Care/Touchup (Inoa).JPG",
       "name": "Touchup (Inoa)",
       "price": 1300,
@@ -54,7 +54,7 @@
       "href" : "/"
     },
     {
-      "id": 7,
+      "id": "HairColour7",
       "image": "/Services/Service Card/Hair Care/Global (Base).JPG",
       "name": "Global (Base)",
       "price": 2500,
@@ -63,7 +63,7 @@
       "href" : "/"
     },
     {
-      "id": 8,
+      "id": "HairColour8",
       "image": "/Services/Service Card/Hair Care/Global (Fashion).JPG",
       "name": "Global (Fashion)",
       "price": 3500,
@@ -72,7 +72,7 @@
       "href" : "/"
     },
     {
-        "id": 9,
+        "id": "HairColour9",
         "image": "/Services/Service Card/Hair Care/Balayage.JPG",
         "name": "Balayage",
         "price": 4000,
@@ -82,7 +82,7 @@
       },
       
     {
-        "id": 10,
+        "id": "HairColour10",
         "image": "/Services/Service Card/Hair Care/Highlight Crown.JPG",
         "name": "Highlight (Crown)",
         "price": 1700,
@@ -92,7 +92,7 @@
       }
       ,
     {
-        "id": 11,
+        "id": "HairColour11",
         "image": "/Services/Service Card/Hair Care/Global highlight.JPG",
         "name": "Global Highlight",
         "price": 3500,

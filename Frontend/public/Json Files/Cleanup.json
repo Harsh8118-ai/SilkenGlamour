@@ -1,6 +1,6 @@
 [
     {
-      "id": 1,
+      "id": "Cleanup1",
       "image": "/Services/Service Card/Facial & Cleanup/Kanpeki Cleanup.JPG",
       "name": "Kanpeki Cleanup",
       "price": 1500,
@@ -9,7 +9,7 @@
       "href" : "/"
     },
     {
-      "id": 2,
+      "id": "Cleanup2",
       "image": "/Services/Service Card/Facial & Cleanup/Lotus Cleanup.JPG",
       "name": "Lotus Cleanup",
       "price": 800,
@@ -18,7 +18,7 @@
       "href" : "/"
     },
     {
-      "id": 3,
+      "id": "Cleanup3",
       "image": "/Services/Service Card/Facial & Cleanup/Aroma Cleanup.JPG",
       "name": "Aroma Cleanup",
       "price": 700,
@@ -27,7 +27,7 @@
       "href" : "/"
     },
     {
-      "id": 4,
+      "id": "Cleanup4",
       "image": "/Services/Service Card/Facial & Cleanup/O3 Cleanup.JPG",
       "name": "O3 Cleanup",
       "price": 1400,
@@ -36,7 +36,7 @@
       "href" : "/"
     },
     {
-      "id": 5,
+      "id": "Cleanup5",
       "image": "/Services/Service Card/Facial & Cleanup/Vedic Line Cleanup.JPG",
       "name": "Vedic Line Cleanup",
       "price": 1100,

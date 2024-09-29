@@ -1,6 +1,6 @@
 [
     {
-      "id": 1,
+      "id": "WaxingNormal1",
       "image": "/Services/Service Card/Waxing/Underarms Wax.JPG",
       "name": "Under Arms Wax (Normal)",
       "price": 50,
@@ -9,7 +9,7 @@
       "href" : "/"
     },
     {
-      "id": 2,
+      "id": "WaxingNormal2",
       "image": "/Services/Service Card/Waxing/Full Arms Wax.JPG",
       "name": "Full Arms Wax (Normal)",
       "price": 300,
@@ -18,7 +18,7 @@
       "href" : "/"
     },
     {
-      "id": 3,
+      "id": "WaxingNormal3",
       "image": "/Services/Service Card/Waxing/Full Legs Wax.JPG",
       "name": "Full Legs Wax (Normal)",
       "price": 400,
@@ -27,7 +27,7 @@
       "href" : "/"
     },
     {
-      "id": 4,
+      "id": "WaxingNormal4",
       "image": "/Services/Service Card/Waxing/Back Wax.JPG",
       "name": "Full Back Wax (Normal)",
       "price": 400,
@@ -36,7 +36,7 @@
       "href" : "/"
     },
     {
-      "id": 5,
+      "id": "WaxingNormal5",
       "image": "/Services/Service Card/Waxing/Bikini Wax.JPG",
       "name": "Bikini Wax (Normal)",
       "price": 800,
@@ -45,7 +45,7 @@
       "href" : "/"
     },
     {
-      "id": 6,
+      "id": "WaxingNormal6",
       "image": "/Services/Service Card/Waxing/Stomach Wax.jpg",
       "name": "Stomach Wax (Normal)",
       "price": 400,
@@ -54,7 +54,7 @@
       "href" : "/"
     },
     {
-      "id": 7,
+      "id": "WaxingNormal7",
       "image": "/Services/Service Card/Waxing/Full Body Wax.JPG",
       "name": "Full Body Wax (Normal)",
       "price": 1300,

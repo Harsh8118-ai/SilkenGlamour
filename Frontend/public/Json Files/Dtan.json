@@ -1,6 +1,6 @@
 [
     {
-      "id": 1,
+      "id": "Dtan1",
       "image": "/Services/Service Card/Bleach & D-Tan/DTan/Face + Neck O3 D-Tan.JPG",
       "name": "Face + Neck O3 D-Tan",
       "price": 500,
@@ -9,7 +9,7 @@
       "href" : "/"
     },
     {
-      "id": 2,
+      "id": "Dtan2",
       "image": "/Services/Service Card/Bleach & D-Tan/DTan/Full Body O3 D-Tan.JPG",
       "name": "Full Body O3 D-Tan",
       "price": 2000,
@@ -18,7 +18,7 @@
       "href" : "/"
     },
     {
-      "id": 3,
+      "id": "Dtan3",
       "image": "/Services/Service Card/Bleach & D-Tan/DTan/Full Arms O3 D-Tan.JPG",
       "name": "Full Arms O3 D-Tan",
       "price": 500,
@@ -27,7 +27,7 @@
       "href" : "/"
     },
     {
-      "id": 4,
+      "id": "Dtan4",
       "image": "/Services/Service Card/Bleach & D-Tan/DTan/Full Legs O3 D-Tan.JPG",
       "name": "Full Legs O3 D-Tan",
       "price": 900,
@@ -36,7 +36,7 @@
       "href" : "/"
     },
     {
-      "id": 5,
+      "id": "Dtan5",
       "image": "/Services/Service Card/Bleach & D-Tan/DTan/Full Back O3 D-Tan.JPG",
       "name": "Full Back O3 D-Tan",
       "price": 650,
@@ -45,7 +45,7 @@
       "href" : "/"
     },
     {
-        "id": 6,
+        "id": "Dtan6",
         "image": "/Services/Service Card/Bleach & D-Tan/DTan/Face + Neck Raga D-Tan.JPG",
         "name": "Face + Neck Raga D-Tan",
         "price": 400,
@@ -54,7 +54,7 @@
         "href" : "/"
       },
       {
-        "id": 7,
+        "id": "Dtan7",
         "image": "/Services/Service Card/Bleach & D-Tan/DTan/Full Body Raga D-Tan.JPG",
         "name": "Full Body Raga D-Tan",
         "price": 1500,
@@ -63,7 +63,7 @@
         "href" : "/"
       },
       {
-        "id": 8,
+        "id": "Dtan8",
         "image": "/Services/Service Card/Bleach & D-Tan/DTan/Full Arms Raga D-Tan.JPG",
         "name": "Full Arms Raga D-Tan",
         "price": 450,
@@ -72,7 +72,7 @@
         "href" : "/"
       },
       {
-        "id": 9,
+        "id": "Dtan9",
         "image": "/Services/Service Card/Bleach & D-Tan/DTan/Full Legs Raga D-Tan.JPG",
         "name": "Full Legs Raga D-Tan",
         "price": 800,
@@ -81,7 +81,7 @@
         "href" : "/"
       },
       {
-        "id": 10,
+        "id": "Dtan10",
         "image": "/Services/Service Card/Bleach & D-Tan/DTan/Full Back Raga D-Tan.JPG",
         "name": "Full Back Raga D-Tan",
         "price": 500,
