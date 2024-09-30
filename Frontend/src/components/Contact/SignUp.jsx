@@ -61,9 +61,9 @@ const SignUp = () => {
 
 
     return (
-        <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-black via-gray-800 to-gray-900 p-5">
-            <div className="bg-gray-800 shadow-lg rounded-lg p-8 w-full max-w-md">
-                <h1 className="text-3xl font-semibold text-center text-white mb-6 animate-fadeIn">
+        <div className="min-h-screen flex items-center justify-center bg-gradient-to-t from-[#2E2117] via-[#796855] to-[#2E2117] p-5">
+            <div className="bg-MainBGColorYellow shadow-lg rounded-lg p-8 w-full max-w-md">
+                <h1 className="text-3xl font-semibold text-center text-[#4c3726] mb-6 animate-fadeIn">
                     Signup
                 </h1>
                 <form className="space-y-6" onSubmit={handleSubmit}>
@@ -77,7 +77,7 @@ const SignUp = () => {
                             name="fullname"
                             value={formData.fullname}
                             onChange={handleChange}
-                            className="w-full p-3 text-gray-300 bg-gray-900 rounded-lg focus:outline-none focus:ring focus:ring-yellow-500 transition duration-300 ease-in-out transform hover:scale-105"
+                            className="w-full p-3 text-gray-300 bg-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-yellow-500 transition duration-300 ease-in-out transform hover:scale-105"
                             placeholder="Enter your full name"
                             required // Required field
                         />
@@ -93,7 +93,7 @@ const SignUp = () => {
                             name="mobileNumber"
                             value={formData.mobileNumber}
                             onChange={handleChange}
-                            className="w-full p-3 text-gray-300 bg-gray-900 rounded-lg focus:outline-none focus:ring focus:ring-yellow-500 transition duration-300 ease-in-out transform hover:scale-105"
+                            className="w-full p-3 text-gray-300 bg-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-yellow-500 transition duration-300 ease-in-out transform hover:scale-105"
                             placeholder="Enter your mobile number"
                             required // Required field
                         />
@@ -109,7 +109,7 @@ const SignUp = () => {
                             name="email"
                             value={formData.email}
                             onChange={handleChange}
-                            className="w-full p-3 text-gray-300 bg-gray-900 rounded-lg focus:outline-none focus:ring focus:ring-yellow-500 transition duration-300 ease-in-out transform hover:scale-105"
+                            className="w-full p-3 text-gray-300 bg-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-yellow-500 transition duration-300 ease-in-out transform hover:scale-105"
                             placeholder="Enter your email"
                             required // Required field
                         />
@@ -129,7 +129,7 @@ const SignUp = () => {
                                         type="text"
                                         placeholder="House Number/street Name"
                                         required
-                                        className="w-full p-3 border border-gray-700 bg-gray-900 text-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-600 transition duration-300 ease-in-out transform hover:scale-105"
+                                        className="w-full p-3 border border-gray-700 bg-gray-700 text-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-600 transition duration-300 ease-in-out transform hover:scale-105"
                                     />
                                 </div>
                                 <div>
@@ -140,7 +140,7 @@ const SignUp = () => {
                                         onChange={handleChange}
                                         type="text"
                                         placeholder="Apartment/Flat Number (optional)"
-                                        className="w-full p-3 border border-gray-700 bg-gray-900 text-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-600 transition duration-300 ease-in-out transform hover:scale-105"
+                                        className="w-full p-3 border border-gray-700 bg-gray-700 text-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-600 transition duration-300 ease-in-out transform hover:scale-105"
                                     />
                                 </div>
                                 <div>
@@ -152,7 +152,7 @@ const SignUp = () => {
                                         type="text"
                                         placeholder="Town/City"
                                         required
-                                        className="w-full p-3 border border-gray-700 bg-gray-900 text-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-600 transition duration-300 ease-in-out transform hover:scale-105"
+                                        className="w-full p-3 border border-gray-700 bg-gray-700 text-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-600 transition duration-300 ease-in-out transform hover:scale-105"
                                     />
                                 </div>
                                 <div>
@@ -165,7 +165,7 @@ const SignUp = () => {
                                         placeholder="Pincode"
                                         required
                                         autoComplete="postal-code"
-                                        className="w-full p-3 border border-gray-700 bg-gray-900 text-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-600 transition duration-300 ease-in-out transform hover:scale-105"
+                                        className="w-full p-3 border border-gray-700 bg-gray-700 text-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-600 transition duration-300 ease-in-out transform hover:scale-105"
                                     />
                                 </div>
                             </div>
@@ -183,7 +183,7 @@ const SignUp = () => {
                                 name="password"
                                 value={formData.password}
                                 onChange={handleChange}
-                                className="w-full p-3 text-gray-300 bg-gray-900 rounded-lg focus:outline-none focus:ring focus:ring-yellow-500 transition duration-300 ease-in-out transform hover:scale-105"
+                                className="w-full p-3 text-gray-300 bg-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-yellow-500 transition duration-300 ease-in-out transform hover:scale-105"
                                 placeholder="Enter your password"
                                 required // Required field
                                 autoComplete="new-password"

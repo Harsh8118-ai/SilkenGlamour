@@ -23,15 +23,15 @@ const Login = () => {
     };
 
     return (
-        <div className="min-h-screen flex -mt-20 sm:mt-0 items-center justify-center bg-gradient-to-r from-black via-gray-800 to-gray-900 p-5">
-            <div className="bg-gray-800 shadow-lg rounded-lg p-8 w-full max-w-md">
-                <h1 className="text-3xl font-semibold text-center text-white mb-6 animate-fadeIn">
+        <div className="min-h-screen flex -mt-20 sm:mt-0 items-center justify-center bg-gradient-to-t from-[#2E2117] via-[#796855] to-[#2E2117] p-5">
+            <div className="bg-MainBGColorYellow shadow-lg rounded-lg p-8 w-full max-w-md">
+                <h1 className="text-3xl font-semibold text-center text-[#4c3726] mb-6 animate-fadeIn">
                     Salon Service Login
                 </h1>
                 <form className="space-y-6" onSubmit={handleSubmit}>
                     {/* Email or Mobile Number */}
                     <div className="relative">
-                        <label className="block text-sm font-medium text-gray-300">
+                        <label className="block text-sm font-medium text-BGColorYellow">
                             Email or Mobile Number
                         </label>
                         <input
@@ -39,7 +39,7 @@ const Login = () => {
                             name="emailOrMobile"
                             value={formData.emailOrMobile}
                             onChange={handleChange}
-                            className="w-full p-3 text-gray-300 bg-gray-900 rounded-lg focus:outline-none focus:ring focus:ring-yellow-500 transition duration-300 ease-in-out transform hover:scale-105"
+                            className="w-full p-3 text-gray-300 bg-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-BGColorYellow transition duration-300 ease-in-out transform hover:scale-105"
                             placeholder="Enter email or mobile number"
                             required
                         />
@@ -47,7 +47,7 @@ const Login = () => {
 
                     {/* Password */}
                     <div className="relative">
-                        <label className="block text-sm font-medium text-gray-300">
+                        <label className="block text-sm font-medium text-BGColorYellow">
                             Password
                         </label>
                         <div className="relative">
@@ -56,7 +56,7 @@ const Login = () => {
                                 name="password"
                                 value={formData.password}
                                 onChange={handleChange}
-                                className="w-full p-3 text-gray-300 bg-gray-900 rounded-lg focus:outline-none focus:ring focus:ring-yellow-500 transition duration-300 ease-in-out transform hover:scale-105"
+                                className="w-full p-3 text-gray-300 bg-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-BGColorYellow transition duration-300 ease-in-out transform hover:scale-105"
                                 placeholder="Enter your password"
                                 required
                             />
@@ -103,11 +103,11 @@ const Login = () => {
                             id="rememberMe"
                             checked={rememberMe}
                             onChange={() => setRememberMe(!rememberMe)}
-                            className="h-4 w-4 text-yellow-500 bg-gray-900 border-gray-600 rounded focus:ring-yellow-500 transition duration-300"
+                            className="h-4 w-4 text-bgcoloring-BGColorYellow bg-gray-700 border-gray-600 rounded focus:ring-BGColorYellow transition duration-300"
                         />
                         <label
                             htmlFor="rememberMe"
-                            className="ml-2 text-sm text-gray-300"
+                            className="ml-2 text-sm text-BGColorYellow sm:font-bold"
                         >
                             Remember Me
                         </label>
@@ -116,15 +116,15 @@ const Login = () => {
                     {/* Submit Button */}
                     <button
                         type="submit"
-                        className="w-full p-3 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-600 transition duration-300 ease-in-out transform hover:scale-105 animate-pulse"
+                        className="w-full p-3 bg-BGColorYellow text-black font-semibold rounded-lg hover:bg-yellow-600 transition duration-300 ease-in-out transform hover:scale-105 animate-pulse"
                     >
                         Login
                     </button>
                 </form>
 
-                <p className="mt-6 text-center text-sm text-gray-400">
+                <p className="mt-6 text-center text-sm text-BGColorYellow">
                     Don't have an account?{' '}
-                    <Link to="/contact/signup" className="text-yellow-500 hover:underline">
+                    <Link to="/contact/signup" className="text-BGColorYellow hover:underline font-bold text-lg">
                         Sign Up
                     </Link>
                 </p>
