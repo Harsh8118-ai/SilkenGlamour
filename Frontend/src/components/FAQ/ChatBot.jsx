@@ -91,12 +91,12 @@ const steps = [
 
 // Creating our own theme
 const theme = {
-  background: 'white',
-  headerBgColor: 'linear-gradient(to bottom, #000000, #1f2937, #374151)',
-  botBubbleColor: 'linear-gradient(to bottom, #000000, #1f2937, #374151)',
-  headerFontColor: '#F59E0B',
+  background: '#d6cbbc',
+  headerBgColor: 'linear-gradient(to right, #2E2117, #796855, #2E2117)',
+  botBubbleColor: 'linear-gradient(to bottom, #2E2117, #796855, #2E2117)',
+  headerFontColor: '#E3DBD0',
   botFontColor: 'white',
-  userBubbleColor: 'linear-gradient(to right, #F59E0B, #F97316)',
+  userBubbleColor: 'linear-gradient(to left, #C6B198, #E3DBD0)',
   userFontColor: 'black',
   headerFontSize: '23px',
 };

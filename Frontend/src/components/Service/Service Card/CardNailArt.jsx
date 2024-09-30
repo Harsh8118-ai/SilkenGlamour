@@ -98,14 +98,14 @@ const CardNailArt = () => {
                         </a>
                         <div className="flex items-center justify-between">
                           <span className={`text-2xl font-bold text-black`}>₹{product.price}</span>
-                          <span className="text-red-500 m-2 mx-1 text-sm font-bold line-through">₹{product.offerprice}</span>
+                          <span className="text-red-500 m-2 mx-1 mr-2 text-sm font-bold line-through">₹{product.offerprice}</span>
                           <CartContext.Consumer>
                             {({ addToCart }) => (
                               <button
                                 onClick={() => addToCart(product)}
-                                className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-1 sm:px-5 py-2.5 text-center"
+                                className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm  sm:px-3  text-center"
                               >
-                                Add to cart
+                                Add to <br />cart
                               </button>
                             )}
                           </CartContext.Consumer>
@@ -129,13 +129,13 @@ const CardNailArt = () => {
               <div className="w-full h-full mt-4 sm:hidden">
                 <div className="grid grid-cols-2 gap-x-3 gap-y-6 ">
                   {products.map((product) => (
-                    <div key={product.id} className="shadow-xl shadow-BGColorYellow rounded-lg bg-BGColorYellow sm:p-4 p-2">
+                    <div key={product.id} className="shadow-xl shadow-BGColorYellow rounded-lg bg-BGColorYellow p-2">
                       <a href={product.href}>
                         <img className="rounded-lg h-36 w-40 object-cover" src={product.image} alt={product.image} />
                       </a>
                       <div className="px-5">
                         <a href={product.href}>
-                          <h5 className={`text-lg tracking-tight text-center mb-1 font-bold text-MainBGColorYellow`}>
+                          <h5 className={`tracking-tight text-center mb-1 font-bold text-MainBGColorYellow`}>
                             {product.name}
                           </h5>
                         </a>
@@ -146,12 +146,12 @@ const CardNailArt = () => {
                               <span className="text-red-500 sm:m-2 sm:mx-1 text-sm font-bold line-through tracking-wider">₹{product.offerprice}</span>
                             </div>
                             {/* Mobile "Add to Cart" button */}
-                            <button
+                            <div
                               onClick={() => addToCart(product)}
-                              className="sm:hidden block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-xs mx-auto p-1 text-center"
+                              className="sm:hidden block"
                             >
-                              Add to Cart
-                            </button>
+                              <svg viewBox="0 0 24 24" fill="none" height="30" xmlns="http://www.w3.org/2000/svg" stroke="#21219c"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.4 3h11.2A2.4 2.4 0 0 1 22 5.4v11.2a2.4 2.4 0 0 1-2.4 2.4H8.4A2.4 2.4 0 0 1 6 16.6V5.4A2.4 2.4 0 0 1 8.4 3ZM14 6a1 1 0 0 1 1 1v3h3a1 1 0 1 1 0 2h-3v3a1 1 0 1 1-2 0v-3h-3a1 1 0 1 1 0-2h3V7a1 1 0 0 1 1-1Z" fill="#1414e1"></path><path d="M4 5a1 1 0 0 0-2 0v11.6C2 20.132 4.868 23 8.4 23H20a1 1 0 1 0 0-2H8.4A4.403 4.403 0 0 1 4 16.6V5Z" fill="#1414e1"></path></g></svg>
+                            </div>
                           </div>
 
                           <div className=''>

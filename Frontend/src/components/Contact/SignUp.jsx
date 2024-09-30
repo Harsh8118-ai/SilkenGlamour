@@ -62,14 +62,14 @@ const SignUp = () => {
 
     return (
         <div className="min-h-screen flex items-center justify-center bg-gradient-to-t from-[#2E2117] via-[#796855] to-[#2E2117] p-5">
-            <div className="bg-MainBGColorYellow shadow-lg rounded-lg p-8 w-full max-w-md">
+            <div className="shadow-lg rounded-lg p-8 w-full max-w-md bg-MainBGColorYellow">
                 <h1 className="text-3xl font-semibold text-center text-[#4c3726] mb-6 animate-fadeIn">
                     Signup
                 </h1>
                 <form className="space-y-6" onSubmit={handleSubmit}>
                     {/* Full Name */}
                     <div className="relative">
-                        <label className="block text-sm font-medium text-gray-300">
+                        <label className="block text-sm font-medium text-BGColorYellow">
                             Full Name
                         </label>
                         <input
@@ -77,7 +77,7 @@ const SignUp = () => {
                             name="fullname"
                             value={formData.fullname}
                             onChange={handleChange}
-                            className="w-full p-3 text-gray-300 bg-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-yellow-500 transition duration-300 ease-in-out transform hover:scale-105"
+                            className="w-full p-3 text-BGColorYellow bg-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-yellow-500 transition duration-300 ease-in-out transform hover:scale-105"
                             placeholder="Enter your full name"
                             required // Required field
                         />
@@ -85,7 +85,7 @@ const SignUp = () => {
 
                     {/* Mobile Number */}
                     <div className="relative">
-                        <label className="block text-sm font-medium text-gray-300">
+                        <label className="block text-sm font-medium text-BGColorYellow">
                             Mobile Number
                         </label>
                         <input
@@ -93,7 +93,7 @@ const SignUp = () => {
                             name="mobileNumber"
                             value={formData.mobileNumber}
                             onChange={handleChange}
-                            className="w-full p-3 text-gray-300 bg-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-yellow-500 transition duration-300 ease-in-out transform hover:scale-105"
+                            className="w-full p-3 text-BGColorYellow bg-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-yellow-500 transition duration-300 ease-in-out transform hover:scale-105"
                             placeholder="Enter your mobile number"
                             required // Required field
                         />
@@ -101,7 +101,7 @@ const SignUp = () => {
 
                     {/* Email */}
                     <div className="relative">
-                        <label className="block text-sm font-medium text-gray-300">
+                        <label className="block text-sm font-medium text-BGColorYellow">
                             Email
                         </label>
                         <input
@@ -109,7 +109,7 @@ const SignUp = () => {
                             name="email"
                             value={formData.email}
                             onChange={handleChange}
-                            className="w-full p-3 text-gray-300 bg-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-yellow-500 transition duration-300 ease-in-out transform hover:scale-105"
+                            className="w-full p-3 text-BGColorYellow bg-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-yellow-500 transition duration-300 ease-in-out transform hover:scale-105"
                             placeholder="Enter your email"
                             required // Required field
                         />
@@ -117,8 +117,8 @@ const SignUp = () => {
 
                     {/* Address */}
                     <div>
-                        <label className="block text-sm font-medium text-gray-200 ">Address</label>
-                        <div className='border border-gray-700 bg-gray-800  rounded-md p-4'>
+                        <label className="block text-sm font-medium text-BGColorYellow ">Address</label>
+                        <div className='border border-gray-700 bg-[#cfbca6]  rounded-md p-4'>
                             <div className="space-y-4">
                                 <div>
                                     <input
@@ -129,7 +129,7 @@ const SignUp = () => {
                                         type="text"
                                         placeholder="House Number/street Name"
                                         required
-                                        className="w-full p-3 border border-gray-700 bg-gray-700 text-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-600 transition duration-300 ease-in-out transform hover:scale-105"
+                                        className="w-full p-3 border border-gray-700 bg-gray-700 text-BGColorYellow rounded-md focus:outline-none focus:ring-2 focus:ring-gray-600 transition duration-300 ease-in-out transform hover:scale-105"
                                     />
                                 </div>
                                 <div>
@@ -140,7 +140,7 @@ const SignUp = () => {
                                         onChange={handleChange}
                                         type="text"
                                         placeholder="Apartment/Flat Number (optional)"
-                                        className="w-full p-3 border border-gray-700 bg-gray-700 text-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-600 transition duration-300 ease-in-out transform hover:scale-105"
+                                        className="w-full p-3 border border-gray-700 bg-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-600 transition duration-300 ease-in-out transform hover:scale-105"
                                     />
                                 </div>
                                 <div>
@@ -152,7 +152,7 @@ const SignUp = () => {
                                         type="text"
                                         placeholder="Town/City"
                                         required
-                                        className="w-full p-3 border border-gray-700 bg-gray-700 text-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-600 transition duration-300 ease-in-out transform hover:scale-105"
+                                        className="w-full p-3 border border-gray-700 bg-gray-700 text-BGColorYellow rounded-md focus:outline-none focus:ring-2 focus:ring-gray-600 transition duration-300 ease-in-out transform hover:scale-105"
                                     />
                                 </div>
                                 <div>
@@ -165,7 +165,7 @@ const SignUp = () => {
                                         placeholder="Pincode"
                                         required
                                         autoComplete="postal-code"
-                                        className="w-full p-3 border border-gray-700 bg-gray-700 text-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-600 transition duration-300 ease-in-out transform hover:scale-105"
+                                        className="w-full p-3 border border-gray-700 bg-gray-700 text-BGColorYellow rounded-md focus:outline-none focus:ring-2 focus:ring-gray-600 transition duration-300 ease-in-out transform hover:scale-105"
                                     />
                                 </div>
                             </div>
@@ -174,7 +174,7 @@ const SignUp = () => {
 
                     {/* Password */}
                     <div className="relative">
-                        <label className="block text-sm font-medium text-gray-300">
+                        <label className="block text-sm font-medium text-BGColorYellow">
                             Password
                         </label>
                         <div className="relative">
@@ -183,7 +183,7 @@ const SignUp = () => {
                                 name="password"
                                 value={formData.password}
                                 onChange={handleChange}
-                                className="w-full p-3 text-gray-300 bg-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-yellow-500 transition duration-300 ease-in-out transform hover:scale-105"
+                                className="w-full p-3 text-BGColorYellow bg-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-yellow-500 transition duration-300 ease-in-out transform hover:scale-105"
                                 placeholder="Enter your password"
                                 required // Required field
                                 autoComplete="new-password"
@@ -227,15 +227,16 @@ const SignUp = () => {
                     {/* Submit Button */}
                     <button
                         type="submit"
-                        className="w-full p-3 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-600"
+                        className="w-full p-3 bg-BGColorYellow text-black font-semibold rounded-lg hover:bg-yellow-600"
                     >
                         Sign Up
                     </button>
                 </form>
 
-                <div className="mt-4 text-center text-gray-400">
-                    <Link to="/contact/login" className="text-yellow-500 hover:text-yellow-400">
-                        Already have an account? Log In
+                <div className="mt-4 text-center text-BGColorYellow">
+                Already have an account?
+                    <Link to="/contact/login" className="text-BGColorYellow hover:text-yellow-400 font-bold">
+                        &nbsp; Log In
                     </Link>
                 </div>
             </div>

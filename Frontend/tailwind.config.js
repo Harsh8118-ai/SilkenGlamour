@@ -19,7 +19,9 @@ export default {
 
         MainBGColorYellow : '#C6B198',
         BGColorYellow : '#796855',
-        LightBGColor : '#E3DBD0'
+        LightBGColor : '#E3DBD0',
+       
+
     },
   
   },
