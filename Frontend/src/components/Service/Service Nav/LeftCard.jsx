@@ -6,7 +6,7 @@ export default function LeftCard() {
   return (
     <>
     <div className="hidden sm:block w-[20%] sticky top-16 h-screen bg-gray-100 p-4">
-          <div className='bg-MainBGColorYellow h-screen'>
+          <div className='bg-MainBGColorYellow h-screen rounded-lg'>
             <h1 className={`text-center text-3xl font-bold p-3 ${LogoColor}`}>Services</h1>
             <div className='flex justify-center items-center p-3x '>
               <div className="flex flex-col gap-2">

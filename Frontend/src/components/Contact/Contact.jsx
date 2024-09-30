@@ -20,10 +20,10 @@ const Contact = () => {
             {/* Call and WhatsApp Section at the Top */}
             <div className="bg-LightBGColor shadow-lg rounded-lg p-6 max-w-2xl w-full flex justify-center gap-24 items-center mb-10 -mx-5"
                 data-aos="fade-down">
-                <div className="text-center hover:scale-110 transform transition duration-500 ease-in-out">
-                    <a href="tel:+919266037001" className="text-lg font-semibold text-black hover:text-[#CBB59F] transition">
+                <div className="text-center hover:scale-110 transform transition duration-500 ease-in-out ">
+                    <a href="tel:+919266037001" className="text-lg font-semibold text-black hover:text-[#CBB59F] transition flex items-center flex-col">
                     <FaPhoneAlt className="text-blue-700 text-5xl  p-1" />
-                        Call Now
+                        <p> Call Now </p>
                     </a>
                 </div>
 

@@ -131,23 +131,24 @@ export default function Header() {
           </span>
 
           {/* ............ CART ICON WITH TOTAL ITEMS ............ */}
-          <button
-            className="sm:hidden fixed right-10 top-2 z-50 text-MainBGColorYellow"
-            onClick={() => setIsCartOpen(true)} // Open cart on click
-          >
-            <div className="relative">
-              <FiShoppingCart className="text-2xl mr-2" />
+          
+
+          <div className="absolute right-0 flex items-center">
+            <button
+            className="text-MainBGColorYellow mr-3"
+            onClick={() => setIsCartOpen(true)}> {/* Open cart on click */}
+
+              <FiShoppingCart className="text-2xl" />
               {totalItems > 0 && (
-                <span className="absolute -top-2 -right-3 bg-red-500 text-white rounded-full w-4 h-4 flex items-center justify-center text-xs">
+                <span className=" bg-red-500 text-white rounded-full w-4 h-4 flex items-center justify-center text-xs">
                   {totalItems}
                 </span>
               )}
-            </div>
+            
           </button>
 
-          <div className="absolute right-0">
-            <Link to="/profile">
-              <div className="mr-2">
+          <Link to="/profile">
+              <div className="mr-3">
                 <svg viewBox="0 0 24 24" fill="none" height="25" xmlns="http://www.w3.org/2000/svg">
                   <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                   <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -162,6 +163,7 @@ export default function Header() {
                 </svg>
               </div>
             </Link>
+
           </div>
         </div>
 
