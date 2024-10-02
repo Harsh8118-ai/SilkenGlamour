@@ -14,9 +14,9 @@ export default function Service() {
 
   return (
     <div className='bg-MainBGColorYellow min-h-screen overflow-x-hidden'>
-      <h1 className='text-center text-3xl font-bold text-gray-900 sm:tracking-wide pt-2' data-aos="fade-down">
+      <h6 className='text-center text-3xl font-bold text-gray-900 sm:tracking-wide pt-2' data-aos="fade-down">
         Luxury Home Salon
-      </h1>
+      </h6>
 
       <div className='flex justify-center items-center p-5 pt-3'>
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-6 bg-LightBGColor p-4 sm:p-6 rounded-xl max-w-screen-lg mx-auto">
