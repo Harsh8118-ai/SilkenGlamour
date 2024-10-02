@@ -12,7 +12,7 @@ const RightCart = () => {
         return `${item.name} -> ₹${item.price} x ${item.quantity} = ₹${itemTotal}`;
       })
       .join('\n');
-    
+
     const message = `${cartDetails}\n\nTotal: ₹${totalPrice}`;
     return message;
   };
@@ -21,7 +21,7 @@ const RightCart = () => {
   const handleOrderNow = () => {
     const message = generateOrderMessage();
     const confirmOrder = window.confirm(`Your Order:\n${message}\n\nClick OK to place your Order.`);
-    
+
     if (confirmOrder) {
       const whatsappLink = `https://api.whatsapp.com/send?phone=919266037001&text=${encodeURIComponent(message)}`;
       window.open(whatsappLink, '_blank');
@@ -30,9 +30,9 @@ const RightCart = () => {
 
   return (
     <>
-      <div className='hidden sm:block sticky top-16 h-screen bg-gray-100 p-4 w-full max-w-sm'>
+      <div className='hidden sm:w-fit lg:w-full sm:block sticky top-16 h-screen bg-gray-100 p-4 max-w-sm'>
         <div className="w-full max-w-sm p-6 h-screen bg-MainBGColorYellow shadow-xl rounded-lg">
-          <h2 className="text-lg font-bold text-center mb-4">Your Cart</h2>
+          <h2 className="text-lg font-bold text-center mb-4">My Cart</h2>
 
           {cartItems.length === 0 ? (
             <p className="text-center text-gray-500">Your cart is empty</p>
@@ -69,17 +69,22 @@ const RightCart = () => {
                 </div>
               ))}
 
+              
+
+              {/* Order Now Button */}
+              <div className="sticky bottom-0 bg-MainBGColorYellow p-4"> {/* Sticky container for the button */}
+
               <div className="border-t mt-4 pt-4">
                 <h3 className="text-lg font-bold text-center">Total: ₹{totalPrice}</h3>
               </div>
-
-              {/* Order Now Button */}
-              <button
-                onClick={handleOrderNow}
-                className="mt-4 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 w-full rounded"
-              >
-                Order Now
-              </button>
+              
+                <button
+                  onClick={handleOrderNow}
+                  className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 w-full rounded"
+                >
+                  Order Now
+                </button>
+              </div>
             </div>
           )}
         </div>
