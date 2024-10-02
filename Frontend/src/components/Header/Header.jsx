@@ -138,7 +138,7 @@ export default function Header() {
               {/* Open cart on click */}
 
               {totalItems > 0 && (
-                <span className="absolute -top-1 -right-2 bg-red-500 text-white rounded-full w-3 h-3 flex items-center justify-center text-xs">
+                <span className="absolute -top-1 -right-2 bg-red-500 text-white rounded-full w-3.5 h-4 flex items-center justify-center text-xs font-semibold">
                   {totalItems}
                 </span>
               )}

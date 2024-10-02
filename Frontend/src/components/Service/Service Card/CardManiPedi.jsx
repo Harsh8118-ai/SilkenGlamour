@@ -88,11 +88,11 @@ const CardManiPedi = () => {
                   {products.map((product) => (
                     <div key={product.id} className="shadow border-gray-700 rounded-lg bg-BGColorYellow sm:p-4 p-2">
 
+                        <img className="rounded-lg h-fit w-fit object-cover" src={product.image} alt={product.image} onClick={() => addToCart(product)} />
 
                       <CartContext.Consumer>
                         {({ addToCart }) => (
                           <div className="relative">
-                            <img className="rounded-lg h-fit w-fit object-cover" src={product.image} alt={product.image} onClick={() => addToCart(product)} />
 
                             {/* Mobile "Add to Cart" button */}
                             <div
@@ -111,13 +111,15 @@ const CardManiPedi = () => {
                             {product.name}
                           </h5>
                         </a>
-                        <div className="flex items-center justify-between">
+                        <div className="flex items-center justify-center gap-3">
                           <span className={`text-2xl font-bold text-black`}>₹{product.price}</span>
-                          <span className="text-red-500 m-2 mx-1 mr-2 text-sm font-bold line-through">₹{product.offerprice}</span>
+                          <span className="text-red-700 m-2 mx-1 mr-2 text-lg font-bold line-through" >₹{product.offerprice}</span>
 
                         </div>
+
+                        <hr />
                         {product.features.map((feature, index) => (
-                          <div key={index} className="flex gap-2 w-full mt-2">
+                          <div key={index} className="flex gap-2 w-fit mt-2 -mx-4 ">
                             <img src="/Services/Tick.svg" alt="tick" />
                             <span className="text-sm font-bold text-black">{feature}</span>
                           </div>
@@ -137,8 +139,8 @@ const CardManiPedi = () => {
                   {products.map((product) => (
                     <div key={product.id} className="shadow-xl shadow-BGColorYellow rounded-lg bg-BGColorYellow p-2">
 
-                      <div className="relative">
                         <img className="rounded-lg h-36 w-40 object-cover" src={product.image} alt={product.image} onClick={() => addToCart(product)} />
+                      <div className="relative">
 
                         {/* Mobile "Add to Cart" button */}
                         <div
@@ -157,9 +159,9 @@ const CardManiPedi = () => {
                         </a>
                         <div className="flex flex-col items-center justify-between gap-2">
                           <div className='flex gap-3'>
-                            <div className='flex flex-col text-center'>
+                            <div className='gap-3 flex justify-center items-center'>
                               <span className={`text-lg sm:text-2xl font-bold tracking-wider text-black `}>₹{product.price}</span>
-                              <span className="text-red-500 sm:m-2 sm:mx-1 text-sm font-bold line-through tracking-wider">₹{product.offerprice}</span>
+                              <span className="text-red-700 sm:m-2 sm:mx-1 text-sm font-bold line-through tracking-wider">₹{product.offerprice}</span>
                             </div>
 
                           </div>
