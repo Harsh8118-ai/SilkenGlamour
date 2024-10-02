@@ -1,39 +1,38 @@
-import React, { useContext } from 'react';
+// components/RightCart.jsx
+import React, { useContext, useState } from 'react';
 import { CartContext } from '../Service Nav/CartContext';
+import Modal from './Modal'; // Import the modal component
 
 const RightCart = () => {
   const { cartItems, removeFromCart, increaseQuantity, decreaseQuantity, totalPrice } = useContext(CartContext);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  // Function to generate the message in the required format
   const generateOrderMessage = () => {
-    const cartDetails = cartItems
-      .map(item => {
-        const itemTotal = item.quantity * item.price;
-        return `${item.name} -> ₹${item.price} x ${item.quantity} = ₹${itemTotal}`;
-      })
-      .join('\n');
+    const cartDetails = cartItems.map(item => {
+      const itemTotal = item.quantity * item.price;
+      return `${item.name} -> ₹${item.price} x ${item.quantity} = ₹${itemTotal}` 
+    }).join('\n');
 
-    const message = `${cartDetails}\n\nTotal: ₹${totalPrice}`;
-    return message;
+    return `${cartDetails}\n\nTotal: ₹${totalPrice}`;
   };
 
-  // Function to handle order submission
   const handleOrderNow = () => {
-    const message = generateOrderMessage();
-    const confirmOrder = window.confirm(`Your Order:\n${message}\n\nClick OK to place your Order.`);
+    setIsModalOpen(true);
+  };
 
-    if (confirmOrder) {
-      const whatsappLink = `https://api.whatsapp.com/send?phone=919266037001&text=${encodeURIComponent(message)}`;
-      window.open(whatsappLink, '_blank');
-    }
+  const confirmOrder = () => {
+    const message = generateOrderMessage();
+    const whatsappLink = `https://api.whatsapp.com/send?phone=919266037001&text=${encodeURIComponent(message)}`;
+    window.open(whatsappLink, '_blank');
+    setIsModalOpen(false); // Close the modal after confirming
   };
 
   return (
     <>
       <div className='hidden sm:w-fit lg:w-full sm:block sticky top-16 h-screen bg-gray-100 p-4 max-w-sm'>
+        {/* Your existing UI and structure */}
         <div className="w-full max-w-sm p-6 h-screen bg-MainBGColorYellow shadow-xl rounded-lg">
           <h2 className="text-lg font-bold text-center mb-4">My Cart</h2>
-
           {cartItems.length === 0 ? (
             <p className="text-center text-gray-500">Your cart is empty</p>
           ) : (
@@ -68,16 +67,10 @@ const RightCart = () => {
                   </div>
                 </div>
               ))}
-
-              
-
-              {/* Order Now Button */}
-              <div className="sticky bottom-0 bg-MainBGColorYellow p-4"> {/* Sticky container for the button */}
-
-              <div className="border-t mt-4 pt-4">
-                <h3 className="text-lg font-bold text-center">Total: ₹{totalPrice}</h3>
-              </div>
-              
+              <div className="sticky bottom-0 bg-MainBGColorYellow p-4">
+                <div className="border-t mt-4 pt-4">
+                  <h3 className="text-lg font-bold text-center">Total: ₹{totalPrice}</h3>
+                </div>
                 <button
                   onClick={handleOrderNow}
                   className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 w-full rounded"
@@ -89,6 +82,15 @@ const RightCart = () => {
           )}
         </div>
       </div>
+
+      {/* Modal for Order Confirmation */}
+      <Modal
+        isOpen={isModalOpen}
+        title="Confirm Your Order"
+        message={generateOrderMessage()}
+        onConfirm={confirmOrder}
+        onClose={() => setIsModalOpen(false)}
+      />
     </>
   );
 };
