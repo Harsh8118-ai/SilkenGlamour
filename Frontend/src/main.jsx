@@ -23,6 +23,7 @@ import ChatBotLayout from './components/FAQ/ChatBotLayout';
 import CardThreading from './components/Service/Service Card/CardThreading';
 import CardBodyPolishing from './components/Service/Service Card/CardBodyPolishing';
 import Profile from './components/Profile/Profile';
+import { AuthProvider } from './Store/auth';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -62,8 +63,10 @@ const router = createBrowserRouter(
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <>
+  <AuthProvider >
     <RouterProvider router={router}>
      
     </RouterProvider>
+    </AuthProvider>
   </>
 );

@@ -1,15 +1,24 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { useAuth } from '../../Store/auth';
+
+const URL = ""
 
 const Login = () => {
     const [formData, setFormData] = useState({
-        emailOrMobile: '',
+        mobileNumber: '',
         password: ''
     });
+
+    
+    const navigate = useNavigate();
+
+    const {storeTokenInLS} = useAuth();
+    
     const [showPassword, setShowPassword] = useState(false);
     const [rememberMe, setRememberMe] = useState(false);
 
-    const handleChange = (e) => {
+    const handleChange =  (e) => {
         const { name, value } = e.target;
         setFormData((prevState) => ({
             ...prevState,
@@ -17,8 +26,43 @@ const Login = () => {
         }));
     };
 
-    const handleSubmit = (e) => {
+    // Access environment variable using import.meta.env
+    const BASE_URL = import.meta.env.VITE_BACKEND_URL;
+
+    const handleSubmit = async (e) => {
         e.preventDefault();
+
+        try {
+            // const response = await fetch(`${BASE_URL}/auth/login`, {
+                const response = await fetch(`http://localhost:5000/api/auth/login`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json", // Indicating that JSON is being sent
+                },
+                body: JSON.stringify(formData), // Converting formData object to JSON string
+            });
+            console.log("login: ", response);
+
+
+            if (response.ok) {
+                alert("Login Successful");
+
+                const data = await response.json(); // Parsing the response data
+                storeTokenInLS(data.token)
+
+                setFormData({mobileNumber: "", password: ""});
+
+                navigate("/");
+            }
+            else{
+                console.log("Invalid Credentials");
+                alert("Invalid Credentials");
+                
+            }
+
+        } catch (error) {
+
+        }
         console.log(formData);
     };
 
@@ -29,18 +73,18 @@ const Login = () => {
                     Salon Service Login
                 </h1>
                 <form className="space-y-6" onSubmit={handleSubmit}>
-                    {/* Email or Mobile Number */}
+                    {/* Email */}
                     <div className="relative">
                         <label className="block text-sm font-medium text-BGColorYellow">
-                            Email or Mobile Number
+                            Mobile Number
                         </label>
                         <input
                             type="text"
-                            name="emailOrMobile"
-                            value={formData.emailOrMobile}
+                            name="mobileNumber"
+                            value={formData.mobileNumber}
                             onChange={handleChange}
                             className="w-full p-3 text-gray-300 bg-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-BGColorYellow transition duration-300 ease-in-out transform hover:scale-105"
-                            placeholder="Enter email or mobile number"
+                            placeholder="Enter Mobile Number"
                             required
                         />
                     </div>
