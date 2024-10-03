@@ -53,6 +53,7 @@ const Login = () => {
                 setFormData({mobileNumber: "", password: ""});
 
                 navigate("/");
+                window.location.reload();
             }
             else{
                 console.log("Invalid Credentials");

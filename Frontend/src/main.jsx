@@ -24,6 +24,7 @@ import CardThreading from './components/Service/Service Card/CardThreading';
 import CardBodyPolishing from './components/Service/Service Card/CardBodyPolishing';
 import Profile from './components/Profile/Profile';
 import { AuthProvider } from './Store/auth';
+import LogOut from './components/Contact/LogOut';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -38,6 +39,7 @@ const router = createBrowserRouter(
         <Route path='' element={<Contact />} />
         <Route path='signup' element={<SignUp />} />
         <Route path='login' element={<Login />} />
+        <Route path='logout' element={<LogOut />} />
       </Route>
 
       {/* .....SERVICE....  */}

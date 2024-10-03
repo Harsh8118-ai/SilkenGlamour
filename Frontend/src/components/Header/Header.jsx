@@ -3,10 +3,13 @@ import { Link, NavLink } from 'react-router-dom';
 import { FiShoppingCart } from 'react-icons/fi';
 import { CartContext } from '../Service/Service Nav/CartContext'; // Import the CartContext
 import MobileCart from '../Service/Service Nav/MobileCart'; // Import MobileCart component
+import { useAuth } from '../../Store/auth';
 
 export default function Header() {
   const [isCartOpen, setIsCartOpen] = useState(false); // State to toggle cart visibility
   const { cartItems } = useContext(CartContext);
+
+  const { isLoggedIn } = useAuth();
 
   // Calculate total number of items in the cart
   const totalItems = cartItems.reduce((total, item) => total + item.quantity, 0);
@@ -26,18 +29,30 @@ export default function Header() {
             </Link>
 
             <div className="items-center sm:order-2 hidden sm:flex">
-              <Link
-                to="contact/login"
+              {isLoggedIn ? <Link
+                to="contact/logout"
                 className="text-MainBGColorYellow hover:bg-MainBGColorYellow focus:ring-4 bg-gray-900 focus:ring-gray-600 font-medium rounded-lg text-sm px-4 sm:px-3 py-2 sm:py-1.5 mr-2 lg:mr-4 focus:outline-none hover:text-black"
               >
-                Log in
+                Log Out
               </Link>
-              <Link
-                to="contact/signup"
-                className="text-MainBGColorYellow hover:bg-MainBGColorYellow focus:ring-4 bg-gray-900 focus:ring-gray-600 font-medium rounded-lg text-sm px-4 sm:px-3 py-2 sm:py-1.5 mr-2 lg:mr-4 focus:outline-none hover:text-black"
-              >
-                Sign Up
-              </Link>
+                :
+                <>
+                  <Link
+                    to="contact/login"
+                    className="text-MainBGColorYellow hover:bg-MainBGColorYellow focus:ring-4 bg-gray-900 focus:ring-gray-600 font-medium rounded-lg text-sm px-4 sm:px-3 py-2 sm:py-1.5 mr-2 lg:mr-4 focus:outline-none hover:text-black"
+                  >
+                    Log In
+                  </Link>
+                  <Link
+                    to="contact/signup"
+                    className="text-MainBGColorYellow hover:bg-MainBGColorYellow focus:ring-4 bg-gray-900 focus:ring-gray-600 font-medium rounded-lg text-sm px-4 sm:px-3 py-2 sm:py-1.5 mr-2 lg:mr-4 focus:outline-none hover:text-black"
+                  >
+                    Sign Up
+                  </Link>
+                </>}
+
+
+
 
               <Link to="/profile">
                 <div className="p-3 hover:scale-110">
