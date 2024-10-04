@@ -25,6 +25,9 @@ app.use(express.json());
 app.get('/', (req, res) => {
   res.status(200).send('Welcome to Silken Glamour Backend!');
 });
+app.get('/api/form/contact', (req, res) => {
+  res.status(200).send('Welcome to "/api/form/user"');
+});
 
 app.use("/api/auth", authRoute);
 app.use("/api/form", contactRoute);
