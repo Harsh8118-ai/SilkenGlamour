@@ -17,53 +17,75 @@ const Contact = () => {
         username: "",
         email: "",
         message: "",
-
     };
 
-    // type UserAuth = boolean;
     const [data, setData] = useState(defaultContactFormData);
 
     const { user } = useAuth();
 
-    console.log("frontend user ", user.email);
-
-    const [userData, setUserData] = useState(true);
-
-    if (userData && user) {
-        setData({
-            username: user.username,
-            email: user.email,
-            message: "",
-        });
-        setUserData(false);
-    }
+    // Update form data when user is available
+    useEffect(() => {
+        if (user) {
+            setData({
+                username: user.username,
+                email: user.email,
+                message: "",
+            });
+        }
+    }, [user]); // This effect runs only when the user changes
 
     const handleInput = (e) => {
-        // console.log(e);
-        const name = e.target.name;
-        const value = e.target.value;
+        const { name, value } = e.target;
         setData((prev) => ({ ...prev, [name]: value }));
     };
 
     const handleContactForm = async (e) => {
         e.preventDefault();
+
+        try {
+            const response = await fetch("http://localhost:5000/api/form/contact", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json", // Indicating that JSON is being sent
+                },
+                body: JSON.stringify(data),
+            });
+
+            if (response.ok) {
+                setData(defaultContactFormData); // Reset the form data after submission
+                const responseData = await response.json(); // Parsing the response data
+                console.log(responseData);
+
+                alert("Message Sent Successfully");
+            }
+        } catch (error) {
+            alert("Message Not Sent");
+            console.error("Error:", error);
+        }
     };
 
     return (
         <>
             <div className="min-h-screen flex flex-col items-center bg-gradient-to-b from-[#CBB59F] to-[#DED6CB] py-16">
                 {/* Call and WhatsApp Section at the Top */}
-                <div className="bg-LightBGColor shadow-lg rounded-lg p-6 max-w-2xl w-full flex justify-center gap-24 items-center mb-10 -mx-5"
-                    data-aos="fade-down">
+                <div
+                    className="bg-LightBGColor shadow-lg rounded-lg p-6 max-w-2xl w-full flex justify-center gap-24 items-center mb-10 -mx-5"
+                    data-aos="fade-down"
+                >
                     <div className="text-center hover:scale-110 transform transition duration-500 ease-in-out ">
                         <a href="tel:+919266037001" className="text-lg font-semibold text-black hover:text-[#CBB59F] transition flex items-center flex-col">
                             <FaPhoneAlt className="text-blue-700 text-5xl  p-1" />
-                            <p> Call Now </p>
+                            <p>Call Now</p>
                         </a>
                     </div>
 
                     <div className="text-center hover:scale-110 transform transition duration-500 ease-in-out ">
-                        <a href="https://wa.me/9266037001" target="_blank" rel="noopener noreferrer" className="text-lg font-semibold flex flex-col items-center text-black hover:text-[#CBB59F] transition">
+                        <a
+                            href="https://wa.me/9266037001"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-lg font-semibold flex flex-col items-center text-black hover:text-[#CBB59F] transition"
+                        >
                             <FaWhatsapp className="text-[#25D366] text-5xl " />
                             Chat Now
                         </a>
@@ -71,8 +93,10 @@ const Contact = () => {
                 </div>
 
                 {/* Main Contact Section */}
-                <div className="bg-LightBGColor shadow-2xl rounded-lg p-10 max-w-4xl w-full text-center text-[#7A6752] mt-12"
-                    data-aos="fade-up">
+                <div
+                    className="bg-LightBGColor shadow-2xl rounded-lg p-10 max-w-4xl w-full text-center text-[#7A6752] mt-12"
+                    data-aos="fade-up"
+                >
                     <h1 className="text-4xl font-semibold mb-6 animate-pulse">Let's Connect!</h1>
                     <p className="text-lg mb-4" data-aos="fade-up" data-aos-delay="200">
                         We'd love to hear from you. Whether you have questions or want to book a service, feel free to reach out.
@@ -87,39 +111,60 @@ const Contact = () => {
                     </div>
 
                     {/* Contact Form */}
-                    <form className="mt-10 space-y-6 max-w-lg mx-auto" data-aos="fade-up" data-aos-delay="500" onSubmit={handleContactForm}>
+                    <form
+                        className="mt-10 space-y-6 max-w-lg mx-auto"
+                        data-aos="fade-up"
+                        data-aos-delay="500"
+                        onSubmit={handleContactForm}
+                    >
                         <div className="flex flex-col">
                             <label htmlFor="username" className="text-lg mb-2">Your Name</label>
-                            <input type="text" className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#7A6752] transition-all text-black font-semibold duration-300 transform hover:scale-105 focus:scale-110" name="username"
+                            <input
+                                type="text"
+                                className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#7A6752] transition-all text-black font-semibold duration-300 transform hover:scale-105 focus:scale-110"
+                                name="username"
                                 id="username"
                                 value={data.username}
                                 onChange={handleInput}
                                 autoCapitalize="off"
-                                required />
+                                required
+                            />
                         </div>
 
                         <div className="flex flex-col">
                             <label htmlFor="email" className="text-lg mb-2">E-mail</label>
-                            <input type="email" className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#7A6752] transition-all text-black font-semibold duration-300 transform hover:scale-105 focus:scale-110" name="email"
+                            <input
+                                type="email"
+                                className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#7A6752] transition-all text-black font-semibold duration-300 transform hover:scale-105 focus:scale-110"
+                                name="email"
                                 id="email"
                                 value={data.email}
                                 onChange={handleInput}
                                 autoCapitalize="off"
-                                required />
+                                required
+                            />
                         </div>
-
 
                         <div className="flex flex-col">
                             <label htmlFor="message" className="text-lg mb-2">Message</label>
-                            <textarea id="message" rows="5" className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#7A6752] text-black transition-all duration-300 transform hover:scale-105 focus:scale-110" />
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="5"
+                                className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#7A6752] text-black transition-all duration-300 transform hover:scale-105 focus:scale-110"
+                                value={data.message}
+                                onChange={handleInput}
+                                required
+                            />
                         </div>
 
-                        <button type="submit" className="w-full bg-gradient-to-r from-[#2E2117] via-[#796855] to-[#2E2117] text-white py-3 rounded-lg shadow-md hover:bg-[#5E5543] transition transform hover:scale-105 duration-500 ease-in-out">
+                        <button
+                            type="submit"
+                            className="w-full bg-gradient-to-r from-[#2E2117] via-[#796855] to-[#2E2117] text-white py-3 rounded-lg shadow-md hover:bg-[#5E5543] transition transform hover:scale-105 duration-500 ease-in-out"
+                        >
                             Send Message
                         </button>
                     </form>
-
-
                 </div>
 
                 {/* Social Media Section */}
@@ -134,10 +179,7 @@ const Contact = () => {
                     <div className="mt-20 overflow-hidden">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div className="p-12 rounded-lg bg-gradient-to-b from-[#2E2117] via-[#796855] to-[#2E2117] sm:rounded-lg">
-                                <h1 className="text-3xl sm:text-4xl text-MainBGColorYellow font-extrabold">
-                                    Get in touch:
-                                </h1>
-
+                                <h1 className="text-3xl sm:text-4xl text-MainBGColorYellow font-extrabold">Get in touch:</h1>
 
                                 <div className="flex items-center mt-8 text-MainBGColorYellow font-bold">
                                     <svg
@@ -162,9 +204,7 @@ const Contact = () => {
                                             d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                                         />
                                     </svg>
-                                    <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                                        Sector 52, Noida
-                                    </div>
+                                    <div className="ml-4 text-md tracking-wide font-semibold w-40">Sector 52, Noida</div>
                                 </div>
 
                                 <div className="flex items-center mt-4 text-MainBGColorYellow font-bold">
@@ -184,7 +224,7 @@ const Contact = () => {
                                             d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                                         />
                                     </svg>
-                                    <div className="ml-4 text-md tracking-wide font-semibold w-40 ">
+                                    <div className="ml-4 text-md tracking-wide font-semibold w-40">
                                         +91 9266037001 <br /> +91 9266037002
                                     </div>
                                 </div>
@@ -206,43 +246,30 @@ const Contact = () => {
                                             d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                                         />
                                     </svg>
-                                    <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                                        silkenglamour@salon.org
-                                    </div>
+                                    <div className="ml-4 text-md tracking-wide font-semibold w-40">silkenglamour@salon.org</div>
                                 </div>
                             </div>
 
-
                             {/*............... button ................ */}
-                            <div className='flex flex-col justify-center items-center sm:items-stretch mt-7 sm:mt-0'>
-                                <Link to="signup"><button
-                                    type="submit"
-                                    className="p-3 sm:w-full px-8 bg-BGColorYellow text-black font-bold rounded-lg hover:bg-white"
-                                >
-                                    Sign Up
-                                </button></Link>
+                            <div className="flex flex-col justify-center items-center sm:items-stretch mt-7 sm:mt-0">
+                                <Link to="signup">
+                                    <button type="submit" className="p-3 sm:w-full px-8 bg-BGColorYellow text-black font-bold rounded-lg hover:bg-white">
+                                        Sign Up
+                                    </button>
+                                </Link>
 
-                                <Link to="login"><button
-                                    type="submit"
-                                    className="mt-5 p-3 sm:w-full px-8  bg-BGColorYellow text-black font-bold rounded-lg hover:bg-white"
-                                >
-                                    Log In
-                                </button></Link></div>
-
-
-
+                                <Link to="login">
+                                    <button type="submit" className="mt-5 p-3 sm:w-full px-8  bg-BGColorYellow text-black font-bold rounded-lg hover:bg-white">
+                                        Log In
+                                    </button>
+                                </Link>
+                            </div>
                         </div>
                     </div>
-
                 </div>
-
             </div>
-
         </>
     );
 };
 
 export default Contact;
-
-
-

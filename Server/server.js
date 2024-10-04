@@ -4,7 +4,7 @@ const cors = require("cors");
 
 const app = express();
 const authRoute = require("./routes/auth-route");
-const contactRoute = require("./routes/contact-router");
+const contactRoute = require("./routes/contact-route");
 const connectDb = require("./utils/db");
 const errorMiddleware = require("./middlewares/error-middleware");
 

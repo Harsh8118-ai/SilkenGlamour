@@ -13,6 +13,9 @@ export const AuthProvider = ({ children }) => {
 
     let isLoggedIn = !!token;
 
+      // Access environment variable using import.meta.env
+      const BASE_URL = import.meta.env.VITE_BACKEND_URL;
+
     // tackling the logout functionality
     const LogoutUser = () => {
         setToken("");
@@ -22,6 +25,7 @@ export const AuthProvider = ({ children }) => {
     // JWT AUTHENTICATION - to get the user data
     const userAuthentication = async () => {
         try {
+            // const response = await fetch(`${BASE_URL}/auth/user`, {
             const response = await fetch("http://localhost:5000/api/auth/user", {
                 method: "GET",
                 headers: {
