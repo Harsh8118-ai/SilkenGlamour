@@ -23,6 +23,9 @@ const Contact = () => {
 
     const { user } = useAuth();
 
+     // Access environment variable using import.meta.env
+     const BASE_URL = import.meta.env.VITE_BACKEND_URL;
+
     // Update form data when user is available
     useEffect(() => {
         if (user) {
@@ -43,7 +46,8 @@ const Contact = () => {
         e.preventDefault();
 
         try {
-            const response = await fetch("http://localhost:5000/api/form/contact", {
+            const response = await fetch(`${BASE_URL}/form/contact`, {
+            // const response = await fetch("http://localhost:5000/api/form/contact", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json", // Indicating that JSON is being sent
