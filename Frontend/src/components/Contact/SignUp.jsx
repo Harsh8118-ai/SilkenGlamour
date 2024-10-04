@@ -5,7 +5,7 @@ import { useAuth } from '../../Store/auth';
 
 const SignUp = () => {
     const [formData, setFormData] = useState({
-        fullname: '',
+        username: '',
         mobileNumber: '',
         email: '',
         street: '',
@@ -85,8 +85,8 @@ const SignUp = () => {
                         </label>
                         <input
                             type="text"
-                            name="fullname"
-                            value={formData.fullname}
+                            name="username"
+                            value={formData.username}
                             onChange={handleChange}
                             className="w-full p-3 text-BGColorYellow bg-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-yellow-500 transition duration-300 ease-in-out transform hover:scale-105"
                             placeholder="Enter your full name"

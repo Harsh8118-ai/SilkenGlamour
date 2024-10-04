@@ -13,10 +13,10 @@ const home = async (req, res) => {
 // User Registration Logic
 const register = async (req, res, next) => {
   try {
-    const { fullname, email, mobileNumber, password, apartmentNumber, pincode, town, street } = req.body;
+    const { username, email, mobileNumber, password, apartmentNumber, pincode, town, street } = req.body;
 
     // Validation
-    if (!fullname || !email || !password || !mobileNumber || !pincode || !town || !street) {
+    if (!username || !email || !password || !mobileNumber || !pincode || !town || !street) {
       return res.status(400).json({ msg: "All fields are required" });
     }
 
@@ -29,7 +29,7 @@ const register = async (req, res, next) => {
 
     // Create new user
     const userCreated = await User.create({
-      fullname, 
+      username, 
       email, 
       mobileNumber, 
       password, 
@@ -96,7 +96,7 @@ const user = async(req, res) => {
   try {
     const userData = req.user;
     console.log(userData);
-    return res.status(200).json({ msg: userData });
+    return res.status(200).json({ userData });
 
   } catch (error) {
     console.log(`error from the user route ${error}`);
