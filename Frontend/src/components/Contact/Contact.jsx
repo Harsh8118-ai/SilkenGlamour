@@ -17,7 +17,7 @@ const Contact = () => {
         username: "",
         email: "",
         message: "",
-        
+
     };
 
     // type UserAuth = boolean;
@@ -90,7 +90,7 @@ const Contact = () => {
                     <form className="mt-10 space-y-6 max-w-lg mx-auto" data-aos="fade-up" data-aos-delay="500" onSubmit={handleContactForm}>
                         <div className="flex flex-col">
                             <label htmlFor="username" className="text-lg mb-2">Your Name</label>
-                            <input type="text" className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#7A6752] transition-all duration-300 transform hover:scale-105 focus:scale-110" name="username"
+                            <input type="text" className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#7A6752] transition-all text-black font-semibold duration-300 transform hover:scale-105 focus:scale-110" name="username"
                                 id="username"
                                 value={data.username}
                                 onChange={handleInput}
@@ -100,7 +100,7 @@ const Contact = () => {
 
                         <div className="flex flex-col">
                             <label htmlFor="email" className="text-lg mb-2">E-mail</label>
-                            <input type="email" className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#7A6752] transition-all duration-300 transform hover:scale-105 focus:scale-110" name="email"
+                            <input type="email" className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#7A6752] transition-all text-black font-semibold duration-300 transform hover:scale-105 focus:scale-110" name="email"
                                 id="email"
                                 value={data.email}
                                 onChange={handleInput}
@@ -111,7 +111,7 @@ const Contact = () => {
 
                         <div className="flex flex-col">
                             <label htmlFor="message" className="text-lg mb-2">Message</label>
-                            <textarea id="message" rows="5" className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#7A6752] transition-all duration-300 transform hover:scale-105 focus:scale-110" />
+                            <textarea id="message" rows="5" className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#7A6752] text-black transition-all duration-300 transform hover:scale-105 focus:scale-110" />
                         </div>
 
                         <button type="submit" className="w-full bg-gradient-to-r from-[#2E2117] via-[#796855] to-[#2E2117] text-white py-3 rounded-lg shadow-md hover:bg-[#5E5543] transition transform hover:scale-105 duration-500 ease-in-out">
