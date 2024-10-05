@@ -165,7 +165,7 @@ export default function Home() {
         <div className="relative h-screen w-full overflow-x-hidden">  {/* Ensure no horizontal scroll */}
           {/* Curved Background */}
           <div
-            className="absolute top-0 left-0 w-full h-1/2 bg-MainBGColorYellow"
+            className="absolute top-0 left-0 w-full h-[50%] bg-MainBGColorYellow"
             style={{ clipPath: 'ellipse(55% 100% at 50% 0%)' }}
           ></div>
 
@@ -177,11 +177,12 @@ export default function Home() {
               Welcome to Our <br /> Premium Home Salon Service
             </h1>
             <div className='flex items-center justify-center w-full'>
+              <Link to="/service">
               <img
                 src="/Home/Banner Mirror.jpeg"
                 alt=""
-                className="w-80 h-96 rounded-t-full border-[6px] border-[000000] object-cover"
-              />
+                className="w-80 h-96 rounded-t-full border-[6px] border-[000000] object-cover transform hover:opacity-95 hover:border-white"
+              /></Link>
 
             </div>
           </div>
