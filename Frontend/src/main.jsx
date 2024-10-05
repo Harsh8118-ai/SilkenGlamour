@@ -25,6 +25,8 @@ import CardBodyPolishing from './components/Service/Service Card/CardBodyPolishi
 import Profile from './components/Profile/Profile';
 import { AuthProvider } from './Store/auth';
 import LogOut from './components/Contact/LogOut';
+import HomeService from './components/Home/HomeService';
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -55,7 +57,7 @@ const router = createBrowserRouter(
         <Route path='threading' element={<CardThreading />} />
         <Route path='facial-cleanup' element={<CardFacial />} />
       </Route>
-      
+
 
       {/* <Route path='user/:userid' element={<User />} /> */}
       <Route path='faq' element={<ChatBotLayout />} />
@@ -65,10 +67,8 @@ const router = createBrowserRouter(
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <>
-  <AuthProvider >
-    <RouterProvider router={router}>
-     
-    </RouterProvider>
+    <AuthProvider >
+      <RouterProvider router={router} />
     </AuthProvider>
   </>
 );

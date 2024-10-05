@@ -17,13 +17,20 @@ export default {
           600: '#C09630',
         },
 
-        MainBGColorYellow : '#C6B198',
-        BGColorYellow : '#796855',
-        LightBGColor : '#E3DBD0',
-       
+        MainBGColorYellow: '#C6B198',
+        BGColorYellow: '#796855',
+        LightBGColor: '#E3DBD0',
+        richBrown: '#7A6752',
+        goldenBeige: '#CBB59F',
+        softCream: '#DED6CB',
+      },
+
+      fontFamily: {
+        serif: ['"Playfair Display"', 'Georgia', 'serif'], // Custom serif font
+        didot: ['"Playfair Display"', 'serif'], // Adding Playfair Display as an alternative to Didot
+      },
 
     },
-  
-  },
-  plugins: [],
-}}
+    plugins: [],
+  }
+}

@@ -13,7 +13,7 @@ export default function Footer() {
   };
 
     return (<>
-        <footer className="bg-MainBGColorYellow border-y hidden sm:block">
+        {/* <footer className="bg-MainBGColorYellow border-y hidden sm:block">
             <div className="mx-auto w-full max-w-screen-xl p-4 py-6">
                 <div className="flex justify-center gap-9 sm:justify-between">
                     <div className="mb-6 md:mb-0">
@@ -72,7 +72,7 @@ export default function Footer() {
                    
                 </div>
             </div>
-        </footer>
+        </footer> */}
 
 
         {/* ...................... WHATSAPP ICON ...................... */}
