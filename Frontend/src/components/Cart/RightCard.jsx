@@ -1,6 +1,5 @@
-// components/RightCart.jsx
 import React, { useContext, useState } from 'react';
-import { CartContext } from '../Service Nav/CartContext';
+import { CartContext, CartProvider } from './CartContext';
 import Modal from './Modal'; // Import the modal component
 
 const RightCart = () => {
@@ -10,7 +9,7 @@ const RightCart = () => {
   const generateOrderMessage = () => {
     const cartDetails = cartItems.map(item => {
       const itemTotal = item.quantity * item.price;
-      return `${item.name} -> ₹${item.price} x ${item.quantity} = ₹${itemTotal}` 
+      return `${item.name} -> ₹${item.price} x ${item.quantity} = ₹${itemTotal}`;
     }).join('\n');
 
     return `${cartDetails}\n\nTotal: ₹${totalPrice}`;
@@ -28,7 +27,7 @@ const RightCart = () => {
   };
 
   return (
-    <>
+    <><CartProvider>
       <div className='hidden sm:w-fit lg:w-full sm:block sticky top-16 h-screen bg-gray-100 p-4 max-w-sm'>
         {/* Your existing UI and structure */}
         <div className="w-full max-w-sm p-6 h-screen bg-MainBGColorYellow shadow-xl rounded-lg">
@@ -73,9 +72,10 @@ const RightCart = () => {
                 </div>
                 <button
                   onClick={handleOrderNow}
-                  className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 w-full rounded"
+                  className={`bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 w-full rounded ${cartItems.length === 0 ? 'cursor-not-allowed opacity-50' : ''}`}
+                  disabled={cartItems.length === 0} // Disable if cart is empty
                 >
-                  Order Now
+                  {cartItems.length === 0 ? 'Cart is Empty' : 'Order Now'}
                 </button>
               </div>
             </div>
@@ -84,13 +84,16 @@ const RightCart = () => {
       </div>
 
       {/* Modal for Order Confirmation */}
-      <Modal
-        isOpen={isModalOpen}
-        title="Confirm Your Order"
-        message={generateOrderMessage()}
-        onConfirm={confirmOrder}
-        onClose={() => setIsModalOpen(false)}
-      />
+      {isModalOpen && (
+        <Modal
+          isOpen={isModalOpen}
+          title="Confirm Your Order"
+          message={generateOrderMessage()}
+          onConfirm={confirmOrder}
+          onClose={() => setIsModalOpen(false)}
+        />
+      )}
+      </CartProvider>
     </>
   );
 };

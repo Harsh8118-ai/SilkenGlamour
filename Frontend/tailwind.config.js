@@ -26,8 +26,10 @@ export default {
       },
 
       fontFamily: {
-        serif: ['"Playfair Display"', 'Georgia', 'serif'], // Custom serif font
-        didot: ['"Playfair Display"', 'serif'], // Adding Playfair Display as an alternative to Didot
+        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+        didot: ['"Playfair Display"', 'serif'], 
+        Helvetica: ['Poppins','Helvetica Neue', 'Helvetica,Arial', 'sans-serif'],
+        Logo: ["Baskervville SC", 'serif']
       },
 
     },

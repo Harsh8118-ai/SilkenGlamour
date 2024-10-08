@@ -1,10 +1,9 @@
 import React, { useEffect } from 'react';
-import Header from './components/Header/Header'
-import Footer from './components/Footer/Footer'
-import { Outlet } from 'react-router-dom'
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import { Outlet } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
-import { CartProvider } from './components/Service/Service Nav/CartContext';
-
+import { CartProvider } from '../src/components/Cart/CartContext'; // CartProvider wraps everything
 
 function Layout({ children }) {
   const { pathname } = useLocation();
@@ -14,16 +13,18 @@ function Layout({ children }) {
   }, [pathname]);
 
   return (
-    <><div>
-<CartProvider>
-    <Header/>
-    <Outlet />
-    <Footer /></CartProvider>
-    
-    {children}
-    </div>
+    <>
+      {/* CartProvider wraps everything to share cart context across the app */}
+      <CartProvider>
+        <div>
+          <Header /> {/* Contains MobileCart */}
+          <Outlet /> {/* Render child components based on route */}
+          <Footer />
+        </div>
+        {children}
+      </CartProvider>
     </>
-  )
+  );
 }
 
-export default Layout
+export default Layout;

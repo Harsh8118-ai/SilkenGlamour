@@ -1,8 +1,10 @@
 import React, { useState, useEffect, useContext } from 'react';
-import RightCard from '../Service Nav/RightCard';
-import LeftCard from '../Service Nav/LeftCard';
-import { CartContext, CartProvider } from '../Service Nav/CartContext'; 
-import RightCart from '../Service Nav/RightCard';
+
+import { CartContext, CartProvider } from '../../Cart/CartContext';
+import LeftCard  from '../../Cart/LeftCard';
+import RightCart from '../../Cart/RightCard'; 
+ 
+
 
 const CardWedding = () => {
   const [products, setProducts] = useState([]);
@@ -76,7 +78,7 @@ const CardWedding = () => {
               <h1 className="text-2xl font-bold mb-4 text-center">Select your Item :</h1>
               <div className="space-x-4 text-center">
               <button
-                  className={`px-4 py-2 ${IsSelect ? "bg-yellow-500" : "bg-gray-400"}  ${IsSelect ? "border-2" : "border-none"} border-yellow-700 text-white font-bold rounded`}
+                  className={`px-4 py-1.5 ${IsSelect ? "bg-yellow-500" : "bg-gray-400"}  ${IsSelect ? "border-2" : "border-none"} border-yellow-700 text-white font-bold rounded-full`}
                   onClick={() => {
                     setType('Party'); toggleActive();
                     toggleSelect1();
@@ -85,7 +87,7 @@ const CardWedding = () => {
                   Party
                 </button>
                 <button
-                  className={`px-4 py-2 ${IsSelect2 ? "bg-yellow-500" : "bg-gray-400"}  ${IsSelect2 ? "border-2" : "border-none"} border-yellow-700 text-white font-bold rounded`}
+                  className={`px-4 py-1.5 ${IsSelect2 ? "bg-yellow-500" : "bg-gray-400"}  ${IsSelect2 ? "border-2" : "border-none"} border-yellow-700 text-white font-bold rounded-full`}
                   onClick={() => {
                     setType('Engagement'); toggleActive();
                     toggleSelect2();
@@ -93,7 +95,7 @@ const CardWedding = () => {
                   Engagement
                 </button>
                 <button
-                  className={`px-4 py-2 ${IsSelect3 ? "bg-yellow-500" : "bg-gray-400"}  ${IsSelect3 ? "border-2" : "border-none"} border-yellow-700 text-white font-bold rounded`}
+                  className={`px-4 py-1.5 ${IsSelect3 ? "bg-yellow-500" : "bg-gray-400"}  ${IsSelect3 ? "border-2" : "border-none"} border-yellow-700 text-white font-bold rounded-full`}
                   onClick={() => {
                     setType('Bridal'); toggleActive();
                     toggleSelect3();

@@ -1,31 +1,29 @@
-import React, { useContext } from 'react';
-import { CartContext } from '../Service Nav/CartContext';
+import React, { useContext, useState } from 'react';
+import { CartContext } from './CartContext';
+import Modal from './Modal'; // Import the modal component
 
 const MobileCart = ({ closeCart }) => {
   const { cartItems, removeFromCart, increaseQuantity, decreaseQuantity, totalPrice } = useContext(CartContext);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  // Function to generate the message in the required format
   const generateOrderMessage = () => {
-    const cartDetails = cartItems
-      .map(item => {
-        const itemTotal = item.quantity * item.price;
-        return `${item.name} -> ₹${item.price} x ${item.quantity} = ₹${itemTotal}`;
-      })
-      .join('\n');
-    
-    const message = `${cartDetails}\n\nTotal: ₹${totalPrice}`;
-    return message;
+    const cartDetails = cartItems.map(item => {
+      const itemTotal = item.quantity * item.price;
+      return `${item.name} -> ₹${item.price} x ${item.quantity} = ₹${itemTotal}`;
+    }).join('\n');
+
+    return `${cartDetails}\n\nTotal: ₹${totalPrice}`;
   };
 
-  // Function to handle order submission
   const handleOrderNow = () => {
+    setIsModalOpen(true);
+  };
+
+  const confirmOrder = () => {
     const message = generateOrderMessage();
-    const confirmOrder = window.confirm(`Your Order:\n${message}\n\nClick OK to place your Order.`);
-    
-    if (confirmOrder) {
-      const whatsappLink = `https://api.whatsapp.com/send?phone=919266037001&text=${encodeURIComponent(message)}`;
-      window.open(whatsappLink, '_blank');
-    }
+    const whatsappLink = `https://api.whatsapp.com/send?phone=919266037001&text=${encodeURIComponent(message)}`;
+    window.open(whatsappLink, '_blank');
+    setIsModalOpen(false); // Close the modal after confirming
   };
 
   return (
@@ -82,14 +80,24 @@ const MobileCart = ({ closeCart }) => {
           {/* Order Now Button */}
           <button
             onClick={handleOrderNow}
-            className="mt-4 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 w-full rounded"
+            className={`mt-4 font-bold py-2 px-4 w-full rounded ${cartItems.length === 0 ? 'bg-gray-300 cursor-not-allowed' : 'bg-green-500 hover:bg-green-600 text-white'}`}
+            disabled={cartItems.length === 0} // Disable if cart is empty
           >
-            Order Now
+            {cartItems.length === 0 ? 'Cart is Empty' : 'Order Now'}
           </button>
         </div>
       )}
 
-      
+      {/* Modal for Order Confirmation */}
+      {isModalOpen && (
+        <Modal
+          isOpen={isModalOpen}
+          title="Confirm Your Order"
+          message={generateOrderMessage()}
+          onConfirm={confirmOrder}
+          onClose={() => setIsModalOpen(false)}
+        />
+      )}
     </div>
   );
 };

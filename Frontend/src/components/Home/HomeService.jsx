@@ -38,11 +38,11 @@ export default function HomeService() {
   };
 
   return (
-    <div className="bg-transparent min-h-screen flex flex-col items-center">
-      <h6 className="text-3xl font-bold text-gray-900 pt-2">
+    <div className="bg-transparent min-h-fit flex flex-col items-center">
+      <h6 className="text-6xl font-bold text-gray-900 mt-10 ">
         Services We Offer 
       </h6>
-      <div className="flex items-center">
+      <div className="flex items-center mt-5">
         {/* Left Scroll Button */}
         <button
           className="bg-gray-500 text-white rounded-full p-2 mr-2 hover:bg-gray-700 transition duration-300 ease-in-out"

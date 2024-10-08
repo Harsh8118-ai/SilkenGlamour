@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import ComboService from '../Service Card/ComboService';
+import { CartProvider } from '../../Cart/CartContext';
 
 export default function Service() {
   // Initialize AOS for animations
@@ -13,6 +15,7 @@ export default function Service() {
   }, []);
 
   return (
+    <><CartProvider>
     <div className='bg-MainBGColorYellow min-h-screen overflow-x-hidden'>
       <h6 className='text-center text-3xl font-bold text-gray-900 sm:tracking-wide pt-2' data-aos="fade-down">
         Luxury Home Salon
@@ -121,5 +124,9 @@ export default function Service() {
         </div>
       </div>
     </div>
+    </CartProvider>
+    <ComboService/>
+
+    </>
   );
 }

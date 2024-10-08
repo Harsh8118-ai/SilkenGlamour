@@ -25,7 +25,9 @@ import CardBodyPolishing from './components/Service/Service Card/CardBodyPolishi
 import Profile from './components/Profile/Profile';
 import { AuthProvider } from './Store/auth';
 import LogOut from './components/Contact/LogOut';
-import HomeService from './components/Home/HomeService';
+import { CartProvider } from './components/Cart/CartContext';
+
+
 
 
 const router = createBrowserRouter(
@@ -68,7 +70,9 @@ const router = createBrowserRouter(
 ReactDOM.createRoot(document.getElementById('root')).render(
   <>
     <AuthProvider >
+      <CartProvider>
       <RouterProvider router={router} />
+      </CartProvider>
     </AuthProvider>
   </>
 );

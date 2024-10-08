@@ -1,5 +1,5 @@
 import React from 'react'
-import { LogoColor } from '../../../Style'
+import { LogoColor } from '../../Style'
 import { Link } from 'react-router-dom'
 
 export default function LeftCard() {
