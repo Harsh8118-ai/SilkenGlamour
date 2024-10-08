@@ -5,6 +5,8 @@ import { useAuth } from '../../Store/auth';
 import HomeService from './HomeService';
 import HomeStarterCombo from './Home Starter Combo';
 import WebCartLayout from '../Cart/WebCartLayout';
+import HeroSection from './HeroSection';
+import HomeServiceMobile from './HomeServiceMobile';
 
 export default function Home() {
   const [isCartOpen, setIsCartOpen] = useState(false); // State to toggle cart visibility
@@ -217,50 +219,14 @@ export default function Home() {
         </div>
 
         {/* HERO SECTION */}
-        <div className="relative h-full w-full overflow-x-hidden">
-          {/* Curved Background */}
-          <div
-            className="absolute top-0 left-0 w-full h-[50%] bg-MainBGColorYellow"
-            style={{ clipPath: 'ellipse(55% 100% at 50% 0%)' }}
-          ></div>
-
-          {/* Content */}
-          <div className="relative h-full w-full text-center pt-20">
-            <p className='text-xl font-bold text-black font-Logo'>SilkenGlamour</p>
-            <h1 className="text-5xl font-bold text-black mb-5 font-Logo">
-              Welcome to Our <br /> Premium Home Salon Service
-            </h1>
-            <div className='flex items-center justify-center w-full gap-10'>
-              <Link to="/service">
-                <img
-                  src="/Home/Makeup Home.jpg"
-                  alt=""
-                  className="w-64 h-64 rounded-xl border-[6px] border-[000000] object-cover transform hover:opacity-80 hover:border-white mt-32"
-                />
-              </Link>
-
-              <Link to="/service">
-                <img
-                  src="/Home/Banner Mirror.jpeg"
-                  alt=""
-                  className="w-80 h-96 rounded-t-full border-[6px] border-[000000] object-cover transform hover:opacity-95 hover:border-white"
-                />
-              </Link>
-
-              <Link to="/service">
-                <img
-                  src="/Home/Facial Home.jpg"
-                  alt=""
-                  className="w-64 h-64 rounded-xl border-[6px] border-[000000] object-cover transform hover:opacity-80 hover:border-white mt-32"
-                />
-              </Link>
-            </div>
-          </div>
-        </div>
-
+        <HeroSection />
+        
         {/* SERVICES */}
-        <div className='bg-MainBGColorYellow rounded-3xl m-0.5 mt-3'>
+        <div className='hidden sm:block bg-MainBGColorYellow rounded-3xl m-0.5 mt-3'>
           <HomeService />
+        </div>
+        <div className='sm:hidden bg-MainBGColorYellow rounded-3xl m-0.5 mt-3'>
+          <HomeServiceMobile />
         </div>
 
         {/* COMBO PACK SECTION */}
