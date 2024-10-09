@@ -71,7 +71,7 @@ const Login = () => {
         <div className="min-h-screen flex -mt-20 sm:mt-0 items-center justify-center bg-gradient-to-t from-[#2E2117] via-[#796855] to-[#2E2117] p-5">
             <div className="bg-MainBGColorYellow shadow-lg rounded-lg p-8 w-full max-w-md">
                 <h1 className="text-3xl font-semibold text-center text-[#4c3726] mb-6 animate-fadeIn">
-                    Salon Service Login
+                    Please Login
                 </h1>
                 <form className="space-y-6" onSubmit={handleSubmit}>
                     {/* Email */}
