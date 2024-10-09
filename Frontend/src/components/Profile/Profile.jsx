@@ -17,7 +17,7 @@ const Profile = () => {
           <h1 className="text-4xl font-semibold mb-6 text-[#7A6752] animate-pulse">Your Profile</h1>
 
           {/* Profile Info Section WEB View */}
-          <div className="bg-white hidden sm:block shadow-2xl rounded-lg p-6 mb-6 transition-all duration-500 ease-in-out transform hover:scale-105">
+          <div className="bg-[#E3DBD0] hidden sm:block shadow-2xl rounded-lg p-6 mb-6 transition-all duration-500 ease-in-out transform hover:scale-105">
             <h2 className="text-2xl font-medium mb-4 text-[#7A6752]">Personal Information</h2>
             <div className="flex items-center space-x-6">
               
@@ -53,18 +53,13 @@ const Profile = () => {
           </div>
 
           {/* Profile Info Section Mobile View */}
-          <div className="bg-white sm:hidden shadow-2xl rounded-lg p-6 mb-6 transition-all duration-500 ease-in-out transform hover:scale-105">
+          <div className="bg-[#E3DBD0] sm:hidden shadow-2xl rounded-lg p-6 mb-6 transition-all duration-500 ease-in-out transform hover:scale-105">
             <h2 className="text-2xl font-medium mb-4 text-[#7A6752]">Personal Information</h2>
             <div className="flex items-center flex-col justify-center ">
-              <img
-                src="https://via.placeholder.com/100"
-                alt="Profile"
-                className="w-24 h-24 rounded-full shadow-lg hover:scale-110 transform transition duration-500"
-              />
               <div>
                 <h3 className="text-xl font-semibold text-[#7A6752]">{user.username}</h3>
-                <p className="text-lg text-black">Email: {user.email}</p>
-                <p className="text-lg text-black">Phone: {user.mobileNumber}</p>
+                <p className="text-sm text-black">Email: {user.email}</p>
+                <p className="text-sm text-black">Phone: {user.mobileNumber}</p>
               </div>
               <div className="my-2">
               <Link
@@ -104,7 +99,7 @@ const Profile = () => {
           </div>
 
           {/* Booking History */}
-          <div className="bg-white shadow-2xl rounded-lg p-6 mb-6 transition-all duration-500 ease-in-out transform hover:scale-105">
+          <div className="bg-[#E3DBD0] shadow-2xl rounded-lg p-6 mb-6 transition-all duration-500 ease-in-out transform hover:scale-105">
             <h2 className="text-2xl font-medium mb-4 text-[#7A6752]">Booking History</h2>
             <div className="space-y-4">
               <div className="p-4 bg-[#DED6CB] rounded-lg flex justify-between items-center">
@@ -132,7 +127,7 @@ const Profile = () => {
           </div>
 
           {/* Address Management */}
-          <div className="bg-white shadow-2xl rounded-lg p-6 transition-all duration-500 ease-in-out transform hover:scale-105">
+          <div className="bg-[#E3DBD0] shadow-2xl rounded-lg p-6 transition-all duration-500 ease-in-out transform hover:scale-105">
             <h2 className="text-2xl font-medium mb-4 text-[#7A6752]">Your Address</h2>
             <div className="space-y-4">
               <div className="p-4 bg-[#DED6CB] rounded-lg">
