@@ -59,7 +59,7 @@ const SignUp = () => {
 
                 storeTokenInLS(data.token)
 
-                navigate('/contact/login');
+                navigate('/');
                
                     toast("Registered Successfully")
                 
