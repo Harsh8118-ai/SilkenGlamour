@@ -62,11 +62,14 @@ const Contact = () => {
                 setData(defaultContactFormData); // Reset the form data after submission
                 const responseData = await response.json(); // Parsing the response data
                 console.log(responseData);
-
-                toast("Message Sent Successfully");
+                if (window.innerWidth > 768) {
+                    toast("Message Sent Successfully");
+                }
             }
         } catch (error) {
-            toast("Message Not Sent");
+            if (window.innerWidth > 768) {
+                toast("Message Not Sent");
+            }
             console.error("Error:", error);
         }
     };

@@ -62,7 +62,9 @@ const Login = () => {
                 }, 2000);
             }
             else {
-                toast(data.extraDetails ? data.extraDetails : data.message);                ;
+                if (window.innerWidth > 768) {
+                    toast(data.extraDetails ? data.extraDetails : data.message);   
+                }             ;
 
                 console.log('Invalid');
 
@@ -71,7 +73,9 @@ const Login = () => {
             }
 
         } catch (error) {
-            toast(error)
+            if (window.innerWidth > 768) {
+                toast(error)
+            }
             console.error('Login failed: ', error);
         }
         console.log(formData);
