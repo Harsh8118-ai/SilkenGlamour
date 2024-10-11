@@ -59,7 +59,7 @@ const Login = () => {
 
                 setTimeout(() => {
                     window.location.reload();
-                }, 2000);
+                }, 500);
             }
             else {
                 
