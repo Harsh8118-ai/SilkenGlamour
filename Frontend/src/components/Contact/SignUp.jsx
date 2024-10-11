@@ -60,20 +60,20 @@ const SignUp = () => {
                 storeTokenInLS(data.token)
 
                 navigate('/contact/login');
-                if (window.innerWidth > 768) {
+               
                     toast("Registered Successfully")
-                }
+                
             } else {
                 console.error('Failed to register user:', data); // Error message from the server
-                if (window.innerWidth > 768) {
+               
                     toast(data.extraDetails ? data.extraDetails : data.message)
-                }
+                
             }
         } catch (error) {
             console.error('Error:', error); // Logging any error from fetch
-            if (window.innerWidth > 768) {
+           
                 toast("Database Not Connected")
-            }
+            
             
         }
     };
