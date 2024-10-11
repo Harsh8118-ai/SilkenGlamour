@@ -7,6 +7,8 @@ import HomeStarterCombo from './Home Starter Combo';
 import WebCartLayout from '../Cart/WebCartLayout';
 import HeroSection from './HeroSection';
 import HomeServiceMobile from './HomeServiceMobile';
+import OurTeam from './OurTeam';
+import CallToActionBanner from './CallToAction';
 
 export default function Home() {
   const [isCartOpen, setIsCartOpen] = useState(false); // State to toggle cart visibility
@@ -232,6 +234,16 @@ export default function Home() {
         {/* COMBO PACK SECTION */}
         <div>
           <HomeStarterCombo />
+        </div>
+
+        {/* Our Team  
+        <div>
+          <OurTeam />
+        </div> */}
+
+        {/* Call to Action */}
+        <div>
+          <CallToActionBanner />
         </div>
 
         {/* REVIEWS SECTION */}
