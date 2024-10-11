@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../Store/auth';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'; // Ensure default styles are loaded
+import '../../Css.css';
+
+
 
 const URL = ""
 
@@ -10,15 +15,15 @@ const Login = () => {
         password: ''
     });
 
-    
+
     const navigate = useNavigate();
 
-    const {storeTokenInLS} = useAuth();
-    
+    const { storeTokenInLS } = useAuth();
+
     const [showPassword, setShowPassword] = useState(false);
     const [rememberMe, setRememberMe] = useState(false);
 
-    const handleChange =  (e) => {
+    const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData((prevState) => ({
             ...prevState,
@@ -33,36 +38,41 @@ const Login = () => {
         e.preventDefault();
 
         try {
-            const response = await fetch(`${BASE_URL}/auth/login`, {
-                // const response = await fetch(`http://localhost:5000/api/auth/login`, {
+            // const response = await fetch(`${BASE_URL}/auth/login`, {
+            const response = await fetch(`http://localhost:5000/api/auth/login`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json", // Indicating that JSON is being sent
                 },
                 body: JSON.stringify(formData), // Converting formData object to JSON string
             });
-            console.log("login: ", response);
 
+            console.log("login: ", response);
+            const data = await response.json(); // Parsing the response data
 
             if (response.ok) {
-                alert("Login Successful");
-
-                const data = await response.json(); // Parsing the response data
+                toast.success("Login Successful");
                 storeTokenInLS(data.token)
-
-                setFormData({mobileNumber: "", password: ""});
+                setFormData({ mobileNumber: "", password: "" });
 
                 navigate("/");
-                window.location.reload();
+
+                setTimeout(() => {
+                    window.location.reload();
+                }, 2000);
             }
-            else{
-                console.log("Invalid Credentials");
-                alert("Invalid Credentials");
-                
+            else {
+                toast(data.extraDetails ? data.extraDetails : data.message);                ;
+
+                console.log('Invalid');
+
+
+
             }
 
         } catch (error) {
-
+            toast(error)
+            console.error('Login failed: ', error);
         }
         console.log(formData);
     };

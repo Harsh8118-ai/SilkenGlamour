@@ -23,6 +23,7 @@ export default {
         richBrown: '#7A6752',
         goldenBeige: '#CBB59F',
         softCream: '#DED6CB',
+
       },
 
       fontFamily: {

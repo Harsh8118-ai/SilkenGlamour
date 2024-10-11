@@ -60,10 +60,10 @@ const Contact = () => {
                 const responseData = await response.json(); // Parsing the response data
                 console.log(responseData);
 
-                alert("Message Sent Successfully");
+                toast("Message Sent Successfully");
             }
         } catch (error) {
-            alert("Message Not Sent");
+            toast("Message Not Sent");
             console.error("Error:", error);
         }
     };

@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  box-shadow: #2E2117;
 }
 
 #About-P{
@@ -12,4 +13,50 @@
     font-family: "Baskervville SC", serif;
   font-weight: 800;
   font-style: normal;
+}
+
+/* Custom Toastify CSS */
+
+.Toastify__toast--custom {
+  background: #2E2117; /* Main background color */
+  color: #796855; /* Text color */
+  font-size: large;
+  background-color: #2E2117;
+  box-shadow: #2E2117;
+  border-radius: 3px;
+  font-family: 'Poppins','Helvetica Neue', 'Helvetica,Arial', 'sans-serif';
+}
+
+
+.Toastify__toast--default {
+  background: #796855; /* Main background color */
+  color: #2E2117; /* Text color */
+}
+
+.Toastify__toast--info {
+  background: #4c3726; /* Informational toast background color */
+}
+
+.Toastify__toast--success {
+  background: #4c3726; /* Success toast background color */
+  color: #CBB59F;
+}
+
+.Toastify__toast--warning {
+  background: #CBB59F; /* Warning toast background color */
+}
+
+.Toastify__toast--error {
+  background: #2E2117; /* Error toast background color */
+  color: #CBB59F; /* Text color for error toast */
+}
+
+/* Customizing the close button */
+.Toastify__close-button {
+  color: #CBB59F;
+}
+
+/* Customizing the progress bar */
+.Toastify__progress-bar {
+  background: #291500;
 }

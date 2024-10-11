@@ -17,14 +17,14 @@ const register = async (req, res, next) => {
 
     // Validation
     if (!username || !email || !password || !mobileNumber || !pincode || !town || !street) {
-      return res.status(400).json({ msg: "All fields are required" });
+      return res.status(400).json({ message: "All fields are required" });
     }
 
     // Check if email already exists
     const userExist = await User.findOne({ mobileNumber });
 
     if (userExist) {
-      return res.status(400).json({ msg: "Mobile Number already exists" });
+      return res.status(400).json({ message: "Mobile Number already exists" });
     }
 
     // Create new user
@@ -66,14 +66,14 @@ const login = async (req, res) => {
     const userExist = await User.findOne({ mobileNumber });
 
     if (!userExist) {
-      return res.status(400).json({ msg: "Invalid credentials" });
+      return res.status(400).json({ message: "Invalid Mobile Number or Password" });
     }
 
     // Compare password
     const isPasswordValid = await userExist.comparePassword(password);
 
     if (!isPasswordValid) {
-      return res.status(400).json({ msg: "Invalid Mobile Number or password" });
+      return res.status(400).json({ message: "Invalid Mobile Number or Password" });
     }
 
     // Respond with success and token

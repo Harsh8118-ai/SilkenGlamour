@@ -39,8 +39,8 @@ const SignUp = () => {
         
 
         try {
-            const response = await fetch(`${BASE_URL}/auth/register`, {
-                // const response = await fetch('http://localhost:5000/api/auth/register', {
+            // const response = await fetch(`${BASE_URL}/auth/register`, {
+                const response = await fetch('http://localhost:5000/api/auth/register', {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json", // Indicating that JSON is being sent
@@ -50,22 +50,22 @@ const SignUp = () => {
 
 
             console.log(response);
+            const data = await response.json(); // Parsing the response data
+            console.log('User registered successfully:', data); // Success message
             
             if (response.ok) {
-                const data = await response.json(); // Parsing the response data
-                console.log('User registered successfully:', data); // Success message
 
                 storeTokenInLS(data.token)
 
                 navigate('/contact/login');
-                alert("Registered Successfully")
+                toast("Registered Successfully")
             } else {
                 console.error('Failed to register user:', data); // Error message from the server
-                alert('Failed to Register User')
+                toast(data.extraDetails ? data.extraDetails : data.message)
             }
         } catch (error) {
             console.error('Error:', error); // Logging any error from fetch
-            alert("Register Error")
+            toast("Register Error")
             
         }
     };

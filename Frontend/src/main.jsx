@@ -26,53 +26,57 @@ import Profile from './components/Profile/Profile';
 import { AuthProvider } from './Store/auth';
 import LogOut from './components/Contact/LogOut';
 import { CartProvider } from './components/Cart/CartContext';
-
-
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/' element={<Layout />}>
-      <Route path='' element={<Home />} />
-      <Route path='about' element={<About />} />
-      <Route path='profile' element={<Profile />} />
-
-
-      {/* ......CONTACT..... */}
-      <Route path='contact' element={<ContactLayout />}>
-        <Route path='' element={<Contact />} />
-        <Route path='signup' element={<SignUp />} />
-        <Route path='login' element={<Login />} />
-        <Route path='logout' element={<LogOut />} />
+    <Route path="/" element={<Layout />}>
+      <Route index element={<Home />} />
+      <Route path="about" element={<About />} />
+      <Route path="profile" element={<Profile />} />
+      <Route path="contact" element={<ContactLayout />}>
+        <Route index element={<Contact />} />
+        <Route path="signup" element={<SignUp />} />
+        <Route path="login" element={<Login />} />
+        <Route path="logout" element={<LogOut />} />
       </Route>
-
-      {/* .....SERVICE....  */}
-      <Route path='service' element={<ServiceLayout />}>
-        <Route path='' element={<Service />} />
-        <Route path='nailart' element={<CardNailArt />} />
-        <Route path='haircare' element={<CardHairCare />} />
-        <Route path='mani-pedi' element={<CardManiPedi />} />
-        <Route path='waxing' element={<CardWaxing />} />
-        <Route path='bleach-dtan' element={<CardBleach />} />
-        <Route path='weddingpakage' element={<CardWedding />} />
-        <Route path='body-polishing' element={<CardBodyPolishing />} />
-        <Route path='threading' element={<CardThreading />} />
-        <Route path='facial-cleanup' element={<CardFacial />} />
+      <Route path="service" element={<ServiceLayout />}>
+        <Route index element={<Service />} />
+        <Route path="nailart" element={<CardNailArt />} />
+        <Route path="haircare" element={<CardHairCare />} />
+        <Route path="mani-pedi" element={<CardManiPedi />} />
+        <Route path="waxing" element={<CardWaxing />} />
+        <Route path="bleach-dtan" element={<CardBleach />} />
+        <Route path="weddingpackage" element={<CardWedding />} />
+        <Route path="body-polishing" element={<CardBodyPolishing />} />
+        <Route path="threading" element={<CardThreading />} />
+        <Route path="facial-cleanup" element={<CardFacial />} />
       </Route>
-
-
-      {/* <Route path='user/:userid' element={<User />} /> */}
-      <Route path='faq' element={<ChatBotLayout />} />
+      <Route path="faq" element={<ChatBotLayout />} />
     </Route>
   )
 );
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <>
-    <AuthProvider >
-      <CartProvider>
+  <AuthProvider>
+    <CartProvider>
       <RouterProvider router={router} />
-      </CartProvider>
-    </AuthProvider>
-  </>
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={true}
+        newestOnTop
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+        bodyClassName='Toastify__toast--custom'
+        progressClassName='Toastify__progress-bar'
+        
+      />
+    </CartProvider>
+  </AuthProvider>
 );
