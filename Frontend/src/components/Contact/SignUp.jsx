@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../Store/auth';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'; // Ensure default styles are loaded
+import '../../Css.css';
 
 const SignUp = () => {
     const [formData, setFormData] = useState({
@@ -39,8 +41,8 @@ const SignUp = () => {
         
 
         try {
-            // const response = await fetch(`${BASE_URL}/auth/register`, {
-                const response = await fetch('http://localhost:5000/api/auth/register', {
+            const response = await fetch(`${BASE_URL}/auth/register`, {
+                // const response = await fetch('http://localhost:5000/api/auth/register', {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json", // Indicating that JSON is being sent
@@ -65,7 +67,7 @@ const SignUp = () => {
             }
         } catch (error) {
             console.error('Error:', error); // Logging any error from fetch
-            toast("Register Error")
+            toast("Database Not Connected")
             
         }
     };

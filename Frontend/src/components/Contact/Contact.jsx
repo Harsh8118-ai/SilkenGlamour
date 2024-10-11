@@ -4,6 +4,9 @@ import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
 import { Link } from "react-router-dom";
 import { useAuth } from "../../Store/auth";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'; // Ensure default styles are loaded
+import '../../Css.css';
 
 const Contact = () => {
     useEffect(() => {
