@@ -57,9 +57,9 @@ const Login = () => {
 
                 navigate("/");
 
-                setTimeout(() => {
-                    window.location.reload();
-                }, 500);
+                // setTimeout(() => {
+                //     window.location.reload();
+                // }, 500);
             }
             else {
                 
