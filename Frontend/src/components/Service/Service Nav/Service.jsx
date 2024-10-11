@@ -102,7 +102,7 @@ export default function Service() {
 
           {/* Service 8: Wedding Package */}
           <div data-aos="fade-left">
-            <Link to="weddingpakage">
+            <Link to="weddingpackage">
               <div className='shadow-lg text-sm sm:text-lg rounded-xl p-1 flex flex-col bg-BGColorYellow justify-center items-center hover:scale-110 hover:rotate-3 hover:shadow-2xl transition-transform duration-500 ease-in-out'>
                 <img src="/Temp/Makeup.jpg
                 " alt="Wedding Package" className="w-32 h-32 sm:w-40 sm:h-40 rounded-xl object-cover transition-all duration-300 ease-in-out" />
