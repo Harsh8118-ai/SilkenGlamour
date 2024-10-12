@@ -107,7 +107,7 @@ function Bot() {
   return (
 <>
 {/* <div className='shadow-md parent-container overflow-visible z-10 shadow-black rounded-lg'> */}
-    <div className="App sm:mt-4 mt-2 rounded-xl border-2 border-black">
+    <div className="App sm:mt-4 mt-2 rounded-xl border-2 border-black relative sm:mb-20 mb-16">
       <ThemeProvider theme={theme}>
       
         <ChatBot

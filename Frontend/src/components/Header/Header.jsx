@@ -46,7 +46,7 @@ export default function Header() {
             </Link>
 
             <div className="hidden justify-between items-center w-full sm:flex sm:flex-wrap sm:w-auto sm:order-1" id="mobile-menu-2">
-              <ul className="flex flex-col mt-4 font-medium sm:flex-row lg:space-x-10 sm:mt-0">
+              <ul className="flex flex-col mt-4 font-medium sm:flex-row lg:space-x-10 sm:mt-0 ml-24">
                 <li>
                   <NavLink
                     to="/"

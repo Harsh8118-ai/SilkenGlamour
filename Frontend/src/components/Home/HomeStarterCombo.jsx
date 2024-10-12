@@ -49,10 +49,10 @@ const HomeStarterCombo = () => {
     return (
         <CartProvider>
 
-            <div className="flex justify-between w-full h-full bg-BGColorYellow">
+            <div className="flex justify-center items-center w-full h-full bg-BGColorYellow mt-10">
 
                 {/* Middle Container (Products Container - 60% Width) */}
-                <div className="w-[70%] mx-2 sm:mx-auto my-8 bg-BGColorYellow mt-4 rounded-xl h-full">
+                <div className="sm:w-[70%] mx-2 sm:mx-auto my-8 bg-BGColorYellow mt-4 rounded-xl h-full">
                     <div className={`w-full h-fit m-3 mx-auto`}>
                         <div className="w-full sticky top-0.5 sm:top-8 flex flex-col justify-center items-center h-fit">
                             <h1 className="text-5xl font-bold mb-4 text-center">Meet Our Starter Combos</h1>
@@ -131,10 +131,10 @@ const HomeStarterCombo = () => {
                         {/* ............. MOBILE VIEW CARD ............. */}
 
                         {products.length > 0 && (
-                            <div className="w-full h-full mt-4 sm:hidden">
+                            <div className="w-full h-full mt-4 sm:hidden ">
                                 <div className="grid grid-cols-2 gap-x-3 gap-y-6 ">
                                     {products.map((product) => (
-                                        <div key={product.id} className="shadow-xl shadow-BGColorYellow rounded-lg bg-BGColorYellow p-2">
+                                        <div key={product.id} className="drop-shadow-2xl rounded-lg bg-BGColorYellow p-2 shadow-MainBGColorYellow">
 
                                             <img className="rounded-lg h-36 w-40 object-cover" src={product.image} alt={product.image} onClick={() => addToCart(product)} />
                                             <div className="relative">

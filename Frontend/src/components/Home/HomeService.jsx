@@ -40,15 +40,19 @@ export default function HomeService() {
   return (
     <div className="bg-transparent min-h-fit flex flex-col items-center">
       <h6 className="text-6xl font-bold text-gray-900 mt-10 ">
-        Services We Offer 
+        Services We Offer
       </h6>
       <div className="flex items-center mt-5">
         {/* Left Scroll Button */}
         <button
-          className="bg-gray-500 text-white rounded-full p-2 mr-2 hover:bg-gray-700 transition duration-300 ease-in-out"
+          className=" text-white transition duration-300 ease-in-out"
           onClick={() => handleScroll('left')}
         >
-          &lt;
+          <div class="w-0 h-0 
+  border-t-[50px] border-t-transparent
+  border-r-[75px] border-r-gray-600
+  border-b-[50px] border-b-transparent">
+          </div>
         </button>
 
         {/* Carousel Container */}
@@ -56,11 +60,10 @@ export default function HomeService() {
           {getVisibleServices().map((service, index) => (
             <Link to={service.link} key={service.name}>
               <div
-                className={`flex flex-col items-center p-2 transform-gpu transition-all duration-500 ease-out ${
-                  index === 2
+                className={`flex flex-col items-center p-2 transform-gpu transition-all duration-500 ease-out ${index === 2
                     ? 'scale-110 opacity-100 hover:scale-[1.15]'
                     : 'scale-100 opacity-50'
-                }`}
+                  }`}
                 style={{
                   transitionTimingFunction: 'cubic-bezier(0.25, 0.8, 0.25, 1)', // Smoother animation
                 }}
@@ -78,10 +81,14 @@ export default function HomeService() {
 
         {/* Right Scroll Button */}
         <button
-          className="bg-gray-500 text-white rounded-full p-2 ml-2 hover:bg-gray-700 transition duration-300 ease-in-out"
+          className="transition duration-300 ease-in-out"
           onClick={() => handleScroll('right')}
         >
-          &gt;
+          <div class="w-0 h-0 
+  border-t-[50px] border-t-transparent
+  border-l-[75px] border-l-gray-600
+  border-b-[50px] border-b-transparent">
+</div>
         </button>
       </div>
     </div>

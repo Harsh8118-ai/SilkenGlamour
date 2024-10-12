@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom';
 import { CartContext, CartProvider } from '../Cart/CartContext'; // Import the CartContext
 import { useAuth } from '../../Store/auth';
 import HomeService from './HomeService';
-import HomeStarterCombo from './Home Starter Combo';
+import HomeStarterCombo from './HomeStarterCombo';
 import WebCartLayout from '../Cart/WebCartLayout';
 import HeroSection from './HeroSection';
 import HomeServiceMobile from './HomeServiceMobile';
@@ -81,7 +81,7 @@ export default function Home() {
                 {isLoggedIn ? (
                   <Link
                     to="contact/logout"
-                    className="text-MainBGColorYellow hover:bg-MainBGColorYellow focus:ring-4 bg-gray-900 focus:ring-gray-600 font-medium rounded-lg text-sm px-4 sm:px-3 py-2 sm:py-1.5 mr-2 lg:mr-4 focus:outline-none hover:text-black"
+                    className="text-MainBGColorYellow hover:bg-BGColorYellow focus:ring-4 bg-gray-900 focus:ring-gray-600 font-medium rounded-lg text-sm px-4 sm:px-3 py-2 sm:py-1.5 mr-2 lg:mr-4 focus:outline-none hover:text-black"
                   >
                     Log Out
                   </Link>
@@ -89,13 +89,13 @@ export default function Home() {
                   <>
                     <Link
                       to="contact/login"
-                      className="text-MainBGColorYellow hover:bg-MainBGColorYellow focus:ring-4 bg-gray-900 focus:ring-gray-600 font-medium rounded-lg text-sm px-4 sm:px-3 py-2 sm:py-1.5 mr-2 lg:mr-4 focus:outline-none hover:text-black"
+                      className="text-MainBGColorYellow hover:bg-BGColorYellow focus:ring-4 bg-gray-900 focus:ring-gray-600 font-medium rounded-lg text-sm px-4 sm:px-3 py-2 sm:py-1.5 mr-2 lg:mr-4 focus:outline-none hover:text-black"
                     >
                       Log In
                     </Link>
                     <Link
                       to="contact/signup"
-                      className="text-MainBGColorYellow hover:bg-MainBGColorYellow focus:ring-4 bg-gray-900 focus:ring-gray-600 font-medium rounded-lg text-sm px-4 sm:px-3 py-2 sm:py-1.5 mr-2 lg:mr-4 focus:outline-none hover:text-black"
+                      className="text-MainBGColorYellow hover:bg-BGColorYellow focus:ring-4 bg-gray-900 focus:ring-gray-600 font-medium rounded-lg text-sm px-4 sm:px-3 py-2 sm:py-1.5 mr-2 lg:mr-4 focus:outline-none hover:text-black"
                     >
                       Sign Up
                     </Link>
@@ -105,7 +105,7 @@ export default function Home() {
                 {/* Cart Icon */}
                 <div className="flex items-center">
                   <div
-                    className="relative text-MainBGColorYellow mr-3 cursor-pointer"
+                    className="relative text-MainBGColorYellow mr-3 cursor-pointer hover:scale-110 hover:shadow-sm shadow-BGColorYellow"
                     onClick={openCart} // Only opens the cart
                   >
                     {totalItems > 0 && (
@@ -135,7 +135,7 @@ export default function Home() {
                   </div>
 
                   <Link to="/profile">
-                    <div className="mr-3">
+                    <div className="mr-3 hover:scale-110 hover:shadow-sm shadow-BGColorYellow">
                     <svg
                       viewBox="0 0 24 24"
                       fill="796855"
@@ -163,12 +163,12 @@ export default function Home() {
               </div>
 
               <div className="hidden justify-between items-center w-full sm:flex sm:flex-wrap sm:w-auto sm:order-1">
-                <ul className="flex flex-col mt-4 font-medium sm:flex-row lg:space-x-10 sm:mt-0 pl-10">
+                <ul className="flex flex-col mt-4 font-medium sm:flex-row lg:space-x-10 sm:mt-0 ml-24">
                   <li>
                     <NavLink
                       to="/"
                       className={({ isActive }) =>
-                        `block py-2 pr-4 pl-3 sm:-ml-5 lg:-ml-0 duration-200 ${isActive ? "text-gray-900" : "text-black"}  border-gray-600  lg:hover:bg-transparent hover:text-black font-bold lg:p-0`
+                        `block py-2 pr-4 pl-3 sm:-ml-5 lg:-ml-0 duration-200 ${isActive ? "text-gray-900" : "text-black"}  border-gray-600  lg:hover:bg-transparent hover:text-[#635a4f]  hover:scale-105 font-bold lg:p-0`
                       }
                     >
                       Home
@@ -178,7 +178,7 @@ export default function Home() {
                     <NavLink
                       to="/about"
                       className={({ isActive }) =>
-                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-gray-900" : "text-black"}  border-gray-600  lg:hover:bg-transparent hover:text-black font-bold lg:p-0`
+                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-gray-900" : "text-black"}  border-gray-600  lg:hover:bg-transparent hover:text-[#635a4f] hover:scale-105 font-bold lg:p-0`
                       }
                     >
                       About
@@ -188,7 +188,7 @@ export default function Home() {
                     <NavLink
                       to="/service"
                       className={({ isActive }) =>
-                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-gray-900" : "text-black"}  border-gray-600  lg:hover:bg-transparent hover:text-black font-bold lg:p-0`
+                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-gray-900" : "text-black"}  border-gray-600  lg:hover:bg-transparent hover:text-[#635a4f] hover:scale-105 font-bold lg:p-0`
                       }
                     >
                       Service
@@ -198,7 +198,7 @@ export default function Home() {
                     <NavLink
                       to="/contact"
                       className={({ isActive }) =>
-                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-gray-900" : "text-black"}  border-gray-600  lg:hover:bg-transparent hover:text-black font-bold lg:p-0`
+                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-gray-900" : "text-black"}  border-gray-600  lg:hover:bg-transparent hover:text-[#635a4f] hover:scale-105 font-bold lg:p-0`
                       }
                     >
                       Contact
@@ -208,7 +208,7 @@ export default function Home() {
                     <NavLink
                       to="/faq"
                       className={({ isActive }) =>
-                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-gray-900" : "text-black"}  border-gray-600  lg:hover:bg-transparent  hover:text-black font-bold lg:p-0`
+                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-gray-900" : "text-black"}  border-gray-600  lg:hover:bg-transparent  hover:text-[#635a4f] hover:scale-105 font-bold lg:p-0`
                       }
                     >
                       FAQ
