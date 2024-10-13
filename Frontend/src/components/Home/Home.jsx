@@ -9,6 +9,7 @@ import HeroSection from './HeroSection';
 import HomeServiceMobile from './HomeServiceMobile';
 import OurTeam from './OurTeam';
 import CallToActionBanner from './CallToAction';
+import Slider from './PhotoSlider';
 
 export default function Home() {
   const [isCartOpen, setIsCartOpen] = useState(false); // State to toggle cart visibility
@@ -163,7 +164,7 @@ export default function Home() {
               </div>
 
               <div className="hidden justify-between items-center w-full sm:flex sm:flex-wrap sm:w-auto sm:order-1">
-                <ul className="flex flex-col mt-4 font-medium sm:flex-row lg:space-x-10 sm:mt-0 ml-24">
+                <ul className="flex flex-col mt-4 font-medium sm:flex-row lg:space-x-10 sm:mt-0 ml-28">
                   <li>
                     <NavLink
                       to="/"
@@ -174,7 +175,7 @@ export default function Home() {
                       Home
                     </NavLink>
                   </li>
-                  <li>
+                  {/* <li>
                     <NavLink
                       to="/about"
                       className={({ isActive }) =>
@@ -183,7 +184,7 @@ export default function Home() {
                     >
                       About
                     </NavLink>
-                  </li>
+                  </li> */}
                   <li>
                     <NavLink
                       to="/service"
@@ -224,7 +225,7 @@ export default function Home() {
         <HeroSection />
         
         {/* SERVICES */}
-        <div className='hidden sm:block bg-MainBGColorYellow rounded-3xl m-0.5 mt-3'>
+        <div className='hidden sm:block bg-MainBGColorYellow rounded-3xl m-1 mt-3'>
           <HomeService />
         </div>
         <div className='sm:hidden bg-MainBGColorYellow rounded-3xl m-0.5 mt-3'>
@@ -236,10 +237,11 @@ export default function Home() {
           <HomeStarterCombo />
         </div>
 
-        {/* Our Team  
+        {/* Our Team   */}
         <div>
-          <OurTeam />
-        </div> */}
+          {/* <OurTeam /> */}
+          <Slider />
+        </div>
 
         {/* Call to Action */}
         <div>
@@ -250,6 +252,8 @@ export default function Home() {
         <div>
           <h1 className='text-center font-bold text-2xl text-MainBGColorYellow'>What People are Saying</h1>
         </div>
+
+      
       </div>
     </CartProvider>
   );

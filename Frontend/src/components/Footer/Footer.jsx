@@ -78,17 +78,17 @@ export default function Footer() {
         {/* ...................... WHATSAPP ICON ...................... */}
 
         <div className=''>
-        <div  className="sm:hidden fixed z-50 bottom-14 right-1 animate-bounce">
+        <div  className="sm:hidden fixed z-50 bottom-14 right-1 animate-bounce ">
         <a href="https://wa.me/9266037001" onClick={handleClick} target="_blank" rel="noopener noreferrer">
-          <FaWhatsapp className="text-[#25D366] text-6xl bg-gray-300 p-2 rounded-full transition hover:scale-110 duration-300" />
+          <FaWhatsapp className="text-[#25D366] text-5xl bg-gray-300 p-2 rounded-full transition hover:scale-110 duration-300" />
         </a>
       </div>
         </div>
 
         <div className='hidden sm:block fixed z-50 top-3/4 right-0'>
-        <div className="fixed bottom-10 right-5 animate-bounce">
+        <div className="fixed bottom-10 right-5 sm:animate-pulse">
         <a href="https://wa.me/9266037001" onClick={handleClick} target="_blank" rel="noopener noreferrer">
-          <FaWhatsapp className="text-[#25D366] text-6xl bg-gray-300 p-2 rounded-full shadow-lg transition hover:scale-110 duration-300" />
+          <FaWhatsapp className="text-[#25D366] text-5xl bg-gray-300 p-2 rounded-full shadow-lg transition hover:scale-110 duration-300" />
         </a>
       </div>
         </div>
@@ -96,14 +96,16 @@ export default function Footer() {
 
         {/*........................................ICON BAR........................................*/}
 
-        <div className='mt-16 sm:mt-0'></div>
-        <div className='sm:hidden shadow fixed z-50 bottom-0 w-full bg-gradient-to-r from-[#2E2117] via-[#796855] to-[#2E2117]'>
-            <ul className="flex justify-around pt-1 bg-transparent">
-                <li className='flex flex-col items-center h-auto w-auto'>
+        
+        <div className='mt-16'></div>
+        <div className='flex justify-center'>
+        <div className='sm:hidden shadow fixed py-1 px-5 z-50 bottom-1.5 w-fit bg-gradient-to-r from-[#2E2117] via-[#796855] to-[#2E2117] rounded-full'>
+            <ul className="flex justify-center gap-10 pt-1 bg-transparent">
+                <li className='flex flex-col items-center h-auto pl-2 w-auto'>
                     <NavLink
                         to="/"
                         className={({ isActive }) =>
-                            `duration-200 flex flex-col items-center gap-1 ${isActive ? "text-gray-900" : "text-MainBGColorYellow"} font-bold`
+                            `duration-200 flex flex-col items-center ${isActive ? "text-gray-900" : "text-MainBGColorYellow"} font-bold`
                         }
                     >
                         <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="24" height="24">
@@ -113,11 +115,11 @@ export default function Footer() {
                     </NavLink>
                 </li>
 
-                <li className='flex flex-col items-center h-auto w-auto'>
+                {/* <li className='flex flex-col items-center h-auto w-auto'>
                     <NavLink
                         to="/about"
                         className={({ isActive }) =>
-                            `duration-200 flex flex-col items-center gap-1 ${isActive ? "text-gray-900" : "text-MainBGColorYellow"} font-bold`
+                            `duration-200 flex flex-col items-center ${isActive ? "text-gray-900" : "text-MainBGColorYellow"} font-bold`
                         }
                     >
                         <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="24" height="24">
@@ -125,13 +127,13 @@ export default function Footer() {
                         </svg>
                         <span className="text-sm">About</span>
                     </NavLink>
-                </li>
+                </li> */}
 
                 <li className='flex flex-col items-center h-auto w-auto'>
                     <NavLink
                         to="/service"
                         className={({ isActive }) =>
-                            `duration-200 flex flex-col items-center gap-1 ${isActive ? "text-gray-900" : "text-MainBGColorYellow"} font-bold`
+                            `duration-200 flex flex-col items-center ${isActive ? "text-gray-900" : "text-MainBGColorYellow"} font-bold`
                         }
                     >
                         <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24" height="24">
@@ -146,7 +148,7 @@ export default function Footer() {
                     <NavLink
                         to="/contact"
                         className={({ isActive }) =>
-                            `duration-200 flex flex-col items-center gap-1 ${isActive ? "text-gray-900" : "text-MainBGColorYellow"} font-bold`
+                            `duration-200 flex flex-col items-center ${isActive ? "text-gray-900" : "text-MainBGColorYellow"} font-bold`
                         }
                     >
                         <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
@@ -157,11 +159,11 @@ export default function Footer() {
                     </NavLink>
                 </li>
 
-                <li className='flex flex-col items-center h-auto w-auto'>
+                <li className='flex flex-col items-center h-auto pr-2 w-auto'>
                     <NavLink
                         to="/faq"
                         className={({ isActive }) =>
-                            `duration-200 flex flex-col items-center gap-1 ${isActive ? "text-gray-900" : "text-MainBGColorYellow"} font-bold`
+                            `duration-200 flex flex-col items-center ${isActive ? "text-gray-900" : "text-MainBGColorYellow"} font-bold`
                         }
                     >
                         <svg className=
@@ -172,6 +174,8 @@ export default function Footer() {
                 </li>
             </ul>
         </div>
+        </div>
+        
         
     </>
     );

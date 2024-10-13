@@ -46,7 +46,7 @@ export default function Header() {
             </Link>
 
             <div className="hidden justify-between items-center w-full sm:flex sm:flex-wrap sm:w-auto sm:order-1" id="mobile-menu-2">
-              <ul className="flex flex-col mt-4 font-medium sm:flex-row lg:space-x-10 sm:mt-0 ml-24">
+              <ul className="flex flex-col mt-4 font-medium sm:flex-row lg:space-x-10 sm:mt-0 ml-28">
                 <li>
                   <NavLink
                     to="/"
@@ -58,7 +58,7 @@ export default function Header() {
                     Home
                   </NavLink>
                 </li>
-                <li>
+                {/* <li>
                   <NavLink
                     to="/about"
                     className={({ isActive }) =>
@@ -68,7 +68,7 @@ export default function Header() {
                   >
                     About
                   </NavLink>
-                </li>
+                </li> */}
                 <li>
                   <NavLink
                     to="/service"

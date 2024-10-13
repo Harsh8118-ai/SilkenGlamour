@@ -39,10 +39,10 @@ export default function HomeService() {
 
   return (
     <div className="bg-transparent min-h-fit flex flex-col items-center">
-      <h6 className="text-6xl font-bold text-gray-900 mt-10 ">
+      <h6 className="text-5xl font-bold text-gray-900 mt-10 ">
         Services We Offer
       </h6>
-      <div className="flex items-center mt-5">
+      <div className="flex items-center mt-5 shadow-sm shadow-BGColorYellow mb-5 px-10 rounded-xl">
         {/* Left Scroll Button */}
         <button
           className=" text-white transition duration-300 ease-in-out"
@@ -51,7 +51,7 @@ export default function HomeService() {
           <div class="w-0 h-0 
   border-t-[50px] border-t-transparent
   border-r-[75px] border-r-gray-600
-  border-b-[50px] border-b-transparent">
+  border-b-[50px] border-b-transparent hover:scale-105">
           </div>
         </button>
 
@@ -87,7 +87,7 @@ export default function HomeService() {
           <div class="w-0 h-0 
   border-t-[50px] border-t-transparent
   border-l-[75px] border-l-gray-600
-  border-b-[50px] border-b-transparent">
+  border-b-[50px] border-b-transparent hover:scale-105">
 </div>
         </button>
       </div>

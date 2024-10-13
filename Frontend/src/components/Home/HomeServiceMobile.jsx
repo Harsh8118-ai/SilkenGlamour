@@ -39,7 +39,7 @@ export default function HomeServiceMobile() {
 
   return (
     <div className="bg-transparent min-h-fit flex flex-col items-center">
-      <h6 className="text-4xl sm:text-6xl font-bold text-gray-900 mt-10">
+      <h6 className="text-4xl sm:text-5xl font-bold text-gray-900 mt-10">
         Services We Offer
       </h6>
       <div className="flex items-center mt-5">

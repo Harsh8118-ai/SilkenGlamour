@@ -185,7 +185,7 @@ const Contact = () => {
                 </div>
 
                 {/* .............. BOTTOM CONTACT SECTION .............. */}
-                <div className="max-w-6xl mx-3 sm:px-6 lg:px-8 ">
+                <div className="max-w-5xl mx-3 sm:px-6 lg:px-8 ">
                     <div className="mt-20 overflow-hidden">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div className="p-12 rounded-lg bg-gradient-to-b from-[#2E2117] via-[#796855] to-[#2E2117] sm:rounded-lg">
