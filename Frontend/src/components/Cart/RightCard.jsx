@@ -17,7 +17,7 @@ const RightCart = () => {
     // Include the user's address in the WhatsApp message
     const userAddress = `\nStreet: ${user.street} ${user.apartmentNumber ? '\nApartment:  ' + user.apartmentNumber : ''}\nTown ${user.town}\n Pincode: ${user.pincode}`;
     
-    return `${cartDetails}\n\nTotal: ₹${totalPrice}\n\nDelivery Address: ${userAddress}`;
+    return `${cartDetails}\n\nTotal: ₹${totalPrice}\n\nAddress: ${userAddress}`;
   };
 
   const handleOrderNow = () => {
