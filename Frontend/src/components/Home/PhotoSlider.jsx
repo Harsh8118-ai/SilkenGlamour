@@ -15,7 +15,7 @@ const Slider = () => {
   const sliderRef = useRef(null);
 
   const totalSlides = photos.length;
-  const duration = 5000; // 5 seconds for each slide
+  const duration = 2000; // 5 seconds for each slide
 
   // Handle automatic sliding
   useEffect(() => {
@@ -70,14 +70,15 @@ const Slider = () => {
       <div
         ref={sliderRef}
         onScroll={handleScroll}
-        className="relative flex overflow-x-scroll snap-x snap-mandatory w-full h-64 rounded-lg scrollbar-hide"
+        onDragCapture={handleScroll}
+        className="relative flex overflow-x-scroll snap-x snap-mandatory w-full mb-2 p-2 rounded-lg scrollbar-hide bg-BGColorYellow"
       >
         {photos.map((photo, index) => (
           <img
             key={index}
             src={photo}
             alt={`Slide ${index}`}
-            className="snap-center w-[358px] h-[182px] object-cover flex-shrink-0"
+            className="snap-center w-full h-full object-cover flex-shrink-0 mr-2 rounded-lg"
           />
         ))}
       </div>
