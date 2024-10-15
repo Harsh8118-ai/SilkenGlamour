@@ -67,6 +67,10 @@ const WebCart = ({ closeCart }) => {
           </div>
 
           {/* Fixed Order Now Button at the bottom of the modal */}
+          <div className="">
+          <div className="border-t pb-5">
+            <h3 className="text-lg font-bold text-center">Total: ₹{totalPrice}</h3>
+          </div>
           <button
             onClick={handleOrderNow}
             className={`mt-auto font-bold py-2 px-4 w-full rounded ${
@@ -76,6 +80,7 @@ const WebCart = ({ closeCart }) => {
           >
             {cartItems.length === 0 ? 'Cart is Empty' : 'Order Now'}
           </button>
+        </div>
         </div>
 
         {/* Modal for Order Confirmation */}
