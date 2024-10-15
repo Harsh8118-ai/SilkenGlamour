@@ -1,10 +1,12 @@
 import React, { useContext, useState } from 'react';
 import { CartContext } from './CartContext';
+import { useAuth } from '../../Store/auth';
 import Modal from './Modal'; // Import the modal component
 
 const MobileCart = ({ closeCart }) => {
   const { cartItems, removeFromCart, increaseQuantity, decreaseQuantity, totalPrice } = useContext(CartContext);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const { user } = useAuth(); // Access user data including address from AuthContext
 
   const generateOrderMessage = () => {
     const cartDetails = cartItems.map(item => {
@@ -12,7 +14,10 @@ const MobileCart = ({ closeCart }) => {
       return `${item.name} -> ₹${item.price} x ${item.quantity} = ₹${itemTotal}`;
     }).join('\n');
 
-    return `${cartDetails}\n\nTotal: ₹${totalPrice}`;
+    // Include the user's address in the WhatsApp message
+    const userAddress = `\nStreet: ${user.street} ${user.apartmentNumber ? '\nApartment:  ' + user.apartmentNumber : ''}\nTown ${user.town}\n Pincode: ${user.pincode}`;
+    
+    return `${cartDetails}\n\nTotal: ₹${totalPrice}\n\nDelivery Address: ${userAddress}`;
   };
 
   const handleOrderNow = () => {

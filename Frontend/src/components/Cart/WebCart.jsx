@@ -15,7 +15,7 @@ const WebCart = ({ closeCart }) => {
     }).join('\n');
 
     // Include the user's address in the WhatsApp message
-    const userAddress = `\nStreet: ${user.street}\n ${user.apartmentNumber ? user.apartmentNumber + '\nApartment:  ' : ''}Town ${user.town}\n Pincode: ${user.pincode}`;
+    const userAddress = `\nStreet: ${user.street} ${user.apartmentNumber ? '\nApartment:  ' + user.apartmentNumber : ''}\nTown ${user.town}\n Pincode: ${user.pincode}`;
     
     return `${cartDetails}\n\nTotal: ₹${totalPrice}\n\nDelivery Address: ${userAddress}`;
   };
