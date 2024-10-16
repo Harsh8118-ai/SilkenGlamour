@@ -1,12 +1,14 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import { CartContext } from './CartContext';
 import { useAuth } from '../../Store/auth';
 import Modal from './Modal'; // Import the modal component
+import { useNavigate } from 'react-router-dom';
 
 const MobileCart = ({ closeCart }) => {
   const { cartItems, removeFromCart, increaseQuantity, decreaseQuantity, totalPrice } = useContext(CartContext);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const { user } = useAuth(); // Access user data including address from AuthContext
+  const { isLoggedIn } = useAuth();
 
   const generateOrderMessage = () => {
     const cartDetails = cartItems.map(item => {
@@ -31,7 +33,20 @@ const MobileCart = ({ closeCart }) => {
     setIsModalOpen(false); // Close the modal after confirming
   };
 
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (!isLoggedIn) {
+      // Redirect to the login page if not logged in
+      navigate('/contact/login'); // Replace '/login' with your desired path
+      setIsCartOpen(false); // Close the cart when navigating to login
+    } else {
+      setIsCartOpen(true); 
+    }
+  }, [isLoggedIn, navigate]);
+
   return (
+    <>
+    {isLoggedIn ?
     <div className="fixed inset-0 z-50 bg-MainBGColorYellow p-4 w-full max-w-xs right-0 shadow-lg flex flex-col">
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-lg font-bold">Your Cart</h2>
@@ -105,6 +120,10 @@ const MobileCart = ({ closeCart }) => {
         />
       )}
     </div>
+     : 
+     null
+      }
+      </>
   );
 };
 

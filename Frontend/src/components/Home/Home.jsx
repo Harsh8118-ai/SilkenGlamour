@@ -228,19 +228,19 @@ export default function Home() {
         <div className='hidden sm:block bg-MainBGColorYellow rounded-3xl m-1 mt-3'>
           <HomeService />
         </div>
-        <div className='sm:hidden bg-MainBGColorYellow rounded-3xl m-0.5 mt-3'>
+        <div className='sm:hidden bg-MainBGColorYellow rounded-3xl m-0.5 mt-12'>
           <HomeServiceMobile />
         </div>
 
         {/* COMBO PACK SECTION */}
         <div>
-          <HomeStarterCombo />
+          {/* <HomeStarterCombo /> */}
         </div>
 
         {/* Our Team   */}
         <div>
           {/* <OurTeam /> */}
-          <Slider />
+          {/* <Slider /> */}
         </div>
 
         {/* Call to Action */}

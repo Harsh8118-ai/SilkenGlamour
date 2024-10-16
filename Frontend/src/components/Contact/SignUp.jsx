@@ -139,6 +139,18 @@ const SignUp = () => {
                         <label className="block text-sm font-medium text-BGColorYellow ">Address</label>
                         <div className='border border-gray-700 bg-[#cfbca6]  rounded-md p-4'>
                             <div className="space-y-4">
+                            <div>
+                                    <input
+                                        id="apartmentNumber"
+                                        name="apartmentNumber"
+                                        value={formData.apartmentNumber}
+                                        onChange={handleChange}
+                                        type="text"
+                                        placeholder="House/Flat Number"
+                                        required
+                                        className="w-full p-3 border border-gray-700 bg-gray-700 rounded-md text-BGColorYellow focus:outline-none focus:ring-2 focus:ring-gray-600 transition duration-300 ease-in-out transform hover:scale-105"
+                                    />
+                                </div>
                                 <div>
                                     <input
                                         id="street"
@@ -146,20 +158,9 @@ const SignUp = () => {
                                         value={formData.street}
                                         onChange={handleChange}
                                         type="text"
-                                        placeholder="House Number/street Name"
+                                        placeholder="Area & Landmark"
                                         required
                                         className="w-full p-3 border border-gray-700 bg-gray-700 text-BGColorYellow rounded-md focus:outline-none focus:ring-2 focus:ring-gray-600 transition duration-300 ease-in-out transform hover:scale-105"
-                                    />
-                                </div>
-                                <div>
-                                    <input
-                                        id="apartmentNumber"
-                                        name="apartmentNumber"
-                                        value={formData.apartmentNumber}
-                                        onChange={handleChange}
-                                        type="text"
-                                        placeholder="Apartment/Flat Number (optional)"
-                                        className="w-full p-3 border border-gray-700 bg-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-600 transition duration-300 ease-in-out transform hover:scale-105"
                                     />
                                 </div>
                                 <div>

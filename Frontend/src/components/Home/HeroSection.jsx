@@ -12,14 +12,14 @@ export default function HeroSection() {
         ></div>
 
         {/* Content */}
-        <div className="relative h-full w-full text-center pt-20">
-          <p className='text-xl font-bold text-black font-Logo'>SilkenGlamour</p>
-          <h1 className="text-5xl font-bold text-black mb-5 font-Logo">
-            Welcome to Our <br /> Premium Home Salon Service
+        <div className="relative h-full w-full text-center sm:pt-16 pt-5">
+          {/* <p className='hidden sm:block text-sm sm:text-xl font-bold text-black font-Logo'>SilkenGlamour</p> */}
+          <h1 className="text-2xl sm:text-5xl font-bold text-black sm:mb-16 mb-5 font-Logo">
+            Welcome to Our<br /> Luxurious Home Salon 
           </h1>
           <div className='flex items-center justify-center w-full gap-10'>
 
-            <div className='mt-32'>
+            <div className='mt-32 hidden sm:block'>
               <Link to="/service">
                 <img
                   src="/Home/Makeup Home.jpg"
@@ -32,11 +32,11 @@ export default function HeroSection() {
               <img
                 src="/Home/Banner Mirror.jpeg"
                 alt=""
-                className="w-80 h-96 rounded-t-full border-[6px] border-[000000] object-cover transform hover:opacity-95 hover:border-white"
+                className="h-72 w-60 sm:w-80 sm:h-96 rounded-t-full border-[6px] border-[000000] object-cover transform hover:opacity-95 hover:border-white"
               />
             </Link>
 
-            <div className='mt-32'>
+            <div className='mt-32 hidden sm:block'>
               <Link to="/service">
                 <img
                   src="/Home/Facial Home.jpg"

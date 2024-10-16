@@ -39,13 +39,13 @@ export default function HomeServiceMobile() {
 
   return (
     <div className="bg-transparent min-h-fit flex flex-col items-center">
-      <h6 className="text-4xl sm:text-5xl font-bold text-gray-900 mt-10">
+      <h6 className="text-3xl font-bold text-gray-900 mt-3">
         Services We Offer
       </h6>
-      <div className="flex items-center mt-5">
+      <div className="flex items-center mt-2 mb-2">
         {/* Left Scroll Button */}
         <button
-          className="bg-gray-500 text-white rounded-full p-2 hover:bg-gray-700 transition duration-300 ease-in-out"
+          className="bg-gray-500 text-white rounded-full p-2 hover:bg-gray-700 transition duration-300 ease-in-out mb-4"
           onClick={() => handleScroll('left')}
         >
           &lt;
@@ -67,7 +67,7 @@ export default function HomeServiceMobile() {
                 <img
                   src={service.image}
                   alt={service.name}
-                  className="w-full h-full sm:w-32 sm:h-32 lg:w-40 lg:h-40 rounded-xl object-cover transition-all duration-500 ease-out hover:shadow-md"
+                  className="w-20x h-20 lg:w-40 lg:h-40 rounded-xl object-cover transition-all duration-500 ease-out hover:shadow-md"
                 />
                 <p className="pt-1.5 font-semibold text-gray-900 text-xs">{service.name}</p>
               </div>
@@ -77,7 +77,7 @@ export default function HomeServiceMobile() {
 
         {/* Right Scroll Button */}
         <button
-          className="bg-gray-500 text-white rounded-full p-2 hover:bg-gray-700 transition duration-300 ease-in-out"
+          className="bg-gray-500 text-white rounded-full p-2 hover:bg-gray-700 transition duration-300 ease-in-out mb-4"
           onClick={() => handleScroll('right')}
         >
           &gt;

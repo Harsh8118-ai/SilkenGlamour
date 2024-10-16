@@ -2,11 +2,14 @@ import React, { useContext, useState } from 'react';
 import { CartContext } from './CartContext';
 import { useAuth } from '../../Store/auth'; // Import useAuth to fetch user data
 import Modal from './Modal';
+import { Link, useNavigate } from 'react-router-dom';
+
 
 const RightCart = () => {
   const { cartItems, removeFromCart, increaseQuantity, decreaseQuantity, totalPrice } = useContext(CartContext);
   const { user } = useAuth(); // Access user data including address from AuthContext
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const { isLoggedIn } = useAuth();
 
   const generateOrderMessage = () => {
     const cartDetails = cartItems.map(item => {
@@ -32,6 +35,8 @@ const RightCart = () => {
   };
 
   return (
+    <>
+    {isLoggedIn ?
     <div className='hidden sm:flex flex-col sticky top-16 h-screen bg-gray-100 p-4 max-w-sm right-0'>
       <div className="w-full max-w-sm p-6 bg-MainBGColorYellow shadow-xl rounded-lg flex flex-col h-full">
         <h2 className="text-lg font-bold text-center mb-4">My Cart</h2>
@@ -89,6 +94,20 @@ const RightCart = () => {
         />
       )}
     </div>
+    : 
+    <div className='hidden sm:flex flex-col justify-center items-center sticky top-16 h-screen bg-gray-100 p-4 max-w-sm right-0'>
+      <div className="w-full max-w-sm p-6 bg-MainBGColorYellow shadow-xl rounded-lg flex flex-col h-full">
+        
+    <div className=' my-auto text-center'>
+    <p className='text-black text-xl text-center font-bold'> Please Login First </p>
+    <Link to="/contact/login">
+    <button className='bg-BGColorYellow mt-3 text-lg px-2 rounded-lg mx-auto'>Login Now</button>
+    </Link>
+    </div>
+    </div>
+    </div>
+     }
+    </>
   );
 };
 
