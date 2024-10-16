@@ -38,9 +38,7 @@ const MobileCart = ({ closeCart }) => {
     if (!isLoggedIn) {
       // Redirect to the login page if not logged in
       navigate('/contact/login'); // Replace '/login' with your desired path
-      setIsCartOpen(false); // Close the cart when navigating to login
-    } else {
-      setIsCartOpen(true); 
+       // Close the cart when navigating to login
     }
   }, [isLoggedIn, navigate]);
 

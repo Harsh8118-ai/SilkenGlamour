@@ -8,16 +8,14 @@ const WebCart = ({ closeCart }) => {
   const { cartItems, removeFromCart, increaseQuantity, decreaseQuantity, totalPrice } = useContext(CartContext);
   const { user, isLoggedIn } = useAuth(); // Access user data and login status from AuthContext
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isCartOpen, setIsCartOpen] = useState(false); // Track cart open state
+  
   const navigate = useNavigate();
 
   useEffect(() => {
     // Check if the user is logged in when the cart is opened
     if (!isLoggedIn) {
       navigate('/profile'); // Redirect to login page if not logged in
-    } else {
-      setIsCartOpen(true); // Open the cart if logged in
-    }
+    } 
   }, [isLoggedIn, navigate]);
 
   const generateOrderMessage = () => {
@@ -45,7 +43,7 @@ const WebCart = ({ closeCart }) => {
 
   return (
     <>
-      {isLoggedIn && isCartOpen && ( // Only display the cart if the user is logged in
+      {isLoggedIn ? // Only display the cart if the user is logged in
         <div className="fixed inset-0 flex justify-center items-center z-50 bg-opacity-70 bg-gray-900">
           <div className="bg-MainBGColorYellow p-6 rounded-lg shadow-lg w-full max-w-md">
             <div className="flex justify-between items-center mb-4">
@@ -114,7 +112,9 @@ const WebCart = ({ closeCart }) => {
             )}
           </div>
         </div>
-      )}
+        :
+        null
+      }
     </>
   );
 };
