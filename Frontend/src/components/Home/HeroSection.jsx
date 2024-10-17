@@ -15,7 +15,7 @@ export default function HeroSection() {
         <div className="relative h-full w-full text-center sm:pt-16 pt-5">
           {/* <p className='hidden sm:block text-sm sm:text-xl font-bold text-black font-Logo'>SilkenGlamour</p> */}
           <h1 className="text-2xl sm:text-5xl font-bold text-black sm:mb-16 mb-5 font-Logo">
-            Welcome to Our<br /> Luxurious Home Salon 
+            Welcome to<br /> Luxurious Home Salon 
           </h1>
           <div className='flex items-center justify-center w-full gap-10'>
 
