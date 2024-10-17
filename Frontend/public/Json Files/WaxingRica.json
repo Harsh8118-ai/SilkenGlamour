@@ -3,8 +3,8 @@
       "id": "WaxingRica1",
       "image": "/Services/Service Card/Waxing/Underarms Wax.JPG",
       "name": "Under Arms Wax",
-      "price": 100,
-      "offerprice": 200,
+      "price": 449,
+      "offerprice": 549,
       "features": ["Removes Underarm Hair", "Provides Smooth Skin", "Reduces Hair Regrowth"],
       "href" : "/"
     },
@@ -12,8 +12,8 @@
       "id": "WaxingRica2",
       "image": "/Services/Service Card/Waxing/Full Arms Wax.JPG",
       "name": "Full Arms Wax",
-      "price": 450,
-      "offerprice": 700,
+      "price": 599,
+      "offerprice": 799,
       "features": ["Removes Full Arm Hair", "Provides Smooth, Hair-Free Skin", "Reduces Hair Regrowth"],
       "href" : "/"
     },
@@ -21,8 +21,8 @@
       "id": "WaxingRica3",
       "image": "/Services/Service Card/Waxing/Full Legs Wax.JPG",
       "name": "Full Legs Wax",
-      "price": 500,
-      "offerprice": 700,
+      "price": 749,
+      "offerprice": 899,
       "features": ["Removes Full Leg Hair", "Provides Smooth, Hair-Free Skin", "Reduces Hair Regrowth"],
       "href" : "/"
     },
@@ -30,8 +30,8 @@
       "id": "WaxingRica4",
       "image": "/Services/Service Card/Waxing/Back Wax.JPG",
       "name": "Full Back Wax",
-      "price": 500,
-      "offerprice": 1000,
+      "price": 699,
+      "offerprice": 949,
       "features": ["Removes Full Back Hair", "Provides Smooth, Hair-Free Skin", "Reduces Hair Regrowth"],
       "href" : "/"
     },
@@ -39,8 +39,8 @@
       "id": "WaxingRica5",
       "image": "/Services/Service Card/Waxing/Bikini Wax.JPG",
       "name": "Bikini Wax",
-      "price": 1000,
-      "offerprice": 1200,
+      "price": 1199,
+      "offerprice": 1499,
       "features": ["Removes Bikini Area Hair", "Provides Smooth, Clean Finish", "Reduces Hair Regrowth"],
       "href" : "/"
     },
@@ -48,8 +48,8 @@
       "id": "WaxingRica6",
       "image": "/Services/Service Card/Waxing/Stomach Wax.jpg",
       "name": "Stomach Wax",
-      "price": 500,
-      "offerprice": 1000,
+      "price": 649,
+      "offerprice": 999,
       "features": ["Removes Stomach Hair", "Provides Smooth Skin", "Reduces Hair Regrowth"],
       "href" : "/"
     },
@@ -57,8 +57,8 @@
       "id": "WaxingRica7",
       "image": "/Services/Service Card/Waxing/Full Body Wax.JPG",
       "name": "Full Body Wax",
-      "price": 2000,
-      "offerprice": 3000,
+      "price": 1899,
+      "offerprice": 2499,
       "features": ["Removes Hair from Entire Body", "Provides Smooth, Hair-Free Skin", "Reduces Overall Hair Regrowth"],
       "href" : "/"
     }

@@ -3,8 +3,8 @@
       "id": "Threading1",
       "image": "/Services/Service Card/Threading & Wax/Eyebrow Threading.JPG",
       "name": "Eyebrow Threading",
-      "price": 50,
-      "offerprice": 80,
+      "price": 89,
+      "offerprice": 99,
       "features": ["Shapes and Defines Eyebrows", "Removes Unwanted Hair", "Creates Clean, Precise Lines"],
       "href" : "/"
     },
@@ -12,8 +12,8 @@
       "id": "Threading2",
       "image": "/Services/Service Card/Threading & Wax/Upper Lips Threading.JPG",
       "name": "Upper Lips Threading",
-      "price": 50,
-      "offerprice": 80,
+      "price": 49,
+      "offerprice": 79,
       "features": ["Removes Upper Lip Hair", "Provides Smooth Finish", "Defines Lip Contour"],
       "href" : "/"
     },
@@ -21,8 +21,8 @@
       "id": "Threading3",
       "image": "/Services/Service Card/Threading & Wax/Chin Threading.JPG",
       "name": "Chin Threading",
-      "price": 50,
-      "offerprice": 80,
+      "price": 59,
+      "offerprice": 89,
       "features": ["Removes Chin Hair", "Provides Smooth, Clean Finish", "Defines Chin Contour"],
       "href" : "/"
     },
@@ -30,8 +30,8 @@
       "id": "Threading4",
       "image": "/Services/Service Card/Threading & Wax/Forehead Threading.JPG",
       "name": "Forehead Threading",
-      "price": 50,
-      "offerprice": 80,
+      "price": 89,
+      "offerprice": 99,
       "features": ["Removes Forehead Hair", "Creates Smooth Appearance", "Defines Forehead Shape"],
       "href" : "/"
     }

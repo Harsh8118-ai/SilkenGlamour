@@ -3,8 +3,8 @@
     "id": "Mani1",
     "image": "/Services/Service Card/Mani-Pedi/Regular Manicure.JPG",
     "name": "Regular Manicure",
-    "price": 500,
-    "offerprice": 600,
+    "price": 599,
+    "offerprice": 799,
     "features": ["Shapes and Smooths Nails", "Softens Hands and Cuticles", "Enhances Nail Appearance"],
     "href" : "/"
   },

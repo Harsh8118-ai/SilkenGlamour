@@ -3,8 +3,8 @@
       "id": "FaceWax1",
       "image": "/Services/Service Card/Threading & Wax/Upper Lips Brazilian Wax.JPG",
       "name": "Upper Lips Brazilian Wax",
-      "price": 80,
-      "offerprice": 100,
+      "price": 149,
+      "offerprice": 199,
       "features": ["Removes Hair Smoothly", "Reduces Hair Growth", "Provides Long-Lasting Results"],
       "href" : "/"
     },
@@ -12,8 +12,8 @@
       "id": "FaceWax2",
       "image": "/Services/Service Card/Threading & Wax/Chin Brazilian Wax.JPG",
       "name": "Chin Brazilian Wax",
-      "price": 80,
-      "offerprice": 150,
+      "price": 119,
+      "offerprice": 149,
       "features": ["Removes Hair Smoothly", "Reduces Regrowth", "Ensures Smooth Skin"],
       "href" : "/"
     },
@@ -21,8 +21,8 @@
       "id": "FaceWax3",
       "image": "/Services/Service Card/Threading & Wax/Side Locks Brazilian Wax.JPG",
       "name": "Side Locks Brazilian Wax",
-      "price": 150,
-      "offerprice": 200,
+      "price": 169,
+      "offerprice": 199,
       "features": ["Removes Side Hair Smoothly", "Reduces Hair Regrowth", "Provides Long-Lasting Smoothness"],
       "href" : "/"
     },
@@ -30,8 +30,8 @@
       "id": "FaceWax4",
       "image": "/Services/Service Card/Threading & Wax/Forehead Brazilian Wax.JPG",
       "name": "Forehead Brazilian Wax",
-      "price": 80,
-      "offerprice": 100,
+      "price": 129,
+      "offerprice": 149,
       "features": ["Removes Forehead Hair", "Provides Smooth, Hair-Free Skin", "Reduces Hair Regrowth"],
       "href" : "/"
     },
@@ -39,8 +39,8 @@
       "id": "FaceWax5",
       "image": "/Services/Service Card/Threading & Wax/Full Face Brazilian Wax.JPG",
       "name": "Full Face Brazilian Wax",
-      "price": 500,
-      "offerprice": 600,
+      "price": 499,
+      "offerprice": 599,
       "features": ["Removes Forehead Hair", "Reduces Regrowth", "Ensures Smooth Skin"],
       "href" : "/"
     },
@@ -48,8 +48,8 @@
       "id": "FaceWax6",
       "image": "/Services/Service Card/Threading & Wax/Bikini Brazilian Wax.JPG",
       "name": "Bikini Brazilian Wax",
-      "price": 1600,
-      "offerprice": 1800,
+      "price": 1499,
+      "offerprice": 1999,
       "features": ["Removes Hair Smoothly", "Reduces Ingrown Hairs", "Provides Long-Lasting Smoothness"],
       "href" : "/"
     }
