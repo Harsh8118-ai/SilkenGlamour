@@ -5,7 +5,7 @@ import { FaWhatsapp, } from "react-icons/fa";
 export default function Footer() {
 
     const phoneNumber = '9266037001'; 
-    const message = 'Hello! I would like to chat with you.'; 
+    const message = "Hi Silken Glamour! I'd like to know more about your Services. Can you help me?";
 
     const handleClick = () => {
         const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
