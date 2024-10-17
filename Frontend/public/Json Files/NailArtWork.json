@@ -1,11 +1,16 @@
-[{
+[
+  {
     "id": "ArtWork1",
     "image": "/Services/Service Card/Nail Art/Chrome.JPG",
     "name": "Chrome",
     "price": 500,
     "offerprice": 700,
-    "features": ["Shiny Metallic Finish", "Adds Sleek Modern Look", "Provides Reflective Shine"],
-    "href" : "/"
+    "features": [
+      "Shiny Metallic Finish",
+      "Adds Sleek Modern Look",
+      "Provides Reflective Shine"
+    ],
+    "href": "/"
   },
   {
     "id": "ArtWork2",
@@ -13,8 +18,12 @@
     "name": "3D Art",
     "price": 300,
     "offerprice": 400,
-    "features": ["Adds Texture and Depth", "Creates Eye-Catching Designs", "Enhances Nail Art with Dimension"],
-    "href" : "/"
+    "features": [
+      "Adds Texture and Depth",
+      "Creates Eye-Catching Designs",
+      "Enhances Nail Art with Dimension"
+    ],
+    "href": "/"
   },
   {
     "id": "ArtWork3",
@@ -22,8 +31,12 @@
     "name": "Marble Art",
     "price": 500,
     "offerprice": 700,
-    "features": ["Elegant Swirling Patterns", "Creates Unique Designs", "Adds Sophisticated Touch"],
-    "href" : "/"
+    "features": [
+      "Elegant Swirling Patterns",
+      "Creates Unique Designs",
+      "Adds Sophisticated Touch"
+    ],
+    "href": "/"
   },
   {
     "id": "ArtWork4",
@@ -31,7 +44,24 @@
     "name": "Spider Design",
     "price": 200,
     "offerprice": 300,
-    "features": ["Intricate Web Patterns", "Adds Bold, Unique Look", "Creates Eye-Catching Detail"],
-    "href" : "/"
+    "features": [
+      "Intricate Web Patterns",
+      "Adds Bold, Unique Look",
+      "Creates Eye-Catching Detail"
+    ],
+    "href": "/"
+  },
+  {
+    "id": "ArtWork5",
+    "image": "/Services/Service Card/Nail Art/Gel Polish.JPG",
+    "name": "Gel Polish",
+    "price": 749,
+    "offerprice": 300,
+    "features": [
+      "Delivers Long-Lasting Shine",
+    "Provides Chip-Resistant Wear",
+    "Ensures Even, Vibrant Color"
+    ],
+    "href": "/"
   }
 ]
