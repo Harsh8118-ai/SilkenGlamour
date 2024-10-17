@@ -1,40 +1,54 @@
 [
-    {
-      "id": "NailExtension1",
-      "image": "/Services/Service Card/Nail Art/Nail Extension Gel.JPG",
-      "name": "Nail Ext. Gel",
-      "price": 999,
-      "offerprice": 1250,
-      "features": ["Creates Natural-Looking Length", "Provides Strong, Durable Nails", "Offers Flexible and Long-Lasting Wear"],
-      "href" : "/"
-    },
-    {
-      "id": "NailExtension2",
-      "image": "/Services/Service Card/Nail Art/Nail Extension Acrylic.JPG",
-      "name": "Nail Ext. Acrylic",
-      "price": 1199,
-      "offerprice": 1599,
-      "features": ["Strong and Durable", "Provides Long-Lasting Length", "Creates a Natural-Looking Finish"],
-      "href" : "/"
-    },
-    {
-      "id": "NailExtension3",
-      "image": "/Services/Service Card/Nail Art/Soft Gel Tip Ext.JPG",
-      "name": "Soft Gel Tip Ext.",
-      "price": 999,
-      "offerprice": 1280,
-      "features": ["Flexible and Lightweight", "Creates Natural-Length Nails", "Provides Comfortable Wear"],
-      "href" : "/"
-    },
-    {
-      "id": "NailExtension4",
-      "image": "/Services/Service Card/Nail Art/Gel Polish.JPG",
-      "name": "Gel Polish",
-      "price": 500,
-      "offerprice": 700,
-      "features": ["Long-Lasting Shine", "Chip-Resistant Finish", "Provides Glossy, Vibrant Color"],
-      "href" : "/"
-    }
-    
-  ]
-  
+  {
+    "id": "NailExtension1",
+    "image": "/Services/Service Card/Nail Art/Nail Extension Gel.JPG",
+    "name": "Nail Ext. Gel",
+    "price": 999,
+    "offerprice": 1250,
+    "features": [
+      "Creates Natural-Looking Length",
+      "Provides Strong, Durable Nails",
+      "Offers Flexible and Long-Lasting Wear"
+    ],
+    "href": "/"
+  },
+  {
+    "id": "NailExtension2",
+    "image": "/Services/Service Card/Nail Art/Nail Extension Acrylic.JPG",
+    "name": "Nail Ext. Acrylic",
+    "price": 1199,
+    "offerprice": 1599,
+    "features": [
+      "Strong and Durable",
+      "Provides Long-Lasting Length",
+      "Creates a Natural-Looking Finish"
+    ],
+    "href": "/"
+  },
+  {
+    "id": "NailExtension3",
+    "image": "/Services/Service Card/Nail Art/Soft Gel Tip Ext.JPG",
+    "name": "Soft Gel Tip Ext.",
+    "price": 999,
+    "offerprice": 1280,
+    "features": [
+      "Flexible and Lightweight",
+      "Creates Natural-Length Nails",
+      "Provides Comfortable Wear"
+    ],
+    "href": "/"
+  },
+  {
+    "id": "NailExtension4",
+    "image": "/Services/Service Card/Nail Art/Acrylic Overlay.JPG",
+    "name": "Acrylic Overlay",
+    "price": 500,
+    "offerprice": 700,
+    "features": [
+     "Adds Strength to Natural Nails",
+    "Creates Smooth, Even Surface",
+    "Offers Long-Lasting Nail Enhancement"
+    ],
+    "href": "/"
+  }
+]

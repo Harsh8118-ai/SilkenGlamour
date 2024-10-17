@@ -1,93 +1,92 @@
 [
-    {
+  {
       "id": "Dtan1",
       "image": "/Services/Service Card/Bleach & D-Tan/DTan/Face + Neck O3 D-Tan.JPG",
       "name": "Face + Neck O3 D-Tan",
-      "price": 500,
-      "offerprice": 550,
+      "price": 749,
+      "offerprice": 849,
       "features": ["Reduces Tan Effectively", "Brightens Face and Neck", "Evens Skin Tone"],
-      "href" : "/"
-    },
-    {
+      "href": "/"
+  },
+  {
       "id": "Dtan2",
       "image": "/Services/Service Card/Bleach & D-Tan/DTan/Full Body O3 D-Tan.JPG",
       "name": "Full Body O3 D-Tan",
-      "price": 2000,
-      "offerprice": 3000,
+      "price": 2499,
+      "offerprice": 2999,
       "features": ["Reduces Overall Tan", "Brightens Full Body", "Evens Out Skin Tone"],
-      "href" : "/"
-    },
-    {
+      "href": "/"
+  },
+  {
       "id": "Dtan3",
       "image": "/Services/Service Card/Bleach & D-Tan/DTan/Full Arms O3 D-Tan.JPG",
       "name": "Full Arms O3 D-Tan",
-      "price": 500,
-      "offerprice": 700,
+      "price": 899,
+      "offerprice": 1049,
       "features": ["Reduces Arm Tan", "Brightens Skin Tone", "Evens Out Dark Spots"],
-      "href" : "/"
-    },
-    {
+      "href": "/"
+  },
+  {
       "id": "Dtan4",
       "image": "/Services/Service Card/Bleach & D-Tan/DTan/Full Legs O3 D-Tan.JPG",
       "name": "Full Legs O3 D-Tan",
-      "price": 900,
-      "offerprice": 1100,
+      "price": 949,
+      "offerprice": 1099,
       "features": ["Reduces Leg Tan", "Brightens Skin Tone", "Evens Out Dark Spots"],
-      "href" : "/"
-    },
-    {
+      "href": "/"
+  },
+  {
       "id": "Dtan5",
       "image": "/Services/Service Card/Bleach & D-Tan/DTan/Full Back O3 D-Tan.JPG",
       "name": "Full Back O3 D-Tan",
-      "price": 650,
-      "offerprice": 750,
+      "price": 999,
+      "offerprice": 1149,
       "features": ["Reduces Back Tan", "Brightens Skin Tone", "Evens Out Discoloration"],
-      "href" : "/"
-    },
-    {
-        "id": "Dtan6",
-        "image": "/Services/Service Card/Bleach & D-Tan/DTan/Face + Neck Raga D-Tan.JPG",
-        "name": "Face + Neck Raga D-Tan",
-        "price": 400,
-        "offerprice": 500,
-        "features": ["Reduces Tan Effectively", "Brightens Face and Neck", "Evens Skin Tone"],
-        "href" : "/"
-      },
-      {
-        "id": "Dtan7",
-        "image": "/Services/Service Card/Bleach & D-Tan/DTan/Full Body Raga D-Tan.JPG",
-        "name": "Full Body Raga D-Tan",
-        "price": 1500,
-        "offerprice": 2000,
-        "features": ["Reduces Overall Tan", "Brightens Full Body", "Evens Out Skin Tone"],
-        "href" : "/"
-      },
-      {
-        "id": "Dtan8",
-        "image": "/Services/Service Card/Bleach & D-Tan/DTan/Full Arms Raga D-Tan.JPG",
-        "name": "Full Arms Raga D-Tan",
-        "price": 450,
-        "offerprice": 650,
-        "features": ["Reduces Arm Tan", "Brightens Skin Tone", "Evens Out Dark Spots"],
-        "href" : "/"
-      },
-      {
-        "id": "Dtan9",
-        "image": "/Services/Service Card/Bleach & D-Tan/DTan/Full Legs Raga D-Tan.JPG",
-        "name": "Full Legs Raga D-Tan",
-        "price": 800,
-        "offerprice": 1000,
-        "features": ["Reduces Leg Tan", "Brightens Skin Tone", "Evens Out Dark Spots"],
-        "href" : "/"
-      },
-      {
-        "id": "Dtan10",
-        "image": "/Services/Service Card/Bleach & D-Tan/DTan/Full Back Raga D-Tan.JPG",
-        "name": "Full Back Raga D-Tan",
-        "price": 500,
-        "offerprice": 600,
-        "features": ["Reduces Back Tan", "Brightens Skin Tone", "Evens Out Discoloration"],
-        "href" : "/"
-      }
-  ]
-  
+      "href": "/"
+  },
+  {
+      "id": "Dtan6",
+      "image": "/Services/Service Card/Bleach & D-Tan/DTan/Face + Neck Raga D-Tan.JPG",
+      "name": "Face + Neck Raga D-Tan",
+      "price": 599,
+      "offerprice": 699,
+      "features": ["Reduces Tan Effectively", "Brightens Face and Neck", "Evens Skin Tone"],
+      "href": "/"
+  },
+  {
+      "id": "Dtan7",
+      "image": "/Services/Service Card/Bleach & D-Tan/DTan/Full Body Raga D-Tan.JPG",
+      "name": "Full Body Raga D-Tan",
+      "price": 2299,
+      "offerprice": 2699,
+      "features": ["Reduces Overall Tan", "Brightens Full Body", "Evens Out Skin Tone"],
+      "href": "/"
+  },
+  {
+      "id": "Dtan8",
+      "image": "/Services/Service Card/Bleach & D-Tan/DTan/Full Arms Raga D-Tan.JPG",
+      "name": "Full Arms Raga D-Tan",
+      "price": 749,
+      "offerprice": 879,
+      "features": ["Reduces Arm Tan", "Brightens Skin Tone", "Evens Out Dark Spots"],
+      "href": "/"
+  },
+  {
+      "id": "Dtan9",
+      "image": "/Services/Service Card/Bleach & D-Tan/DTan/Full Legs Raga D-Tan.JPG",
+      "name": "Full Legs Raga D-Tan",
+      "price": 929,
+      "offerprice": 1129,
+      "features": ["Reduces Leg Tan", "Brightens Skin Tone", "Evens Out Dark Spots"],
+      "href": "/"
+  },
+  {
+      "id": "Dtan10",
+      "image": "/Services/Service Card/Bleach & D-Tan/DTan/Full Back Raga D-Tan.JPG",
+      "name": "Full Back Raga D-Tan",
+      "price": 989,
+      "offerprice": 1099,
+      "features": ["Reduces Back Tan", "Brightens Skin Tone", "Evens Out Discoloration"],
+      "href": "/"
+  }
+]

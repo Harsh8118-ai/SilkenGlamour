@@ -65,20 +65,20 @@ const CardNailArt = () => {
                 <button
                   className={`px-4 py-1.5 ${IsSelect ? "bg-BGColorYellow" : "bg-gray-400"} ${IsSelect ? "border-2" : "border-none"} border-black text-white rounded-full z-50`}
                   onClick={() => {
-                    setType('NailExtension'); toggleActive();
+                    setType('NailArtWork'); toggleActive();
                     toggleSelect1();
                   }}
                 >
-                  Nail Extension
+                  Nail Art
                 </button>
                 <button
                   className={`px-4 py-1.5 ${IsSelect2 ? "bg-BGColorYellow" : "bg-gray-400"} ${IsSelect2 ? "border-2" : "border-none"} border-black text-white rounded-full`}
                   onClick={() => {
-                    setType('NailArtWork'); toggleActive();
+                    setType('NailExtension'); toggleActive();
                     toggleSelect2();
                   }}
                 >
-                  Nail Art
+                  Nail Extension
                 </button>
               </div>
             </div>
