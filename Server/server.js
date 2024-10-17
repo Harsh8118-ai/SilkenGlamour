@@ -12,7 +12,8 @@ const corsOptions = {
   origin: [
     "https://silken-glamour.vercel.app",
     "https://silkenglamour.netlify.app",
-    "http://localhost:5173"
+    "http://localhost:5173",
+    "https://silkenglamour.com"
   ], 
   methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
   credentials: true,
