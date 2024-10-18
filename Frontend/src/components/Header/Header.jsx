@@ -202,7 +202,7 @@ export default function Header() {
               />
             </Link>
           </div>
-          <span className={`text-gray-300 text-center text-lg font-extrabold my-1.5`} id="logo">
+          <span className={`text-MainBGColorYellow text-center text-lg font-extrabold my-1.5`} id="logo">
             Silken Glamour
           </span>
 
