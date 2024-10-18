@@ -48,8 +48,8 @@
       "id": "WaxingNormal6",
       "image": "/Services/Service Card/Waxing/Stomach Wax.jpg",
       "name": "Stomach Wax (Normal)",
-      "price": 400,
-      "offerprice": 600,
+      "price": 649,
+      "offerprice": 799,
       "features": ["Removes Stomach Hair", "Provides Smooth Skin", "Reduces Hair Regrowth"],
       "href" : "/"
     },

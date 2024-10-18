@@ -154,18 +154,5 @@
       "Promotes Scalp Health"
     ],
     "href": "/"
-  },
-  {
-    "id": "HairColour13",
-    "image": "/Services/Service Card/Hair Care/Scalp Treatment.JPG",
-    "name": "Scalp Treatment",
-    "price": 999,
-    "offerprice": 1299,
-    "features": [
-      "Soothes and Hydrates Scalp",
-    "Reduces Dandruff and Flakiness",
-    "Promotes Healthier Hair Growth"
-    ],
-    "href": "/"
   }
 ]

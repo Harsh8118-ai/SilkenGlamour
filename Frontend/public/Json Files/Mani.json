@@ -12,8 +12,8 @@
       "id": "Mani2",
       "image": "/Services/Service Card/Mani-Pedi/VLCC Manicure.JPG",
       "name": "VLCC  Manicure",
-      "price": 400,
-      "offerprice": 500,
+      "price": 749,
+      "offerprice": 999,
       "features": ["Hydrates and Softens Hands", "Nourishes Cuticles", "Enhances Nail Appearance"],
       "href" : "/"
     },
@@ -21,8 +21,8 @@
       "id": "Mani3",
       "image": "/Services/Service Card/Mani-Pedi/Aroma Manicure.JPG",
       "name": "Aroma Manicure",
-      "price": 500,
-      "offerprice": 700,
+      "price": 849,
+      "offerprice": 1199,
       "features": ["Relaxing therapy", "Softens and Nourishes Hands", "Enhances Nail Health"],
       "href" : "/"
     },
@@ -30,8 +30,8 @@
       "id": "Mani4",
       "image": "/Services/Service Card/Mani-Pedi/O3 Manicure.JPG",
       "name": "O3  Manicure",
-      "price": 700,
-      "offerprice": 900,
+      "price": 949,
+      "offerprice": 1499,
       "features": ["Deep Cleanses and Exfoliates", "Nourishes and Hydrates", "Revitalizes Nail Health"],
       "href" : "/"
     }

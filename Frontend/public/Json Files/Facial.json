@@ -3,8 +3,8 @@
       "id": "Facial1",
       "image": "/Services/Service Card/Facial & Cleanup/Sara Gold Facial.JPG",
       "name": "Sara Gold Facial",
-      "price": 1200,
-      "offerprice": 1500,
+      "price": 1899,
+      "offerprice": 2499,
       "features": ["Boosts Skin Elasticity", "Enhances Glow and Shine", "Rejuvenates Tired Skin"],
       "href" : "/"
     },
@@ -12,8 +12,8 @@
       "id": "Facial2",
       "image": "/Services/Service Card/Facial & Cleanup/Cheryl's Facial.JPG",
       "name": "Cheryl's Facial",
-      "price": 1400,
-      "offerprice": 1600,
+      "price": 2199,
+      "offerprice": 2699,
       "features": ["Brightens Dull Skin", "Deeply Moisturizes", "Reduces Blemishes and Spots"],
       "href" : "/"
     },
@@ -21,8 +21,8 @@
       "id": "Facial3",
       "image": "/Services/Service Card/Facial & Cleanup/O3 Facial.JPG",
       "name": "O3 Facial",
-      "price": 2000,
-      "offerprice": 3500,
+      "price": 2599,
+      "offerprice": 3499,
       "features": [ "Deeply Cleanses Skin", "Boosts Skin Radiance", "Reduces Fine Lines"],
       "href" : "/"
     },
@@ -30,8 +30,8 @@
       "id": "Facial4",
       "image": "/Services/Service Card/Facial & Cleanup/Casmara Facial.JPG",
       "name": "Casmara Facial",
-      "price": 3000,
-      "offerprice": 4500,
+      "price": 3199,
+      "offerprice": 3999,
       "features": ["Nourishes and Rejuvenates", "Balances Skin Hydration", "Promotes Firmness and Glow"],
       "href" : "/"
     },
@@ -39,8 +39,8 @@
       "id": "Facial5",
       "image": "/Services/Service Card/Facial & Cleanup/Bridal Glow Facial.JPG",
       "name": "Bridal Glow Facial",
-      "price": 2500,
-      "offerprice": 3000,
+      "price": 3399,
+      "offerprice": 3999,
       "features": [ "Enhances Natural Radiance", "Evens Skin Tone", "Boosts Long-Lasting Glow"],
       "href" : "/"
     }

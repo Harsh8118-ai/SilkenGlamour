@@ -92,7 +92,7 @@
   },
   {
     "id": "HairColour8",
-    "image": "/Services/Service Card/Hair Care/Global highlight.JPG",
+    "image": "/Services/Service Card/Hair Care/Ombre.JPG",
     "name": "Ombre",
     "price": 6699,
     "offerprice": 9499,
@@ -105,7 +105,7 @@
   },
   {
     "id": "HairColour9",
-    "image": "/Services/Service Card/Hair Care/Global highlight.JPG",
+    "image": "/Services/Service Card/Hair Care/Global Lowlight.JPG",
     "name": "Global Lowlight",
     "price": 5299,
     "offerprice": 7499,

@@ -125,7 +125,7 @@ export default function Service() {
       </div>
     </div>
     </CartProvider>
-    <ComboService/>
+    {/* <ComboService/> */}
 
     </>
   );

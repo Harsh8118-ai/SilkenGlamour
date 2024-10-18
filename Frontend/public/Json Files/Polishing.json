@@ -3,8 +3,8 @@
       "id": "Polishing1",
       "image": "/Services/Service Card/Polish & Massage/Polish/Full Body Polishing.JPG",
       "name": "Full Body Polishing",
-      "price": 2000,
-      "offerprice": 3000,
+      "price": 1999,
+      "offerprice": 2499,
       "features": ["Exfoliates and Smooths Skin", "Brightens Overall Complexion", "Removes Dead Skin Cells"],
       "href" : "/"
     },
@@ -12,8 +12,8 @@
       "id": "Polishing2",
       "image": "/Services/Service Card/Polish & Massage/Polish/Full Arms + Legs Polishing.JPG",
       "name": "Full Arms + Legs Polishing",
-      "price": 1300,
-      "offerprice": 1600,
+      "price": 1399,
+      "offerprice": 1699,
       "features": ["Exfoliates and Smooths Skin", "Brightens Arms and Legs", "Removes Dead Skin Cells"],
       "href" : "/"
     },
@@ -21,8 +21,8 @@
       "id": "Polishing3",
       "image": "/Services/Service Card/Polish & Massage/Polish/Full Back + Arms Polishing.JPG",
       "name": "Full Back + Arms Polishing",
-      "price": 1000,
-      "offerprice": 1200,
+      "price": 1599,
+      "offerprice": 1999,
       "features": ["Exfoliates and Smooths Skin", "Brightens Back and Arms", "Removes Dead Skin Cells"],
       "href" : "/"
     }
