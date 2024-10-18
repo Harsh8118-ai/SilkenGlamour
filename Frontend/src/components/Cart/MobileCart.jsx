@@ -9,6 +9,9 @@ const MobileCart = ({ closeCart }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const { user } = useAuth(); // Access user data including address from AuthContext
   const { isLoggedIn } = useAuth();
+  
+  const visitingCharge = 100; // Fixed visiting charge of ₹100
+  const totalPriceWithVisitingCharge = totalPrice + visitingCharge; // Include visiting charge
 
   const generateOrderMessage = () => {
     const cartDetails = cartItems.map(item => {
@@ -17,9 +20,9 @@ const MobileCart = ({ closeCart }) => {
     }).join('\n');
 
     // Include the user's address in the WhatsApp message
-    const userAddress = `\nStreet: ${user.street} ${user.apartmentNumber ? '\nApartment:  ' + user.apartmentNumber : ''}\nTown ${user.town}\n Pincode: ${user.pincode}`;
+    const userAddress = `\nStreet: ${user.street} ${user.apartmentNumber ? '\nApartment: ' + user.apartmentNumber : ''}\nTown: ${user.town}\nPincode: ${user.pincode}`;
     
-    return `${cartDetails}\n\n*Total: ₹${totalPrice}*\n\n*Address* :- ${userAddress}`;
+    return `${cartDetails}\n\nVisiting Charge: ₹${visitingCharge}\n\n*Total: ₹${totalPriceWithVisitingCharge}*\n\n*Address* :- ${userAddress}`;
   };
 
   const handleOrderNow = () => {
@@ -44,7 +47,7 @@ const MobileCart = ({ closeCart }) => {
 
   return (
     <>
-    {isLoggedIn ?
+    {isLoggedIn ? (
     <div className="fixed inset-0 z-50 bg-MainBGColorYellow p-4 w-full max-w-xs right-0 shadow-lg flex flex-col">
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-lg font-bold">Your Cart</h2>
@@ -98,6 +101,8 @@ const MobileCart = ({ closeCart }) => {
 
       {/* Fixed Order Now Button */}
       <div className="mt-4">
+        <p className="text-left text-gray-600">Visiting Charge: ₹{visitingCharge}</p>
+        <p className="text-left font-bold">Total: ₹{totalPriceWithVisitingCharge}</p>
         <button
           onClick={handleOrderNow}
           className={`font-bold py-2 px-4 w-full rounded mb-12 ${cartItems.length === 0 ? 'bg-gray-300 cursor-not-allowed' : 'bg-green-500 hover:bg-green-600 text-white'}`}
@@ -118,10 +123,8 @@ const MobileCart = ({ closeCart }) => {
         />
       )}
     </div>
-     : 
-     null
-      }
-      </>
+    ) : null }
+    </>
   );
 };
 

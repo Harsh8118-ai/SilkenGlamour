@@ -18,6 +18,9 @@ const WebCart = ({ closeCart }) => {
     } 
   }, [isLoggedIn, navigate]);
 
+  const visitingCharge = 100; // Fixed visiting charge of ₹100
+  const totalPriceWithVisitingCharge = totalPrice + visitingCharge; // Add visiting charge to total price
+
   const generateOrderMessage = () => {
     const cartDetails = cartItems.map(item => {
       const itemTotal = item.quantity * item.price;
@@ -27,7 +30,7 @@ const WebCart = ({ closeCart }) => {
     // Include the user's address in the WhatsApp message
     const userAddress = `\nStreet: ${user.street} ${user.apartmentNumber ? '\nApartment: ' + user.apartmentNumber : ''}\nTown: ${user.town}\nPincode: ${user.pincode}`;
     
-    return `${cartDetails}\n\n*Total: ₹${totalPrice}*\n\n*Address* :- ${userAddress}`;
+    return `${cartDetails}\n\nVisiting Charge: ₹${visitingCharge}\n\n*Total: ₹${totalPriceWithVisitingCharge}*\n\n*Address* :- ${userAddress}`;
   };
 
   const handleOrderNow = () => {
@@ -86,7 +89,10 @@ const WebCart = ({ closeCart }) => {
               {/* Fixed Order Now Button at the bottom of the modal */}
               <div className="">
                 <div className="border-t pb-5">
-                  <h3 className="text-lg font-bold text-center">Total: ₹{totalPrice}</h3>
+                  {/* Display Visiting Charge */}
+                  <p className="text-left text-gray-600">Visiting Charge: ₹{visitingCharge}</p>
+                  {/* Display Total Price including Visiting Charge */}
+                  <h3 className="text-lg font-bold text-center">Total: ₹{totalPriceWithVisitingCharge}</h3>
                 </div>
                 <button
                   onClick={handleOrderNow}

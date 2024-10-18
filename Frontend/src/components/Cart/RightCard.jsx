@@ -4,12 +4,14 @@ import { useAuth } from '../../Store/auth'; // Import useAuth to fetch user data
 import Modal from './Modal';
 import { Link, useNavigate } from 'react-router-dom';
 
-
 const RightCart = () => {
   const { cartItems, removeFromCart, increaseQuantity, decreaseQuantity, totalPrice } = useContext(CartContext);
   const { user } = useAuth(); // Access user data including address from AuthContext
   const [isModalOpen, setIsModalOpen] = useState(false);
   const { isLoggedIn } = useAuth();
+  
+  const visitingCharge = 100; // Fixed visiting charge of ₹100
+  const totalPriceWithVisitingCharge = totalPrice + visitingCharge; // Add visiting charge to the total price
 
   const generateOrderMessage = () => {
     const cartDetails = cartItems.map(item => {
@@ -18,9 +20,9 @@ const RightCart = () => {
     }).join('\n');
 
     // Include the user's address in the WhatsApp message
-    const userAddress = `\nStreet: ${user.street} ${user.apartmentNumber ? '\nApartment:  ' + user.apartmentNumber : ''}\nTown ${user.town}\n Pincode: ${user.pincode}`;
+    const userAddress = `\nStreet: ${user.street} ${user.apartmentNumber ? '\nApartment: ' + user.apartmentNumber : ''}\nTown: ${user.town}\nPincode: ${user.pincode}`;
     
-    return `${cartDetails}\n\n*Total: ₹${totalPrice}*\n\n*Address* :- ${userAddress}`;
+    return `${cartDetails}\n\nVisiting Charge: ₹${visitingCharge}\n\n*Total: ₹${totalPriceWithVisitingCharge}*\n\n*Address* :- ${userAddress}`;
   };
 
   const handleOrderNow = () => {
@@ -36,7 +38,7 @@ const RightCart = () => {
 
   return (
     <>
-    {isLoggedIn ?
+    {isLoggedIn ? (
     <div className='hidden sm:flex flex-col sticky top-16 h-screen bg-gray-100 p-4 max-w-sm right-0'>
       <div className="w-full max-w-sm p-6 bg-MainBGColorYellow shadow-xl rounded-lg flex flex-col h-full">
         <h2 className="text-lg font-bold text-center mb-4">My Cart</h2>
@@ -69,11 +71,14 @@ const RightCart = () => {
         </div>
         <div className="mt-4">
           <div className="border-t pt-4">
-            <h3 className="text-lg font-bold text-center">Total: ₹{totalPrice}</h3>
+            {/* Display Visiting Charge */}
+            <p className="text-left text-gray-600">Visiting Charge: ₹{visitingCharge}</p>
+            {/* Display Total Price including Visiting Charge */}
+            <h3 className="text-lg font-bold text-center">Total: ₹{totalPriceWithVisitingCharge}</h3>
           </div>
           <button
             onClick={handleOrderNow}
-            className={`mt-4 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 w-full rounded mb-16   ${
+            className={`mt-4 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 w-full rounded mb-16 ${
               cartItems.length === 0 ? 'cursor-not-allowed opacity-50' : ''
             }`}
             disabled={cartItems.length === 0}
@@ -94,19 +99,18 @@ const RightCart = () => {
         />
       )}
     </div>
-    : 
+    ) : (
     <div className='hidden sm:flex flex-col justify-center items-center sticky top-16 h-screen bg-gray-100 p-4 max-w-sm right-0'>
       <div className="w-full max-w-sm p-6 bg-MainBGColorYellow shadow-xl rounded-lg flex flex-col h-full">
-        
-    <div className=' my-auto text-center'>
-    <p className='text-black text-xl text-center font-bold'> Please Login First </p>
-    <Link to="/contact/login">
-    <button className='bg-BGColorYellow mt-3 text-lg px-2 rounded-lg mx-auto'>Login Now</button>
-    </Link>
+        <div className='my-auto text-center'>
+          <p className='text-black text-xl text-center font-bold'>Please Login First</p>
+          <Link to="/contact/login">
+            <button className='bg-BGColorYellow mt-3 text-lg px-2 rounded-lg mx-auto'>Login Now</button>
+          </Link>
+        </div>
+      </div>
     </div>
-    </div>
-    </div>
-     }
+    )}
     </>
   );
 };
