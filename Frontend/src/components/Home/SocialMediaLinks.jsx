@@ -22,7 +22,7 @@ const SocialMediaLinks = () => {
   return (
     <>
       {/* .......... MOBILE VIEW .......... */}
-      <h2 className="text-center text-2xl font-bold text-black mt-10 sm:hidden">
+      <h2 className="text-center text-3xl font-bold text-black mt-10 sm:hidden">
         Connect With Us
       </h2>
 
