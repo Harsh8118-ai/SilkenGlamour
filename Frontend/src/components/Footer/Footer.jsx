@@ -15,7 +15,7 @@ export default function Footer() {
     };
 
     useEffect(() => {
-        AOS.init({ duration: 1000 });
+        AOS.init({ duration: 1000, once: true, });
     }, []);
 
     const iconClasses =
@@ -111,7 +111,7 @@ export default function Footer() {
                             href="https://wa.me/yournumber"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="bg-BGColorYellow sm:bg-MainBGColorYellow rounded-full p-2 sm:p-3 shadow-lg hover:bg-[#635a4f] hover:text-white"
+                            className="bg-BGColorYellow sm:bg-MainBGColorYellow rounded-full p-2 sm:p-3 shadow-lg hover:bg-[#635a4f] hover:text-green-500 animate-bounce"
                             data-aos="fade-up"
                         >
                             <FaWhatsapp className={`${iconClasses} w-6 h-6 sm:w-8 sm:h-8`} />

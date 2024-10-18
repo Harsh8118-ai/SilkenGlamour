@@ -45,7 +45,7 @@ export default function HomeServiceMobile() {
       <div className="flex items-center mt-2 mb-2">
         {/* Left Scroll Button */}
         <button
-          className="bg-gray-500 text-white rounded-full p-2 hover:bg-gray-700 transition duration-300 ease-in-out mb-4"
+          className="bg-gray-500 text-white rounded-full p-4 hover:bg-gray-700 transition duration-300 ease-in-out mb-4"
           onClick={() => handleScroll('left')}
         >
           &lt;
@@ -57,7 +57,7 @@ export default function HomeServiceMobile() {
           {getVisibleServices(3).map((service, index) => (
             <Link to={service.link} key={service.name}>
               <div
-                className={`flex flex-col items-center justify-center p-2 transform-gpu transition-all duration-500 ease-out ${
+                className={`flex flex-col items-center justify-center p-1 transform-gpu transition-all duration-500 ease-out ${
                   index === 1 ? 'scale-110 opacity-100 hover:scale-[1.15]' : 'scale-100 opacity-50'
                 }`}
                 style={{
@@ -67,9 +67,9 @@ export default function HomeServiceMobile() {
                 <img
                   src={service.image}
                   alt={service.name}
-                  className="w-20x h-20 lg:w-40 lg:h-40 rounded-xl object-cover transition-all duration-500 ease-out hover:shadow-md"
+                  className="w-24 h-22 lg:w-40 lg:h-40 rounded-xl object-cover transition-all duration-500 ease-out hover:shadow-md"
                 />
-                <p className="pt-1.5 font-semibold text-gray-900 text-center text-[11px]">{service.name}</p>
+                <p className="pt-1.5 font-semibold text-gray-900 text-center text-[8px]">{service.name}</p>
               </div>
             </Link>
           ))}
@@ -77,7 +77,7 @@ export default function HomeServiceMobile() {
 
         {/* Right Scroll Button */}
         <button
-          className="bg-gray-500 text-white rounded-full p-2 hover:bg-gray-700 transition duration-300 ease-in-out mb-4"
+          className="bg-gray-500 text-white rounded-full p-4 hover:bg-gray-700 transition duration-300 ease-in-out mb-4"
           onClick={() => handleScroll('right')}
         >
           &gt;

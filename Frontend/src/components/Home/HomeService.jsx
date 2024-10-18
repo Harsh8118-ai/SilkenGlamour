@@ -45,7 +45,7 @@ export default function HomeService() {
       <div className="flex items-center mt-5 shadow-sm shadow-BGColorYellow mb-5 px-10 rounded-xl">
         {/* Left Scroll Button */}
         <button
-          className=" text-white transition duration-300 ease-in-out"
+          className=" text-white transition duration-100 ease-in-out"
           onClick={() => handleScroll('left')}
         >
           <div class="w-0 h-0 
@@ -81,7 +81,7 @@ export default function HomeService() {
 
         {/* Right Scroll Button */}
         <button
-          className="transition duration-300 ease-in-out"
+          className="transition duration-100 ease-in-out"
           onClick={() => handleScroll('right')}
         >
           <div class="w-0 h-0 

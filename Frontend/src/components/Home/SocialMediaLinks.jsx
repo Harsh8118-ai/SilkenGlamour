@@ -34,7 +34,7 @@ const SocialMediaLinks = () => {
           data-aos-delay="100"
           className="bg-MainBGColorYellow rounded-full p-2 shadow-lg hover:bg-[#635a4f] hover:text-white"
         >
-          <a href="https://www.instagram.com/yourhandle" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/silkenglamour" target="_blank" rel="noopener noreferrer">
             <FaInstagram className={`${iconClasses} w-6 h-6 sm:w-8 sm:h-8`} />
           </a>
         </div>
@@ -45,7 +45,7 @@ const SocialMediaLinks = () => {
           data-aos-delay="200"
           className="bg-MainBGColorYellow rounded-full p-2 shadow-lg hover:bg-[#635a4f] hover:text-white"
         >
-          <a href="https://www.facebook.com/yourhandle" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.facebook.com/profile.php?id=61565477906413&mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer">
             <FaFacebookF className={`${iconClasses} w-6 h-6 sm:w-8 sm:h-8`} />
           </a>
         </div>
@@ -56,7 +56,7 @@ const SocialMediaLinks = () => {
           data-aos-delay="300"
           className="bg-MainBGColorYellow rounded-full p-2 shadow-lg hover:bg-[#635a4f] hover:text-white"
         >
-          <a href="https://www.linkedin.com/in/yourhandle" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/company/silkenglamour/" target="_blank" rel="noopener noreferrer">
             <FaLinkedinIn className={`${iconClasses} w-6 h-6 sm:w-8 sm:h-8`} />
           </a>
         </div>
@@ -81,7 +81,7 @@ const SocialMediaLinks = () => {
         <div className="flex flex-row sm:flex-col space-x-4 sm:space-x-0 sm:space-y-4">
           {/* Instagram */}
           <a
-            href="https://www.instagram.com/yourhandle"
+            href="https://www.instagram.com/silkenglamour"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-MainBGColorYellow rounded-full p-2 sm:p-3 shadow-lg hover:bg-[#635a4f] hover:text-white"
@@ -94,7 +94,7 @@ const SocialMediaLinks = () => {
 
           {/* Facebook */}
           <a
-            href="https://www.facebook.com/yourhandle"
+            href="https://www.facebook.com/profile.php?id=61565477906413&mibextid=LQQJ4d"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-MainBGColorYellow rounded-full p-2 sm:p-3 shadow-lg hover:bg-[#635a4f] hover:text-white"
@@ -119,7 +119,7 @@ const SocialMediaLinks = () => {
 
           {/* LinkedIn */}
           <a
-            href="https://www.linkedin.com/in/yourhandle"
+            href="https://www.linkedin.com/company/silkenglamour/"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-MainBGColorYellow rounded-full p-2 sm:p-3 shadow-lg hover:bg-[#635a4f] hover:text-white"

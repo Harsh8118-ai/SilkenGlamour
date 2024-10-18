@@ -256,7 +256,7 @@ export default function Home() {
 
         {/* REVIEWS SECTION */}
         <div>
-          <h1 className='text-center font-bold text-2xl text-MainBGColorYellow'>What People are Saying</h1>
+          <h1 className='sm:hidden text-center font-bold text-2xl text-MainBGColorYellow'>What People are Saying</h1>
         </div>
 
       

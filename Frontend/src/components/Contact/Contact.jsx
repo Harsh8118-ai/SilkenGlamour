@@ -26,8 +26,8 @@ const Contact = () => {
 
     const { user } = useAuth();
 
-     // Access environment variable using import.meta.env
-     const BASE_URL = import.meta.env.VITE_BACKEND_URL;
+    // Access environment variable using import.meta.env
+    const BASE_URL = import.meta.env.VITE_BACKEND_URL;
 
     // Update form data when user is available
     useEffect(() => {
@@ -50,7 +50,7 @@ const Contact = () => {
 
         try {
             const response = await fetch(`${BASE_URL}/form/contact`, {
-            // const response = await fetch("http://localhost:5000/api/form/contact", {
+                // const response = await fetch("http://localhost:5000/api/form/contact", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json", // Indicating that JSON is being sent
@@ -62,14 +62,14 @@ const Contact = () => {
                 setData(defaultContactFormData); // Reset the form data after submission
                 const responseData = await response.json(); // Parsing the response data
                 console.log(responseData);
-                
-                    toast("Message Sent Successfully");
-                
+
+                toast("Message Sent Successfully");
+
             }
         } catch (error) {
-            
-                toast("Message Not Sent");
-            
+
+            toast("Message Not Sent");
+
             console.error("Error:", error);
         }
     };
@@ -179,9 +179,12 @@ const Contact = () => {
 
                 {/* Social Media Section */}
                 <div className="flex justify-center space-x-8 text-3xl text-[#7A6752] mt-12" data-aos="fade-up" data-aos-delay="400">
-                    <FaInstagram className="hover:text-[#CBB59F] transition transform hover:scale-125 duration-500 ease-in-out" />
-                    <FaFacebookF className="hover:text-[#CBB59F] transition transform hover:scale-125 duration-500 ease-in-out" />
-                    <FaLinkedinIn className="hover:text-[#CBB59F] transition transform hover:scale-125 duration-500 ease-in-out" />
+                    <a href="https://www.instagram.com/silkenglamour" target="_blank"
+                        rel="noopener noreferrer"><FaInstagram className="hover:text-[#CBB59F] transition transform hover:scale-125 duration-500 ease-in-out" /></a>
+                    <a href="https://www.facebook.com/profile.php?id=61565477906413&mibextid=LQQJ4d" target="_blank"
+                        rel="noopener noreferrer"><FaFacebookF className="hover:text-[#CBB59F] transition transform hover:scale-125 duration-500 ease-in-out" /></a>
+                    <a href="https://www.linkedin.com/company/silkenglamour/" target="_blank"
+                        rel="noopener noreferrer"><FaLinkedinIn className="hover:text-[#CBB59F] transition transform hover:scale-125 duration-500 ease-in-out" /></a>
                 </div>
 
                 {/* .............. BOTTOM CONTACT SECTION .............. */}
