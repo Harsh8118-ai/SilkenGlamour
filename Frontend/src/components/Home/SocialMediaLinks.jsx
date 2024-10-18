@@ -23,7 +23,7 @@ const SocialMediaLinks = () => {
     <>
       {/* .......... MOBILE VIEW .......... */}
       <h2 className="text-center text-2xl font-bold text-black mt-10 sm:hidden">
-        Connect with Us
+        Connect With Us
       </h2>
 
       <div className="sm:hidden flex flex-row sm:flex-col justify-center space-x-8 sm:space-x-0 sm:space-y-4 pb-6 py-6 bg-gradient-to-t from-[#796855] via-[#baa48a] to-[#796855] ">
