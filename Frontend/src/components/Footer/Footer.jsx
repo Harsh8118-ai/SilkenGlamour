@@ -1,16 +1,25 @@
-import React from 'react'
+import { React, useEffect } from 'react'
 import { Link, NavLink } from 'react-router-dom';
 import { FaWhatsapp, } from "react-icons/fa";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Footer() {
 
-    const phoneNumber = '9266037001'; 
+    const phoneNumber = '9266037001';
     const message = "Hi Silken Glamour! I'd like to know more about your Services. Can you help me?";
 
     const handleClick = () => {
         const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
-        window.open(url, '_blank'); 
+        window.open(url, '_blank');
     };
+
+    useEffect(() => {
+        AOS.init({ duration: 1000 });
+    }, []);
+
+    const iconClasses =
+        'transition duration-300 transform hover:scale-125 w-10 h-10';
 
     return (
         <>
@@ -78,26 +87,44 @@ export default function Footer() {
 
             <div className=''>
                 {/* Mobile version of WhatsApp Icon */}
-                <div className="sm:hidden fixed z-50 bottom-14 right-1 animate-bounce">
+                {/* <div className="sm:hidden fixed z-50 bottom-14 right-1 animate-bounce">
                     <a href="https://wa.me/9266037001" onClick={handleClick} target="_blank" rel="noopener noreferrer">
                         <FaWhatsapp className="text-[#25D366] text-5xl bg-gray-300 p-2 rounded-full transition hover:scale-110 duration-300" />
                     </a>
-                </div>
+                </div> */}
 
                 {/* Desktop version of WhatsApp Icon */}
-                <div className="hidden sm:block fixed z-50 top-3/4 right-0">
+                {/* <div className="hidden sm:block fixed z-50 top-3/4 right-0">
                     <div className="fixed bottom-10 right-5 sm:animate-pulse">
                         <a href="https://wa.me/9266037001" onClick={handleClick} target="_blank" rel="noopener noreferrer">
                             <FaWhatsapp className="text-[#25D366] text-5xl bg-gray-300 p-2 rounded-full shadow-lg transition hover:scale-110 duration-300" />
                         </a>
                     </div>
+                </div> */}
+
+                <div className="fixed bottom-14 sm:bottom-20 right-0 m-4 z-[999]">
+
+                    <div className="flex flex-row sm:flex-col space-x-4 sm:space-x-0 sm:space-y-4">
+
+                        {/* WhatsApp */}
+                        <a
+                            href="https://wa.me/yournumber"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-BGColorYellow sm:bg-MainBGColorYellow rounded-full p-2 sm:p-3 shadow-lg hover:bg-[#635a4f] hover:text-white"
+                            data-aos="fade-up"
+                        >
+                            <FaWhatsapp className={`${iconClasses} w-6 h-6 sm:w-8 sm:h-8`} />
+                        </a>
+                    </div>
                 </div>
+
             </div>
 
             {/*........................................ ICON BAR ........................................*/}
 
             {/* Removed the empty div that caused extra space */}
-            
+
             <div className="flex justify-center">
                 <div className="sm:hidden shadow fixed py-1 px-5 z-50 bottom-1.5 w-fit bg-gradient-to-r from-[#2E2117] via-[#796855] to-[#2E2117] rounded-full">
                     <ul className="flex justify-center gap-10 pt-1 bg-transparent">

@@ -69,7 +69,7 @@ export default function HomeServiceMobile() {
                   alt={service.name}
                   className="w-20x h-20 lg:w-40 lg:h-40 rounded-xl object-cover transition-all duration-500 ease-out hover:shadow-md"
                 />
-                <p className="pt-1.5 font-semibold text-gray-900 text-xs">{service.name}</p>
+                <p className="pt-1.5 font-semibold text-gray-900 text-center text-[11px]">{service.name}</p>
               </div>
             </Link>
           ))}
