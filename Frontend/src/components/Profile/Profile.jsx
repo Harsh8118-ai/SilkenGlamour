@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../../Store/auth';
 import Login from '../Contact/LogIn';
-import ConfirmationModal from './ConfirmationModal';
+import ConfirmationModalName from './ConfirmationModalName';
 
 const Profile = () => {
   const { user } = useAuth();
@@ -163,9 +163,9 @@ const Profile = () => {
             
         }
 
-         {/* Render the ConfirmationModal and pass necessary props */}
+         {/* Render the ConfirmationModalName and pass necessary props */}
       {ModalData && (
-        <ConfirmationModal data={ModalData} isOpen={isModalOpen} onClose={closeModal} />
+        <ConfirmationModalName data={ModalData} isOpen={isModalOpen} onClose={closeModal} />
       )}
 
     </>

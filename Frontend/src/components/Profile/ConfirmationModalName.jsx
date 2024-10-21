@@ -2,12 +2,15 @@ import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { useAuth } from '../../Store/auth';
 import { ToastContainer, toast } from 'react-toastify';
+import { useNavigate } from 'react-router-dom';
 
-const ConfirmationModal = ({ data, isOpen, onClose }) => {
+const ConfirmationModalName = ({ data, isOpen, onClose }) => {
     // console.log("data",data);
     
     const [token, setToken] = useState(localStorage.getItem("token"));
   const { user } = useAuth();
+
+  const navigate = useNavigate();
 
   // Access environment variable using import.meta.env
   const BASE_URL = import.meta.env.VITE_BACKEND_URL;
@@ -53,11 +56,12 @@ const ConfirmationModal = ({ data, isOpen, onClose }) => {
     if (response.ok) {
       toast.success("Update Successfully");
       console.log('User Updated successfully:', data); // Success message
-      navigate("/");
 
-      // setTimeout(() => {
-      //     window.location.reload();
-      // }, 500);
+      navigate("/profile");
+
+      setTimeout(() => {
+          window.location.reload();
+      }, 500);
   }
   else {
           
@@ -157,4 +161,4 @@ const ConfirmationModal = ({ data, isOpen, onClose }) => {
   );
 };
 
-export default ConfirmationModal;
+export default ConfirmationModalName;

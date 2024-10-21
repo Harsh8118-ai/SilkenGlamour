@@ -49,7 +49,7 @@ const Login = () => {
 
             console.log("login: ", response);
             const data = await response.json(); // Parsing the response data
-            console.log("loginn: ", data);
+            
             if (response.ok) {
                 toast.success("Login Successful");
                 storeTokenInLS(data.token)
@@ -78,7 +78,7 @@ const Login = () => {
             
             console.error('Login failed: ', error);
         }
-        console.log(formData);
+        
     };
 
     return (
