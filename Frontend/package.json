@@ -17,10 +17,7 @@
     "aos": "^2.3.4",
     "axios": "^1.7.7",
     "build": "^0.1.4",
-<<<<<<< HEAD
-=======
     "concurrently": "^9.0.1",
->>>>>>> eb4a2f6 (backend profile updation change)
     "framer-motion": "^11.5.4",
     "motion": "^10.18.0",
     "react": "^18.3.1",
