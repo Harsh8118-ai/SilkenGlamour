@@ -1,11 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../../Store/auth';
 import Login from '../Contact/LogIn';
+import ConfirmationModal from './ConfirmationModal';
 
 const Profile = () => {
   const { user } = useAuth();
   const { isLoggedIn } = useAuth();
+  const [ModalData, setModalData] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false); // State to open/close modal
+
+  // Function to open the modal with data
+  const openModal = (data) => {
+    setModalData(data);
+    setIsModalOpen(true);
+  };
+
+  // Function to close the modal
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
 
 
   return (
@@ -42,14 +56,21 @@ const Profile = () => {
               </div>
 
             </div>
-            <div className="mt-4">
-              <Link
-                to="/edit-profile"
-                className="text-[#796855] hover:text-[#CBB59F] font-medium transition-all duration-300"
-              >
-                Edit Profile
-              </Link>
-            </div>
+            {/* Edit Profile Button */}
+              <div className="mt-4">
+                <button
+                  className="text-[#796855] hover:text-[#CBB59F] font-medium transition-all duration-300"
+                  onClick={() =>
+                    openModal({
+                      username: user?.username,
+                      // email: user.email,
+                      mobileNumber: user.mobileNumber,
+                    })
+                  }
+                >
+                  Edit Profile
+                </button>
+              </div>
           </div>
 
           {/* Profile Info Section Mobile View */}
@@ -62,12 +83,17 @@ const Profile = () => {
                 <p className="text-lg text-black">Email: {user.email}</p>
               </div>
               <div className="my-2">
-              <Link
-                to="/edit-profile"
-                className="text-[#796855] hover:text-[#CBB59F] font-medium transition-all duration-300"
-              >
+              <button className="text-[#796855] hover:text-[#CBB59F] font-medium transition-all duration-300" onClick={()=> {
+                SetModal({
+                  username: user?.username,
+                  // email: user.email,
+                  // mobileNumber: user.mobileNumber,
+                })
+              }}>
                 Edit Profile
-              </Link>
+              
+              </button>
+               
             </div>
 
               {/* .............. LOG IN / LOG OUT .............. */}
@@ -131,7 +157,17 @@ const Profile = () => {
           
         </div>
         </div>
-          : <Login /> }
+          : <Login /> 
+          
+          
+            
+        }
+
+         {/* Render the ConfirmationModal and pass necessary props */}
+      {ModalData && (
+        <ConfirmationModal data={ModalData} isOpen={isModalOpen} onClose={closeModal} />
+      )}
+
     </>
   );
 };

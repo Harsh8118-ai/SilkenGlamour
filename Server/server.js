@@ -24,7 +24,10 @@ app.use(express.json());
 
 // Root route to display a message
 app.get('/', (req, res) => {
-  res.status(200).send('Welcome to Silken Glamour Backend!');
+  res.status(200).send('Welcome to Silken Glamour Backend! locally');
+});
+app.get('/api/form/contact', (req, res) => {
+  res.status(200).send('Welcome to "/api/form/user"');
 });
 app.get('/api/form/contact', (req, res) => {
   res.status(200).send('Welcome to "/api/form/user"');
@@ -32,7 +35,7 @@ app.get('/api/form/contact', (req, res) => {
 
 app.use("/api/auth", authRoute);
 app.use("/api/form", contactRoute);
-app.use(errorMiddleware);
+// app.use(errorMiddleware);
 
 app.use((error, req, res, next) => {
   const statusCode = error.status || 500;

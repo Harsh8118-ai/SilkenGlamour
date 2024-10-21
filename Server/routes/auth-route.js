@@ -7,10 +7,11 @@ const authMiddleware = require("../middlewares/auth-middleware");
 
 router.route("/").get(authControllers.home);
 router
-.route("/register")
-.post(validate(signupSchema), authControllers.register);
+.route("/register").post(validate(signupSchema), authControllers.register);
 
-router.route("/login").post(validate(loginSchema), authControllers.login);
+router.route("/login").post(validate(loginSchema) , authControllers.login);
+
+router.route("/updateProfile").put(authMiddleware, authControllers.UpdateProfile);
 
 router.route("/user").get(authMiddleware, authControllers.user);
 
