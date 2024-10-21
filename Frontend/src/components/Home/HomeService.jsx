@@ -45,15 +45,16 @@ export default function HomeService() {
       <div className="flex items-center mt-5 shadow-sm shadow-BGColorYellow mb-5 px-10 rounded-xl">
         {/* Left Scroll Button */}
         <button
-          className=" text-white transition duration-100 ease-in-out"
-          onClick={() => handleScroll('left')}
-        >
-          <div class="w-0 h-0 
-  border-t-[50px] border-t-transparent
-  border-r-[75px] border-r-gray-600
-  border-b-[50px] border-b-transparent hover:scale-105">
-          </div>
-        </button>
+  className="text-white transition duration-100 ease-in-out"
+  onClick={() => handleScroll('left')}
+  aria-label="Scroll Left"
+>
+  <div className="w-0 h-0 
+    border-t-[50px] border-t-transparent
+    border-r-[75px] border-r-gray-600
+    border-b-[50px] border-b-transparent hover:scale-105">
+  </div>
+</button>
 
         {/* Carousel Container */}
         <div className="flex overflow-hidden p-10">
@@ -81,16 +82,18 @@ export default function HomeService() {
 
         {/* Right Scroll Button */}
         <button
-          className="transition duration-100 ease-in-out"
-          onClick={() => handleScroll('right')}
-        >
-          <div class="w-0 h-0 
-  border-t-[50px] border-t-transparent
-  border-l-[75px] border-l-gray-600
-  border-b-[50px] border-b-transparent hover:scale-105">
-</div>
-        </button>
-      </div>
+  className="transition duration-100 ease-in-out"
+  onClick={() => handleScroll('right')}
+  aria-label="Scroll Right"
+>
+  <div className="w-0 h-0 
+    border-t-[50px] border-t-transparent
+    border-l-[75px] border-l-gray-600
+    border-b-[50px] border-b-transparent hover:scale-105">
+  </div>
+</button>
+
+      </div>  
     </div>
   );
 }
