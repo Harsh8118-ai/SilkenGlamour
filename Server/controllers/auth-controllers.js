@@ -77,7 +77,7 @@ const login = async (req, res) => {
     }
 
     // Respond with success and token
-    res.status(200).json({
+    return res.status(200).json({
       msg: "Login Successful",
       token: await userExist.generateToken(),
       userId: userExist._id.toString(),
@@ -105,4 +105,56 @@ const user = async(req, res) => {
 }
 
 
+<<<<<<< HEAD
 module.exports = { home, register, login, user };
+=======
+const UpdateProfile = async(req,res) => {
+  
+  try {
+      //  fetch the data from req body
+      const { username= ""} = req.body;
+
+      const userid = req.user;
+      console.log("Userid", userid);
+      
+   
+
+    //   // find Profile
+      const userDetails = await User.findById(userid);
+
+     
+     userDetails.username = username;
+    //  userDetails.email = email;
+     
+    //  userDetails.mobileNumber = mobileNumber;
+  
+     // save the updated profile
+     await userDetails.save()
+    //  await profileDetails.save();
+
+     console.log("User details" , userDetails);
+
+     // Find the updated user details
+       const updatedUserDetails = await User.findById(userid).exec() 
+
+     
+
+
+      
+      return res.status(200).json({
+          success:true,
+          message:"Profile Updated Successfully",
+          data: updatedUserDetails,
+      })
+  } catch (error) {
+      return res.status(500).json({
+          success:false,
+          message:"Internal Server error, while updating profile",
+          error:error.message,
+      })
+    }
+}
+
+
+module.exports = { home, register, login, user , UpdateProfile};
+>>>>>>> eb4a2f6 (backend profile updation change)
