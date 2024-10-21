@@ -49,11 +49,7 @@ const Login = () => {
 
             console.log("login: ", response);
             const data = await response.json(); // Parsing the response data
-<<<<<<< HEAD
-
-=======
             console.log("loginn: ", data);
->>>>>>> eb4a2f6 (backend profile updation change)
             if (response.ok) {
                 toast.success("Login Successful");
                 storeTokenInLS(data.token)
