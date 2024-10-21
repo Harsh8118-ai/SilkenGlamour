@@ -21,11 +21,7 @@ const authMiddleware = async(req, res, next) => {
         const userData = await User.findOne({ mobileNumber: isVerified.mobileNumber}).select({
             password: 0,
         })     
-<<<<<<< HEAD
-        console.log(userData);
-=======
         console.log("Data", userData);
->>>>>>> eb4a2f6 (backend profile updation change)
 
         req.user = userData;
         req.token = token;

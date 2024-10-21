@@ -1,21 +1,12 @@
-<<<<<<< HEAD
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { useAuth } from '../../Store/auth';
-import Login from '../Contact/LogIn';
-=======
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../../Store/auth';
 import Login from '../Contact/LogIn';
 import ConfirmationModal from './ConfirmationModal';
->>>>>>> eb4a2f6 (backend profile updation change)
 
 const Profile = () => {
   const { user } = useAuth();
   const { isLoggedIn } = useAuth();
-<<<<<<< HEAD
-=======
   const [ModalData, setModalData] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false); // State to open/close modal
 
@@ -29,7 +20,6 @@ const Profile = () => {
   const closeModal = () => {
     setIsModalOpen(false);
   };
->>>>>>> eb4a2f6 (backend profile updation change)
 
 
   return (
@@ -66,16 +56,6 @@ const Profile = () => {
               </div>
 
             </div>
-<<<<<<< HEAD
-            <div className="mt-4">
-              <Link
-                to="/edit-profile"
-                className="text-[#796855] hover:text-[#CBB59F] font-medium transition-all duration-300"
-              >
-                Edit Profile
-              </Link>
-            </div>
-=======
             {/* Edit Profile Button */}
               <div className="mt-4">
                 <button
@@ -91,7 +71,6 @@ const Profile = () => {
                   Edit Profile
                 </button>
               </div>
->>>>>>> eb4a2f6 (backend profile updation change)
           </div>
 
           {/* Profile Info Section Mobile View */}
@@ -104,14 +83,6 @@ const Profile = () => {
                 <p className="text-lg text-black">Email: {user.email}</p>
               </div>
               <div className="my-2">
-<<<<<<< HEAD
-              <Link
-                to="/edit-profile"
-                className="text-[#796855] hover:text-[#CBB59F] font-medium transition-all duration-300"
-              >
-                Edit Profile
-              </Link>
-=======
               <button className="text-[#796855] hover:text-[#CBB59F] font-medium transition-all duration-300" onClick={()=> {
                 SetModal({
                   username: user?.username,
@@ -123,7 +94,6 @@ const Profile = () => {
               
               </button>
                
->>>>>>> eb4a2f6 (backend profile updation change)
             </div>
 
               {/* .............. LOG IN / LOG OUT .............. */}
@@ -187,9 +157,6 @@ const Profile = () => {
           
         </div>
         </div>
-<<<<<<< HEAD
-          : <Login /> }
-=======
           : <Login /> 
           
           
@@ -201,7 +168,6 @@ const Profile = () => {
         <ConfirmationModal data={ModalData} isOpen={isModalOpen} onClose={closeModal} />
       )}
 
->>>>>>> eb4a2f6 (backend profile updation change)
     </>
   );
 };

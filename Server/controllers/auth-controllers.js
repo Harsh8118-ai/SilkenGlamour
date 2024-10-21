@@ -105,9 +105,6 @@ const user = async(req, res) => {
 }
 
 
-<<<<<<< HEAD
-module.exports = { home, register, login, user };
-=======
 const UpdateProfile = async(req,res) => {
   
   try {
@@ -157,4 +154,3 @@ const UpdateProfile = async(req,res) => {
 
 
 module.exports = { home, register, login, user , UpdateProfile};
->>>>>>> eb4a2f6 (backend profile updation change)
