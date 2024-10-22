@@ -1,6 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
+const compression = require('compression'); // Import compression
 
 const app = express();
 const authRoute = require("./routes/auth-route");
@@ -19,24 +20,25 @@ const corsOptions = {
   credentials: true,
 };
 
+// Enable gzip compression
+app.use(compression());
+
 app.use(cors(corsOptions));
 app.use(express.json());
 
 // Root route to display a message
 app.get('/', (req, res) => {
-  res.status(200).send('Welcome to Silken Glamour Backend! locally');
+  res.status(200).send('Welcome to Silken Glamour Backend!');
 });
+
 app.get('/api/form/contact', (req, res) => {
-  res.status(200).send('Welcome to "/api/form/user"');
-});
-app.get('/api/form/contact', (req, res) => {
-  res.status(200).send('Welcome to "/api/form/user"');
+  res.status(200).send('Welcome to /api/form/user');
 });
 
 app.use("/api/auth", authRoute);
 app.use("/api/form", contactRoute);
-// app.use(errorMiddleware);
 
+// Error handling middleware
 app.use((error, req, res, next) => {
   const statusCode = error.status || 500;
   res.status(statusCode).json({
