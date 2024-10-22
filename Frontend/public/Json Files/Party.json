@@ -1,7 +1,7 @@
 [
     {
       "id": "Party1",
-      "image": "/Services/Service Card/Wedding Package/Party/Birthday Makeup.JPG",
+      "image": "/Services/Service Card/Wedding Package/Party/Birthday Makeup.webp",
       "name": "Birthday Makeup",
       "price": 1299,
       "offerprice": 1500,
@@ -10,7 +10,7 @@
     },
     {
       "id": "Party2",
-      "image": "/Services/Service Card/Wedding Package/Party/Forever52 & Krylon.JPG",
+      "image": "/Services/Service Card/Wedding Package/Party/Forever52 & Krylon.webp",
       "name": "Forever52 & Krylon",
       "price": 2499,
       "offerprice": 3000,
@@ -19,7 +19,7 @@
     },
     {
       "id": "Party3",
-      "image": "/Services/Service Card/Wedding Package/Party/Mac Makeup.JPG",
+      "image": "/Services/Service Card/Wedding Package/Party/Mac Makeup.webp",
       "name": "Mac Makeup",
       "price": 3499,
       "offerprice": 4000,
@@ -28,7 +28,7 @@
     },
     {
       "id": "Party4",
-      "image": "/Services/Service Card/Wedding Package/Party/Airbrush Makeup.JPG",
+      "image": "/Services/Service Card/Wedding Package/Party/Airbrush Makeup.webp",
       "name": "Airbrush Makeup",
       "price": 4999,
       "offerprice": 7000,

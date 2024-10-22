@@ -1,7 +1,7 @@
 [
     {
       "id": "Engagement1",
-      "image": "/Services/Service Card/Wedding Package/Engagemant & Bridal/Roka Makeup.JPG",
+      "image": "/Services/Service Card/Wedding Package/Engagemant & Bridal/Roka Makeup.webp",
       "name": "Roka Makeup",
       "price": 9999,
       "offerprice": 15000,
@@ -10,7 +10,7 @@
     },
     {
       "id": "Engagement2",
-      "image": "/Services/Service Card/Wedding Package/Engagemant & Bridal/HD Engagement Makeup.JPG",
+      "image": "/Services/Service Card/Wedding Package/Engagemant & Bridal/HD Engagement Makeup.webp",
       "name": "HD Engagement Makeup",
       "price": 11999,
       "offerprice": 16000,
@@ -19,7 +19,7 @@
     },
     {
       "id": "Engagement3",
-      "image": "/Services/Service Card/Wedding Package/Engagemant & Bridal/Airbrush Makeup.JPG",
+      "image": "/Services/Service Card/Wedding Package/Engagemant & Bridal/Airbrush Makeup.webp",
       "name": "Airbrush Makeup" ,
       "price": 14999,
       "offerprice": 20000,

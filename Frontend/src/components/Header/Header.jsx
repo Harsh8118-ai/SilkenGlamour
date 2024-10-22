@@ -32,7 +32,7 @@ export default function Header() {
             <Link to="/">
               <div className="flex items-center justify-center sm:flex-col lg:flex-col">
                 <img
-                  src="/Services/SG Logo.png"
+                  src="/Services/sg logo.png"
                   alt="LOGO"
                   className="hidden sm:inline ml-8 h-8 rounded-md object-cover bg-transparent"
                 />
@@ -196,7 +196,7 @@ export default function Header() {
           <div className="absolute left-0 h-full">
             <Link to="/">
               <img
-                src="/Services/SG Logo.png"
+                src="/Services/sg logo.png"
                 alt="LOGO"
                 className="ml-3 m-2 h-6 rounded-md object-cover bg-transparent left-0"
               />

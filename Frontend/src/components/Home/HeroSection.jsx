@@ -22,7 +22,7 @@ export default function HeroSection() {
             <div className='mt-32 hidden sm:block'>
               <Link to="/service">
                 <img
-                  src="/Home/Makeup Home.jpg"
+                  src="/Home/Makeup Home.webp"
                   alt=""
                   className="w-64 h-64 rounded-xl border-[6px] border-[000000] object-cover transform hover:opacity-80 hover:border-white "
                 />
@@ -30,7 +30,7 @@ export default function HeroSection() {
 
             <Link to="/service">
               <img
-                src="/Home/Banner Mirror.jpeg"
+                src="/Home/Banner Mirror.webp"
                 alt=""
                 className="h-72 w-60 sm:w-80 sm:h-96 rounded-t-full border-[6px] border-[000000] object-cover transform hover:opacity-95 hover:border-white"
               />
@@ -39,7 +39,7 @@ export default function HeroSection() {
             <div className='mt-32 hidden sm:block'>
               <Link to="/service">
                 <img
-                  src="/Home/Facial Home.jpg"
+                  src="/Home/Facial Home.webp"
                   alt=""
                   className="w-64 h-64 rounded-xl border-[6px] border-[000000] object-cover transform hover:opacity-80 hover:border-white "
                 />

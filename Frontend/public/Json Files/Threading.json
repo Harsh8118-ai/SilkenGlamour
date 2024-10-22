@@ -1,7 +1,7 @@
 [
     {
       "id": "Threading1",
-      "image": "/Services/Service Card/Threading & Wax/Eyebrow Threading.JPG",
+      "image": "/Services/Service Card/Threading & Wax/Eyebrow Threading.webp",
       "name": "Eyebrow Threading",
       "price": 89,
       "offerprice": 99,
@@ -10,7 +10,7 @@
     },
     {
       "id": "Threading2",
-      "image": "/Services/Service Card/Threading & Wax/Upper Lips Threading.JPG",
+      "image": "/Services/Service Card/Threading & Wax/Upper Lips Threading.webp",
       "name": "Upper Lips Threading",
       "price": 49,
       "offerprice": 79,
@@ -19,7 +19,7 @@
     },
     {
       "id": "Threading3",
-      "image": "/Services/Service Card/Threading & Wax/Chin Threading.JPG",
+      "image": "/Services/Service Card/Threading & Wax/Chin Threading.webp",
       "name": "Chin Threading",
       "price": 59,
       "offerprice": 89,
@@ -28,7 +28,7 @@
     },
     {
       "id": "Threading4",
-      "image": "/Services/Service Card/Threading & Wax/Forehead Threading.JPG",
+      "image": "/Services/Service Card/Threading & Wax/Forehead Threading.webp",
       "name": "Forehead Threading",
       "price": 89,
       "offerprice": 99,

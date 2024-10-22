@@ -2,8 +2,8 @@ import React from 'react';
 
 const OurTeam = () => {
   const team = [
-    { name: 'Sarah', role: 'Lead Stylist', image: '/path-to-image/sarah.jpg' },
-    { name: 'David', role: 'Makeup Artist', image: '/path-to-image/david.jpg' },
+    { name: 'Sarah', role: 'Lead Stylist', image: '/path-to-image/sarah.webp' },
+    { name: 'David', role: 'Makeup Artist', image: '/path-to-image/david.webp' },
   ];
 
   return (

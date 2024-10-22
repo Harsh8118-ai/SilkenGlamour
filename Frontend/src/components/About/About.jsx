@@ -24,7 +24,7 @@ export default function About() {
                 Pamper your inner and outer body at home with our soothing and relaxing body massage services because In & out beauty matters! Get personalized salon services brought to your doorstep with our Salon at Home.
               </p></div>
             <div className='h-full w-full lg:align-top flex justify-center mt-2'>
-              <img src="About\HeadBody.jpg" alt="Head & Body Massage" className='' />
+              <img src="About\HeadBody.webp" alt="Head & Body Massage" className='' />
             </div>
           </div>
 
@@ -36,7 +36,7 @@ export default function About() {
                 Let your beautiful face talk. Enjoy the best offers on facial massage in your own comfort space to revamp the quality of your facial skin with our Salon at Home services.
               </p></div>
             <div className='h-full w-full lg:align-top flex justify-center mt-2'>
-              <img src="About\Facial.jpg" alt="Head & Body Massage" className='' />
+              <img src="About\Facial.webp" alt="Head & Body Massage" className='' />
             </div>
           </div>
 
@@ -48,14 +48,14 @@ export default function About() {
                 Don't have time to go to the salon? Don’t worry! Get rid of unwanted hair at home with our personalized salon services brought to your comfort and privacy. Save your precious time with our Salon at Home services.
               </p></div>
             <div className='h-full w-full lg:align-top flex justify-center mt-2'>
-              <img src="About\Waxing.jpg" alt="Head & Body Massage" className='' />
+              <img src="About\Waxing.webp" alt="Head & Body Massage" className='' />
             </div>
           </div>
 
         </div>
 
         <div title='MID IMAGE' className='flex justify-center items-center'>
-          <img src="About\Mid.jpg" alt="" className='rounded-full m-auto mt-8 mb-8 sm:mt-12 sm:mb-0' />
+          <img src="About\Mid.webp" alt="" className='rounded-full m-auto mt-8 mb-8 sm:mt-12 sm:mb-0' />
         </div>
 
         <div title='DOWN ABOUT BOX'>
@@ -64,7 +64,7 @@ export default function About() {
         sm:hover:shadow-gray-400 sm:hover:shadow sm:shadow-none shadow-gray-400 shadow sm:text-left mx-3  text-center'>
 
             <div className='h-full w-full sm:align-top flex justify-center mt-2'>
-              <img src="About\Hair.jpg" alt="Head & Body Massage" /></div>
+              <img src="About\Hair.webp" alt="Head & Body Massage" /></div>
             <div className=''>
               <h3 className="font-bold lg:text-left sm:text-center text-xl sm:text-lg">Hair Spa at home</h3>
 
@@ -78,7 +78,7 @@ export default function About() {
         sm:hover:shadow-gray-400 sm:hover:shadow sm:shadow-none shadow-gray-400 shadow sm:text-left mx-3  text-center'>
 
             <div className='h-full w-full sm:align-top flex justify-center mt-2'>
-              <img src="About\Mani.jpg" alt="Head & Body Massage" /></div>
+              <img src="About\Mani.webp" alt="Head & Body Massage" /></div>
 
             <div className='shadow-sm shadow-gray-900 rounded-xl'>
               <h3 className="font-bold lg:text-left sm:text-center text-xl sm:text-lg">Manicure & Pedicure</h3>
@@ -93,7 +93,7 @@ export default function About() {
         sm:hover:shadow-gray-400 sm:hover:shadow sm:shadow-none shadow-gray-400 shadow sm:text-left mx-3 text-center'>
 
             <div className='h-full w-full sm:align-top flex justify-center mt-2'>
-              <img src="About\Bleach.jpg" alt="Head & Body Massage" /></div>
+              <img src="About\Bleach.webp" alt="Head & Body Massage" /></div>
 
             <div className='shadow-sm shadow-gray-900 rounded-xl'>
               <h3 className="font-bold lg:text-left text-xl sm:text-center sm:text-lg">Bleach & D-tan</h3>

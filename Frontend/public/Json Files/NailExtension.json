@@ -1,7 +1,7 @@
 [
   {
     "id": "NailExtension1",
-    "image": "/Services/Service Card/Nail Art/Nail Extension Gel.JPG",
+    "image": "/Services/Service Card/Nail Art/Nail Extension Gel.webp",
     "name": "Nail Ext. Gel",
     "price": 999,
     "offerprice": 1250,
@@ -14,7 +14,7 @@
   },
   {
     "id": "NailExtension2",
-    "image": "/Services/Service Card/Nail Art/Nail Extension Acrylic.JPG",
+    "image": "/Services/Service Card/Nail Art/Nail Extension Acrylic.webp",
     "name": "Nail Ext. Acrylic",
     "price": 1199,
     "offerprice": 1599,
@@ -27,7 +27,7 @@
   },
   {
     "id": "NailExtension3",
-    "image": "/Services/Service Card/Nail Art/Soft Gel Tip Ext.JPG",
+    "image": "/Services/Service Card/Nail Art/Soft Gel Tip Ext.webp",
     "name": "Soft Gel Tip Ext.",
     "price": 999,
     "offerprice": 1280,
@@ -40,7 +40,7 @@
   },
   {
     "id": "NailExtension4",
-    "image": "/Services/Service Card/Nail Art/Acrylic Overlay.JPG",
+    "image": "/Services/Service Card/Nail Art/Acrylic Overlay.webp",
     "name": "Acrylic Overlay",
     "price": 500,
     "offerprice": 700,

@@ -5,15 +5,15 @@ export default function HomeServiceMobile() {
   const [activeIndex, setActiveIndex] = useState(4); // Start with the middle card (index 4)
 
   const services = [
-    { name: 'Nail Art', image: '/Temp/Nail Art.jpg', link: '/service/nailart' },
-    { name: 'Hair Care', image: '/Temp/Haircare.jpg', link: '/service/haircare' },
-    { name: 'Mani-Pedi', image: '/Temp/Pedicure.jpg', link: '/service/mani-pedi' },
-    { name: 'Waxing', image: '/Temp/Waxing.jpg', link: '/service/waxing' },
-    { name: 'Polish & Massage', image: '/Temp/Massage.jpg', link: '/service/body-polishing' },
-    { name: 'Threading & Wax', image: '/Temp/Threading.jpg', link: '/service/threading' },
-    { name: 'Bleach & D-Tan', image: '/Temp/Bleach.jpg', link: '/service/bleach-dtan' },
-    { name: 'Wedding Package', image: '/Temp/Makeup.jpg', link: '/service/weddingpakage' },
-    { name: 'Facial & Cleanup', image: '/Temp/Facial.jpg', link: '/service/facial-cleanup' },
+    { name: 'Nail Art', image: '/Temp/Nail Art.webp', link: '/service/nailart' },
+    { name: 'Hair Care', image: '/Temp/Haircare.webp', link: '/service/haircare' },
+    { name: 'Mani-Pedi', image: '/Temp/Pedicure.webp', link: '/service/mani-pedi' },
+    { name: 'Waxing', image: '/Temp/Waxing.webp', link: '/service/waxing' },
+    { name: 'Polish & Massage', image: '/Temp/Massage.webp', link: '/service/body-polishing' },
+    { name: 'Threading & Wax', image: '/Temp/Threading.webp', link: '/service/threading' },
+    { name: 'Bleach & D-Tan', image: '/Temp/Bleach.webp', link: '/service/bleach-dtan' },
+    { name: 'Wedding Package', image: '/Temp/Makeup.webp', link: '/service/weddingpakage' },
+    { name: 'Facial & Cleanup', image: '/Temp/Facial.webp', link: '/service/facial-cleanup' },
   ];
 
   // Function to handle cyclic scrolling
