@@ -37,7 +37,7 @@ const router = createBrowserRouter(
       <Route
         index
         element={
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<div className='bg-MainBGColorYellow h-screen w-full'></div>}>
             <Home />
           </Suspense>
         }
@@ -45,7 +45,7 @@ const router = createBrowserRouter(
       <Route
         path="about"
         element={
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<div className='bg-MainBGColorYellow h-screen w-full'></div>}>
             <About />
           </Suspense>
         }
@@ -53,20 +53,20 @@ const router = createBrowserRouter(
       <Route
         path="profile"
         element={
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<div className='bg-MainBGColorYellow h-screen w-full'></div>}>
             <Profile />
           </Suspense>
         }
       />
       <Route path="contact" element={
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<div className='bg-MainBGColorYellow h-screen w-full'></div>}>
           <ContactLayout />
         </Suspense>
       }>
         <Route
           index
           element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<div className='bg-MainBGColorYellow h-screen w-full'></div>}>
               <Contact />
             </Suspense>
           }
@@ -74,7 +74,7 @@ const router = createBrowserRouter(
         <Route
           path="signup"
           element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<div className='bg-MainBGColorYellow h-screen w-full'></div>}>
               <SignUp />
             </Suspense>
           }
@@ -82,7 +82,7 @@ const router = createBrowserRouter(
         <Route
           path="login"
           element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<div className='bg-MainBGColorYellow h-screen w-full'></div>}>
               <Login />
             </Suspense>
           }
@@ -90,21 +90,21 @@ const router = createBrowserRouter(
         <Route
           path="logout"
           element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<div className='bg-MainBGColorYellow h-screen w-full'></div>}>
               <LogOut />
             </Suspense>
           }
         />
       </Route>
       <Route path="service" element={
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<div className='bg-MainBGColorYellow h-screen w-full'></div>}>
           <ServiceLayout />
         </Suspense>
       }>
         <Route
           index
           element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<div className='bg-MainBGColorYellow h-screen w-full'></div>}>
               <Service />
             </Suspense>
           }
@@ -112,7 +112,7 @@ const router = createBrowserRouter(
         <Route
           path="nailart"
           element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<div className='bg-MainBGColorYellow h-screen w-full'></div>}>
               <CardNailArt />
             </Suspense>
           }
@@ -120,7 +120,7 @@ const router = createBrowserRouter(
         <Route
           path="haircare"
           element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<div className='bg-MainBGColorYellow h-screen w-full'></div>}>
               <CardHairCare />
             </Suspense>
           }
@@ -128,7 +128,7 @@ const router = createBrowserRouter(
         <Route
           path="mani-pedi"
           element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<div className='bg-MainBGColorYellow h-screen w-full'></div>}>
               <CardManiPedi />
             </Suspense>
           }
@@ -136,7 +136,7 @@ const router = createBrowserRouter(
         <Route
           path="waxing"
           element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<div className='bg-MainBGColorYellow h-screen w-full'></div>}>
               <CardWaxing />
             </Suspense>
           }
@@ -144,7 +144,7 @@ const router = createBrowserRouter(
         <Route
           path="bleach-dtan"
           element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<div className='bg-MainBGColorYellow h-screen w-full'></div>}>
               <CardBleach />
             </Suspense>
           }
@@ -152,7 +152,7 @@ const router = createBrowserRouter(
         <Route
           path="weddingpackage"
           element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<div className='bg-MainBGColorYellow h-screen w-full'></div>}>
               <CardWedding />
             </Suspense>
           }
@@ -160,7 +160,7 @@ const router = createBrowserRouter(
         <Route
           path="body-polishing"
           element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<div className='bg-MainBGColorYellow h-screen w-full'></div>}>
               <CardBodyPolishing />
             </Suspense>
           }
@@ -168,7 +168,7 @@ const router = createBrowserRouter(
         <Route
           path="threading"
           element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<div className='bg-MainBGColorYellow h-screen w-full'></div>}>
               <CardThreading />
             </Suspense>
           }
@@ -176,7 +176,7 @@ const router = createBrowserRouter(
         <Route
           path="facial-cleanup"
           element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<div className='bg-MainBGColorYellow h-screen w-full'></div>}>
               <CardFacial />
             </Suspense>
           }
@@ -185,7 +185,7 @@ const router = createBrowserRouter(
       <Route
         path="faq"
         element={
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<div className='bg-MainBGColorYellow h-screen w-full'></div>}>
             <ChatBotLayout />
           </Suspense>
         }
