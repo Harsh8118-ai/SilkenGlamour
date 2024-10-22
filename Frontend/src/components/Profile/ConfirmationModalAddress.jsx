@@ -37,8 +37,7 @@ const ConfirmationModalAddress = ({ data, isOpen, onClose }) => {
         try {
             // Form submission logic here
             console.log("Dataa", formData);
-            const response = await fetch(`${BASE_URL}/auth/updateProfile`, {
-                // const response = await fetch('http://localhost:5000/api/auth/register', {
+            const response = await fetch(`${BASE_URL}/auth/updateAddress`, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json",
@@ -57,8 +56,8 @@ const ConfirmationModalAddress = ({ data, isOpen, onClose }) => {
 
 
             if (response.ok) {
-                toast.success("Update Successfully");
-                console.log('User Updated successfully:', data); // Success message
+                toast.success("Address Update Successfully");
+                console.log('Address Updated successfully:', data); // Success message
 
                 navigate("/profile");
 
@@ -80,7 +79,7 @@ const ConfirmationModalAddress = ({ data, isOpen, onClose }) => {
 
         } catch (error) {
             // Handle error
-            console.log("error occur while updation", error.message);
+            console.log("Error occur while Updating Address", error.message);
             console.log(error);
 
 

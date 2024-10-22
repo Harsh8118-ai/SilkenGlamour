@@ -88,7 +88,7 @@ const ConfirmationModalName = ({ data, isOpen, onClose }) => {
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-center">
-      <div className="bg-MainBGColorYellow p-6 rounded-lg shadow-lg max-w-lg w-full relative">
+      <div className="bg-MainBGColorYellow p-6 rounded-lg shadow-lg max-w-lg w-full relative mx-4 sm:mx-0">
         <button
           onClick={onClose}
           className="absolute top-2 right-2 text-red-500 hover:text-red-800 text-bold"

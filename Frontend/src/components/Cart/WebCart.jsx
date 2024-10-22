@@ -67,7 +67,7 @@ const WebCart = ({ closeCart }) => {
                       <img src={item.image} alt={item.name} className="w-12 h-12 rounded-lg object-cover" />
                       <div className="ml-4">
                         <h3 className="text-sm font-bold text-black text-left">{item.name}</h3>
-                        <p className="text-xs text-gray-700 text-left">₹{item.price} x {item.quantity}</p>
+                        <p className="text-sm font-bold text-gray-700 text-left">₹{item.price} x {item.quantity}</p>
                       </div>
                       <div className="flex items-center space-x-2">
                         <button onClick={() => decreaseQuantity(item.id)} className="px-2 py-1 text-xs font-bold text-white bg-gray-500 rounded">

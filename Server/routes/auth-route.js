@@ -13,6 +13,9 @@ router.route("/login").post(validate(loginSchema) , authControllers.login);
 
 router.route("/updateProfile").put(authMiddleware, authControllers.UpdateProfile);
 
+router.route("/updateAddress").put(authMiddleware, authControllers.UpdateAddress);
+
+
 router.route("/user").get(authMiddleware, authControllers.user);
 
 

@@ -70,7 +70,7 @@ const MobileCart = ({ closeCart }) => {
                 <img src={item.image} alt={item.name} className="w-12 h-12 rounded-lg object-cover" />
                 <div className="ml-4">
                   <h3 className="text-sm font-bold text-left">{item.name}</h3>
-                  <p className="text-xs text-gray-500 text-left">₹{item.price} x {item.quantity}</p>
+                  <p className="text-sm font-bold text-gray-500 text-left">₹{item.price} x {item.quantity}</p>
                 </div>
                 <div className="flex items-center space-x-2">
                   <button

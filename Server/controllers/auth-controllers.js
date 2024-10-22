@@ -152,5 +152,52 @@ const UpdateProfile = async(req,res) => {
     }
 }
 
+const UpdateAddress = async(req,res) => {
+  
+  try {
+      //  fetch the data from req body
+      const { apartmentNumber= "", street="", town="", pincode="" } = req.body;
 
-module.exports = { home, register, login, user , UpdateProfile};
+      const userid = req.user;
+      console.log("Userid", userid);
+      
+   
+
+    //   // find Profile
+      const userDetails = await User.findById(userid);
+
+     
+     userDetails.street = street;
+     userDetails.apartmentNumber = apartmentNumber;
+     userDetails.town = town;
+     userDetails.pincode = pincode;
+  
+     // save the updated profile
+     await userDetails.save()
+    //  await profileDetails.save();
+
+     console.log("User details" , userDetails);
+
+     // Find the updated user details
+       const updatedUserDetails = await User.findById(userid).exec() 
+
+     
+
+
+      
+      return res.status(200).json({
+          success:true,
+          message:"Address Updated Successfully",
+          data: updatedUserDetails,
+      })
+  } catch (error) {
+      return res.status(500).json({
+          success:false,
+          message:"Internal Server error, while updating Address",
+          error:error.message,
+      })
+    }
+}
+
+
+module.exports = { home, register, login, user , UpdateProfile, UpdateAddress};
