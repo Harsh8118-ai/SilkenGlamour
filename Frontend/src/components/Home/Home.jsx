@@ -72,7 +72,7 @@ export default function Home() {
             <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
               <Link to="/">
                 <div className="flex items-center justify-center sm:flex-col lg:flex-col">
-                  <img src="/Services/sg logo.png" alt="LOGO" className="hidden sm:inline ml-8 h-8 rounded-md object-cover bg-transparent" />
+                  <img src="/Services/SG Logo.png" alt="LOGO" className="hidden sm:inline ml-8 h-8 rounded-md object-cover bg-transparent" />
                   <span className={`text-black hidden sm:inline text-center ml-6 mt-1 text-sm font-bold`} id="logo">
                     SilkenGlamour
                   </span>
