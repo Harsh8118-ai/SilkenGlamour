@@ -4,7 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
 import { Link } from "react-router-dom";
 import { useAuth } from "../../Store/auth";
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'; // Ensure default styles are loaded
 import '../../Css.css';
 
@@ -131,12 +131,13 @@ const Contact = () => {
                             <label htmlFor="username" className="text-lg mb-2">Your Name</label>
                             <input
                                 type="text"
-                                className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#7A6752] transition-all text-black font-semibold duration-300 transform hover:scale-105 focus:scale-110"
+                                className="px-4 py-2 text-gray-300 bg-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-BGColorYellow transition duration-300 ease-in-out transform hover:scale-105"
                                 name="username"
                                 id="username"
                                 value={data.username}
                                 onChange={handleInput}
                                 autoCapitalize="off"
+                                placeholder="Enter Your Name"
                                 required
                             />
                         </div>
@@ -145,12 +146,13 @@ const Contact = () => {
                             <label htmlFor="email" className="text-lg mb-2">E-mail</label>
                             <input
                                 type="email"
-                                className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#7A6752] transition-all text-black font-semibold duration-300 transform hover:scale-105 focus:scale-110"
+                                className="px-4 py-2 text-gray-300 bg-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-BGColorYellow transition duration-300 ease-in-out transform hover:scale-105"
                                 name="email"
                                 id="email"
                                 value={data.email}
                                 onChange={handleInput}
                                 autoCapitalize="off"
+                                placeholder="Enter Your E-Mail"
                                 required
                             />
                         </div>
@@ -161,16 +163,17 @@ const Contact = () => {
                                 id="message"
                                 name="message"
                                 rows="5"
-                                className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#7A6752] text-black transition-all duration-300 transform hover:scale-105 focus:scale-110"
+                                className="px-4 py-2 text-gray-300 bg-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-BGColorYellow transition duration-300 ease-in-out transform hover:scale-105"
                                 value={data.message}
                                 onChange={handleInput}
+                                placeholder="Write Your message here..."
                                 required
                             />
                         </div>
 
                         <button
                             type="submit"
-                            className="w-full bg-gradient-to-r from-[#2E2117] via-[#796855] to-[#2E2117] text-white py-3 rounded-lg shadow-md hover:bg-[#5E5543] transition transform hover:scale-105 duration-500 ease-in-out"
+                            className="w-full bg-gradient-to-r from-[#2E2117] via-[#796855] to-[#2E2117] text-gray-300 py-3 rounded-lg shadow-md hover:bg-[#5E5543] transition transform hover:scale-105 duration-500 ease-in-out"
                         >
                             Send Message
                         </button>

@@ -11,6 +11,7 @@ import OurTeam from './OurTeam';
 import CallToActionBanner from './CallToAction';
 import Slider from './PhotoSlider';
 import SocialMediaLinks from './SocialMediaLinks';
+import ReviewComponent from './ReviewComponent';
 
 export default function Home() {
   const [isCartOpen, setIsCartOpen] = useState(false); // State to toggle cart visibility
@@ -247,6 +248,7 @@ export default function Home() {
         <div>
           {/* <OurTeam /> */}
           {/* <Slider /> */}
+          <ReviewComponent />
         </div>
 
         {/* Call to Action */}
