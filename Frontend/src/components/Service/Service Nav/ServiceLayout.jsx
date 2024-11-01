@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Outlet } from 'react-router-dom'
 import { useLocation } from 'react-router-dom';
+import SocialMediaLinks from '../../Home/SocialMediaLinks';
 
 
 
@@ -15,6 +16,7 @@ function ServiceLayout({ children }) {
   return (
     <> <div>
     <Outlet />
+    <SocialMediaLinks />  
     {children}
     </div>
     </>
