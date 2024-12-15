@@ -108,7 +108,7 @@ export default function Footer() {
 
                         {/* WhatsApp */}
                         <a
-                            href="https://wa.me/yournumber"
+                            onClick={handleClick}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="bg-BGColorYellow sm:bg-MainBGColorYellow rounded-full p-2 sm:p-3 shadow-lg hover:bg-[#635a4f] hover:text-green-500 animate-bounce"

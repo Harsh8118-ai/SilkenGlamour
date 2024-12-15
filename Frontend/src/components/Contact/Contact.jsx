@@ -74,6 +74,14 @@ const Contact = () => {
         }
     };
 
+    const phoneNumber = '9266037001';
+    const message = "Hi Silken Glamour! I'd like to know more about your Services. Can you help me?";
+
+    const handleClick = () => {
+        const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+        window.open(url, '_blank');
+    };
+
     return (
         <>
             <div className="min-h-screen flex flex-col items-center bg-gradient-to-b from-[#CBB59F] to-[#DED6CB] py-16">
@@ -89,9 +97,8 @@ const Contact = () => {
                         </a>
                     </div>
 
-                    <div className="text-center hover:scale-110 transform transition duration-500 ease-in-out ">
+                    <div className="text-center hover:scale-110 transform transition duration-500 ease-in-out " onClick={handleClick}>
                         <a
-                            href="https://wa.me/9266037001"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-lg font-semibold flex flex-col items-center text-black hover:text-[#CBB59F] transition"
@@ -116,7 +123,7 @@ const Contact = () => {
                     <div className="flex justify-evenly flex-wrap gap-8 mt-6" data-aos="fade-right" data-aos-delay="300">
                         <div className="flex items-center space-x-3 hover:scale-105 transition transform duration-300 ease-in-out">
                             <FaEnvelope className="text-[#7A6752] text-2xl" />
-                            <span className="text-lg">silkenglamour@salon.org</span>
+                            <a href="mailto:silkenglamour@gmail.com"><span className="text-lg">silkenglamour@gmail.com</span></a>
                         </div>
                     </div>
 
@@ -262,7 +269,8 @@ const Contact = () => {
                                             d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                                         />
                                     </svg>
-                                    <div className="ml-4 text-md tracking-wide font-semibold w-40">silkenglamour@salon.org</div>
+                            <a href="mailto:silkenglamour@gmail.com">
+                                    <div className="ml-4 text-md tracking-wide font-semibold w-40">silkenglamour@gmail.com</div></a>
                                 </div>
                             </div>
 
