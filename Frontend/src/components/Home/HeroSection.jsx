@@ -15,7 +15,7 @@ export default function HeroSection() {
         <div className="relative h-full w-full text-center sm:pt-16 pt-5">
           {/* <p className='hidden sm:block text-sm sm:text-xl font-bold text-black font-Logo'>SilkenGlamour</p> */}
           <h1 className="text-2xl sm:text-5xl font-bold text-black sm:mb-16 mb-5 font-Logo">
-            Welcome to<br /> Luxurious Home Salon 
+            Welcome to<br /> Luxurious Home Salon
           </h1>
           <div className='flex items-center justify-center w-full gap-10'>
 
@@ -31,10 +31,15 @@ export default function HeroSection() {
             <Link to="/service">
               <img
                 src="/Home/Banner Mirror.webp"
-                alt=""
-                className="h-72 w-60 sm:w-80 sm:h-96 rounded-t-full border-[6px] border-[000000] object-cover transform hover:opacity-95 hover:border-white"
+                alt="Banner Mirror"
+                width="320"
+                height="384"
+                className="h-72 w-60 sm:w-80 sm:h-96 rounded-t-full border-[6px] border-white object-cover transform hover:opacity-95 hover:border-white"
+                loading="lazy"
+                decoding="async"
               />
             </Link>
+
 
             <div className='mt-32 hidden sm:block'>
               <Link to="/service">
