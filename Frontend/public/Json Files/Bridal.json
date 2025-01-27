@@ -5,8 +5,7 @@
       "name": "HD Bridal Makeup",
       "price": 17999,
       "offerprice": 20000,
-      "features": ["Including Lenses, Lashes & Hair Accesories", "High-Definition Coverage", "Enhances Natural Beauty"],
-      "href" : "/"
+      "features": ["Including Lenses, Lashes & Hair Accesories", "High-Definition Coverage", "Enhances Natural Beauty"]
     },
     {
       "id": "Bridal2",
@@ -14,8 +13,7 @@
       "name": "Airbrush Bridal Makeup",
       "price": 19999,
       "offerprice": 24000,
-      "features": ["Including Lenses, Lashes & Hair Accesories", "Flawless, Smooth Finish", "Long-Lasting Wear"],
-      "href" : "/"
+      "features": ["Including Lenses, Lashes & Hair Accesories", "Flawless, Smooth Finish", "Long-Lasting Wear"]
     },
     {
       "id": "Bridal3",
@@ -23,8 +21,7 @@
       "name": "Celebrity Makeup",
       "price": 24999,
       "offerprice": 30000,
-      "features": ["Including Lenses, Lashes & Hair Accesories", "Red Carpet Ready", "Expertly Sculpted Look"],
-      "href" : "/"
+      "features": ["Including Lenses, Lashes & Hair Accesories", "Red Carpet Ready", "Expertly Sculpted Look"]
     }
     ,
     {
@@ -33,8 +30,7 @@
         "name": "Bridal Package",
         "price": 31999,
         "offerprice": 35000,
-        "features": ["Threading, Waxing, Facial", "D-Tan, Hair SPA, Nail Ext.", "Polishing, Mani-Pedi, Makeup"],
-        "href" : "/"
+        "features": ["Threading, Waxing, Facial", "D-Tan, Hair SPA, Nail Ext.", "Polishing, Mani-Pedi, Makeup"]
       },
     {
       "id": "Bridal5",
@@ -42,8 +38,7 @@
       "name": "Only Hairdo",
       "price": 749,
       "offerprice": 900,
-      "features": ["Including Lenses, Lashes & Hair Accesories", "Stylish Hair Design", "Enhances Overall Look"],
-      "href" : "/"
+      "features": ["Including Lenses, Lashes & Hair Accesories", "Stylish Hair Design", "Enhances Overall Look"]
     }
     ,
     {
@@ -52,8 +47,7 @@
       "name": "Saree Rapping",
       "price": 299,
       "offerprice": 500,
-      "features": ["Including Lenses, Lashes & Hair Accesories", "Perfectly Draped Saree", "Enhances Elegance and Fit"],
-      "href" : "/"
+      "features": ["Including Lenses, Lashes & Hair Accesories", "Perfectly Draped Saree", "Enhances Elegance and Fit"]
     }
     
     
