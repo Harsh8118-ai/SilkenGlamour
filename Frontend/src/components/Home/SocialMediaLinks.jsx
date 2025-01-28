@@ -11,13 +11,13 @@ const SocialMediaLinks = () => {
   const iconClasses =
     'transition duration-300 transform hover:scale-125 w-10 h-10';
 
-    const phoneNumber = '9266037001';
-    const message = "Hi Silken Glamour! I'd like to know more about your Services. Can you help me?";
+  const phoneNumber = '9266037001';
+  const message = "Hi Silken Glamour! I'd like to know more about your Services. Can you help me?";
 
-    const handleClick = () => {
-        const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
-        window.open(url, '_blank');
-    };
+  const handleClick = () => {
+    const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank');
+  };
 
   return (
     <>
@@ -86,7 +86,7 @@ const SocialMediaLinks = () => {
             rel="noopener noreferrer"
             className="bg-MainBGColorYellow rounded-full p-2 sm:p-3 shadow-lg hover:bg-[#635a4f] hover:text-white"
             data-aos="fade-up"
-          data-aos-delay="100"
+            data-aos-delay="100"
 
           >
             <FaInstagram className={`${iconClasses} w-6 h-6 sm:w-8 sm:h-8`} />
@@ -99,23 +99,12 @@ const SocialMediaLinks = () => {
             rel="noopener noreferrer"
             className="bg-MainBGColorYellow rounded-full p-2 sm:p-3 shadow-lg hover:bg-[#635a4f] hover:text-white"
             data-aos="fade-up"
-          data-aos-delay="200"
+            data-aos-delay="200"
 
           >
             <FaFacebookF className={`${iconClasses} w-6 h-6 sm:w-8 sm:h-8`} />
           </a>
 
-
-          {/* WhatsApp */}
-          {/* <a
-            href="https://wa.me/yournumber"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-MainBGColorYellow rounded-full p-2 sm:p-3 shadow-lg hover:bg-[#635a4f] hover:text-white"
-            data-aos="fade-up"
-          >
-            <FaWhatsapp className={`${iconClasses} w-6 h-6 sm:w-8 sm:h-8`} />
-          </a> */}
 
           {/* LinkedIn */}
           <a
@@ -124,13 +113,29 @@ const SocialMediaLinks = () => {
             rel="noopener noreferrer"
             className="bg-MainBGColorYellow rounded-full p-2 sm:p-3 shadow-lg hover:bg-[#635a4f] hover:text-white"
             data-aos="fade-up"
-          data-aos-delay="300"
+            data-aos-delay="300"
 
           >
             <FaLinkedinIn className={`${iconClasses} w-6 h-6 sm:w-8 sm:h-8`} />
           </a>
 
         </div>
+
+        {/* WhatsApp */}
+
+        <div className="fixed bottom-14 sm:bottom-20 right-0 m-4 z-[999]">
+          <div className="flex flex-row sm:flex-col space-x-4 sm:space-x-0 sm:space-y-4">
+            <a
+              href="https://wa.me/yournumber"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-MainBGColorYellow rounded-full p-4 sm:p-3 shadow-lg hover:bg-[#635a4f] hover:text-white animate-bounce"
+              data-aos="fade-up"
+            >
+              <FaWhatsapp className={`${iconClasses} w-6 h-6 sm:w-8 sm:h-8`} />
+            </a>
+          </div></div>
+
       </div>
     </>
   );

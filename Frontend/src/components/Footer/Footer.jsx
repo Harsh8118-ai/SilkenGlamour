@@ -23,86 +23,9 @@ export default function Footer() {
 
     return (
         <>
-            {/* Uncomment and adjust this section when needed */}
-            {/* <footer className="bg-MainBGColorYellow border-y hidden sm:block">
-                <div className="mx-auto w-full max-w-screen-xl p-4 py-6">
-                    <div className="flex justify-center gap-9 sm:justify-between">
-                        <div className="mb-6 md:mb-0">
-                            <Link to="/" className="flex items-center">
-                                <img src="/Services/SG Logo.png" alt="Logo" className="hidden sm:inline ml-9 h-14 rounded-md object-cover" />
-                            </Link>
-                        </div>
-                        <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-                            <div>
-                                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Resources</h2>
-                                <ul className="text-gray-500 font-medium">
-                                    <li className="mb-4">
-                                        <Link to="/" className="hover:underline">
-                                            Home
-                                        </Link>
-                                    </li>
-                                    <li className="mb-4">
-                                        <Link to="/about" className="hover:underline">
-                                            About
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link to="/service" className="hover:underline">
-                                            Service
-                                        </Link>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Legal</h2>
-                                <ul className="text-gray-500 font-medium">
-                                    <li className="mb-4">
-                                        <Link to="#" className="hover:underline">
-                                            Privacy Policy
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link to="#" className="hover:underline">
-                                            Terms &amp; Conditions
-                                        </Link>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
-                    <div className="flex items-center justify-between">
-                        <span className="text-sm text-gray-500 sm:text-center">
-                            © 2024
-                            <a href="https://hiteshchoudhary.com/" className="hover:underline">
-                                harshtyagi
-                            </a>
-                            . All Rights Reserved.
-                        </span>
-                    </div>
-                </div>
-            </footer> */}
+            <div>                
 
-            {/* ...................... WHATSAPP ICON ...................... */}
-
-            <div className=''>
-                {/* Mobile version of WhatsApp Icon */}
-                {/* <div className="sm:hidden fixed z-50 bottom-14 right-1 animate-bounce">
-                    <a href="https://wa.me/9266037001" onClick={handleClick} target="_blank" rel="noopener noreferrer">
-                        <FaWhatsapp className="text-[#25D366] text-5xl bg-gray-300 p-2 rounded-full transition hover:scale-110 duration-300" />
-                    </a>
-                </div> */}
-
-                {/* Desktop version of WhatsApp Icon */}
-                {/* <div className="hidden sm:block fixed z-50 top-3/4 right-0">
-                    <div className="fixed bottom-10 right-5 sm:animate-pulse">
-                        <a href="https://wa.me/9266037001" onClick={handleClick} target="_blank" rel="noopener noreferrer">
-                            <FaWhatsapp className="text-[#25D366] text-5xl bg-gray-300 p-2 rounded-full shadow-lg transition hover:scale-110 duration-300" />
-                        </a>
-                    </div>
-                </div> */}
-
-                <div className="fixed bottom-14 sm:bottom-20 right-0 m-4 z-[999]">
+                <div className="fixed bottom-14 sm:bottom-20 right-0 m-4 z-[998]">
 
                     <div className="flex flex-row sm:flex-col space-x-4 sm:space-x-0 sm:space-y-4">
 
@@ -111,7 +34,7 @@ export default function Footer() {
                             onClick={handleClick}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="bg-BGColorYellow sm:bg-MainBGColorYellow rounded-full p-2 sm:p-3 shadow-lg hover:bg-[#635a4f] hover:text-green-500 animate-bounce"
+                            className="bg-BGColorYellow rounded-full p-2 sm:p-3 shadow-lg hover:bg-[#635a4f] hover:text-green-500 animate-bounce"
                             data-aos="fade-up"
                         >
                             <FaWhatsapp className={`${iconClasses} w-6 h-6 sm:w-8 sm:h-8`} />
@@ -123,7 +46,7 @@ export default function Footer() {
 
             {/*........................................ ICON BAR ........................................*/}
 
-            {/* Removed the empty div that caused extra space */}
+           
 
             <div className="flex justify-center">
                 <div className="sm:hidden shadow fixed py-1 px-5 z-50 bottom-1.5 w-fit bg-gradient-to-r from-[#2E2117] via-[#796855] to-[#2E2117] rounded-full">

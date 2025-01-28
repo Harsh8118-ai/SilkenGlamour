@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useSwipeable } from 'react-swipeable';
 
 export default function HomeServiceMobile() {
   const [activeIndex, setActiveIndex] = useState(4); // Start with the middle card (index 4)
@@ -30,12 +31,19 @@ export default function HomeServiceMobile() {
     const totalServices = services.length;
     const visibleServices = [];
 
-    // Adjust for 3 cards on mobile and 5 cards on larger screens
     for (let i = -Math.floor(cardsToShow / 2); i <= Math.floor(cardsToShow / 2); i++) {
       visibleServices.push(services[(activeIndex + i + totalServices) % totalServices]);
     }
     return visibleServices;
   };
+
+  // Swipe handlers
+  const swipeHandlers = useSwipeable({
+    onSwipedLeft: () => handleScroll('right'),
+    onSwipedRight: () => handleScroll('left'),
+    preventDefaultTouchmoveEvent: true,
+    trackMouse: true, // Allow mouse swipe in addition to touch
+  });
 
   return (
     <div className="bg-transparent min-h-fit flex flex-col items-center">
@@ -51,9 +59,11 @@ export default function HomeServiceMobile() {
           &lt;
         </button>
 
-        {/* Carousel Container */}
-        <div className="flex overflow-hidden items-center justify-center sm:p-10 w-full" >
-          {/* Show 3 cards on mobile and 5 cards on larger screens */}
+        {/* Carousel Container with Swipe Handlers */}
+        <div
+          {...swipeHandlers}
+          className="flex overflow-hidden items-center justify-center sm:p-10 w-full"
+        >
           {getVisibleServices(3).map((service, index) => (
             <Link to={service.link} key={service.name}>
               <div

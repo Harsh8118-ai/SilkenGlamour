@@ -5,8 +5,7 @@
     "name": "Face + Neck Oxy Bleach",
     "price": 529,
     "offerprice": 579,
-    "features": ["Brightens Dull Complexion", "Evens Skin Tone", "Reduces Dark Spots"],
-    "href" : "/"
+    "features": ["Brightens Dull Complexion", "Evens Skin Tone", "Reduces Dark Spots"]
   },
   {
     "id": "Bleach2",
@@ -14,8 +13,7 @@
     "name": "Full Body Oxy Bleach",
     "price": 1299,
     "offerprice": 1549,
-    "features": ["Brightens Full Body", "Evens Skin Tone", "Reduces Uneven Pigmentation"],
-    "href" : "/"
+    "features": ["Brightens Full Body", "Evens Skin Tone", "Reduces Uneven Pigmentation"]
   },
   {
     "id": "Bleach3",
@@ -23,8 +21,7 @@
     "name": "Full Arms Oxy Bleach",
     "price": 649,
     "offerprice": 749,
-    "features": ["Brightens Arm Skin", "Evens Skin Tone", "Reduces Dark Spots"],
-    "href" : "/"
+    "features": ["Brightens Arm Skin", "Evens Skin Tone", "Reduces Dark Spots"]
   },
   {
     "id": "Bleach4",
@@ -32,8 +29,7 @@
     "name": "Full Legs Oxy Bleach",
     "price": 749,
     "offerprice": 849,
-    "features": ["Brightens Leg Skin", "Evens Out Skin Tone", "Reduces Dark Spots"],
-    "href" : "/"
+    "features": ["Brightens Leg Skin", "Evens Out Skin Tone", "Reduces Dark Spots"]
   },
   {
     "id": "Bleach5",
@@ -41,8 +37,7 @@
     "name": "Full Back Oxy Bleach",
     "price": 799,
     "offerprice": 899,
-    "features": ["Brightens Back Skin", "Evens Skin Tone", "Reduces Acne Marks"],
-    "href" : "/"
+    "features": ["Brightens Back Skin", "Evens Skin Tone", "Reduces Acne Marks"]
   },
   {
       "id": "Bleach6",
@@ -50,8 +45,7 @@
       "name": "Face + Neck O3 Bleach",
       "price": 649,
       "offerprice": 799,
-      "features": ["Brightens Face and Neck", "Evens Skin Tone", "Reduces Dark Spots"],
-      "href" : "/"
+      "features": ["Brightens Face and Neck", "Evens Skin Tone", "Reduces Dark Spots"]
     },
     {
       "id": "Bleach7",
@@ -59,8 +53,7 @@
       "name": "Full Body O3 Bleach",
       "price": 1899,
       "offerprice": 2199,
-      "features": ["Brightens Full Body", "Evens Out Skin Tone", "Reduces Hyperpigmentation"],
-      "href" : "/"
+      "features": ["Brightens Full Body", "Evens Out Skin Tone", "Reduces Hyperpigmentation"]
     },
     {
       "id": "Bleach8",
@@ -68,8 +61,7 @@
       "name": "Full Arms O3 Bleach",
       "price": 789,
       "offerprice": 849,
-      "features": ["Brightens Arm Skin", "Evens Skin Tone", "Reduces Dark Spots"],
-      "href" : "/"
+      "features": ["Brightens Arm Skin", "Evens Skin Tone", "Reduces Dark Spots"]
     },
     {
       "id": "Bleach9",
@@ -77,8 +69,7 @@
       "name": "Full Legs O3 Bleach",
       "price": 919,
       "offerprice": 999,
-      "features": ["Brightens Leg Skin", "Evens Out Skin Tone", "Reduces Uneven Pigmentation"],
-      "href" : "/"
+      "features": ["Brightens Leg Skin", "Evens Out Skin Tone", "Reduces Uneven Pigmentation"]
     },
     {
       "id": "Bleach10",
@@ -86,7 +77,6 @@
       "name": "Full Back O3 Bleach",
       "price": 949,
       "offerprice": 1049,
-      "features": ["Brightens Back Skin", "Evens Out Skin Tone", "Reduces Acne Marks"],
-      "href" : "/"
+      "features": ["Brightens Back Skin", "Evens Out Skin Tone", "Reduces Acne Marks"]
     }
 ]
