@@ -132,7 +132,6 @@ const ReviewComponent = () => {
 
   return (
     <div className="p-6 mt-10 bg-[#C6B198] rounded-3xl sm:rounded-lg shadow-lg w-full max-w-lg mx-auto flex flex-col justify-center items-center">
-      <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">Leave a Review</h2>
 
       {/* Rating Selection */}
       <div className="flex">

@@ -17,8 +17,8 @@ function Layout({ children }) {
       {/* CartProvider wraps everything to share cart context across the app */}
       <CartProvider>
         <div>
-          <Header /> {/* Contains MobileCart */}
-          <Outlet /> {/* Render child components based on route */}
+          <Header /> 
+          <Outlet /> 
           <Footer />
         </div>
         {children}
