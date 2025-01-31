@@ -26,7 +26,7 @@ app.use(express.json());
 
 // Root route
 app.get('/', (req, res) => {
-  res.status(200).send('Welcome to Silken Glamour Backend!');
+  res.status(200).send("Welcome to SilkenGlamour's Backend!");
 });
 
 app.use("/api/auth", authRoute);
