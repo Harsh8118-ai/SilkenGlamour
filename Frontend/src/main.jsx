@@ -8,6 +8,7 @@ import { AuthProvider } from './Store/auth';
 import { CartProvider } from './components/Cart/CartContext';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import BlogAndReview from './components/Blog & Review/Blog&Review';
 
 // Lazy-loaded components for better code splitting
 const Home = React.lazy(() => import('./components/Home/Home'));
@@ -182,6 +183,14 @@ const router = createBrowserRouter(
           }
         />
       </Route>
+      <Route
+        path="blog"
+        element={
+          <Suspense fallback={<div className='bg-MainBGColorYellow h-screen w-full'></div>}>
+            <BlogAndReview />
+          </Suspense>
+        }
+      />
       <Route
         path="faq"
         element={

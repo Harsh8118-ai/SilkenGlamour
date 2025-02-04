@@ -7,11 +7,10 @@ import HomeStarterCombo from './HomeStarterCombo';
 import WebCartLayout from '../Cart/WebCartLayout';
 import HeroSection from './HeroSection';
 import HomeServiceMobile from './HomeServiceMobile';
-import OurTeam from './OurTeam';
 import CallToActionBanner from './CallToAction';
-import Slider from './PhotoSlider';
 import SocialMediaLinks from './SocialMediaLinks';
-import ReviewComponent from './ReviewComponent';
+import ReviewComponent from '../Blog & Review/ReviewComponent';
+
 
 export default function Home() {
   const [isCartOpen, setIsCartOpen] = useState(false); // State to toggle cart visibility
@@ -177,16 +176,6 @@ export default function Home() {
                       Home
                     </NavLink>
                   </li>
-                  {/* <li>
-                    <NavLink
-                      to="/about"
-                      className={({ isActive }) =>
-                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-gray-900" : "text-black"}  border-gray-600  lg:hover:bg-transparent hover:text-[#635a4f] hover:scale-105 font-bold lg:p-0`
-                      }
-                    >
-                      About
-                    </NavLink>
-                  </li> */}
                   <li>
                     <NavLink
                       to="/service"
@@ -205,6 +194,16 @@ export default function Home() {
                       }
                     >
                       Contact
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to="/blog"
+                      className={({ isActive }) =>
+                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-gray-900" : "text-black"}  border-gray-600  lg:hover:bg-transparent  hover:text-[#635a4f] hover:scale-105 font-bold lg:p-0`
+                      }
+                    >
+                      Blog
                     </NavLink>
                   </li>
                   <li>
