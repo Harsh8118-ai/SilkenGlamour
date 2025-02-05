@@ -3,6 +3,7 @@ import { format } from 'date-fns';
 import { useAuth } from '../../Store/auth';
 import { toast } from 'react-toastify';
 import AllReviewsPage from './AllReviewsPage';
+import EditReviewModal from './EditReviewModal';
 
 const ReviewComponent = () => {
   const [reviews, setReviews] = useState([]);
@@ -184,7 +185,7 @@ const ReviewComponent = () => {
 
       <button
         onClick={handleReviewSubmit}
-        className="w-full bg-[#796855] text-gray-300 font-semibold py-2 rounded"
+        className="w-full bg-[#796855] text-gray-300 font-semibold py-2 rounded hover:bg-[#3d3428]"
       >
         Submit Review
       </button>
@@ -251,6 +252,7 @@ const ReviewComponent = () => {
         </div>
       )}
     </div>
+    
   );
 };
 
