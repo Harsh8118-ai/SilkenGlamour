@@ -3,6 +3,7 @@ import { format } from 'date-fns';
 import { useAuth } from '../../Store/auth';
 import { toast } from 'react-toastify';
 import AllReviewsPage from './AllReviewsPage';
+import ReviewStats from './ReviewStats';
 
 const ReviewComponent = () => {
   const [reviews, setReviews] = useState([]);
@@ -12,10 +13,34 @@ const ReviewComponent = () => {
   const [currentReviewId, setCurrentReviewId] = useState(null);
   const [modalComment, setModalComment] = useState('');
   const [modalRating, setModalRating] = useState(0);
+  const [hasReviewed, setHasReviewed] = useState(false);
 
   const { user } = useAuth();
   const loggedInUsername = user?.username || '';
   const BASE_URL = import.meta.env.VITE_BACKEND_URL;
+
+  useEffect(() => {
+    const fetchReviews = async () => {
+      try {
+        const response = await fetch(`${BASE_URL}/form/review`);
+        if (response.ok) {
+          const data = await response.json();
+          setReviews(data);
+
+          const userReview = data.find((review) => review.username === loggedInUsername);
+          if (userReview) {
+            setHasReviewed(true);
+          }
+          console.log(userReview);
+          
+        }
+      } catch (error) {
+        console.error("Error fetching reviews:", error);
+      }
+    };
+
+    fetchReviews();
+  }, [loggedInUsername]);
 
   const handleReviewSubmit = async () => {
     if (!loggedInUsername) {
@@ -58,6 +83,9 @@ const ReviewComponent = () => {
       if (response.ok) {
         const responseData = await response.json();
         toast.success('Review Posted Successfully');
+        setTimeout(() => {
+          window.location.reload();  // ✅ Refresh the page after success
+        }, 1000);
       }
     } catch (error) {
       toast.error('Review Not Posted');
@@ -131,8 +159,13 @@ const ReviewComponent = () => {
   };
 
   return (
+    <>
+    <ReviewStats />
     <div className="p-6 mt-10 bg-[#C6B198] rounded-3xl sm:rounded-lg shadow-lg w-full max-w-lg mx-auto flex flex-col justify-center items-center">
-
+      {hasReviewed ? (
+        <h2 className="text-2xl -mb-8 font-bold text-gray-800 text-center">Your Review</h2>
+      ) : (
+        <>
       {/* Rating Selection */}
       <div className="flex">
         <div className={`flex items-center mb-4 ${rating ? 'mr-10' : 'mr-0'}`}>
@@ -184,10 +217,12 @@ const ReviewComponent = () => {
 
       <button
         onClick={handleReviewSubmit}
-        className="w-full bg-[#796855] text-gray-300 font-semibold py-2 rounded"
+        className="w-full bg-[#796855] text-gray-300 font-semibold py-2 rounded hover:bg-[#3d3428]"
       >
         Submit Review
       </button>
+      </>
+      )}
 
       <div className="reviews-page">
         <AllReviewsPage reviews={reviews} openEditModal={openEditModal} />
@@ -251,6 +286,9 @@ const ReviewComponent = () => {
         </div>
       )}
     </div>
+
+    </>
+    
   );
 };
 
