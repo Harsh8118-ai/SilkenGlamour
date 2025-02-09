@@ -51,13 +51,7 @@ export default function HomeServiceMobile() {
         Services We Offer
       </h6>
       <div className="flex items-center mt-2 mb-2">
-        {/* Left Scroll Button */}
-        <button
-          className="bg-gray-500 text-white rounded-full p-4 hover:bg-gray-700 transition duration-300 ease-in-out mb-4"
-          onClick={() => handleScroll('left')}
-        >
-          &lt;
-        </button>
+        
 
         {/* Carousel Container with Swipe Handlers */}
         <div
@@ -69,7 +63,7 @@ export default function HomeServiceMobile() {
               <div
                 className={`flex flex-col items-center justify-center p-1 transform-gpu transition-all duration-500 ease-out ${
                   index === 1 ? 'scale-110 opacity-100 hover:scale-[1.15]' : 'scale-100 opacity-50'
-                }`}
+                } mx-1`}
                 style={{
                   transitionTimingFunction: 'cubic-bezier(0.25, 0.8, 0.25, 1)', // Smoother animation
                 }}
@@ -84,14 +78,6 @@ export default function HomeServiceMobile() {
             </Link>
           ))}
         </div>
-
-        {/* Right Scroll Button */}
-        <button
-          className="bg-gray-500 text-white rounded-full p-4 hover:bg-gray-700 transition duration-300 ease-in-out mb-4"
-          onClick={() => handleScroll('right')}
-        >
-          &gt;
-        </button>
       </div>
     </div>
   );
