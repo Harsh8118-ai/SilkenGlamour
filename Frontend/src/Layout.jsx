@@ -4,6 +4,7 @@ import Footer from './components/Footer/Footer';
 import { Outlet } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import { CartProvider } from '../src/components/Cart/CartContext'; // CartProvider wraps everything
+import TrackPageView from './TrackPageView';
 
 function Layout({ children }) {
   const { pathname } = useLocation();
@@ -17,8 +18,9 @@ function Layout({ children }) {
       {/* CartProvider wraps everything to share cart context across the app */}
       <CartProvider>
         <div>
-          <Header /> {/* Contains MobileCart */}
-          <Outlet /> {/* Render child components based on route */}
+          <TrackPageView />
+          <Header /> 
+          <Outlet /> 
           <Footer />
         </div>
         {children}

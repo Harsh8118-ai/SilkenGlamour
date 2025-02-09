@@ -8,6 +8,24 @@ import { AuthProvider } from './Store/auth';
 import { CartProvider } from './components/Cart/CartContext';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import BlogAndReview from './components/Blog & Review/Blog&Review';
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import ReactGA from "react-ga4";
+
+
+// Load Google Analytics ID from .env
+const TRACKING_ID = import.meta.env.VITE_GOOGLE_ANALYTICS_ID;
+ReactGA.initialize(TRACKING_ID);
+
+// Function to track page views
+const TrackPageView = () => {
+  const location = useLocation();
+  useEffect(() => {
+    ReactGA.send({ hitType: "pageview", page: location.pathname });
+  }, [location]);
+  return null;
+};
 
 // Lazy-loaded components for better code splitting
 const Home = React.lazy(() => import('./components/Home/Home'));
@@ -183,6 +201,14 @@ const router = createBrowserRouter(
         />
       </Route>
       <Route
+        path="blog"
+        element={
+          <Suspense fallback={<div className='bg-MainBGColorYellow h-screen w-full'></div>}>
+            <BlogAndReview />
+          </Suspense>
+        }
+      />
+      <Route
         path="faq"
         element={
           <Suspense fallback={<div className='bg-MainBGColorYellow h-screen w-full'></div>}>
@@ -197,7 +223,10 @@ const router = createBrowserRouter(
 ReactDOM.createRoot(document.getElementById('root')).render(
   <AuthProvider>
     <CartProvider>
-      <RouterProvider router={router} />
+      <RouterProvider router={router}>
+        <TrackPageView />
+      </RouterProvider>
+
       <ToastContainer
         position="top-right"
         autoClose={1000}
@@ -211,6 +240,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         bodyClassName='Toastify__toast--custom'
         progressClassName='Toastify__progress-bar'
       />
+      
     </CartProvider>
   </AuthProvider>
 );

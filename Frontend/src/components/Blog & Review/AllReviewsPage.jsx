@@ -96,31 +96,34 @@ const AllReviewsComponent = () => {
       <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">All Reviews</h2>
 
       {reviews.length > 0 ? (
-        reviews.map((review) => (
-          <div key={review._id} className={`p-4 bg-white rounded-lg shadow mt-4 w-full ${review.username === loggedInUsername ? 'border-2 border-[#796855]' : ''}`}>
-            <div className="flex items-center justify-between">
-              <h3 className="text-lg font-semibold text-gray-800">{review.username}</h3>
-              <div className="text-sm text-gray-500">{review.date} at {review.time}</div>
-            </div>
-            <div className="flex items-center text-[#796855] text-xl mt-2">
-              {Array(Number(review.rating))
-                .fill()
-                .map((_, i) => (
-                  <span key={i}>★</span>
-                ))}
-            </div>
-            <p className="text-gray-700 mt-2">{review.comment}</p>
+        reviews
+          .filter((review) => review.username === loggedInUsername) // Filter reviews to show only the logged-in user's reviews
+          .map((review) => (
+            <div key={review._id} className={`p-4 bg-white rounded-lg shadow mt-4 w-full m-10 ${review.username === loggedInUsername ? 'border-2 border-[#796855]' : ''}`}>
+              <div className="flex items-center justify-between">
+                <h3 className="text-lg font-semibold text-gray-800">{review.username}</h3>
+                <div className="text-sm text-gray-500">{review.date} <br /> {review.time}</div>
+              </div>
+              <div className="flex items-center text-[#796855] text-xl mt-2">
+                {Array(Number(review.rating))
+                  .fill()
+                  .map((_, i) => (
+                    <span key={i}>★</span>
+                  ))}
+              </div>
+              <p className="text-gray-700 mt-2">{review.comment}</p>
 
-            {review.username === loggedInUsername && (
-              <button onClick={() => handleEditClick(review)} className="text-blue-500 mt-2 text-sm">
-                Edit
-              </button>
-            )}
-          </div>
-        ))
+              {review.username === loggedInUsername && (
+                <button onClick={() => handleEditClick(review)} className="text-blue-500 mt-2 text-sm">
+                  Edit
+                </button>
+              )}
+            </div>
+          ))
       ) : (
         <p className="text-gray-700">No reviews yet.</p>
       )}
+
 
       {isModalOpen && (
         <div className="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center z-50">

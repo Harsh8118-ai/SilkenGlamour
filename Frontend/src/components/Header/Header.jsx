@@ -93,6 +93,17 @@ export default function Header() {
                 </li>
                 <li>
                   <NavLink
+                    to="/blog"
+                    className={({ isActive }) =>
+                      `block py-2 pr-4 pl-3 duration-200 ${isActive ? 'text-gray-900' : 'text-MainBGColorYellow'
+                      }  border-gray-600  lg:hover:bg-transparent  hover:text-black font-bold lg:p-0`
+                    }
+                  >
+                    Blog
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
                     to="/faq"
                     className={({ isActive }) =>
                       `block py-2 pr-4 pl-3 duration-200 ${isActive ? 'text-gray-900' : 'text-MainBGColorYellow'
