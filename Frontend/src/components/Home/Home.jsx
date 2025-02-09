@@ -10,6 +10,7 @@ import HomeServiceMobile from './HomeServiceMobile';
 import CallToActionBanner from './CallToAction';
 import SocialMediaLinks from './SocialMediaLinks';
 import ReviewComponent from '../Blog & Review/ReviewComponent';
+import Review from '../Blog & Review/Review';
 
 
 export default function Home() {
@@ -247,7 +248,7 @@ export default function Home() {
         <div>
           {/* <OurTeam /> */}
           {/* <Slider /> */}
-          <ReviewComponent />
+          <Review />
         </div>
 
         {/* Call to Action */}

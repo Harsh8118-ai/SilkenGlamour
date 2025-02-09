@@ -104,7 +104,7 @@ const AllReviewsComponent = () => {
         reviews
           .filter((review) => review.username === loggedInUsername) // Filter reviews to show only the logged-in user's reviews
           .map((review) => (
-            <div key={review._id} className={`py-4 bg-white rounded-lg shadow mt-4 w-full m-10  ${review.username === loggedInUsername ? 'border-2 border-[#796855]' : ''}`}>
+            <div key={review._id} className={`py-4 bg-LightBGColor rounded-lg shadow mt-4 w-full m-10  ${review.username === loggedInUsername ? 'border-2 border-[#796855]' : ''}`}>
               <div className="flex items-baseline gap-8 sm:gap-16 justify-between px-2 sm:px-4">
                 <h3 className="text-lg font-semibold text-gray-800 left-0">{review.username}</h3>
                 <div className="text-sm text-gray-500">{review.date} at {review.time}</div>

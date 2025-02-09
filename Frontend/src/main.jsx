@@ -8,10 +8,10 @@ import { AuthProvider } from './Store/auth';
 import { CartProvider } from './components/Cart/CartContext';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import ReviewStats from './components/Blog & Review/ReviewStats';
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import ReactGA from "react-ga4";
+import Blog from './components/Blog & Review/Blog';
 
 
 // Load Google Analytics ID from .env
@@ -204,7 +204,7 @@ const router = createBrowserRouter(
         path="blog"
         element={
           <Suspense fallback={<div className='bg-MainBGColorYellow h-screen w-full'></div>}>
-            <ReviewStats />
+            <Blog />
           </Suspense>
         }
       />

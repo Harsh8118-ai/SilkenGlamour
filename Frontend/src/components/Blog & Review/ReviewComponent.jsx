@@ -85,7 +85,7 @@ const ReviewComponent = () => {
         toast.success('Review Posted Successfully');
         setTimeout(() => {
           window.location.reload();  // ✅ Refresh the page after success
-        }, 1000);
+        }, 500);
       }
     } catch (error) {
       toast.error('Review Not Posted');
@@ -160,7 +160,6 @@ const ReviewComponent = () => {
 
   return (
     <>
-    <ReviewStats />
     <div className="p-6 mt-10 bg-[#C6B198] rounded-3xl sm:rounded-lg shadow-lg w-full max-w-lg mx-auto flex flex-col justify-center items-center">
       {hasReviewed ? (
         <h2 className="text-2xl -mb-8 font-bold text-gray-800 text-center">Your Review</h2>
@@ -229,62 +228,7 @@ const ReviewComponent = () => {
       </div>
 
       {/* Modal for editing review */}
-      {isModalOpen && (
-        <div className="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center z-50">
-          <div className="bg-white p-6 rounded-lg w-96">
-            <h3 className="text-2xl font-bold text-center mb-4">Edit Your Review</h3>
-
-            {/* Rating Selection in Modal */}
-            <div className="flex mb-4">
-              {[1, 2, 3, 4, 5].map((star) => (
-                <button
-                  key={star}
-                  onClick={() => setModalRating(star)}
-                  className="text-3xl sm:text-4xl lg:ml-2 ml-1"
-                >
-                  <svg
-                    width={`${star <= modalRating ? '23px' : '20px'}`}
-                    version="1.1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 47.94 47.94"
-                  >
-                    <path
-                      fill={`${star <= modalRating ? '#796855' : '#475569'}`}
-                      d="M26.285,2.486l5.407,10.956c0.376,0.762,1.103,1.29,1.944,1.412l12.091,1.757 
-                        c2.118,0.308,2.963,2.91,1.431,4.403l-8.749,8.528c-0.608,0.593-0.886,1.448-0.742,2.285l2.065,12.042 
-                        c0.362,2.109-1.852,3.717-3.746,2.722l-10.814-5.685c-0.752-0.395-1.651-0.395-2.403,0l-10.814,5.685 
-                        c-1.894,0.996-4.108-0.613-3.746-2.722l2.065-12.042c0.144-0.837-0.134-1.692-0.742-2.285l-8.749-8.528 
-                        c-1.532-1.494-0.687-4.096,1.431-4.403l12.091-1.757c0.841-0.122,1.568-0.65,1.944-1.412l5.407-10.956 
-                        C22.602,0.567,25.338,0.567,26.285,2.486z"
-                    ></path>
-                  </svg>
-                </button>
-              ))}
-            </div>
-
-            <textarea
-              value={modalComment}
-              onChange={(e) => setModalComment(e.target.value)}
-              className="w-full p-2 mb-4 text-gray-300 bg-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-BGColorYellow transition duration-300 ease-in-out transform hover:scale-105 h-24"
-            />
-
-            <div className="flex justify-between">
-              <button
-                onClick={closeModal}
-                className="bg-gray-500 text-white px-4 py-2 rounded-lg"
-              >
-                Cancel
-              </button>
-              <button
-                onClick={handleReviewUpdate}
-                className="bg-[#796855] text-gray-300 px-4 py-2 rounded-lg"
-              >
-                Update Review
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
+      
     </div>
 
     </>
