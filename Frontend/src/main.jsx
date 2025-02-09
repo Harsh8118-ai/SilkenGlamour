@@ -11,7 +11,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import ReactGA from "react-ga4";
-import Blog from './components/Blog & Review/Blog';
+import Blog from './components/Blog&Review/Blog';
 
 
 // Load Google Analytics ID from .env

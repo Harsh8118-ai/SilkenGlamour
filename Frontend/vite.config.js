@@ -23,6 +23,9 @@ export default defineConfig({
           if (id.includes('/components/FAQ/')) {
             return 'faq';  // Separate chunk for FAQ-related components
           }
+          if (id.includes('/components/Blog&Review/')) {
+            return 'blog';  // Separate chunk for FAQ-related components
+          }
           // Add more manual chunking logic if necessary
         }
       }
