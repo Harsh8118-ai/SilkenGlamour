@@ -73,7 +73,7 @@ const ReviewStats = () => {
   const ratingDistribution = getRatingDistribution();
 
   return (
-    <div className="p-6 bg-gray-100 rounded-xl shadow-lg max-w-3xl mx-auto">
+    <div className="p-6 mt-10 bg-MainBGColorYellow rounded-xl shadow-lg max-w-3xl mx-auto">
       <h2 className="text-2xl font-bold text-center">Ratings and Reviews</h2>
       <h1 className="text-xs text-center mb-4">
         Ratings and Reviews are verified and are from people who use our services
