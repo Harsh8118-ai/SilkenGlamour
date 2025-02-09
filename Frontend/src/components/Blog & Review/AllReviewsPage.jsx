@@ -5,7 +5,7 @@ import { useAuth } from '../../Store/auth';
 const AllReviewsComponent = () => {
   const [reviews, setReviews] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [currentReview, setCurrentReview] = useState({ id: '', comment: '', rating: 0 });
+  const [currentReview, setCurrentReview] = useState({ _id: '', comment: '', rating: 0 });
   const BASE_URL = import.meta.env.VITE_BACKEND_URL;
   const { token, user } = useAuth();
   const loggedInUsername = user?.username || '';
@@ -23,44 +23,34 @@ const AllReviewsComponent = () => {
 
         if (response.ok) {
           const data = await response.json();
-          // Sorting reviews to ensure logged-in user's review is on top
-          const sortedReviews = [
-            ...data.filter((review) => review.username.toLowerCase() === loggedInUsername.toLowerCase()),
-            ...data.filter((review) => review.username.toLowerCase() !== loggedInUsername.toLowerCase()),
-          ];
-          setReviews(sortedReviews);
+          setReviews(
+            data.sort((a, b) => (a.username === loggedInUsername ? -1 : 1))
+          );
         } else {
           toast.error('Failed to fetch reviews');
         }
       } catch (error) {
         toast.error('Error fetching reviews');
-        console.error(error);
       }
     };
-
     fetchReviews();
   }, [BASE_URL, token, loggedInUsername]);
 
   const handleEditClick = (review) => {
     if (review.username === loggedInUsername) {
-      setCurrentReview(review);
+      setCurrentReview({ ...review });
       setIsModalOpen(true);
     }
   };
 
   const handleReviewUpdate = async () => {
-    const updatedReview = {
-      ...currentReview,
-      comment: currentReview.comment.trim(),
-    };
-
+    const updatedReview = { ...currentReview, comment: currentReview.comment.trim() };
     if (!updatedReview.comment || updatedReview.rating === 0) {
       toast.error('Please provide valid comments and rating');
       return;
     }
-
     try {
-      const response = await fetch(`${BASE_URL}/form/review/${updatedReview.id}`, {
+      const response = await fetch(`${BASE_URL}/form/review/${updatedReview._id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -68,13 +58,11 @@ const AllReviewsComponent = () => {
         },
         body: JSON.stringify(updatedReview),
       });
-
       if (response.ok) {
-        const data = await response.json();
         toast.success('Review updated successfully');
         setReviews((prevReviews) =>
           prevReviews.map((review) =>
-            review._id === updatedReview.id ? updatedReview : review
+            review._id === updatedReview._id ? updatedReview : review
           )
         );
         closeModal();
@@ -83,7 +71,6 @@ const AllReviewsComponent = () => {
       }
     } catch (error) {
       toast.error('Error updating review');
-      console.error(error);
     }
   };
 
@@ -96,7 +83,6 @@ const AllReviewsComponent = () => {
           Authorization: `Bearer ${token}`,
         },
       });
-
       if (response.ok) {
         toast.success('Review deleted successfully');
         setReviews((prevReviews) => prevReviews.filter((review) => review._id !== reviewId));
@@ -105,17 +91,14 @@ const AllReviewsComponent = () => {
       }
     } catch (error) {
       toast.error('Error deleting review');
-      console.error(error);
     }
   };
 
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
+  const closeModal = () => setIsModalOpen(false);
 
   return (
-    <div className="px-7 sm:px-14 mt-10 bg-[#C6B198] rounded-3xl sm:rounded-lg shadow-lg w-full max-w-lg mx-auto flex flex-col justify-center items-center">
-      <h2 className="text-2xl font-bold text-gray-800 text-center">Your Review</h2>
+    <div className="px-7  mt-10 bg-[#C6B198] rounded-3xl sm:rounded-lg shadow-lg w-full max-w-lg mx-auto flex flex-col justify-center items-center">
+      
 
       {reviews.length > 0 ? (
         reviews
