@@ -175,6 +175,7 @@ const ReviewComponent = () => {
               className="text-3xl sm:text-4xl lg:ml-2 ml-1"
             >
               <svg
+              className='transition duration-300 ease-in-out transform hover:scale-125'
                 width={`${star <= rating ? '23px' : '20px'}`}
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"

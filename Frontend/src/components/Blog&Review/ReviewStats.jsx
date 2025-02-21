@@ -52,7 +52,7 @@ const ReviewStats = () => {
         className="inline-block mx-0.5"
         initial={{ scale: 0 }}
         animate={inView ? { scale: 1 } : {}}
-        transition={{ delay: i * 0.1, duration: 0.3, type: 'spring' }}
+        transition={{ delay: i * 0.3, duration: 1, type: 'spring' }}
       >
         <path d="M12 2l2.93 6.26L22 9.27l-5 4.87 1.18 7.01L12 17.77l-6.18 3.38L7 14.14 2 9.27l7.07-1.01L12 2z" />
       </motion.svg>
@@ -76,9 +76,9 @@ const ReviewStats = () => {
       ref={ref}
       initial={{ opacity: 0, y: 50, scale: 0.9 }}
       animate={inView ? { opacity: 1, y: 0, scale: 1 } : {}}
-      transition={{ duration: 0.8, ease: 'easeOut' }}
+      transition={{ duration: 0.5, ease: 'easeOut' }}
       className="p-6 mt-10 bg-MainBGColorYellow rounded-xl shadow-lg max-w-3xl mx-auto"
-      whileHover={{ scale: 1.05, rotateX: 5, rotateY: 5 }}
+      whileHover={{ scale: 1.05, rotateX: 5, rotateY: 6 }}
     >
       <motion.h2
         className="text-2xl font-bold text-center"
@@ -96,17 +96,17 @@ const ReviewStats = () => {
         {/* Star Rating Display */}
         <motion.div className="flex flex-col items-center" whileHover={{ scale: 1.1 }}>
           <motion.p
-            className="text-8xl font-bold"
+            className="text-4xl sm:text-8xl font-bold"
             initial={{ scale: 0 }}
             animate={inView ? { scale: 1 } : {}}
             transition={{ duration: 0.5 }}
           >
             {isNaN(averageRating) ? 'N/A' : averageRating}
           </motion.p>
-          <div className="flex items-center mb-2">{renderStars(isNaN(averageRating) ? 0 : Math.round(averageRating))}</div>
+          <div className="flex items-center mb-2 h-6 sm:h-full sm:w-full w-28">{renderStars(isNaN(averageRating) ? 0 : Math.round(averageRating))}</div>
           <div className="flex items-center gap-2">
             <FaUser size={20} color="#505050" />
-            <p className="text-2xl font-bold text-[#505050]">{totalReviews.toLocaleString()}</p>
+            <p className="text-1xl sm:text-2xl font-bold text-[#505050]">{totalReviews.toLocaleString()}</p>
           </div>
         </motion.div>
 

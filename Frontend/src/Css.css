@@ -73,3 +73,23 @@
   scrollbar-width: none;  /* Firefox */
 }
 
+
+/* Scrollbar for WebKit browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 8px; /* Scrollbar width */
+}
+
+::-webkit-scrollbar-track {
+  background: #C6B198; /* Track color */
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #796855; /* Thumb color */
+  border-radius: 10px;
+  /* transition: background 0.3s; */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d4ac0d; /* Darker on hover */
+}

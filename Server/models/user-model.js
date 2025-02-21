@@ -45,7 +45,7 @@ const userSchema = new mongoose.Schema({
     default: false,
   },
 }, { timestamps: true });
-
+7
 // Password Hashing Middleware
 userSchema.pre("save", async function (next) {
   const user = this;
