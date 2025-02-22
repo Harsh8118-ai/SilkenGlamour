@@ -9,8 +9,9 @@ import HeroSection from './HeroSection';
 import HomeServiceMobile from './HomeServiceMobile';
 import CallToActionBanner from './CallToAction';
 import SocialMediaLinks from './SocialMediaLinks';
-import ReviewComponent from '../Blog&Review/ReviewComponent';
-import Review from '../Blog&Review/Review';
+import ReviewComponent from '../Review/ReviewComponent';
+import Review from '../Review/Review';
+import ReviewStats from '../Review/ReviewStats';
 
 
 export default function Home() {
@@ -248,7 +249,8 @@ export default function Home() {
         <div>
           {/* <OurTeam /> */}
           {/* <Slider /> */}
-          <Review />
+          <ReviewStats/>
+          <ReviewComponent />
         </div>
 
         {/* Call to Action */}

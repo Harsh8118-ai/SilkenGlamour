@@ -3,7 +3,8 @@ import { format } from 'date-fns';
 import { useAuth } from '../../Store/auth';
 import { toast } from 'react-toastify';
 import AllReviewsPage from './AllReviewsPage';
-import ReviewStats from './ReviewStats';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const ReviewComponent = () => {
   const [reviews, setReviews] = useState([]);
@@ -20,6 +21,8 @@ const ReviewComponent = () => {
   const BASE_URL = import.meta.env.VITE_BACKEND_URL;
 
   useEffect(() => {
+    AOS.init({ duration: 1000 });
+
     const fetchReviews = async () => {
       try {
         const response = await fetch(`${BASE_URL}/form/review`);
@@ -160,13 +163,13 @@ const ReviewComponent = () => {
 
   return (
     <>
-    <div className="p-6 mt-10 bg-[#C6B198] rounded-3xl sm:rounded-lg shadow-lg w-full max-w-lg mx-auto flex flex-col justify-center items-center">
+    <div className="p-6 mt-10 bg-[#C6B198] rounded-3xl sm:rounded-lg shadow-lg w-full max-w-lg mx-auto flex flex-col justify-center items-center" data-aos="fade-down">
       {hasReviewed ? (
-        <h2 className="text-2xl -mb-8 font-bold text-gray-800 text-center">Your Review</h2>
+        <h2 className="text-2xl -mb-8 font-bold text-gray-800 text-center" data-aos="fade-up">Your Review</h2>
       ) : (
         <>
       {/* Rating Selection */}
-      <div className="flex">
+      <div className="flex" data-aos="fade-left">
         <div className={`flex items-center mb-4 ${rating ? 'mr-10' : 'mr-0'}`}>
           {[1, 2, 3, 4, 5].map((star) => (
             <button
@@ -205,10 +208,11 @@ const ReviewComponent = () => {
           <span className="ml-2 text-3xl">{getEmoji()}</span>
         </div>
       </div>
-      <span className="text-xs -mt-2.5 mb-2.5 font-bold font-Helvetica">Give your Rating</span>
+      <span className="text-xs -mt-2.5 mb-2.5 font-bold font-Helvetica" data-aos="fade-up">Give your Rating</span>
 
       {/* Comment Input */}
       <textarea
+      data-aos="fade-right  "
         placeholder="Write your review here..."
         value={comment}
         onChange={(e) => setComment(e.target.value)}
@@ -218,7 +222,7 @@ const ReviewComponent = () => {
       <button
         onClick={handleReviewSubmit}
         className="w-full bg-[#796855] text-gray-300 font-semibold py-2 rounded hover:bg-[#3d3428]"
-      >
+        data-aos="fade-up">
         Submit Review
       </button>
       </>

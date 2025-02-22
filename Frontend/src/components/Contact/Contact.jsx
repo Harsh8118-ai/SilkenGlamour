@@ -87,7 +87,7 @@ const Contact = () => {
             <div className="min-h-screen flex flex-col items-center bg-gradient-to-b from-[#CBB59F] to-[#DED6CB] py-16">
                 {/* Call and WhatsApp Section at the Top */}
                 <div
-                    className="bg-LightBGColor shadow-lg rounded-lg p-6 max-w-2xl w-full flex justify-center gap-24 items-center mb-10 -mx-5"
+                    className="bg-LightBGColor shadow-lg rounded-lg p-6 max-w-2xl w-full flex justify-center gap-24 items-center  -mx-5"
                     data-aos="fade-down"
                 >
                     <div className="text-center hover:scale-110 transform transition duration-500 ease-in-out ">
@@ -109,9 +109,19 @@ const Contact = () => {
                     </div>
                 </div>
 
+                {/* Social Media Section */}
+                <div className="flex justify-center space-x-8 text-3xl text-[#7A6752] mt-12" data-aos="fade-up" data-aos-delay="400">
+                    <a href="https://www.instagram.com/silkenglamour" target="_blank"
+                        rel="noopener noreferrer"><FaInstagram className="hover:text-[#CBB59F] transition transform hover:scale-125 duration-500 ease-in-out" /></a>
+                    <a href="https://www.facebook.com/profile.php?id=61565477906413&mibextid=LQQJ4d" target="_blank"
+                        rel="noopener noreferrer"><FaFacebookF className="hover:text-[#CBB59F] transition transform hover:scale-125 duration-500 ease-in-out" /></a>
+                    <a href="https://www.linkedin.com/company/silkenglamour/" target="_blank"
+                        rel="noopener noreferrer"><FaLinkedinIn className="hover:text-[#CBB59F] transition transform hover:scale-125 duration-500 ease-in-out" /></a>
+                </div>
+
                 {/* Main Contact Section */}
                 <div
-                    className="bg-LightBGColor shadow-2xl rounded-lg p-10 max-w-4xl w-full text-center text-[#7A6752] mt-12"
+                    className="bg-LightBGColor shadow-2xl rounded-lg p-10 max-w-4xl w-full text-center text-[#7A6752] mt-10"
                     data-aos="fade-up"
                 >
                     <h1 className="text-4xl font-semibold mb-6 animate-pulse">Let's Connect!</h1>

@@ -5,14 +5,15 @@ const compression = require("compression");
 
 const app = express();
 const authRoute = require("./routes/auth-route");
-const contactRoute = require("./routes/contact-route");
+const reviewRoute = require("./routes/review-route");
+const blogRoute = require("./routes/blog-route")
 const connectDb = require("./utils/db");
 
 // ✅ Dynamically set CORS based on environment
 const allowedOrigins =
   process.env.NODE_ENV === "production"
     ? ["https://silkenglamour.com", "https://www.silkenglamour.com", "https://silken-glamour.vercel.app", "https://silkenglamour.netlify.app"]
-    : ["http://localhost:5173"];
+    : ["http://localhost:5173", "http://192.168.156.15:5173", "http://192.168.156.15:5173/blog"];
 
 const corsOptions = {
   origin: allowedOrigins,
@@ -31,7 +32,8 @@ app.get("/", (req, res) => {
 
 // ✅ API Routes
 app.use("/api/auth", authRoute);
-app.use("/api/form", contactRoute);
+app.use("/api/form", reviewRoute);
+app.use("/api/blog", blogRoute)
 
 // ✅ Error handling middleware
 app.use((error, req, res, next) => {

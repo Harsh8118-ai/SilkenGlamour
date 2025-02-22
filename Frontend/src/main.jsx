@@ -12,6 +12,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import ReactGA from "react-ga4";
 import Blog from './components/Blog&Review/Blog';
+import Review from './components/Review/Review';
 
 
 // Load Google Analytics ID from .env
@@ -60,6 +61,14 @@ const router = createBrowserRouter(
           </Suspense>
         }
       />
+      <Route
+          path="review"
+          element={
+            <Suspense fallback={<div className='bg-MainBGColorYellow h-screen w-full'></div>}>
+              <Review />
+            </Suspense>
+          }
+        />
       <Route
         path="about"
         element={
@@ -114,6 +123,7 @@ const router = createBrowserRouter(
           }
         />
       </Route>
+      
       <Route path="service" element={
         <Suspense fallback={<div className='bg-MainBGColorYellow h-screen w-full'></div>}>
           <ServiceLayout />

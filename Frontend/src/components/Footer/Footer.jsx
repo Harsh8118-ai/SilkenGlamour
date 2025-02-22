@@ -23,7 +23,7 @@ export default function Footer() {
 
     return (
         <>
-            <div>                
+            <div>
 
                 <div className="fixed bottom-14 sm:bottom-20 right-0 m-4 z-[998]">
 
@@ -46,11 +46,11 @@ export default function Footer() {
 
             {/*........................................ ICON BAR ........................................*/}
 
-           
+
 
             <div className="flex justify-center">
                 <div className="sm:hidden shadow fixed py-1 px-5 z-50 bottom-1.5 w-fit bg-gradient-to-r from-[#2E2117] via-[#796855] to-[#2E2117] rounded-full">
-                    <ul className="flex justify-center gap-10 pt-1 bg-transparent">
+                    <ul className="flex justify-center gap-8 pt-1 bg-transparent">
                         <li className="flex flex-col items-center h-auto pl-2 w-auto">
                             <NavLink
                                 to="/"
@@ -92,6 +92,54 @@ export default function Footer() {
                                     <path d="M14,11.25H10A5.757,5.757,0,0,0,4.25,17v5a.75.75,0,0,0,.75.75H19a.75.75,0,0,0,.75-.75V17A5.757,5.757,0,0,0,14,11.25Z"></path>
                                 </svg>
                                 <span className="text-sm">Contact</span>
+                            </NavLink>
+                        </li>
+
+                        <li className="flex flex-col items-center h-auto pr-2 w-auto">
+                            <NavLink
+                                to="/blog"
+                                className={({ isActive }) =>
+                                    `duration-200 flex flex-col items-center ${isActive ? "text-gray-900" : "text-MainBGColorYellow"} font-bold`
+                                }
+                            >
+                                <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 430 430"
+                                    preserveAspectRatio="xMidYMid meet" className='fill-current'>
+
+                                    <g transform="translate(0.000000,399.000000) scale(0.100000,-0.1000000)"
+                                        strokeWidth="90" strokeLinecap="round" strokeLinejoin="round">
+
+                                        <path d="M3744 3751 c-99 -26 -115 -40 -704 -630 -535 -535 -579 -582 -628 -665
+      -96 -166 -152 -351 -152 -511 0 -92 18 -133 72 -161 27 -14 50 -16 138 -11
+      188 12 371 77 536 192 44 30 269 249 618 598 523 524 550 553 581 621 56 121
+      55 221 -1 346 -33 75 -122 161 -201 197 -62 27 -197 40 -259 24z m154 -275
+      c38 -19 61 -47 72 -87 21 -74 27 -68 -552 -645 -299 -298 -563 -555 -588 -571
+      -25 -17 -67 -42 -95 -55 -54 -28 -181 -69 -188 -61 -17 16 64 211 124 300 43
+      65 1076 1102 1114 1119 39 17 79 17 113 0z"/>
+
+                                        <path d="M1341 3379 c-242 -47 -439 -220 -519 -453 l-27 -81 -3 -899 c-3 -978
+      -4 -964 53 -1061 36 -60 115 -132 183 -163 51 -24 69 -27 167 -27 100 0 115 3
+      166 28 31 15 110 73 174 130 l118 102 761 5 761 5 73 27 c105 38 175 83 256
+      164 84 83 137 169 173 279 24 74 26 96 30 300 4 198 2 223 -14 255 -50 97
+      -179 106 -233 17 -18 -29 -20 -51 -20 -208 0 -96 -5 -202 -11 -234 -24 -128
+      -112 -243 -229 -299 l-65 -31 -790 -5 c-702 -4 -792 -7 -813 -21 -12 -9 -74
+      -63 -138 -120 -64 -57 -126 -109 -137 -116 -34 -19 -98 -15 -135 7 -65 40 -63
+      0 -60 963 l3 872 32 67 c35 76 108 155 171 187 98 50 115 51 755 51 539 0 603
+      2 634 17 92 43 98 180 10 233 -31 19 -54 20 -657 19 -344 -1 -645 -5 -669 -10z"/>
+
+                                        <path d="M1401 2562 c-64 -34 -87 -110 -54 -179 32 -69 49 -73 316 -73 195 0
+      243 3 268 15 65 34 89 128 49 193 -35 57 -62 62 -317 62 -202 0 -232 -2 -262
+      -18z"/>
+
+                                        <path d="M1423 2033 c-35 -7 -81 -59 -89 -100 -10 -53 13 -112 56 -141 34 -23
+      37 -23 288 -20 l254 3 34 37 c29 32 34 45 34 85 0 60 -26 104 -73 126 -30 14
+      -69 17 -259 16 -122 -1 -233 -4 -245 -6z"/>
+
+                                    </g>
+                                </svg>
+
+
+                                <span className="text-sm">Blog</span>
                             </NavLink>
                         </li>
 
