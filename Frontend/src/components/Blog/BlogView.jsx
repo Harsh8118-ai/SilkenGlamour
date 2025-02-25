@@ -10,10 +10,13 @@ const BlogView = () => {
   const [selectedBlog, setSelectedBlog] = useState(null);
   const blogsPerPage = 5;
 
+  const BASE_URL = import.meta.env.VITE_BACKEND_URL;
+
+
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/blog");
+        const response = await axios.get(`${BASE_URL}/api/blog`);
         setBlogs(response.data);
         setFilteredBlogs(response.data);
       } catch (error) {
