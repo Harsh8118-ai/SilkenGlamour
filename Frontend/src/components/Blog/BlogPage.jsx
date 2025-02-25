@@ -8,6 +8,8 @@ export default function BlogPage() {
   const [content, setContent] = useState("");
   const [image, setImage] = useState(null);
 
+  const BASE_URL = import.meta.env.VITE_BACKEND_URL;
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!title.trim() || !content.trim()) {
@@ -23,7 +25,7 @@ export default function BlogPage() {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/api/blog", {
+      const response = await fetch(`${BASE_URL}/api/blog`, {
         method: "POST",
         body: formData,
       });
