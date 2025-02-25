@@ -16,7 +16,7 @@ const BlogView = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await axios.get(`${BASE_URL}/api/blog`);
+        const response = await axios.get(`${BASE_URL}/blog`);
         setBlogs(response.data);
         setFilteredBlogs(response.data);
       } catch (error) {
@@ -50,8 +50,8 @@ const BlogView = () => {
   const currentBlogs = filteredBlogs.slice(indexOfFirstBlog, indexOfLastBlog);
 
   return (
-    <div className="max-w-4xl mx-auto p-6">
-      <h2 className="text-2xl font-bold mb-4">Blog Posts</h2>
+    <div className="max-w-4xl mx-auto p-6 min-h-screen mt-16">
+      <h2 className="text-2xl font-bold mb-4 text-center text-LightBGColor">Blog Posts</h2>
 
       {/* Search Bar */}
       <input
