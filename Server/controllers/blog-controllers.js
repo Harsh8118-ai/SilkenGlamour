@@ -16,34 +16,42 @@ const uploadImage = async (fileBuffer, fileName) => {
   }
 };
 
-// Create a new blog
+// Create a new blog (Fixed Image Upload Handling)
 const createBlog = async (req, res) => {
   try {
-    const { title, content } = req.body;
-    let imageUrl = null;
+    const { title, content, username } = req.body;
+    
+    if (!title || !content || !username) {
+      return res.status(400).json({ message: "Title, content, and username are required" });
+    }
 
+    let imageUrl = null;
     if (req.file) {
       imageUrl = await uploadImage(req.file.buffer, req.file.originalname);
     }
 
-    if (!title || !content) {
-      return res.status(400).json({ message: "Title and content are required" });
-    }
+    const newBlog = await Blog.create({
+      title,
+      content,
+      username,
+      image: imageUrl, // Store uploaded image URL or null if not uploaded
+    });
 
-    const newBlog = await Blog.create({ title, content, image: imageUrl });
-    res.status(201).json({ message: "Blog posted successfully", newBlog });
+    return res.status(201).json({ message: "Blog posted successfully", newBlog });
   } catch (error) {
-    res.status(500).json({ message: "Error posting blog", error });
+    console.error("Error posting blog:", error);
+    return res.status(500).json({ message: "Error posting blog", error: error.message });
   }
 };
 
-// 🔹 FIX: Add this function to retrieve all blogs
+// Retrieve all blogs
 const getAllBlogs = async (req, res) => {
   try {
     const blogs = await Blog.find();
     res.status(200).json(blogs);
   } catch (error) {
-    res.status(500).json({ message: "Error fetching blogs", error });
+    console.error("Error fetching blogs:", error.message);
+    res.status(500).json({ message: "Error fetching blogs", error: error.message });
   }
 };
 
@@ -52,61 +60,63 @@ const getBlogById = async (req, res) => {
   try {
     const { id } = req.params;
     const blog = await Blog.findById(id);
-    if (!blog) {
-      return res.status(404).json({ message: "Blog not found" });
-    }
+
+    if (!blog) return res.status(404).json({ message: "Blog not found" });
+
     res.status(200).json(blog);
   } catch (error) {
-    res.status(500).json({ message: "Error fetching blog", error });
+    console.error("Error fetching blog:", error.message);
+    res.status(500).json({ message: "Error fetching blog", error: error.message });
   }
 };
 
-// Delete a blog by ID
-const deleteBlog = async (req, res) => {
-  try {
-    const { id } = req.params;
-    const deletedBlog = await Blog.findByIdAndDelete(id);
-    if (!deletedBlog) {
-      return res.status(404).json({ message: "Blog not found" });
-    }
-    res.json({ message: "Blog deleted successfully" });
-  } catch (error) {
-    res.status(500).json({ message: "Error deleting blog", error });
-  }
-};
-
-// Update a blog
+// Update a blog (Fixed Image Upload Handling)
 const updateBlog = async (req, res) => {
   try {
     const { id } = req.params;
     const { title, content } = req.body;
-    let imageUrl = undefined;
 
+    const blog = await Blog.findById(id);
+    if (!blog) return res.status(404).json({ message: "Blog not found" });
+
+    let imageUrl = blog.image; // Keep existing image if no new image is uploaded
     if (req.file) {
       imageUrl = await uploadImage(req.file.buffer, req.file.originalname);
     }
 
-    const updatedBlog = await Blog.findByIdAndUpdate(
-      id,
-      { title, content, ...(imageUrl && { image: imageUrl }) },
-      { new: true, runValidators: true }
-    );
+    blog.title = title || blog.title;
+    blog.content = content || blog.content;
+    blog.image = imageUrl;
 
-    if (!updatedBlog) {
-      return res.status(404).json({ message: "Blog not found" });
-    }
-
+    const updatedBlog = await blog.save();
     res.json({ message: "Blog updated successfully", updatedBlog });
   } catch (error) {
-    res.status(500).json({ message: "Error updating blog", error });
+    console.error("Error updating blog:", error.message);
+    res.status(500).json({ message: "Error updating blog", error: error.message });
   }
 };
 
-// 🔹 FIX: Ensure all functions are correctly exported
-module.exports = { 
-  createBlog, 
-  getAllBlogs, 
-  getBlogById, 
-  deleteBlog, 
-  updateBlog 
+// Delete a blog
+const deleteBlog = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const blog = await Blog.findById(id);
+
+    if (!blog) return res.status(404).json({ message: "Blog not found" });
+
+    await Blog.findByIdAndDelete(id);
+    res.json({ message: "Blog deleted successfully" });
+  } catch (error) {
+    console.error("Error deleting blog:", error.message);
+    res.status(500).json({ message: "Error deleting blog", error: error.message });
+  }
+};
+
+// Export all functions
+module.exports = {
+  createBlog,
+  getAllBlogs,
+  getBlogById,
+  updateBlog,
+  deleteBlog,
 };

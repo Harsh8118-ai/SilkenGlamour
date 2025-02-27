@@ -12,7 +12,6 @@ const BlogView = () => {
 
   const BASE_URL = import.meta.env.VITE_BACKEND_URL;
 
-
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
@@ -26,10 +25,8 @@ const BlogView = () => {
     fetchBlogs();
   }, []);
 
-  // Extract unique categories
   const categories = ["All", ...new Set(blogs.map((blog) => blog.category))];
 
-  // Filter blogs based on category and search query
   useEffect(() => {
     let filtered = blogs;
     if (selectedCategory !== "All") {
@@ -41,10 +38,9 @@ const BlogView = () => {
       );
     }
     setFilteredBlogs(filtered);
-    setCurrentPage(1); // Reset to first page after filter change
+    setCurrentPage(1);
   }, [selectedCategory, searchQuery, blogs]);
 
-  // Pagination Logic
   const indexOfLastBlog = currentPage * blogsPerPage;
   const indexOfFirstBlog = indexOfLastBlog - blogsPerPage;
   const currentBlogs = filteredBlogs.slice(indexOfFirstBlog, indexOfLastBlog);
@@ -59,41 +55,112 @@ const BlogView = () => {
         placeholder="Search by title..."
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
-        className="w-full p-2 border rounded-md mb-4"
+        className="w-full p-2 border rounded-md mb-10 bg-LightBGColor "
       />
 
-      {/* Category Filter */}
-      <select
-        className="w-full p-2 border rounded-md mb-4"
-        value={selectedCategory}
-        onChange={(e) => setSelectedCategory(e.target.value)}
-      >
-        {categories.map((category, index) => (
-          <option key={index} value={category}>{category}</option>
-        ))}
-      </select>
+
 
       {/* Blog List */}
-      {selectedBlog ? (
-        <div className="p-4 border rounded-lg shadow-lg">
-          <button onClick={() => setSelectedBlog(null)} className="text-blue-500 underline mb-2">← Back</button>
-          {selectedBlog.image && <img src={selectedBlog.image} alt={selectedBlog.title} className="w-full h-64 object-cover mb-4 rounded-lg" />}
-          <h3 className="text-xl font-semibold">{selectedBlog.title}</h3>
-          <p className="text-gray-700 mt-2">{selectedBlog.content}</p>
-        </div>
-      ) : (
-        currentBlogs.map((blog) => (
-          <div key={blog._id} className="border p-4 rounded-lg mb-4 shadow-lg">
-            {blog.image && <img src={blog.image} alt={blog.title} className="w-full h-48 object-cover mb-2 rounded-lg" />}
-            <h3
-              className="text-xl font-semibold text-blue-500 cursor-pointer hover:underline"
-              onClick={() => setSelectedBlog(blog)}
-            >
-              {blog.title}
-            </h3>
-            <p className="text-gray-600">{blog.category}</p>
+
+      {/* Web View */}
+      <div className="hidden sm:block">
+        {currentBlogs.map((blog) => (
+          <div
+            key={blog._id}
+            className="grid grid-cols-3 gap-4 border p-4 rounded-lg mb-4 shadow-lg cursor-pointer"
+            onClick={() => setSelectedBlog(blog)}
+          >
+            {/* Left: Image (30% width) */}
+            {blog.image && (
+              <div className="col-span-1">
+                <img
+                  src={blog.image}
+                  alt={blog.title}
+                  className="w-full h-full object-cover rounded-lg"
+                />
+              </div>
+            )}
+
+            {/* Right: Title, username, Date, Snippet (70% width) */}
+            <div className="col-span-2">
+              <h3 className="text-xl font-bold text-black ">{blog.title}</h3>
+              <p className="text-black text-sm">By {blog.username || 'Unknown'} • {new Date(blog.createdAt).toLocaleDateString()}</p>
+              <p className="text-gray-300 mt-2">{blog.content.slice(0, 200)}...</p>
+            </div>
           </div>
-        ))
+        ))}</div>
+
+      {/* Mobile View */}
+      <div className="sm:hidden">
+        {currentBlogs.map((blog) => (
+          <div
+            key={blog._id}
+            className="border p-4 rounded-lg mb-4 shadow-lg cursor-pointer flex flex-col sm:grid sm:grid-cols-3 sm:gap-4"
+            onClick={() => setSelectedBlog(blog)}
+          >
+            {/* Image (Full width on mobile, left column on larger screens) */}
+            {blog.image && (
+              <div className="w-full sm:col-span-1 mb-3 sm:mb-0">
+                <img
+                  src={blog.image}
+                  alt={blog.title}
+                  className="w-full h-48 object-cover rounded-lg"
+                />
+              </div>
+            )}
+
+            {/* Text Content (Takes full width on mobile, right column on larger screens) */}
+            <div className="sm:col-span-2 flex flex-col justify-center items-center">
+              <h3 className="text-xl font-bold text-black  text-center">{blog.title}</h3>
+              <p className="text-black text-sm font-Helvetica">
+                By {blog.username || 'Unknown'} • {new Date(blog.createdAt).toLocaleDateString()}
+              </p>
+              <p className="text-gray-600 mt-2 whitespace-pre-line">
+                {blog.content.slice(0, 100)}...
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Modal for Blog Details */}
+      {selectedBlog && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4 overflow-auto">
+          <div className="bg-LightBGColor p-6 rounded-lg shadow-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto relative">
+            {/* Close Button */}
+            <button
+              onClick={() => setSelectedBlog(null)}
+              className="absolute top-3 right-3  text-xl font-bold bg-red-600 rounded-full w-8 h-8 flex items-center justify-center hover:bg-gray-300"
+            >
+              <span className="text-white">✖</span>
+            </button>
+
+            {/* Modal Content */}
+            <div className="grid grid-cols-5 gap-4">
+              {/* Left: Image (40% width) */}
+              {selectedBlog.image && (
+                <div className="col-span-2">
+                  <img
+                    src={selectedBlog.image}
+                    alt={selectedBlog.title}
+                    className="w-full h-full object-cover rounded-lg"
+                  />
+                </div>
+              )}
+
+              {/* Right: Title, Author, Date (60% width) */}
+              <div className="col-span-3">
+                <h3 className="text-2xl font-bold mt-3">{selectedBlog.title}</h3>
+                <p className="text-gray-500 text-sm font-bold mt-3">By {selectedBlog.username || 'Unknown'} • {new Date(selectedBlog.createdAt).toLocaleDateString()}</p>
+              </div>
+            </div>
+
+            {/* Full Content Below */}
+            <div className="mt-4">
+              <p className="text-gray-800 font-semibold whitespace-pre-line">{selectedBlog.content}</p>
+            </div>
+          </div>
+        </div>
       )}
 
       {/* Pagination */}

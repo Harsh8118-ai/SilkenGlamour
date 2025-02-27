@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { toast } from 'react-toastify';
 import { useAuth } from '../../Store/auth';
 
-const AllReviewsComponent = () => {
+const ReviewModal = () => {
   const [reviews, setReviews] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentReview, setCurrentReview] = useState({ _id: '', comment: '', rating: 0 });
@@ -195,4 +195,4 @@ const AllReviewsComponent = () => {
   );
 };
 
-export default AllReviewsComponent;
+export default ReviewModal;

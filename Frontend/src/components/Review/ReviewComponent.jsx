@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { format } from 'date-fns';
 import { useAuth } from '../../Store/auth';
 import { toast } from 'react-toastify';
-import AllReviewsPage from './AllReviewsPage';
+import ReviewModal from './ReviewModal';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -229,10 +229,10 @@ const ReviewComponent = () => {
       )}
 
       <div className="reviews-page">
-        <AllReviewsPage reviews={reviews} openEditModal={openEditModal} />
+        <ReviewModal reviews={reviews} openEditModal={openEditModal} />
       </div>
 
-      {/* Modal for editing review */}
+      
       
     </div>
 

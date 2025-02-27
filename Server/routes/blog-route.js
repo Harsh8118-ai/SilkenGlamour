@@ -8,8 +8,8 @@ const upload = multer({ storage });
 
 router.post("/", upload.single("image"), blogController.createBlog);
 router.get("/", blogController.getAllBlogs);
-router.get("//:id", blogController.getBlogById);
-router.delete("//:id", blogController.deleteBlog);
-router.put("//:id", upload.single("image"), blogController.updateBlog);
+router.get("/:id", blogController.getBlogById);
+router.put("/:id", upload.single("image"), blogController.updateBlog);
+router.delete("/:id", blogController.deleteBlog);
 
 module.exports = router;
