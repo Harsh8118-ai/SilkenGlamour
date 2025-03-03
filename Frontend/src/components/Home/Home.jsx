@@ -19,6 +19,9 @@ export default function Home() {
   const { cartItems } = useContext(CartContext);
   const { isLoggedIn } = useAuth();
 
+  const IMAGEKIT_BASE_URL = import.meta.env.VITE_IMAGEKIT_BASE_URL;
+
+
   // Calculate total number of items in the cart
   const totalItems = cartItems.reduce((total, item) => total + item.quantity, 0);
 
@@ -54,15 +57,15 @@ export default function Home() {
 
   // Array of services (data source for each card)
   const services = [
-    { name: 'Nail Art', image: '/Temp/Nail Art.webp', link: 'nailart' },
-    { name: 'Hair Care', image: '/Temp/Haircare.webp', link: 'haircare' },
-    { name: 'Mani-Pedi', image: '/Temp/Pedicure.webp', link: 'mani-pedi' },
-    { name: 'Waxing', image: '/Temp/Waxing.webp', link: 'waxing' },
-    { name: 'Polish & Massage', image: '/Temp/Massage.webp', link: 'body-polishing' },
-    { name: 'Threading & Wax', image: '/Temp/Threading.webp', link: 'threading' },
-    { name: 'Bleach & D-Tan', image: '/Temp/Bleach.webp', link: 'bleach-dtan' },
-    { name: 'Wedding Package', image: '/Temp/Makeup.webp', link: 'weddingpakage' },
-    { name: 'Facial & Cleanup', image: '/Temp/Facial.webp', link: 'facial-cleanup' },
+    { name: 'Nail Art', image: `${IMAGEKIT_BASE_URL}/Temp/Nail Art.webp`, link: '/service/nailart' },
+    { name: 'Hair Care', image: `${IMAGEKIT_BASE_URL}/Temp/Haircare.webp`, link: '/service/haircare' },
+    { name: 'Mani-Pedi', image: `${IMAGEKIT_BASE_URL}/Temp/Pedicure.webp`, link: '/service/mani-pedi' },
+    { name: 'Waxing', image: `${IMAGEKIT_BASE_URL}/Temp/Waxing.webp`, link: '/service/waxing' },
+    { name: 'Polish & Massage', image: `${IMAGEKIT_BASE_URL}/Temp/Massage.webp`, link: '/service/body-polishing' },
+    { name: 'Threading & Wax', image: `${IMAGEKIT_BASE_URL}/Temp/Threading.webp`, link: '/service/threading' },
+    { name: 'Bleach & D-Tan', image: `${IMAGEKIT_BASE_URL}/Temp/Bleach.webp`, link: '/service/bleach-dtan' },
+    { name: 'Wedding Package', image: `${IMAGEKIT_BASE_URL}/Temp/Makeup.webp`, link: '/service/weddingpackage' },
+    { name: 'Facial & Cleanup', image: `${IMAGEKIT_BASE_URL}/Temp/Facial.webp`, link: '/service/facial-cleanup' },
   ];
 
   return (

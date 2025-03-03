@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 export default function HeroSection() {
+  const IMAGEKIT_BASE_URL = import.meta.env.VITE_IMAGEKIT_BASE_URL;
+
   return (
     <>
       <div className="relative h-full w-full overflow-x-hidden">
@@ -22,30 +24,31 @@ export default function HeroSection() {
             <div className='mt-32 hidden sm:block'>
               <Link to="/service">
                 <img
-                  src="/Home/Makeup Home.webp"
-                  alt=""
+                  src={`${import.meta.env.VITE_IMAGEKIT_BASE_URL}/Home/Makeup Home.webp`}
+                  alt="Makeup Home"
                   className="w-64 h-64 rounded-xl border-[6px] border-[000000] object-cover transform hover:opacity-80 hover:border-white "
                 />
               </Link></div>
 
             <Link to="/service">
               <img
-                src="/Home/Banner Mirror.webp"
+                src={`${import.meta.env.VITE_IMAGEKIT_BASE_URL}/Home/Banner Mirror.webp`}
                 alt="Banner Mirror"
                 width="320"
                 height="384"
                 className="h-72 w-60 sm:w-80 sm:h-96 rounded-t-full border-[6px] border-white object-cover transform hover:opacity-95 hover:border-white"
-                loading="lazy"
                 decoding="async"
+                fetchpriority="high"
               />
             </Link>
+
 
 
             <div className='mt-32 hidden sm:block'>
               <Link to="/service">
                 <img
-                  src="/Home/Facial Home.webp"
-                  alt=""
+                  src={`${import.meta.env.VITE_IMAGEKIT_BASE_URL}/Home/Facial Home.webp`}
+                  alt="Facial Home"
                   className="w-64 h-64 rounded-xl border-[6px] border-[000000] object-cover transform hover:opacity-80 hover:border-white "
                 />
               </Link></div>

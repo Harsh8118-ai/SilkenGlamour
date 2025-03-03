@@ -1,7 +1,7 @@
 [
   {
     "id": "HairCare1",
-    "image": "/Services/Service Card/Hair Care/Hair Wash.webp",
+    "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Hair Care/Hair Wash.webp",
     "name": "Hair Wash",
     "price": 299,
     "offerprice": 399,
@@ -14,7 +14,7 @@
   },
   {
     "id": "HairCare2",
-    "image": "/Services/Service Card/Hair Care/Hair Cut.webp",
+    "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Hair Care/Hair Cut.webp",
     "name": "Hair Cut",
     "price": 649,
     "offerprice": 999,
@@ -27,7 +27,7 @@
   },
   {
     "id": "HairCare3",
-    "image": "/Services/Service Card/Hair Care/Hair Straight.webp",
+    "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Hair Care/Hair Straight.webp",
     "name": "Hair Straight",
     "price": 599,
     "offerprice": 799,
@@ -40,7 +40,7 @@
   },
   {
     "id": "HairCare4",
-    "image": "/Services/Service Card/Hair Care/Outcurls.webp",
+    "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Hair Care/Outcurls.webp",
     "name": "Out Curls",
     "price": 649,
     "offerprice": 799,
@@ -53,7 +53,7 @@
   },
   {
     "id": "HairCare5",
-    "image": "/Services/Service Card/Hair Care/Ironing.webp",
+    "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Hair Care/Ironing.webp",
     "name": "Iron Straighten",
     "price": 649,
     "offerprice": 749,
@@ -66,7 +66,7 @@
   },
   {
     "id": "HairCare6",
-    "image": "/Services/Service Card/Hair Care/Ironing Curls.webp",
+    "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Hair Care/Ironing Curls.webp",
     "name": "Iron Curls",
     "price": 699,
     "offerprice": 799,
@@ -79,7 +79,7 @@
   },
   {
     "id": "HairCare7",
-    "image": "/Services/Service Card/Hair Care/Blow Dry.webp",
+    "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Hair Care/Blow Dry.webp",
     "name": "Blow Dry",
     "price": 549,
     "offerprice": 699,
@@ -92,7 +92,7 @@
   },
   {
     "id": "HairCare8",
-    "image": "/Services/Service Card/Hair Care/Splends.webp",
+    "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Hair Care/Splends.webp",
     "name": "Splends",
     "price": 449,
     "offerprice": 549,
@@ -105,7 +105,7 @@
   },
   {
     "id": "HairColour9",
-    "image": "/Services/Service Card/Hair Care/Keratin.webp",
+    "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Hair Care/Keratin.webp",
     "name": "Keratin",
     "price": 5499,
     "offerprice": 7299,
@@ -118,7 +118,7 @@
   },
   {
     "id": "HairColour10",
-    "image": "/Services/Service Card/Hair Care/Hair Botox.webp",
+    "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Hair Care/Hair Botox.webp",
     "name": "Hair Botox",
     "price": 6949,
     "offerprice": 8999,
@@ -131,7 +131,7 @@
   },
   {
     "id": "HairColour11",
-    "image": "/Services/Service Card/Hair Care/Smoothning.webp",
+    "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Hair Care/Smoothning.webp",
     "name": "Smoothning",
     "price": 5499,
     "offerprice": 6999,
@@ -144,7 +144,7 @@
   },
   {
     "id": "HairColour12",
-    "image": "/Services/Service Card/Hair Care/Hair SPA.webp",
+    "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Hair Care/Hair SPA.webp",
     "name": "Hair SPA",
     "price": 1699,
     "offerprice": 2199,

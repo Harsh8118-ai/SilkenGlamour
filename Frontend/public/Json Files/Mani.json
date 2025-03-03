@@ -1,7 +1,7 @@
 [
   {
     "id": "Mani1",
-    "image": "/Services/Service Card/Mani-Pedi/Regular Manicure.webp",
+    "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Mani-Pedi/Regular Manicure.webp",
     "name": "Regular Manicure",
     "price": 599,
     "offerprice": 799,
@@ -10,7 +10,7 @@
   },
     {
       "id": "Mani2",
-      "image": "/Services/Service Card/Mani-Pedi/VLCC Manicure.webp",
+      "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Mani-Pedi/VLCC Manicure.webp",
       "name": "VLCC  Manicure",
       "price": 749,
       "offerprice": 999,
@@ -19,7 +19,7 @@
     },
     {
       "id": "Mani3",
-      "image": "/Services/Service Card/Mani-Pedi/Aroma Manicure.webp",
+      "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Mani-Pedi/Aroma Manicure.webp",
       "name": "Aroma Manicure",
       "price": 849,
       "offerprice": 1199,
@@ -28,7 +28,7 @@
     },
     {
       "id": "Mani4",
-      "image": "/Services/Service Card/Mani-Pedi/O3 Manicure.webp",
+      "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Mani-Pedi/O3 Manicure.webp",
       "name": "O3  Manicure",
       "price": 949,
       "offerprice": 1499,

@@ -1,7 +1,7 @@
 [
   {
     "id": "Bleach1",
-    "image": "/Services/Service Card/Bleach & D-Tan/Bleach/Face + Neck Oxy Bleach.webp",
+    "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Bleach & D-Tan/Bleach/Face + Neck Oxy Bleach.webp",
     "name": "Face + Neck Oxy Bleach",
     "price": 529,
     "offerprice": 579,
@@ -9,7 +9,7 @@
   },
   {
     "id": "Bleach2",
-    "image": "/Services/Service Card/Bleach & D-Tan/Bleach/Full Body Oxy Bleach.webp",
+    "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Bleach & D-Tan/Bleach/Full Body Oxy Bleach.webp",
     "name": "Full Body Oxy Bleach",
     "price": 1299,
     "offerprice": 1549,
@@ -17,7 +17,7 @@
   },
   {
     "id": "Bleach3",
-    "image": "/Services/Service Card/Bleach & D-Tan/Bleach/Full Arms Oxy Bleach.webp",
+    "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Bleach & D-Tan/Bleach/Full Arms Oxy Bleach.webp",
     "name": "Full Arms Oxy Bleach",
     "price": 649,
     "offerprice": 749,
@@ -25,7 +25,7 @@
   },
   {
     "id": "Bleach4",
-    "image": "/Services/Service Card/Bleach & D-Tan/Bleach/Full Legs Oxy Bleach.webp",
+    "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Bleach & D-Tan/Bleach/Full Legs Oxy Bleach.webp",
     "name": "Full Legs Oxy Bleach",
     "price": 749,
     "offerprice": 849,
@@ -33,7 +33,7 @@
   },
   {
     "id": "Bleach5",
-    "image": "/Services/Service Card/Bleach & D-Tan/Bleach/Full Back Oxy Bleach.webp",
+    "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Bleach & D-Tan/Bleach/Full Back Oxy Bleach.webp",
     "name": "Full Back Oxy Bleach",
     "price": 799,
     "offerprice": 899,
@@ -41,7 +41,7 @@
   },
   {
       "id": "Bleach6",
-      "image": "/Services/Service Card/Bleach & D-Tan/Bleach/Face + Neck O3 Bleach.webp",
+      "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Bleach & D-Tan/Bleach/Face + Neck O3 Bleach.webp",
       "name": "Face + Neck O3 Bleach",
       "price": 649,
       "offerprice": 799,
@@ -49,7 +49,7 @@
     },
     {
       "id": "Bleach7",
-      "image": "/Services/Service Card/Bleach & D-Tan/Bleach/Full Body O3 Bleach.webp",
+      "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Bleach & D-Tan/Bleach/Full Body O3 Bleach.webp",
       "name": "Full Body O3 Bleach",
       "price": 1899,
       "offerprice": 2199,
@@ -57,7 +57,7 @@
     },
     {
       "id": "Bleach8",
-      "image": "/Services/Service Card/Bleach & D-Tan/Bleach/Full Arms O3 Bleach.webp",
+      "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Bleach & D-Tan/Bleach/Full Arms O3 Bleach.webp",
       "name": "Full Arms O3 Bleach",
       "price": 789,
       "offerprice": 849,
@@ -65,7 +65,7 @@
     },
     {
       "id": "Bleach9",
-      "image": "/Services/Service Card/Bleach & D-Tan/Bleach/Full Legs O3 Bleach.webp",
+      "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Bleach & D-Tan/Bleach/Full Legs O3 Bleach.webp",
       "name": "Full Legs O3 Bleach",
       "price": 919,
       "offerprice": 999,
@@ -73,7 +73,7 @@
     },
     {
       "id": "Bleach10",
-      "image": "/Services/Service Card/Bleach & D-Tan/Bleach/Full Back O3 Bleach.webp",
+      "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Bleach & D-Tan/Bleach/Full Back O3 Bleach.webp",
       "name": "Full Back O3 Bleach",
       "price": 949,
       "offerprice": 1049,

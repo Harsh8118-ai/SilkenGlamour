@@ -13,6 +13,9 @@ export default function Service() {
     });
   }, []);
 
+  const IMAGEKIT_BASE_URL = import.meta.env.VITE_IMAGEKIT_BASE_URL;
+
+
   return (
     <><CartProvider>
     <div className='bg-MainBGColorYellow min-h-screen overflow-x-hidden overflow-y-auto' style={{ scrollBehavior: 'smooth' }}>
@@ -26,7 +29,7 @@ export default function Service() {
           <div data-aos="fade-up">
             <Link to="nailart">
               <div className='shadow-lg text-sm sm:text-lg rounded-xl p-1 flex flex-col bg-BGColorYellow justify-center items-center hover:scale-110 hover:rotate-3 hover:shadow-2xl transition-transform duration-500 ease-in-out'>
-                <img src="/Temp/Nail Art.webp" alt="Nail Art" className="w-32 h-32 sm:w-40 sm:h-40 rounded-xl object-cover transition-all duration-300 ease-in-out" />
+                <img src={`${import.meta.env.VITE_IMAGEKIT_BASE_URL}/Temp/Nail Art.webp`} alt="Nail Art" className="w-32 h-32 sm:w-40 sm:h-40 rounded-xl object-cover transition-all duration-300 ease-in-out" />
                 <p className='font-bold pt-1.5 text-gray-900'>Nail Art</p>
               </div>
             </Link>
@@ -36,7 +39,7 @@ export default function Service() {
           <div data-aos="fade-down">
             <Link to="haircare">
               <div className='shadow-lg text-sm sm:text-lg rounded-xl p-1 flex flex-col bg-BGColorYellow justify-center items-center hover:scale-110 hover:rotate-3 hover:shadow-2xl transition-transform duration-500 ease-in-out'>
-                <img src="/Temp/Haircare.webp" alt="Hair Care" className="w-32 h-32 sm:w-40 sm:h-40 rounded-xl object-cover transition-all duration-300 ease-in-out" />
+                <img src={`${import.meta.env.VITE_IMAGEKIT_BASE_URL}/Temp/Haircare.webp`} alt="Hair Care" className="w-32 h-32 sm:w-40 sm:h-40 rounded-xl object-cover transition-all duration-300 ease-in-out" />
                 <p className='font-bold pt-1.5 text-gray-900'>Hair Care</p>
               </div>
             </Link>
@@ -46,7 +49,7 @@ export default function Service() {
           <div data-aos="fade-right">
             <Link to="mani-pedi">
               <div className='shadow-lg text-sm sm:text-lg rounded-xl p-1 flex flex-col bg-BGColorYellow justify-center items-center hover:scale-110 hover:rotate-3 hover:shadow-2xl transition-transform duration-500 ease-in-out'>
-                <img src="/Temp/Pedicure.webp" alt="Mani-Pedi" className="w-32 h-32 sm:w-40 sm:h-40 rounded-xl object-cover transition-all duration-300 ease-in-out" />
+                <img src={`${import.meta.env.VITE_IMAGEKIT_BASE_URL}/Temp/Pedicure.webp`} alt="Mani-Pedi" className="w-32 h-32 sm:w-40 sm:h-40 rounded-xl object-cover transition-all duration-300 ease-in-out" />
                 <p className='font-bold pt-1.5 text-gray-900'>Mani-Pedi</p>
               </div>
             </Link>
@@ -56,7 +59,7 @@ export default function Service() {
           <div data-aos="fade-left">
             <Link to="waxing">
               <div className='shadow-lg text-sm sm:text-lg rounded-xl p-1 flex flex-col bg-BGColorYellow justify-center items-center hover:scale-110 hover:rotate-3 hover:shadow-2xl transition-transform duration-500 ease-in-out'>
-                <img src="/Temp/Waxing.webp" alt="Waxing" className="w-32 h-32 sm:w-40 sm:h-40 rounded-xl object-cover transition-all duration-300 ease-in-out" />
+                <img src={`${import.meta.env.VITE_IMAGEKIT_BASE_URL}/Temp/Waxing.webp`} alt="Waxing" className="w-32 h-32 sm:w-40 sm:h-40 rounded-xl object-cover transition-all duration-300 ease-in-out" />
                 <p className='font-bold pt-1.5 text-gray-900'>Waxing</p>
               </div>
             </Link>
@@ -66,7 +69,7 @@ export default function Service() {
           <div data-aos="fade-up">
             <Link to="body-polishing">
               <div className='shadow-lg text-sm sm:text-lg rounded-xl p-1 flex flex-col bg-BGColorYellow justify-center items-center hover:scale-110 hover:rotate-3 hover:shadow-2xl transition-transform duration-500 ease-in-out'>
-                <img src="/Temp/Massage.webp" alt="Polish & Massage" className="w-32 h-32 sm:w-40 sm:h-40 rounded-xl object-cover transition-all duration-300 ease-in-out" />
+                <img src={`${import.meta.env.VITE_IMAGEKIT_BASE_URL}/Temp/Massage.webp`} alt="Polish & Massage" className="w-32 h-32 sm:w-40 sm:h-40 rounded-xl object-cover transition-all duration-300 ease-in-out" />
                 <p className='font-bold pt-1.5 text-gray-900'>Polish & Massage</p>
               </div>
             </Link>
@@ -76,7 +79,7 @@ export default function Service() {
           <div data-aos="fade-down">
             <Link to="threading">
               <div className='shadow-lg text-sm sm:text-lg rounded-xl p-1 flex flex-col bg-BGColorYellow justify-center items-center hover:scale-110 hover:rotate-3 hover:shadow-2xl transition-transform duration-500 ease-in-out'>
-                <img src="/Temp/Threading.webp" alt="Threading & Wax" className="w-32 h-32 sm:w-40 sm:h-40 rounded-xl object-cover transition-all duration-300 ease-in-out" />
+                <img src={`${import.meta.env.VITE_IMAGEKIT_BASE_URL}/Temp/Threading.webp`} alt="Threading & Wax" className="w-32 h-32 sm:w-40 sm:h-40 rounded-xl object-cover transition-all duration-300 ease-in-out" />
                 <p className='font-bold pt-1.5 text-gray-900'>Threading & Wax</p>
               </div>
             </Link>
@@ -86,7 +89,7 @@ export default function Service() {
           <div data-aos="fade-right">
             <Link to="bleach-dtan">
               <div className='shadow-lg text-sm sm:text-lg rounded-xl p-1 flex flex-col bg-BGColorYellow justify-center items-center hover:scale-110 hover:rotate-3 hover:shadow-2xl transition-transform duration-500 ease-in-out'>
-                <img src="/Temp/Bleach.webp" alt="Bleach & D-Tan" className="w-32 h-32 sm:w-40 sm:h-40 rounded-xl object-cover transition-all duration-300 ease-in-out" />
+                <img src={`${import.meta.env.VITE_IMAGEKIT_BASE_URL}/Temp/Bleach.webp`} alt="Bleach & D-Tan" className="w-32 h-32 sm:w-40 sm:h-40 rounded-xl object-cover transition-all duration-300 ease-in-out" />
                 <p className='font-bold pt-1.5 text-gray-900'>Bleach & D-Tan</p>
               </div>
             </Link>
@@ -96,7 +99,7 @@ export default function Service() {
           <div data-aos="fade-left">
             <Link to="weddingpackage">
               <div className='shadow-lg text-sm sm:text-lg rounded-xl p-1 flex flex-col bg-BGColorYellow justify-center items-center hover:scale-110 hover:rotate-3 hover:shadow-2xl transition-transform duration-500 ease-in-out'>
-                <img src="/Temp/Makeup.webp" alt="Wedding Package" className="w-32 h-32 sm:w-40 sm:h-40 rounded-xl object-cover transition-all duration-300 ease-in-out" />
+                <img src={`${import.meta.env.VITE_IMAGEKIT_BASE_URL}/Temp/Makeup.webp`} alt="Wedding Package" className="w-32 h-32 sm:w-40 sm:h-40 rounded-xl object-cover transition-all duration-300 ease-in-out" />
                 <p className='font-bold pt-1.5 text-gray-900'>Wedding Package</p>
               </div>
             </Link>
@@ -106,7 +109,7 @@ export default function Service() {
           <div data-aos="fade-up">
             <Link to="facial-cleanup">
               <div className='shadow-lg text-sm sm:text-lg rounded-xl p-1 flex flex-col bg-BGColorYellow justify-center items-center hover:scale-110 hover:rotate-3 hover:shadow-2xl transition-transform duration-500 ease-in-out'>
-                <img src="/Temp/Facial.webp" alt="Facial & Cleanup" className="w-32 h-32 sm:w-40 sm:h-40 rounded-xl object-cover transition-all duration-300 ease-in-out" />
+                <img src={`${import.meta.env.VITE_IMAGEKIT_BASE_URL}/Temp/Facial.webp`} alt="Facial & Cleanup" className="w-32 h-32 sm:w-40 sm:h-40 rounded-xl object-cover transition-all duration-300 ease-in-out" />
                 <p className='font-bold pt-1.5 text-gray-900'>Facial & Cleanup</p>
               </div>
             </Link>

@@ -1,7 +1,7 @@
 [
   {
     "id": "Cleanup2",
-    "image": "/Services/Service Card/Facial & Cleanup/Lotus Cleanup.webp",
+    "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Facial & Cleanup/Lotus Cleanup.webp",
     "name": "Lotus Cleanup",
     "price": 949,
     "offerprice": 1299,
@@ -13,7 +13,7 @@
   },
   {
     "id": "Cleanup3",
-    "image": "/Services/Service Card/Facial & Cleanup/Aroma Cleanup.webp",
+    "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Facial & Cleanup/Aroma Cleanup.webp",
     "name": "Aroma Cleanup",
     "price": 1199,
     "offerprice": 1499,
@@ -25,7 +25,7 @@
   },
   {
     "id": "Cleanup4",
-    "image": "/Services/Service Card/Facial & Cleanup/O3 Cleanup.webp",
+    "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Facial & Cleanup/O3 Cleanup.webp",
     "name": "O3 Cleanup",
     "price": 1399,
     "offerprice": 1799,
@@ -37,7 +37,7 @@
   },
   {
     "id": "Cleanup5",
-    "image": "/Services/Service Card/Facial & Cleanup/Vedic Line Cleanup.webp",
+    "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Facial & Cleanup/Vedic Line Cleanup.webp",
     "name": "Vedic Line Cleanup",
     "price": 1099,
     "offerprice": 1399,
@@ -49,7 +49,7 @@
   },
   {
     "id": "Cleanup1",
-    "image": "/Services/Service Card/Facial & Cleanup/Kanpeki Cleanup.webp",
+    "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Facial & Cleanup/Kanpeki Cleanup.webp",
     "name": "Kanpeki Cleanup",
     "price": 1599,
     "offerprice": 1999,

@@ -9,10 +9,11 @@
     font-family: 'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
-#logo{
-    font-family: "Baskervville SC", serif;
+#logo {
+  font-family: "Baskervville SC", serif;
   font-weight: 800;
   font-style: normal;
+  font-display: swap; /* Ensures instant rendering with a fallback font */
 }
 
 /* Custom Toastify CSS */

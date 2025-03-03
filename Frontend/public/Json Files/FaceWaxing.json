@@ -1,7 +1,7 @@
 [
     {
       "id": "FaceWax1",
-      "image": "/Services/Service Card/Threading & Wax/Upper Lips Brazilian Wax.webp",
+      "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Threading & Wax/Upper Lips Brazilian Wax.webp",
       "name": "Upper Lips Brazilian Wax",
       "price": 149,
       "offerprice": 199,
@@ -10,7 +10,7 @@
     },
     {
       "id": "FaceWax2",
-      "image": "/Services/Service Card/Threading & Wax/Chin Brazilian Wax.webp",
+      "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Threading & Wax/Chin Brazilian Wax.webp",
       "name": "Chin Brazilian Wax",
       "price": 119,
       "offerprice": 149,
@@ -19,7 +19,7 @@
     },
     {
       "id": "FaceWax3",
-      "image": "/Services/Service Card/Threading & Wax/Side Locks Brazilian Wax.webp",
+      "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Threading & Wax/Side Locks Brazilian Wax.webp",
       "name": "Side Locks Brazilian Wax",
       "price": 169,
       "offerprice": 199,
@@ -28,7 +28,7 @@
     },
     {
       "id": "FaceWax4",
-      "image": "/Services/Service Card/Threading & Wax/Forehead Brazilian Wax.webp",
+      "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Threading & Wax/Forehead Brazilian Wax.webp",
       "name": "Forehead Brazilian Wax",
       "price": 129,
       "offerprice": 149,
@@ -37,7 +37,7 @@
     },
     {
       "id": "FaceWax5",
-      "image": "/Services/Service Card/Threading & Wax/Full Face Brazilian Wax.webp",
+      "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Threading & Wax/Full Face Brazilian Wax.webp",
       "name": "Full Face Brazilian Wax",
       "price": 499,
       "offerprice": 599,
@@ -46,7 +46,7 @@
     },
     {
       "id": "FaceWax6",
-      "image": "/Services/Service Card/Threading & Wax/Bikini Brazilian Wax.webp",
+      "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Threading & Wax/Bikini Brazilian Wax.webp",
       "name": "Bikini Brazilian Wax",
       "price": 1499,
       "offerprice": 1999,

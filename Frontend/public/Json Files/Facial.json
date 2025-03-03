@@ -1,7 +1,7 @@
 [
     {
       "id": "Facial1",
-      "image": "/Services/Service Card/Facial & Cleanup/Sara Gold Facial.webp",
+      "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Facial & Cleanup/Sara Gold Facial.webp",
       "name": "Sara Gold Facial",
       "price": 1899,
       "offerprice": 2499,
@@ -10,7 +10,7 @@
     },
     {
       "id": "Facial2",
-      "image": "/Services/Service Card/Facial & Cleanup/Cheryl's Facial.webp",
+      "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Facial & Cleanup/Cheryl's Facial.webp",
       "name": "Cheryl's Facial",
       "price": 2199,
       "offerprice": 2699,
@@ -19,7 +19,7 @@
     },
     {
       "id": "Facial3",
-      "image": "/Services/Service Card/Facial & Cleanup/O3 Facial.webp",
+      "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Facial & Cleanup/O3 Facial.webp",
       "name": "O3 Facial",
       "price": 2599,
       "offerprice": 3499,
@@ -28,7 +28,7 @@
     },
     {
       "id": "Facial4",
-      "image": "/Services/Service Card/Facial & Cleanup/Casmara Facial.webp",
+      "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Facial & Cleanup/Casmara Facial.webp",
       "name": "Casmara Facial",
       "price": 3199,
       "offerprice": 3999,
@@ -37,7 +37,7 @@
     },
     {
       "id": "Facial5",
-      "image": "/Services/Service Card/Facial & Cleanup/Bridal Glow Facial.webp",
+      "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Facial & Cleanup/Bridal Glow Facial.webp",
       "name": "Bridal Glow Facial",
       "price": 3399,
       "offerprice": 3999,

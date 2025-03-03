@@ -1,7 +1,7 @@
 [
   {
     "id": "ArtWork1",
-    "image": "/Services/Service Card/Nail Art/Chrome.webp",
+    "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Nail Art/Chrome.webp",
     "name": "Chrome",
     "price": 500,
     "offerprice": 700,
@@ -14,7 +14,7 @@
   },
   {
     "id": "ArtWork2",
-    "image": "/Services/Service Card/Nail Art/3D Art.webp",
+    "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Nail Art/3D Art.webp",
     "name": "3D Art",
     "price": 300,
     "offerprice": 400,
@@ -27,7 +27,7 @@
   },
   {
     "id": "ArtWork3",
-    "image": "/Services/Service Card/Nail Art/Marble Art.webp",
+    "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Nail Art/Marble Art.webp",
     "name": "Marble Art",
     "price": 500,
     "offerprice": 700,
@@ -40,7 +40,7 @@
   },
   {
     "id": "ArtWork4",
-    "image": "/Services/Service Card/Nail Art/Spider Art.webp",
+    "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Nail Art/Spider Art.webp",
     "name": "Spider Design",
     "price": 200,
     "offerprice": 300,
@@ -53,7 +53,7 @@
   },
   {
     "id": "ArtWork5",
-    "image": "/Services/Service Card/Nail Art/Gel Polish.webp",
+    "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Nail Art/Gel Polish.webp",
     "name": "Gel Polish",
     "price": 749,
     "offerprice": 300,

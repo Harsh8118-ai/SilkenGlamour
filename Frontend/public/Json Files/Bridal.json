@@ -1,7 +1,7 @@
 [
     {
       "id": "Bridal1",
-      "image": "/Services/Service Card/Wedding Package/Engagemant & Bridal/HD Bridal Makeup.webp",
+      "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Wedding Package/Engagemant & Bridal/HD Bridal Makeup.webp",
       "name": "HD Bridal Makeup",
       "price": 17999,
       "offerprice": 20000,
@@ -9,7 +9,7 @@
     },
     {
       "id": "Bridal2",
-      "image": "/Services/Service Card/Wedding Package/Engagemant & Bridal/Airbrush Bridal Makeup.webp",
+      "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Wedding Package/Engagemant & Bridal/Airbrush Bridal Makeup.webp",
       "name": "Airbrush Bridal Makeup",
       "price": 19999,
       "offerprice": 24000,
@@ -17,7 +17,7 @@
     },
     {
       "id": "Bridal3",
-      "image": "/Services/Service Card/Wedding Package/Engagemant & Bridal/Celebrity Makeup.webp",
+      "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Wedding Package/Engagemant & Bridal/Celebrity Makeup.webp",
       "name": "Celebrity Makeup",
       "price": 24999,
       "offerprice": 30000,
@@ -26,7 +26,7 @@
     ,
     {
         "id": "Bridal4",
-        "image": "/Services/Service Card/Wedding Package/Engagemant & Bridal/Bridal Package.webp",
+        "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Wedding Package/Engagemant & Bridal/Bridal Package.webp",
         "name": "Bridal Package",
         "price": 31999,
         "offerprice": 35000,
@@ -34,7 +34,7 @@
       },
     {
       "id": "Bridal5",
-      "image": "/Services/Service Card/Wedding Package/Engagemant & Bridal/Only Hairdo.webp",
+      "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Wedding Package/Engagemant & Bridal/Only Hairdo.webp",
       "name": "Only Hairdo",
       "price": 749,
       "offerprice": 900,
@@ -43,7 +43,7 @@
     ,
     {
       "id": "Bridal6",
-      "image": "/Services/Service Card/Wedding Package/Engagemant & Bridal/Saree Rapping.webp",
+      "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Wedding Package/Engagemant & Bridal/Saree Rapping.webp",
       "name": "Saree Rapping",
       "price": 299,
       "offerprice": 500,

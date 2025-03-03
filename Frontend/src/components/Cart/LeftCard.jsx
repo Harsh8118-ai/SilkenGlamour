@@ -53,7 +53,7 @@ export default function LeftCard() {
                     <p className={`font-bold  ${LogoColor}`}>Bleach & D-Tan</p>
                   </div></Link>
 
-                <Link to="/service/weddingpakage">
+                <Link to="/service/weddingpackage">
                   <div className='shadow-lg rounded-xl p-2 flex flex-col bg-BGColorYellow justify-center items-center hover:scale-125'>
 
                     <p className={`font-bold  ${LogoColor}`}>Wedding Package</p>
