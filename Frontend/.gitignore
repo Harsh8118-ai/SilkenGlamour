@@ -28,29 +28,30 @@ dist-ssr
 *.sln
 *.sw?
 
-# Ignore Netlify cache and config (if any)
+
 .netlify/
 
-# Ignore package-lock.json (optional, but usually recommended to keep this in the repo)
-# package-lock.json
 
-# Ignore PostCSS config (if you prefer not to commit this config)
 postcss.config.js
 
-# Ignore Tailwind CSS config (if you prefer not to commit this config)
+
 tailwind.config.js
 
-# Ignore Vite config (if you prefer not to commit this config)
+
 vite.config.js
 
-# Ignore ESLint config (if you prefer not to commit this config)
+
 eslint.config.js
 
-# Ignore jsconfig (if you prefer not to commit this config)
+
 jsconfig.json
 
-# Ignore Netlify config (optional, only if you don't want to commit it)
+
 netlify.toml
 
-# Ignore Vercel config (optional, only if you don't want to commit it)
+
 vercel.json
+
+# Ignore environment files
+.env
+.env.*

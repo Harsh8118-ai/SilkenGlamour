@@ -87,7 +87,7 @@ const ReviewComponent = () => {
         const responseData = await response.json();
         toast.success('Review Posted Successfully');
         setTimeout(() => {
-          window.location.reload();  // ✅ Refresh the page after success
+          window.location.reload();  //Refresh the page after success
         }, 500);
       }
     } catch (error) {

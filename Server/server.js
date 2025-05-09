@@ -9,11 +9,12 @@ const reviewRoute = require("./routes/review-route");
 const blogRoute = require("./routes/blog-route")
 const connectDb = require("./utils/db");
 
-// ✅ Dynamically set CORS based on environment
+//Dynamically set CORS based on environment
+const prodOrigins = process.env.PROD_ORIGINS?.split(",") || [];
+const devOrigins = process.env.DEV_ORIGINS?.split(",") || [];
+
 const allowedOrigins =
-  process.env.NODE_ENV === "production"
-    ? ["https://silkenglamour.com", "https://www.silkenglamour.com", "https://silken-glamour.vercel.app", "https://silkenglamour.netlify.app"]
-    : ["http://localhost:5173", "http://192.168.156.15:5173", "http://192.168.156.15:5173/blog"];
+  process.env.NODE_ENV === "production" ? prodOrigins : devOrigins;
 
 const corsOptions = {
   origin: allowedOrigins,
@@ -25,17 +26,17 @@ app.use(compression());
 app.use(cors(corsOptions));
 app.use(express.json());
 
-// ✅ Root route
+//Root route
 app.get("/", (req, res) => {
   res.status(200).send("Welcome to SilkenGlamour's Backend!");
 });
 
-// ✅ API Routes
+//API Routes
 app.use("/api/auth", authRoute);
 app.use("/api/form", reviewRoute);
 app.use("/api/blog", blogRoute)
 
-// ✅ Error handling middleware
+//Error handling middleware
 app.use((error, req, res, next) => {
   const statusCode = error.status || 500;
   res.status(statusCode).json({
@@ -44,7 +45,7 @@ app.use((error, req, res, next) => {
   });
 });
 
-// ✅ Connect to Database & Start Server
+//Connect to Database & Start Server
 connectDb().then(() => {
   const PORT = process.env.PORT || 5000;
   app.listen(PORT, () => {

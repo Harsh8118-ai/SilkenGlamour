@@ -87,7 +87,7 @@ const ReviewModal = () => {
         toast.success('Review deleted successfully');
         setReviews((prevReviews) => prevReviews.filter((review) => review._id !== reviewId));
         setTimeout(() => {
-          window.location.reload();  // ✅ Refresh the page after success
+          window.location.reload();  //Refresh the page after success
         }, 500);
       } else {
         toast.error('Failed to delete review');
