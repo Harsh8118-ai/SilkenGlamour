@@ -213,9 +213,9 @@ export default function Header() {
               />
             </Link>
           </div>
-          <span className="text-MainBGColorYellow text-center text-lg font-extrabold my-1.5" id="logo">
-            Silken Glamour
-          </span>
+          <div className="text-MainBGColorYellow text-center text-lg font-extrabold my-5" id="logo">
+            {/* Silken Glamour */}
+          </div>
 
           {/* Mobile Cart Icon */}
           <div className="absolute right-0 flex items-center">

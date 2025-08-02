@@ -2,12 +2,10 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../Store/auth';
 import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css'; // Ensure default styles are loaded
+import 'react-toastify/dist/ReactToastify.css';
 import '../../Css.css';
+import { FaGoogle, FaGithub } from "react-icons/fa";
 
-
-
-const URL = ""
 
 const Login = () => {
     const [formData, setFormData] = useState({
@@ -30,8 +28,6 @@ const Login = () => {
             [name]: value,
         }));
     };
-
-    // Access environment variable using import.meta.env
     const BASE_URL = import.meta.env.VITE_BACKEND_URL;
 
     const handleSubmit = async (e) => {
@@ -39,47 +35,39 @@ const Login = () => {
 
         try {
             const response = await fetch(`${BASE_URL}/auth/login`, {
-            // const response = await fetch(`http://localhost:5000/api/auth/login`, {
                 method: "POST",
                 headers: {
-                    "Content-Type": "application/json", // Indicating that JSON is being sent
+                    "Content-Type": "application/json",
                 },
-                body: JSON.stringify(formData), // Converting formData object to JSON string
+                body: JSON.stringify(formData),
             });
 
             console.log("login: ", response);
-            const data = await response.json(); // Parsing the response data
-            
+            const data = await response.json();
+
             if (response.ok) {
                 toast.success("Login Successful");
                 storeTokenInLS(data.token)
                 setFormData({ mobileNumber: "", password: "" });
+                navigate(`/auth-success?token=${data.token}`);
 
-                navigate("/");
-
-                // setTimeout(() => {
-                //     window.location.reload();
-                // }, 500);
             }
             else {
-                
-                    toast(data.extraDetails ? data.extraDetails : data.message);   
-                
-
+                toast(data.extraDetails ? data.extraDetails : data.message);
                 console.log('Invalid');
-
-
-
             }
 
         } catch (error) {
-            
-                toast(error)
-            
+            toast(error)
             console.error('Login failed: ', error);
         }
-        
+
     };
+
+    // Handle OAuth Login
+  const handleOAuthLogin = (provider) => {
+    window.location.href = `${BASE_URL}/oauth/${provider}`;
+  };
 
     return (
         <div className="min-h-screen flex -mt-20 sm:mt-0 items-center justify-center bg-gradient-to-t from-[#2E2117] via-[#796855] to-[#2E2117] p-5">
@@ -187,6 +175,34 @@ const Login = () => {
                         Sign Up
                     </Link>
                 </p>
+
+                {/* 🔹 OAuth Login Buttons */}
+          <div className="my-4 flex items-center">
+            <hr className="flex-grow border-gray-700" />
+            <span className="px-2 text-[#4c3726] text-xs font-bold">OR CONTINUE WITH</span>
+            <hr className="flex-grow border-gray-700" />
+          </div>
+
+          <div className="flex justify-center space-x-3">
+            <button
+              onClick={() => handleOAuthLogin("github")}
+              className="flex items-center space-x-2 px-4 py-2 bg-BGColorYellow border border-gray-700 text-MainBGColorYellow  rounded-md hover:bg-yellow-600 transition-all"
+              whileTap={{ scale: 0.95 }}
+            >
+              <FaGithub className="w-5 h-5" />
+              <span>GitHub</span>
+            </button>
+
+            <button
+              onClick={() => handleOAuthLogin("google")}
+              className="flex items-center space-x-2 px-4 py-2 bg-BGColorYellow border border-gray-700 text-MainBGColorYellow  rounded-md hover:bg-yellow-600 transition-all"
+              whileTap={{ scale: 0.95 }}
+            >
+              <FaGoogle className="w-5 h-5" />
+              <span>Google</span>
+            </button>
+          </div>
+
             </div>
         </div>
     );

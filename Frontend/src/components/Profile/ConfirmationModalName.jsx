@@ -7,7 +7,6 @@ import { FaTimes } from 'react-icons/fa';
 
 
 const ConfirmationModalName = ({ data, isOpen, onClose }) => {
-  // console.log("data",data);
 
   const [token, setToken] = useState(localStorage.getItem("token"));
   const { user } = useAuth();
@@ -33,7 +32,6 @@ const ConfirmationModalName = ({ data, isOpen, onClose }) => {
   const submitProfileForm = async (formData) => {
     try {
       // Form submission logic here
-      console.log("Dataa", formData);
       const response = await fetch(`${BASE_URL}/auth/updateProfile`, {
         method: "PUT",
         headers: {

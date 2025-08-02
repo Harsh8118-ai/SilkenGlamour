@@ -18,5 +18,6 @@ router.route("/updateAddress").put(authMiddleware, authControllers.UpdateAddress
 
 router.route("/user").get(authMiddleware, authControllers.user);
 
+router.post("/oauth", authControllers.oauthLogin);
 
 module.exports = router;

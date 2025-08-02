@@ -16,7 +16,7 @@ const register = async (req, res, next) => {
     const { username, email, mobileNumber, password, apartmentNumber, pincode, town, street } = req.body;
 
     // Validation
-    if (!username || !email || !password || !mobileNumber || !pincode || !town || !street) {
+    if (!username || !email || !password || !mobileNumber) {
       return res.status(400).json({ message: "All fields are required" });
     }
 
@@ -29,12 +29,12 @@ const register = async (req, res, next) => {
 
     // Create new user
     const userCreated = await User.create({
-      username, 
-      email, 
-      mobileNumber, 
-      password, 
-      apartmentNumber, 
-      pincode, 
+      username,
+      email,
+      mobileNumber,
+      password,
+      apartmentNumber,
+      pincode,
       town,
       street
     });
@@ -88,116 +88,155 @@ const login = async (req, res) => {
   }
 };
 
-// *-------------------
+// *------------------- 
 // to send user data - User Logic
 // *-------------------
 
-const user = async(req, res) => {
+const user = async (req, res) => {
   try {
     const userData = req.user;
-    console.log(userData);
     return res.status(200).json({ userData });
 
   } catch (error) {
     console.log(`error from the user route ${error}`);
-    
+
   }
 }
 
 
-const UpdateProfile = async(req,res) => {
-  
+const UpdateProfile = async (req, res) => {
   try {
-      //  fetch the data from req body
-      const { username= ""} = req.body;
+    const { username = "", mobileNumber = "" } = req.body;
+    const userid = req.user;
 
-      const userid = req.user;
-      console.log("Userid", userid);
-      
-   
+    const userDetails = await User.findById(userid);
+    if (!userDetails) {
+      return res.status(404).json({
+        success: false,
+        message: "User not found",
+      });
+    }
+
+    if (username) userDetails.username = username;
+    if (mobileNumber) userDetails.mobileNumber = mobileNumber;
+
+    await userDetails.save();
+
+    const updatedUserDetails = await User.findById(userid).exec();
+
+    return res.status(200).json({
+      success: true,
+      message: "Profile Updated Successfully",
+      data: updatedUserDetails,
+    });
+  } catch (error) {
+    return res.status(500).json({
+      success: false,
+      message: "Internal Server error, while updating profile",
+      error: error.message,
+    });
+  }
+};
+
+
+const UpdateAddress = async (req, res) => {
+
+  try {
+    //  fetch the data from req body
+    const { apartmentNumber = "", street = "", town = "", pincode = "" } = req.body;
+
+    const userid = req.user;
+
+
 
     //   // find Profile
-      const userDetails = await User.findById(userid);
-
-     
-     userDetails.username = username;
-    //  userDetails.email = email;
-     
-    //  userDetails.mobileNumber = mobileNumber;
-  
-     // save the updated profile
-     await userDetails.save()
-    //  await profileDetails.save();
-
-     console.log("User details" , userDetails);
-
-     // Find the updated user details
-       const updatedUserDetails = await User.findById(userid).exec() 
-
-     
+    const userDetails = await User.findById(userid);
 
 
-      
-      return res.status(200).json({
-          success:true,
-          message:"Profile Updated Successfully",
-          data: updatedUserDetails,
-      })
+    userDetails.street = street;
+    userDetails.apartmentNumber = apartmentNumber;
+    userDetails.town = town;
+    userDetails.pincode = pincode;
+
+    await userDetails.save()
+    const updatedUserDetails = await User.findById(userid).exec()
+
+    return res.status(200).json({
+      success: true,
+      message: "Address Updated Successfully",
+      data: updatedUserDetails,
+    })
   } catch (error) {
-      return res.status(500).json({
-          success:false,
-          message:"Internal Server error, while updating profile",
-          error:error.message,
-      })
-    }
+    return res.status(500).json({
+      success: false,
+      message: "Internal Server error, while updating Address",
+      error: error.message,
+    })
+  }
 }
 
-const UpdateAddress = async(req,res) => {
-  
+// OAuth Login (Google/GitHub)
+const oauthLogin = async (req, res) => {
   try {
-      //  fetch the data from req body
-      const { apartmentNumber= "", street="", town="", pincode="" } = req.body;
+    const { email, username, googleId, githubId } = req.body;
 
-      const userid = req.user;
-      console.log("Userid", userid);
-      
-   
+    if (!email) {
+      return res.status(400).json({ message: "Email is required" });
+    }
 
-    //   // find Profile
-      const userDetails = await User.findById(userid);
+    let user;
 
-     
-     userDetails.street = street;
-     userDetails.apartmentNumber = apartmentNumber;
-     userDetails.town = town;
-     userDetails.pincode = pincode;
-  
-     // save the updated profile
-     await userDetails.save()
-    //  await profileDetails.save();
+    // 🔹 First, check if user exists by OAuth ID
+    if (googleId) {
+      user = await User.findOne({ googleId });
+    } else if (githubId) {
+      user = await User.findOne({ githubId });
+    }
 
-     console.log("User details" , userDetails);
+    // 🔹 If no user found by OAuth ID, check by email
+    if (!user) {
+      user = await User.findOne({ email });
 
-     // Find the updated user details
-       const updatedUserDetails = await User.findById(userid).exec() 
+      // 🔹 If user exists but doesn't have OAuth ID, update it
+      if (user) {
+        if (googleId) user.googleId = googleId;
+        if (githubId) user.githubId = githubId;
+        user.authProvider = googleId ? "google" : "github";
+        await user.save();
+      }
+    }
 
-     
+    // 🔹 If user still doesn't exist, create a new one
+    if (!user) {
+      let uniqueUsername = username;
+      let count = 1;
+      while (await User.findOne({ username: uniqueUsername })) {
+        uniqueUsername = `${username}${count++}`;
+      }
 
+      user = new User({
+        username: uniqueUsername,
+        email,
+        googleId,
+        githubId,
+        authProvider: googleId ? "google" : "github",
+      });
 
-      
-      return res.status(200).json({
-          success:true,
-          message:"Address Updated Successfully",
-          data: updatedUserDetails,
-      })
+      await user.save();
+    }
+
+    console.log("User Auth Provider:", user.authProvider);
+
+    // 🔹 Generate and send token
+    const token = generateToken(user);
+    res.redirect(
+      `${process.env.FRONTEND_URL}/oauth-success?token=${token}&username=${user.username}`
+    );
   } catch (error) {
-      return res.status(500).json({
-          success:false,
-          message:"Internal Server error, while updating Address",
-          error:error.message,
-      })
-    }
-}
+    console.error("OAuth Login Error:", error);
+    res.redirect(`${process.env.FRONTEND_URL}/login?error=OAuthFailed`);
+  }
+};
 
 
-module.exports = { home, register, login, user , UpdateProfile, UpdateAddress};
+module.exports = { home, register, login, user, UpdateProfile, UpdateAddress, oauthLogin };

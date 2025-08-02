@@ -1,9 +1,8 @@
 import React, { useEffect } from 'react';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import { Outlet } from 'react-router-dom';
-import { useLocation } from 'react-router-dom';
-import { CartProvider } from '../src/components/Cart/CartContext'; // CartProvider wraps everything
+import { Outlet, useLocation } from 'react-router-dom';
+import { CartProvider } from '../src/components/Cart/CartContext';
 import TrackPageView from './TrackPageView';
 
 function Layout({ children }) {
@@ -13,19 +12,19 @@ function Layout({ children }) {
     window.scrollTo(0, 0);
   }, [pathname]);
 
+  // Hide Header and Footer on admin routes
+  const isAdminRoute = pathname.startsWith('/admin');
+
   return (
-    <>
-      {/* CartProvider wraps everything to share cart context across the app */}
-      <CartProvider>
-        <div>
-          <TrackPageView />
-          <Header /> 
-          <Outlet /> 
-          <Footer />
-        </div>
-        {children}
-      </CartProvider>
-    </>
+    <CartProvider>
+      <div>
+        <TrackPageView />
+        {!isAdminRoute && <Header />}
+        <Outlet />
+        {!isAdminRoute && <Footer />}
+      </div>
+      {children}
+    </CartProvider>
   );
 }
 

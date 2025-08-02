@@ -13,6 +13,15 @@ import { useLocation } from "react-router-dom";
 import ReactGA from "react-ga4";
 import Blog from './components/Blog/Blog';
 import Review from './components/Review/Review';
+import SearchServices from './components/Home/SearchServices';
+import TrackOrder from './components/Orders/TrackOrder';
+import TrackOrderList from './components/Orders/TrackOrderList';
+import OrderHistory from './components/Orders/OrderHistory';
+import AdminDashboard from './components/Admin/Admin';
+import AdminRoute from './components/Admin/AdminRoute';
+import AdminOrdersPage from './components/Admin/AdminOrdersPage';
+import AdminUsersPage from './components/Admin/AdminUsersPage';
+import AdminLayout from './components/Admin/AdminLayout';
 
 
 // Load Google Analytics ID from .env
@@ -49,6 +58,8 @@ const CardThreading = React.lazy(() => import('./components/Service/Service Card
 const CardFacial = React.lazy(() => import('./components/Service/Service Card/CardFacial'));
 const ChatBotLayout = React.lazy(() => import('./components/FAQ/ChatBotLayout'));
 const Profile = React.lazy(() => import('./components/Profile/Profile'));
+const AuthSuccess = React.lazy(() => import('./Store/AuthSuccess'));
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -61,14 +72,42 @@ const router = createBrowserRouter(
           </Suspense>
         }
       />
+      <Route element={<AdminRoute />}>
+  <Route path="admin" element={<AdminLayout />}>
+    <Route
+      index
+      element={
+        <Suspense fallback={<div className='bg-MainBGColorYellow h-screen w-full'></div>}>
+          <AdminDashboard />
+        </Suspense>
+      }
+    />
+    <Route
+      path="orders"
+      element={
+        <Suspense fallback={<div className='bg-MainBGColorYellow h-screen w-full'></div>}>
+          <AdminOrdersPage />
+        </Suspense>
+      }
+    />
+    <Route
+      path="users"
+      element={
+        <Suspense fallback={<div className='bg-MainBGColorYellow h-screen w-full'></div>}>
+          <AdminUsersPage />
+        </Suspense>
+      }
+    />
+  </Route>
+</Route>
       <Route
-          path="review"
-          element={
-            <Suspense fallback={<div className='bg-MainBGColorYellow h-screen w-full'></div>}>
-              <Review />
-            </Suspense>
-          }
-        />
+        path="review"
+        element={
+          <Suspense fallback={<div className='bg-MainBGColorYellow h-screen w-full'></div>}>
+            <Review />
+          </Suspense>
+        }
+      />
       <Route
         path="about"
         element={
@@ -78,10 +117,58 @@ const router = createBrowserRouter(
         }
       />
       <Route
+        path="auth-success"
+        element={
+          <Suspense fallback={<div className='bg-MainBGColorYellow h-screen w-full'></div>}>
+            <AuthSuccess />
+          </Suspense>
+        }
+      />
+      <Route
+        path="track-order/:userId/:orderId"
+        element={
+          <Suspense fallback={<div className='bg-MainBGColorYellow h-screen w-full'></div>}>
+            <TrackOrder />
+          </Suspense>
+        }
+      />
+      {/* <Route
+        path="admin"
+        element={
+          <Suspense fallback={<div className='bg-MainBGColorYellow h-screen w-full'></div>}>
+            <AdminDashboard />
+          </Suspense>
+        }
+      /> */}
+      <Route
+        path="my-order"
+        element={
+          <Suspense fallback={<div className='bg-MainBGColorYellow h-screen w-full'></div>}>
+            <TrackOrderList />
+          </Suspense>
+        }
+      />
+      <Route
+        path="order-history"
+        element={
+          <Suspense fallback={<div className='bg-MainBGColorYellow h-screen w-full'></div>}>
+            <OrderHistory />
+          </Suspense>
+        }
+      />
+      <Route
         path="profile"
         element={
           <Suspense fallback={<div className='bg-MainBGColorYellow h-screen w-full'></div>}>
             <Profile />
+          </Suspense>
+        }
+      />
+      <Route
+        path="search-services"
+        element={
+          <Suspense fallback={<div className='bg-MainBGColorYellow h-screen w-full'></div>}>
+            <SearchServices />
           </Suspense>
         }
       />
@@ -123,7 +210,7 @@ const router = createBrowserRouter(
           }
         />
       </Route>
-      
+
       <Route path="service" element={
         <Suspense fallback={<div className='bg-MainBGColorYellow h-screen w-full'></div>}>
           <ServiceLayout />
@@ -250,7 +337,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         bodyClassName='Toastify__toast--custom'
         progressClassName='Toastify__progress-bar'
       />
-      
+
     </CartProvider>
   </AuthProvider>
 );

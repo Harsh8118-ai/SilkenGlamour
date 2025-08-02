@@ -132,8 +132,8 @@ const CardNailArt = () => {
               </div>
             )}
 
-            {/* ............. MOBILE VIEW CARD ............. */}
 
+            {/* ............. MOBILE VIEW CARD ............. */}
             {products.length > 0 && (
               <div className="w-full h-full mt-4 sm:hidden">
                 <div className="grid grid-cols-2 gap-x-3 gap-y-6 ">

@@ -34,7 +34,6 @@ const ReviewComponent = () => {
           if (userReview) {
             setHasReviewed(true);
           }
-          console.log(userReview);
           
         }
       } catch (error) {

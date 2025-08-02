@@ -11,7 +11,7 @@ router.route("/review").post(reviewForm);
 router.get("/review", async (req, res) => {
   try {
     const reviews = await Review.find();
-    console.log("Fetched reviews:", reviews);
+    
     res.status(200).json(reviews);
   } catch (error) {
     console.error(error);
@@ -57,8 +57,7 @@ router.delete("/review/:id", async (req, res) => {
 router.put("/review/:id", async (req, res) => {
   try {
     const { id } = req.params;
-    console.log("Updating review with ID:", id);
-    console.log("Received data:", req.body);
+    
 
     const updatedReview = await Review.findByIdAndUpdate(
       id,

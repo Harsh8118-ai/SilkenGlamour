@@ -4,6 +4,7 @@ import { useAuth } from '../../Store/auth';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'; // Ensure default styles are loaded
 import '../../Css.css';
+import { FaGoogle, FaGithub } from "react-icons/fa";
 
 const SignUp = () => {
     const [formData, setFormData] = useState({
@@ -17,10 +18,10 @@ const SignUp = () => {
         password: '' // Required field
     });
 
-    const {storeTokenInLS} = useAuth();
+    const { storeTokenInLS } = useAuth();
 
     const [showPassword, setShowPassword] = useState(false);
-    
+
     // Access environment variable using import.meta.env
     const BASE_URL = import.meta.env.VITE_BACKEND_URL;
 
@@ -38,7 +39,7 @@ const SignUp = () => {
         e.preventDefault();
         console.log(formData);
 
-        
+
 
         try {
             const response = await fetch(`${BASE_URL}/auth/register`, {
@@ -54,28 +55,33 @@ const SignUp = () => {
             console.log(response);
             const data = await response.json(); // Parsing the response data
             console.log('User registered successfully:', data); // Success message
-            
+
             if (response.ok) {
 
                 storeTokenInLS(data.token)
 
-                navigate('/');
-               
-                    toast("Registered Successfully")
-                
+                navigate(`/auth-success?token=${data.token}`);
+
+                toast("Registered Successfully")
+
             } else {
                 console.error('Failed to register user:', data); // Error message from the server
-               
-                    toast(data.extraDetails ? data.extraDetails : data.message)
-                
+
+                toast(data.extraDetails ? data.extraDetails : data.message)
+
             }
         } catch (error) {
             console.error('Error:', error); // Logging any error from fetch
-           
-                toast("Database Not Connected")
-            
-            
+
+            toast("Database Not Connected")
+
+
         }
+    };
+
+    // Handle OAuth Login
+    const handleOAuthLogin = (provider) => {
+        window.location.href = `${BASE_URL}/oauth/${provider}`;
     };
 
 
@@ -135,11 +141,11 @@ const SignUp = () => {
                     </div>
 
                     {/* Address */}
-                    <div>
+                    {/*<div>
                         <label className="block text-sm font-medium text-BGColorYellow ">Address</label>
                         <div className='border border-gray-700 bg-[#cfbca6]  rounded-md p-4'>
                             <div className="space-y-4">
-                            <div>
+                                <div>
                                     <input
                                         id="apartmentNumber"
                                         name="apartmentNumber"
@@ -190,7 +196,7 @@ const SignUp = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
 
                     {/* Password */}
                     <div className="relative">
@@ -254,11 +260,39 @@ const SignUp = () => {
                 </form>
 
                 <div className="mt-4 text-center text-BGColorYellow">
-                Already have an account?
+                    Already have an account?
                     <Link to="/contact/login" className="text-BGColorYellow hover:text-yellow-400 font-bold">
                         &nbsp; Log In
                     </Link>
                 </div>
+
+                {/* 🔹 OAuth Signup Buttons */}
+                <div className="my-4 flex items-center">
+                    <hr className="flex-grow border-gray-700" />
+                    <span className="px-2 text-[#4c3726] text-xs font-bold">OR CONTINUE WITH</span>
+                    <hr className="flex-grow border-gray-700" />
+                </div>
+
+                <div className="flex justify-center space-x-3">
+                    <button
+                        onClick={() => handleOAuthLogin("github")}
+                        className="flex items-center space-x-2 px-4 py-2 bg-BGColorYellow border border-gray-700 text-MainBGColorYellow  rounded-md hover:bg-yellow-600 transition-all"
+                        whileTap={{ scale: 0.95 }}
+                    >
+                        <FaGithub className="w-5 h-5" />
+                        <span>GitHub</span>
+                    </button>
+
+                    <button
+                        onClick={() => handleOAuthLogin("google")}
+                        className="flex items-center space-x-2 px-4 py-2 bg-BGColorYellow border border-gray-700 text-MainBGColorYellow  rounded-md hover:bg-yellow-600 transition-all"
+                        whileTap={{ scale: 0.95 }}
+                    >
+                        <FaGoogle className="w-5 h-5" />
+                        <span>Google</span>
+                    </button>
+                </div>
+
             </div>
         </div>
     );

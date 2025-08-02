@@ -94,3 +94,35 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #d4ac0d; /* Darker on hover */
 }
+
+
+/* Global CSS: index.css or App.css */
+.custom-datepicker {
+  background-color: #fff4e6 ;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100% ;
+  display: flex;
+  justify-content: center;
+}
+
+/* Optional: style the header and days */
+.custom-datepicker .react-datepicker__header {
+  background-color: #fff4e6 ;
+  border-bottom: none;
+}
+
+.custom-datepicker .react-datepicker__day {
+  color: #6b3f1d;
+}
+
+.custom-datepicker .react-datepicker__day--selected {
+  background-color: #6b3f1d ;
+  color: #fff4e6 ;
+}
+
+.custom-datepicker .react-datepicker__month-container {
+  width: 100%;
+}
+
+
