@@ -69,7 +69,7 @@ export default function AdminUsersPage() {
         return <div className="p-10 text-amber-800">Loading users...</div>;
     }
 
-    if (error) {
+    if (error) { 
         return <div className="p-10 text-red-600">Error: {error}</div>;
     }
 
