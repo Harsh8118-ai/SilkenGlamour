@@ -67,7 +67,7 @@ const SearchServices = () => {
   };
 
   return (
-    <div className="p-4 min-h-screen bg-[#fffaf5]">
+    <div className="p-4 min-h-screen bg-MainBGColorYellow">
       {/* Header */}
       <div className="flex items-center space-x-2 text-[#6b4c3b] font-semibold text-lg mb-4">
         <FaArrowLeft className="cursor-pointer" onClick={() => navigate(-1)} />
@@ -76,16 +76,16 @@ const SearchServices = () => {
 
       {/* Search Bar */}
       <div className="relative mb-6">
-        <FaSearch className="absolute top-3 left-3 text-pink-500" />
+        <FaSearch className="absolute top-3 left-3 text-BGColorYellow" />
         <input
           type="text"
           placeholder="Search for Beauty"
           value={search}
           onChange={(e) => {
             setSearch(e.target.value);
-            setSelectedKeyword(""); // reset keyword when typing
+            setSelectedKeyword("");
           }}
-          className="w-full pl-10 pr-4 py-2 rounded-full bg-white border border-pink-200 focus:outline-none focus:ring-2 focus:ring-pink-300 shadow-sm placeholder:text-gray-400"
+          className="w-full pl-10 pr-4 py-2 rounded-full bg-white border border-pink-200 focus:outline-none focus:ring-2 focus:ring-BGColorYellow shadow-sm placeholder:text-gray-400"
         />
       </div>
 
@@ -98,12 +98,12 @@ const SearchServices = () => {
             onClick={() => handleKeywordClick(tag)}
             className={`flex items-center px-3 py-1.5 rounded-md border text-sm text-[#6b4c3b] shadow-sm transition ${
               selectedKeyword === tag
-                ? "bg-pink-100 border-pink-300"
+                ? "bg-LightBGColor border-yellow-900"
                 : "bg-white border-gray-200 hover:bg-pink-50"
             }`}
           >
             <svg
-              className="w-3 h-3 mr-1 text-pink-500"
+              className="w-3 h-3 mr-1 text-BGColorYellow"
               fill="currentColor"
               viewBox="0 0 20 20"
             >
@@ -130,7 +130,7 @@ const SearchServices = () => {
               <div className="p-2">
                 <h3 className="text-sm font-semibold text-[#6b4c3b] truncate">{service.name}</h3>
                 <p className="text-xs text-gray-500 line-through">₹{service.offerprice}</p>
-                <p className="text-sm text-pink-600 font-bold">₹{service.price}</p>
+                <p className="text-sm text-BGColorYellow font-bold">₹{service.price}</p>
               </div>
             </div>
           ))}
@@ -140,6 +140,6 @@ const SearchServices = () => {
       )}
     </div>
   );
-};
+};  
 
 export default SearchServices;
