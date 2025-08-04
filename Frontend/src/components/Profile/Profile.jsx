@@ -13,7 +13,6 @@ const Profile = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const navigate = useNavigate();
 
-
   const openModal = (type, data) => {
     setModalType(type);
     setModalData(data);
