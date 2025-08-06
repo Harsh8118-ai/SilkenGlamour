@@ -16,7 +16,6 @@ const session = require("express-session");
 require("./utils/passport-config");
 
 
-//Dynamically set CORS based on environment
 const prodOrigins = process.env.PROD_ORIGINS?.split(",") || [];
 const devOrigins = process.env.DEV_ORIGINS?.split(",") || [];
 
@@ -45,7 +44,6 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
-//API Routes
 app.use("/api/auth", authRoute);
 app.use("/api/oauth", oauthRoute);
 app.use("/api/form", reviewRoute);
@@ -55,13 +53,10 @@ app.use("/api/orders", orderRoute);
 app.use("/api/admin", adminRoute);
 
 
-
-//Root route
 app.get("/", (req, res) => {
   res.status(200).send("Welcome to SilkenGlamour's Backend!");
 });
 
-//Error handling middleware
 app.use((error, req, res, next) => {
   const statusCode = error.status || 500;
   res.status(statusCode).json({
@@ -70,7 +65,6 @@ app.use((error, req, res, next) => {
   });
 });
 
-//Connect to Database & Start Server
 connectDb().then(() => {
   const PORT = process.env.PORT || 5000;
   app.listen(PORT, () => {
