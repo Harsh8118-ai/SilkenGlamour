@@ -71,7 +71,7 @@ const SearchServices = () => {
       <div className="flex items-center space-x-2 text-[#6b4c3b] font-semibold text-lg mb-4">
         <FaArrowLeft className="cursor-pointer" onClick={() => navigate(-1)} />
         <span>Search Services</span>
-      </div>
+      </div> 
 
       {/* Search Bar */}
       <div className="relative mb-6">
