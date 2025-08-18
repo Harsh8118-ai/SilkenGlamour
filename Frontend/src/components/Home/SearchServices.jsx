@@ -72,7 +72,7 @@ const SearchServices = () => {
         <FaArrowLeft className="cursor-pointer" onClick={() => navigate(-1)} />
         <span>Search Services</span>
       </div> 
-
+ 
       {/* Search Bar */}
       <div className="relative mb-6">
         <FaSearch className="absolute top-3 left-3 text-BGColorYellow" />
