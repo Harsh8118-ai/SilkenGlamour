@@ -16,7 +16,7 @@ const Profile = () => {
   const openModal = (type, data) => {
     setModalType(type);
     setModalData(data);
-    setIsModalOpen(true);
+    setIsModalOpen(true); 
   };
 
   const closeModal = () => {
