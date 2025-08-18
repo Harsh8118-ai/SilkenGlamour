@@ -5,6 +5,8 @@
     "name": "Touchup (Majirel)",
     "price": 1299,
     "offerprice": 1599,
+    "discount": "30%",
+    "time": "10 min",
     "features": [
       "Refreshes Hair Color",
       "Covers Gray Roots",
@@ -18,6 +20,8 @@
     "name": "Touchup (Inoa)",
     "price": 1499,
     "offerprice": 1799,
+    "discount": "30%",
+    "time": "10 min",
     "features": [
       "Revives Hair Color",
       "Covers Gray Roots",
@@ -31,6 +35,8 @@
     "name": "Global (Base)",
     "price": 3999,
     "offerprice": 4999,
+    "discount": "30%",
+    "time": "10 min",
     "features": [
       "Full Hair Color Change",
       "Uniform Color Application",
@@ -44,6 +50,8 @@
     "name": "Global (Fashion)",
     "price": 4499,
     "offerprice": 5999,
+    "discount": "30%",
+    "time": "10 min",
     "features": [
       "Bold Color Change",
       "Enhances Hair with Trendy Tones",
@@ -57,6 +65,8 @@
     "name": "Balayage",
     "price": 5999,
     "offerprice": 8499,
+    "discount": "30%",
+    "time": "10 min",
     "features": [
       "Creates Natural Highlights",
       "Adds Dimension and Depth",
@@ -70,6 +80,8 @@
     "name": "Highlight (Crown)",
     "price": 4999,
     "offerprice": 6999,
+    "discount": "30%",
+    "time": "10 min",
     "features": [
       "Brightens Crown Area",
       "Adds Dimension and Shine",
@@ -83,6 +95,8 @@
     "name": "Global Highlight",
     "price": 6499,
     "offerprice": 8499,
+    "discount": "30%",
+    "time": "10 min",
     "features": [
       "Uniform Hair Lightening",
       "Adds Overall Dimension",
@@ -96,6 +110,8 @@
     "name": "Ombre",
     "price": 6699,
     "offerprice": 9499,
+    "discount": "30%",
+    "time": "10 min",
     "features": [
       "Seamless Color Transition",
       "Adds Natural-Looking Depth",
@@ -109,6 +125,8 @@
     "name": "Global Lowlight",
     "price": 5299,
     "offerprice": 7499,
+    "discount": "30%",
+    "time": "10 min",
     "features": [
       "Enhances Depth with Darker Tones",
       "Adds Subtle Contrast",

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { FaArrowLeft, FaSearch } from "react-icons/fa";
 
-// Mapping keywords to filenames in /public/Json Files/
 const keywordToFile = {
   "Bleach": "Bleach.json",
   "Bridal": "Bridal.json",
@@ -96,11 +95,10 @@ const SearchServices = () => {
           <button
             key={index}
             onClick={() => handleKeywordClick(tag)}
-            className={`flex items-center px-3 py-1.5 rounded-md border text-sm text-[#6b4c3b] shadow-sm transition ${
-              selectedKeyword === tag
+            className={`flex items-center px-3 py-1.5 rounded-md border text-sm text-[#6b4c3b] shadow-sm transition ${selectedKeyword === tag
                 ? "bg-LightBGColor border-yellow-900"
                 : "bg-white border-gray-200 hover:bg-pink-50"
-            }`}
+              }`}
           >
             <svg
               className="w-3 h-3 mr-1 text-BGColorYellow"
@@ -121,6 +119,7 @@ const SearchServices = () => {
             <div
               key={service.id}
               className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200"
+              onClick={() => navigate(service.href)}
             >
               <img
                 src={service.image}
@@ -134,12 +133,13 @@ const SearchServices = () => {
               </div>
             </div>
           ))}
+          <div className="mb-14"></div>
         </div>
       ) : (
         <p className="text-sm text-gray-500">No matching services found.</p>
       )}
     </div>
   );
-};  
+};
 
 export default SearchServices;

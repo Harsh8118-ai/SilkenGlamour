@@ -366,11 +366,11 @@
     {
       "id": "Facial1",
       "image": "https://ik.imagekit.io/silkenglamour/public/Services/Service Card/Facial & Cleanup/Sara Gold Facial.webp",
-      "name": "Sara Gold Facial",
+      "name": "Sara Gold Faci",
       "price": 1899,
       "offerprice": 2499,
       "features": ["Boosts Skin Elasticity", "Enhances Glow and Shine", "Rejuvenates Tired Skin"],
-      "href" : "/"
+      "href" : "/service/facial-cleanup"
     },
     {
       "id": "Facial2",
@@ -379,7 +379,7 @@
       "price": 2199,
       "offerprice": 2699,
       "features": ["Brightens Dull Skin", "Deeply Moisturizes", "Reduces Blemishes and Spots"],
-      "href" : "/"
+      "href" : "/service/facial-cleanup"
     },
     {
       "id": "Facial3",
@@ -388,7 +388,7 @@
       "price": 2599,
       "offerprice": 3499,
       "features": [ "Deeply Cleanses Skin", "Boosts Skin Radiance", "Reduces Fine Lines"],
-      "href" : "/"
+      "href" : "/service/facial-cleanup"
     },
     {
       "id": "Facial4",
@@ -397,7 +397,7 @@
       "price": 3199,
       "offerprice": 3999,
       "features": ["Nourishes and Rejuvenates", "Balances Skin Hydration", "Promotes Firmness and Glow"],
-      "href" : "/"
+      "href" : "/service/facial-cleanup"
     },
     {
       "id": "Facial5",
@@ -406,7 +406,7 @@
       "price": 3399,
       "offerprice": 3999,
       "features": [ "Enhances Natural Radiance", "Evens Skin Tone", "Boosts Long-Lasting Glow"],
-      "href" : "/"
+      "href" : "/service/facial-cleanup"
     },
 
   {
