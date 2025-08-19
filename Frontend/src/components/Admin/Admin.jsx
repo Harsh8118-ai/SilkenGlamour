@@ -17,13 +17,13 @@ export default function AdminDashboard() {
     useEffect(() => {
         const fetchDashboardData = async () => {
             try {
-                const token = localStorage.getItem("token"); // or however you store it
+                const token = localStorage.getItem("token");
 
                 const res = await fetch("http://localhost:5000/api/admin/dashboard", {
                     method: "GET",
                     headers: {
                         "Content-Type": "application/json",
-                        Authorization: `Bearer ${token}`, // 💥 critical
+                        Authorization: `Bearer ${token}`,
                     },
                 });
 
