@@ -126,3 +126,31 @@
 }
 
 
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.luxury-gradient {
+  background: linear-gradient(135deg, #3a2d1b 0%, #38301bcf 100%);
+}
+
+.hover-glow {
+  transition: all 0.3s ease;
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 20px rgba(194, 159, 109, 0.3);
+  transform: translateY(-2px);
+}
+
+.pill-button {
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.pill-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(194, 159, 109, 0.2);
+}

@@ -1,78 +1,61 @@
-import React from 'react'
-import { LogoColor } from '../../Style'
-import { Link } from 'react-router-dom'
+import { useState, useEffect } from "react"
+import { Link, useLocation } from 'react-router-dom'
+import { Card } from "../ui/card"
+import { Button } from "../ui/button"
+
+
 
 export default function LeftCard() {
+  
+ const categories = [
+    { name: "Nail Art", path: "/service/nailart" },
+    { name: "Hair Care", path: "/service/haircare" },
+    { name: "Mani-Pedi", path: "/service/mani-pedi" },
+    { name: "Waxing", path: "/service/waxing" },
+    { name: "Polish & Massage", path: "/service/body-polishing" },
+    { name: "Threading & Wax", path: "/service/threading" },
+    { name: "Bleach & De-Tan", path: "/service/bleach-dtan" },
+    { name: "Wedding Package", path: "/service/weddingpackage" },
+    { name: "Facial & Cleanup", path: "/service/facial-cleanup" },
+  ]
+
+  
+  const location = useLocation()
+  const [selectedCategory, setSelectedCategory] = useState("")
+
+  // update selectedCategory whenever the URL changes
+  useEffect(() => {
+    const activeCategory = categories.find(cat => location.pathname.startsWith(cat.path))
+    if (activeCategory) {
+      setSelectedCategory(activeCategory.name)
+    }
+  }, [location.pathname])
+
   return (
     <>
-    <div className="hidden sm:block w-[20%] sticky top-16 h-screen bg-gray-100 p-4">
-          <div className='bg-MainBGColorYellow h-screen rounded-lg'>
-            <h1 className={`text-center text-3xl font-bold p-3 ${LogoColor}`}>Services</h1>
-            <div className='flex justify-center items-center p-3x '>
-              <div className="flex flex-col gap-2">
-
-                <Link to="/service/nailart">
-                  <div className='shadow-lg rounded-xl p-2 flex flex-col bg-BGColorYellow justify-center items-center hover:scale-125 '>
-
-                    <p className={`font-bold  ${LogoColor}`}>Nail Art</p>
-                  </div></Link>
-
-                <Link to="/service/haircare">
-                  <div className='shadow-lg rounded-xl p-2 flex flex-col bg-BGColorYellow justify-center items-center hover:scale-125'>
-
-                    <p className={`font-bold  ${LogoColor}`}>Hair Care</p>
-                  </div></Link>
-
-                <Link to="/service/mani-pedi">
-                  <div className='shadow-lg rounded-xl p-2 flex flex-col bg-BGColorYellow justify-center items-center hover:scale-125'>
-
-                    <p className={`font-bold  ${LogoColor}`}>Mani-Pedi</p>
-                  </div></Link>
-
-                <Link to="/service/waxing">
-                  <div className='shadow-lg rounded-xl p-2 flex flex-col bg-BGColorYellow justify-center items-center hover:scale-125'>
-
-                    <p className={`font-bold  ${LogoColor}`}>Waxing</p>
-                  </div></Link>
-
-                <Link to="/service/body-polishing">
-                  <div className='shadow-lg rounded-xl p-2 flex flex-col bg-BGColorYellow justify-center items-center hover:scale-125'>
-
-                    <p className={`font-bold  ${LogoColor}`}>Polish & Massage</p>
-                  </div></Link>
-
-                <Link to="/service/threading">
-                  <div className='shadow-lg rounded-xl p-2 flex flex-col bg-BGColorYellow justify-center items-center hover:scale-125'>
-
-                    <p className={`font-bold  ${LogoColor}`}>Threading & Wax</p>
-                  </div></Link>
-
-                <Link to="/service/bleach-dtan">
-                  <div className='shadow-lg rounded-xl p-2 flex flex-col bg-BGColorYellow justify-center items-center hover:scale-125'>
-
-                    <p className={`font-bold  ${LogoColor}`}>Bleach & D-Tan</p>
-                  </div></Link>
-
-                <Link to="/service/weddingpackage">
-                  <div className='shadow-lg rounded-xl p-2 flex flex-col bg-BGColorYellow justify-center items-center hover:scale-125'>
-
-                    <p className={`font-bold  ${LogoColor}`}>Wedding Package</p>
-                  </div></Link>
-
-
-
-                <Link to="/service/facial-cleanup">
-                  <div className='shadow-lg rounded-xl p-2 sm:hidden text-center
-                    lg:flex lg:justify-center lg:items-center lg:flex-col bg-BGColorYellow hover:scale-125'>
-
-                    <p className={`font-bold  ${LogoColor}`}>Facial & Cleanup</p>
-                  </div></Link>
-                <div className='m-4'></div>
-
-              </div >
-            </div >
+    <div className="hidden sm:block w-[20%] sticky mt-11 ml-16 h-screen bg p-4 ">
+          <div className="sm:col-span-1">
+            <Card className="glass-card p-6 sticky top-24 shadow-sm shadow-MainBGColorYellow">
+              <h2 className="text-xl font-semibold mb-6 text-foreground">Service Categories</h2>
+              <div className="space-y-3">
+                {categories.map((category) => (
+                  <Link key={category.name} to={category.path} className="flex gap-2">
+                  <Button
+                    key={category.name}
+                    variant={selectedCategory === category.name ? "default" : "ghost"}
+                    className={`w-full justify-start pill-button hover-glow border border-white/25 ${
+                      selectedCategory === category.name ? "bg-BGColorYellow text-white" : "hover:bg-accent/10"
+                    }`}
+                    onClick={() => setSelectedCategory(category.name)}
+                  >
+                    {category.name}
+                  </Button>
+                  </Link>
+                ))}
+              </div>
+            </Card>
           </div>
-          {/* Add content for the left container */}
+
         </div>
     </>
   )

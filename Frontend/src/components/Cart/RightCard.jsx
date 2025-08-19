@@ -39,7 +39,7 @@ const RightCart = () => {
   return (
     <>
     {isLoggedIn ? (
-    <div className='hidden sm:flex flex-col sticky top-16 h-screen bg-gray-100 p-4 max-w-sm right-0'>
+    <div className='hidden sm:flex flex-col sticky top-16 h-screen  p-4 max-w-sm right-0'>
       <div className="w-full max-w-sm p-6 bg-MainBGColorYellow shadow-xl rounded-lg flex flex-col h-full">
         <h2 className="text-lg font-bold text-center mb-4">My Cart</h2>
         <div className="flex-grow overflow-auto">
@@ -100,7 +100,7 @@ const RightCart = () => {
       )}
     </div>
     ) : (
-    <div className='hidden sm:flex flex-col justify-center items-center sticky top-16 h-screen bg-gray-100 p-4 max-w-sm right-0'>
+    <div className='hidden sm:flex flex-col justify-center items-center sticky top-16 h-screen p-4 max-w-sm right-0'>
       <div className="w-full max-w-sm p-6 bg-MainBGColorYellow shadow-xl rounded-lg flex flex-col h-full">
         <div className='my-auto text-center'>
           <p className='text-black text-xl text-center font-bold'>Please Login First</p>

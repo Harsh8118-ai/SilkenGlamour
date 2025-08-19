@@ -1,12 +1,11 @@
-import React, { useState, useEffect, useContext } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import { CartContext, CartProvider } from '../../Cart/CartContext';
 import LeftCard from '../../Cart/LeftCard';
 import RightCart from '../../Cart/RightCard';
-<<<<<<< HEAD
-import { Star, Plus, Clock } from 'lucide-react';
-=======
-import { Star, Plus } from 'lucide-react';
->>>>>>> e595c25879d097e6a1443ced9b7ee535da210be3
+import { Star, Clock } from 'lucide-react';
+
+
+
 
 const CardBleach = () => {
   const [products, setProducts] = useState([]);
@@ -53,11 +52,7 @@ const CardBleach = () => {
   };
 
   return (
-<<<<<<< HEAD
     <CartProvider>
-=======
-    <CartProvider> 
->>>>>>> e595c25879d097e6a1443ced9b7ee535da210be3
       <div className="flex justify-between w-full h-full bg-MainBGColorYellow">
         <LeftCard />
 
@@ -79,7 +74,7 @@ const CardBleach = () => {
                 <button
                   className={`px-4 py-1.5 ${IsSelect2 ? 'bg-BGColorYellow' : 'bg-gray-400'} ${IsSelect2 ? 'border-2' : 'border-none'} border-black text-white rounded-full`}
                   onClick={() => {
-                    setType('Dtan');
+                    setType('D-Tan');
                     toggleActive();
                     toggleSelect2();
                   }}
@@ -89,164 +84,27 @@ const CardBleach = () => {
               </div>
             </div>
 
-<<<<<<< HEAD
+
             
-            {/* {products.length > 0 && (
-=======
-            {/* WEB VIEW */}
-            {products.length > 0 && (
->>>>>>> e595c25879d097e6a1443ced9b7ee535da210be3
-              <div className="w-full h-full mt-6 hidden sm:block">
-                <div className="grid grid-cols-1 gap-4">
-                  {products.map((product) => (
-                    <div key={product.id} className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
-                      <div className="flex">
-<<<<<<< HEAD
-                        
-                        <div className="flex-1 p-5">
-                          
-=======
-                        {/* Left Content */}
-                        <div className="flex-1 p-5">
-                          {/* Service Name */}
->>>>>>> e595c25879d097e6a1443ced9b7ee535da210be3
-                          <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                            {product.name}
-                          </h3>
-
-<<<<<<< HEAD
-                          
-=======
-                          {/* Rating */}
->>>>>>> e595c25879d097e6a1443ced9b7ee535da210be3
-                          <div className="flex items-center mb-3">
-                            <Star className="w-4 h-4 fill-amber-400 text-amber-400" />
-                            <span className="text-sm text-gray-600 ml-1">4.84 (507K reviews)</span>
-                          </div>
-
-<<<<<<< HEAD
-                          
-=======
-                          {/* Pricing */}
->>>>>>> e595c25879d097e6a1443ced9b7ee535da210be3
-                          <div className="mb-4">
-                            <span className="text-sm text-gray-600">Starts at </span>
-                            <span className="text-xl font-semibold text-gray-900">₹{product.price}</span>
-                            {product.offerprice && (
-                              <span className="text-sm text-gray-500 line-through ml-2">₹{product.offerprice}</span>
-                            )}
-                          </div>
-
-<<<<<<< HEAD
-                          
-=======
-                          {/* Features */}
->>>>>>> e595c25879d097e6a1443ced9b7ee535da210be3
-                          <div className="mb-4 space-y-2">
-                            {product.features.map((feature, index) => (
-                              <div key={index} className="flex items-start gap-2">
-                                <div className="w-1.5 h-1.5 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
-                                <span className="text-sm text-gray-700">{feature}</span>
-                              </div>
-                            ))}
-                          </div>
-
-<<<<<<< HEAD
-                        
-=======
-                          {/* View Details */}
->>>>>>> e595c25879d097e6a1443ced9b7ee535da210be3
-                          <button className="text-purple-600 text-sm font-medium hover:text-purple-700 transition-colors">
-                            View details
-                          </button>
-                        </div>
-
-<<<<<<< HEAD
-                        
-=======
-                        {/* Right Image */}
->>>>>>> e595c25879d097e6a1443ced9b7ee535da210be3
-                        <div className="w-40 h-40 relative bg-gradient-to-br from-orange-50 to-pink-50 flex-shrink-0">
-                          <img
-                            src={product.image}
-                            alt={product.name}
-                            className="w-full h-full object-cover cursor-pointer"
-                            onClick={() => addToCart(product)}
-                            onError={(e) => {
-                              e.target.style.display = 'none';
-                            }}
-                          />
-<<<<<<< HEAD
-                          
-=======
-                          {/* Discount Badge */}
->>>>>>> e595c25879d097e6a1443ced9b7ee535da210be3
-                          {product.discount && (
-                            <div className="absolute top-2 left-2 bg-red-500 text-white px-2 py-1 rounded text-xs font-medium">
-                              {product.discount} OFF
-                            </div>
-                          )}
-                        </div>
-                      </div>
-
-<<<<<<< HEAD
-                      
-=======
-                      {/* Bottom Section */}
->>>>>>> e595c25879d097e6a1443ced9b7ee535da210be3
-                      <div className="px-5 pb-4 flex items-center justify-between border-t border-gray-100 pt-4">
-                        <span className="text-sm text-gray-500">2 options</span>
-                        <button
-                          onClick={() => addToCart(product)}
-                          className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-lg font-medium transition-colors flex items-center gap-2"
-                        >
-                          Add
-                        </button>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-<<<<<<< HEAD
-            )} */}
-
             {products.length > 0 && (
               <div className="w-full h-full mt-4 hidden sm:block border rounded-xl px-6 py-3 border-BGColorYellow">
                 <div className="w-full grid gap-6">
-=======
-            )}
-
-            {/* MOBILE VIEW */}
-            {products.length > 0 && (
-              <div className="w-full h-full mt-4 sm:hidden">
-                <div className="grid grid-cols-1 gap-4">
->>>>>>> e595c25879d097e6a1443ced9b7ee535da210be3
                   {products.map((product) => {
                     const isExpanded = expandedCard === product.id;
                     return (
                       <div
                         key={product.id}
-<<<<<<< HEAD
                         className="bg-MainBGColorYellow  shadow-sm rounded-lg border-b border-BGColorYellow overflow-hidden transition-all duration-300 ease-in-out"
-=======
-                        className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden transition-all duration-300 ease-in-out"
->>>>>>> e595c25879d097e6a1443ced9b7ee535da210be3
                       >
                         <div className="flex">
                           {/* Left Content */}
                           <div className="flex-1 p-4">
-<<<<<<< HEAD
                             {/* Name */}
                             <h3 className="text-lg font-bold text-gray-900 leading-tight">
-=======
-                            {/* Service Name */}
-                            <h3 className="text-base font-semibold text-gray-900 mb-2 leading-tight">
->>>>>>> e595c25879d097e6a1443ced9b7ee535da210be3
                               {product.name}
                             </h3>
 
                             {/* Rating */}
-<<<<<<< HEAD
                             <div className="flex items-center font-semibold text-lg text-BGColorYellow mt-1">
                               <Star className="w-3.5 h-3.5 fill-BGColorYellow text-BGColorYellow" />
                               <span className="ml-1">
@@ -291,50 +149,6 @@ const CardBleach = () => {
 
                           {/* Right Image */}
                           <div className="w-36 h-36 relative flex-shrink-0 m-4 rounded-lg overflow-hidden">
-=======
-                            <div className="flex items-center mb-2">
-                              <Star className="w-3 h-3 fill-amber-400 text-amber-400" />
-                              <span className="text-xs text-gray-600 ml-1">4.84 (507K)</span>
-                            </div>
-
-                            {/* Pricing */}
-                            <div className="mb-3">
-                              <span className="text-xs text-gray-600">Starts at </span>
-                              <span className="text-lg font-semibold text-gray-900">₹{product.price}</span>
-                              {product.offerprice && (
-                                <span className="text-xs text-gray-500 line-through ml-1">₹{product.offerprice}</span>
-                              )}
-                            </div>
-
-                            {/* Show/Hide Details Button */}
-                            <button
-                              onClick={() => toggleDetails(product.id)}
-                              className="text-purple-600 text-xs font-medium hover:text-purple-700 transition-colors mb-2"
-                            >
-                              {isExpanded ? 'Hide Details' : 'View details'}
-                            </button>
-
-                            {/* Expandable Features */}
-                            <div
-                              className={`transition-all duration-300 ease-in-out overflow-hidden ${isExpanded ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
-                                }`}
-                            >
-                              {isExpanded && (
-                                <div className="space-y-1 mb-3">
-                                  {product.features.map((feature, index) => (
-                                    <div key={index} className="flex items-start gap-2">
-                                      <div className="w-1 h-1 bg-green-500 rounded-full mt-1.5 flex-shrink-0"></div>
-                                      <span className="text-xs text-gray-700">{feature}</span>
-                                    </div>
-                                  ))}
-                                </div>
-                              )}
-                            </div>
-                          </div>
-
-                          {/* Right Image */}
-                          <div className="w-24 h-24 relative bg-gradient-to-br from-orange-50 to-pink-50 flex-shrink-0 m-4 rounded-lg overflow-hidden">
->>>>>>> e595c25879d097e6a1443ced9b7ee535da210be3
                             <img
                               src={product.image}
                               alt={product.name}
@@ -344,23 +158,15 @@ const CardBleach = () => {
                                 e.target.style.display = 'none';
                               }}
                             />
-<<<<<<< HEAD
                             {product.discount && (
                               <div className="absolute top-1 left-1 bg-red-500 text-white px-1 py-0.5 rounded text-xs font-medium">
                                 {product.discount} OFF
-=======
-                            {/* Discount Badge */}
-                            {product.discount && (
-                              <div className="absolute top-1 left-1 bg-red-500 text-white px-1 py-0.5 rounded text-xs font-medium">
-                                {product.discount}
->>>>>>> e595c25879d097e6a1443ced9b7ee535da210be3
                               </div>
                             )}
                           </div>
                         </div>
 
                         {/* Bottom Section */}
-<<<<<<< HEAD
                         <div className="px-4 pb-4 flex items-center justify-between pt-3">
                           {/* View details toggle */}
                           <button
@@ -372,13 +178,6 @@ const CardBleach = () => {
                           <button
                             onClick={() => addToCart(product)}
                             className="bg-gradient-to-br from-[#877865] via-[#4d3e29] to-[#523f28] hover:bg-BGColorYellow text-LightBGColor px-4 py-1.5 rounded-lg text-lg font-medium transition-colors"
-=======
-                        <div className="px-4 pb-4 flex items-center justify-between border-t border-gray-100 pt-3">
-                          <span className="text-xs text-gray-500">2 options</span>
-                          <button
-                            onClick={() => addToCart(product)}
-                            className="bg-purple-600 hover:bg-purple-700 text-white px-4 py-1.5 rounded-lg text-sm font-medium transition-colors"
->>>>>>> e595c25879d097e6a1443ced9b7ee535da210be3
                           >
                             Add
                           </button>
@@ -386,7 +185,6 @@ const CardBleach = () => {
                       </div>
                     );
                   })}
-<<<<<<< HEAD
                 </div>
               </div>
             )}
@@ -486,12 +284,9 @@ const CardBleach = () => {
                       </div>
                     );
                   })}
-=======
->>>>>>> e595c25879d097e6a1443ced9b7ee535da210be3
                 </div>
               </div>
             )}
-            
           </div>
         </div>
 
