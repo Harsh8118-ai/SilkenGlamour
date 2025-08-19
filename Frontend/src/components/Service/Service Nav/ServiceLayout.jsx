@@ -14,7 +14,7 @@ function ServiceLayout({ children }) {
   }, [pathname]);
 
   return (
-    <> <div>
+    <> <div className='bg-MainBGColorYellow'>
     <Outlet />
     <SocialMediaLinksService />  
     {children}

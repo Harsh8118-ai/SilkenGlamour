@@ -12,7 +12,7 @@
       "Adds Sleek Modern Look",
       "Provides Reflective Shine"
     ],
-    "href": "/"
+    "href": "/service/nailart"
   },
   {
     "id": "ArtWork2",
@@ -27,7 +27,7 @@
       "Creates Eye-Catching Designs",
       "Enhances Nail Art with Dimension"
     ],
-    "href": "/"
+    "href": "/service/nailart"
   },
   {
     "id": "ArtWork3",
@@ -42,7 +42,7 @@
       "Creates Unique Designs",
       "Adds Sophisticated Touch"
     ],
-    "href": "/"
+    "href": "/service/nailart"
   },
   {
     "id": "ArtWork4",
@@ -57,7 +57,7 @@
       "Adds Bold, Unique Look",
       "Creates Eye-Catching Detail"
     ],
-    "href": "/"
+    "href": "/service/nailart"
   },
   {
     "id": "ArtWork5",
@@ -72,6 +72,6 @@
     "Provides Chip-Resistant Wear",
     "Ensures Even, Vibrant Color"
     ],
-    "href": "/"
+    "href": "/service/nailart"
   }
 ]

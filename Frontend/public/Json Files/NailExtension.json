@@ -12,7 +12,7 @@
       "Provides Strong, Durable Nails",
       "Offers Flexible and Long-Lasting Wear"
     ],
-    "href": "/"
+    "href": "/service/nailart"
   },
   {
     "id": "NailExtension2",
@@ -27,7 +27,7 @@
       "Provides Long-Lasting Length",
       "Creates a Natural-Looking Finish"
     ],
-    "href": "/"
+    "href": "/service/nailart"
   },
   {
     "id": "NailExtension3",
@@ -42,7 +42,7 @@
       "Creates Natural-Length Nails",
       "Provides Comfortable Wear"
     ],
-    "href": "/"
+    "href": "/service/nailart"
   },
   {
     "id": "NailExtension4",
@@ -57,6 +57,6 @@
     "Creates Smooth, Even Surface",
     "Offers Long-Lasting Nail Enhancement"
     ],
-    "href": "/"
+    "href": "/service/nailart"
   }
 ]

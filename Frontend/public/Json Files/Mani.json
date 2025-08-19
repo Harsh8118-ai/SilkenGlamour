@@ -8,7 +8,7 @@
     "discount": "30%",
     "time": "10 min",
     "features": ["Shapes and Smooths Nails", "Softens Hands and Cuticles", "Enhances Nail Appearance"],
-    "href" : "/"
+    "href" : "/service/mani-pedi"
   },
     {
       "id": "Mani2",
@@ -19,7 +19,7 @@
       "discount": "30%",
     "time": "10 min",
       "features": ["Hydrates and Softens Hands", "Nourishes Cuticles", "Enhances Nail Appearance"],
-      "href" : "/"
+      "href" : "/service/mani-pedi"
     },
     {
       "id": "Mani3",
@@ -30,7 +30,7 @@
       "discount": "30%",
     "time": "10 min",
       "features": ["Relaxing therapy", "Softens and Nourishes Hands", "Enhances Nail Health"],
-      "href" : "/"
+      "href" : "/service/mani-pedi"
     },
     {
       "id": "Mani4",
@@ -41,7 +41,7 @@
       "discount": "30%",
     "time": "10 min",
       "features": ["Deep Cleanses and Exfoliates", "Nourishes and Hydrates", "Revitalizes Nail Health"],
-      "href" : "/"
+      "href" : "/service/mani-pedi"
     }
    
     

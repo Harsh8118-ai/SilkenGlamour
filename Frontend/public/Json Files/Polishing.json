@@ -12,7 +12,7 @@
       "Brightens Overall Complexion",
       "Removes Dead Skin Cells"
     ],
-    "href": "/"
+    "href": "/service/body-polishing"
   },
   {
     "id": "Polishing2",
@@ -27,7 +27,7 @@
       "Brightens Arms and Legs",
       "Removes Dead Skin Cells"
     ],
-    "href": "/"
+    "href": "/service/body-polishing"
   },
   {
     "id": "Polishing3",
@@ -42,6 +42,6 @@
       "Brightens Back and Arms",
       "Removes Dead Skin Cells"
     ],
-    "href": "/"
+    "href": "/service/body-polishing"
   }
 ]

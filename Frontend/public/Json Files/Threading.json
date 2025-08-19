@@ -12,7 +12,7 @@
       "Removes Unwanted Hair",
       "Creates Clean, Precise Lines"
     ],
-    "href": "/"
+    "href": "/service/threading"
   },
   {
     "id": "Threading2",
@@ -27,7 +27,7 @@
       "Provides Smooth Finish",
       "Defines Lip Contour"
     ],
-    "href": "/"
+    "href": "/service/threading"
   },
   {
     "id": "Threading3",
@@ -42,7 +42,7 @@
       "Provides Smooth, Clean Finish",
       "Defines Chin Contour"
     ],
-    "href": "/"
+    "href": "/service/threading"
   },
   {
     "id": "Threading4",
@@ -57,6 +57,6 @@
       "Creates Smooth Appearance",
       "Defines Forehead Shape"
     ],
-    "href": "/"
+    "href": "/service/threading"
   }
 ]

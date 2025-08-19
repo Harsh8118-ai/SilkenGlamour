@@ -12,7 +12,7 @@
       "Reduces Hair Growth",
       "Provides Long-Lasting Results"
     ],
-    "href": "/"
+    "href": "/service/threading"
   },
   {
     "id": "FaceWax2",
@@ -27,7 +27,7 @@
       "Reduces Regrowth",
       "Ensures Smooth Skin"
     ],
-    "href": "/"
+    "href": "/service/threading"
   },
   {
     "id": "FaceWax3",
@@ -42,7 +42,7 @@
       "Reduces Hair Regrowth",
       "Provides Long-Lasting Smoothness"
     ],
-    "href": "/"
+    "href": "/service/threading"
   },
   {
     "id": "FaceWax4",
@@ -57,7 +57,7 @@
       "Provides Smooth, Hair-Free Skin",
       "Reduces Hair Regrowth"
     ],
-    "href": "/"
+    "href": "/service/threading"
   },
   {
     "id": "FaceWax5",
@@ -72,7 +72,7 @@
       "Reduces Regrowth",
       "Ensures Smooth Skin"
     ],
-    "href": "/"
+    "href": "/service/threading"
   },
   {
     "id": "FaceWax6",
@@ -87,6 +87,6 @@
       "Reduces Ingrown Hairs",
       "Provides Long-Lasting Smoothness"
     ],
-    "href": "/"
+    "href": "/service/threading"
   }
 ]

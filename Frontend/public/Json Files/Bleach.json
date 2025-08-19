@@ -7,6 +7,7 @@
     "offerprice": 579,
     "discount": "30%",
     "time": "10 min",
+    "href": "/service/bleach-dtan",
     "features": ["Brightens Dull Complexion", "Evens Skin Tone", "Reduces Dark Spots"]
   },
   {
@@ -17,6 +18,7 @@
     "offerprice": 1549,
     "discount": "30%",
     "time": "10 min",
+    "href": "/service/bleach-dtan",
     "features": ["Brightens Full Body", "Evens Skin Tone", "Reduces Uneven Pigmentation"]
   },
   {
@@ -27,6 +29,7 @@
     "offerprice": 749,
     "discount": "30%",
     "time": "10 min",
+    "href": "/service/bleach-dtan",
     "features": ["Brightens Arm Skin", "Evens Skin Tone", "Reduces Dark Spots"]
   },
   {
@@ -37,6 +40,7 @@
     "offerprice": 849,
     "discount": "30%",
     "time": "10 min",
+    "href": "/service/bleach-dtan",
     "features": ["Brightens Leg Skin", "Evens Out Skin Tone", "Reduces Dark Spots"]
   },
   {
@@ -47,6 +51,7 @@
     "offerprice": 899,
     "discount": "30%",
     "time": "10 min",
+    "href": "/service/bleach-dtan",
     "features": ["Brightens Back Skin", "Evens Skin Tone", "Reduces Acne Marks"]
   },
   {
@@ -57,6 +62,7 @@
       "offerprice": 799,
       "discount": "30%",
       "time": "10 min",
+      "href": "/service/bleach-dtan",
       "features": ["Brightens Face and Neck", "Evens Skin Tone", "Reduces Dark Spots"]
     },
     {
@@ -67,6 +73,7 @@
       "offerprice": 2199,
       "discount": "30%",
       "time": "10 min",
+      "href": "/service/bleach-dtan",
       "features": ["Brightens Full Body", "Evens Out Skin Tone", "Reduces Hyperpigmentation"]
     },
     {
@@ -77,6 +84,7 @@
       "offerprice": 849,
       "discount": "30%",
       "time": "10 min",
+      "href": "/service/bleach-dtan",
       "features": ["Brightens Arm Skin", "Evens Skin Tone", "Reduces Dark Spots"]
     },
     {
@@ -87,6 +95,7 @@
       "offerprice": 999,
       "discount": "30%",
       "time": "10 min",
+      "href": "/service/bleach-dtan",
       "features": ["Brightens Leg Skin", "Evens Out Skin Tone", "Reduces Uneven Pigmentation"]
     },
     {
@@ -97,6 +106,7 @@
       "offerprice": 1049,
       "discount": "30%",
       "time": "10 min",
+      "href": "/service/bleach-dtan",
       "features": ["Brightens Back Skin", "Evens Out Skin Tone", "Reduces Acne Marks"]
     }
 ]

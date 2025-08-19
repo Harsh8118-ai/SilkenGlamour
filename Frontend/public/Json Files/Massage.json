@@ -12,7 +12,7 @@
       "Promotes Relaxation",
       "Improves Blood Circulation"
     ],
-    "href": "/"
+    "href": "/service/body-polishing"
   },
   {
     "id": "Massage2",
@@ -27,7 +27,7 @@
       "Strengthens Hair Roots",
       "Promotes Relaxation and Growth"
     ],
-    "href": "/"
+    "href": "/service/body-polishing"
   },
   {
     "id": "Massage3",
@@ -42,7 +42,7 @@
       "Eases Muscle Stiffness",
       "Improves Posture and Flexibility"
     ],
-    "href": "/"
+    "href": "/service/body-polishing"
   },
   {
     "id": "Massage4",
@@ -57,7 +57,7 @@
       "Improves Circulation",
       "Promotes Overall Relaxation"
     ],
-    "href": "/"
+    "href": "/service/body-polishing"
   },
   {
     "id": "Massage5",
@@ -72,6 +72,6 @@
       "Soothes Sore Muscles",
       "Improves Circulation and Flexibility"
     ],
-    "href": "/"
+    "href": "/service/body-polishing"
   }
 ]

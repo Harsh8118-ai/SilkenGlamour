@@ -12,7 +12,7 @@
       "Nourishes Hair Roots",
       "Adds Shine and Softness"
     ],
-    "href": "/"
+    "href": "/service/haircare"
   },
   {
     "id": "HairCare2",
@@ -27,7 +27,7 @@
       "Removes Split Ends",
       "Enhances Hair Shape"
     ],
-    "href": "/"
+    "href": "/service/haircare"
   },
   {
     "id": "HairCare3",
@@ -42,7 +42,7 @@
       "Adds Sleek Shine",
       "Long-Lasting Straightness"
     ],
-    "href": "/"
+    "href": "/service/haircare"
   },
   {
     "id": "HairCare4",
@@ -57,7 +57,7 @@
       "Reduces Frizz",
       "Adds Volume and Bounce"
     ],
-    "href": "/"
+    "href": "/service/haircare"
   },
   {
     "id": "HairCare5",
@@ -72,7 +72,7 @@
       "Adds Sleek Finish",
       "Enhances Hair Shine"
     ],
-    "href": "/"
+    "href": "/service/haircare"
   },
   {
     "id": "HairCare6",
@@ -87,7 +87,7 @@
       "Smooths Out Frizz",
       "Adds Shine and Volume"
     ],
-    "href": "/"
+    "href": "/service/haircare"
   },
   {
     "id": "HairCare7",
@@ -102,7 +102,7 @@
       "Adds Volume and Shape",
       "Enhances Hair Shine and Manageability"
     ],
-    "href": "/"
+    "href": "/service/haircare"
   },
   {
     "id": "HairCare8",
@@ -117,7 +117,7 @@
       "Enhances Hair Texture",
       "Reduces Frizz"
     ],
-    "href": "/"
+    "href": "/service/haircare"
   },
   {
     "id": "HairColour9",
@@ -132,7 +132,7 @@
       "Reduces Frizz",
       "Adds Long-Lasting Shine"
     ],
-    "href": "/"
+    "href": "/service/haircare"
   },
   {
     "id": "HairColour10",
@@ -147,7 +147,7 @@
       "Restores Shine and Softness",
       "Reduces Frizz and Breakage"
     ],
-    "href": "/"
+    "href": "/service/haircare"
   },
   {
     "id": "HairColour11",
@@ -162,7 +162,7 @@
       "Enhances Shine",
       "Creates Sleek Texture"
     ],
-    "href": "/"
+    "href": "/service/haircare"
   },
   {
     "id": "HairColour12",
@@ -177,6 +177,6 @@
       "Enhances Shine and Softness",
       "Promotes Scalp Health"
     ],
-    "href": "/"
+    "href": "/service/haircare"
   }
 ]

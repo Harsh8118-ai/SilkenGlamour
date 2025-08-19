@@ -20,13 +20,13 @@ const SocialMediaLinksService = () => {
     };
 
     return (
-        <>
+        <><div>
             {/* .......... MOBILE VIEW .......... */}
             <h2 className="text-center text-3xl font-bold text-black mt-10 sm:hidden">
                 Connect With Us
             </h2>
 
-            <div className="sm:hidden flex flex-row sm:flex-col justify-center space-x-8 sm:space-x-0 sm:space-y-4 pb-6 py-6 bg-gradient-to-t from-[#796855] via-[#baa48a] to-[#796855] ">
+            <div className="sm:hidden flex flex-row sm:flex-col justify-center space-x-8 sm:space-x-0 sm:space-y-4 pb-6 py-6 bg-gradient-to-t from-[#796855] via-[#baa48a] to-[#796855] mb-14">
 
                 {/* Instagram */}
                 <div
@@ -125,6 +125,7 @@ const SocialMediaLinksService = () => {
                 </div>
 
                 
+            </div>
             </div>
         </>
     );

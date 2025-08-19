@@ -12,7 +12,7 @@
       "Covers Gray Roots",
       "Maintains Vibrant Hue"
     ],
-    "href": "/"
+    "href": "/service/haircare"
   },
   {
     "id": "HairColour2",
@@ -27,7 +27,7 @@
       "Covers Gray Roots",
       "Provides Long-Lasting Color"
     ],
-    "href": "/"
+    "href": "/service/haircare"
   },
   {
     "id": "HairColour3",
@@ -42,7 +42,7 @@
       "Uniform Color Application",
       "Provides Consistent Hue"
     ],
-    "href": "/"
+    "href": "/service/haircare"
   },
   {
     "id": "HairColour4",
@@ -57,7 +57,7 @@
       "Enhances Hair with Trendy Tones",
       "Provides Uniform Fashionable Hue"
     ],
-    "href": "/"
+    "href": "/service/haircare"
   },
   {
     "id": "HairColour5",
@@ -72,7 +72,7 @@
       "Adds Dimension and Depth",
       "Provides Sun-Kissed Look"
     ],
-    "href": "/"
+    "href": "/service/haircare"
   },
   {
     "id": "HairColour6",
@@ -87,7 +87,7 @@
       "Adds Dimension and Shine",
       "Creates Subtle Contrast"
     ],
-    "href": "/"
+    "href": "/service/haircare"
   },
   {
     "id": "HairColour7",
@@ -102,7 +102,7 @@
       "Adds Overall Dimension",
       "Creates Bright, Consistent Highlights"
     ],
-    "href": "/"
+    "href": "/service/haircare"
   },
   {
     "id": "HairColour8",
@@ -117,7 +117,7 @@
       "Adds Natural-Looking Depth",
       "Creates Soft, Gradual Highlights"
     ],
-    "href": "/"
+    "href": "/service/haircare"
   },
   {
     "id": "HairColour9",
@@ -132,6 +132,6 @@
       "Adds Subtle Contrast",
       "Creates Natural, Multi-Dimensional Look"
     ],
-    "href": "/"
+    "href": "/service/haircare"
   }
 ]
