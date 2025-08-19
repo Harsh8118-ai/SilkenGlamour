@@ -33,9 +33,10 @@ export default function LeftCard() {
 
   return (
     <>
-    <div className="hidden sm:block w-[20%] sticky mt-11 ml-16 h-screen bg p-4 ">
-          <div className="sm:col-span-1">
-            <Card className="glass-card p-6 sticky top-24 shadow-sm shadow-MainBGColorYellow">
+    <div className="hidden sm:block w-[20%] mt-11 ml-16 p-4 ">
+
+          <div className="w-full h-screen">
+            <Card className="glass-card p-6 fixed px-6 top-24 shadow-sm shadow-MainBGColorYellow">
               <h2 className="text-xl font-semibold mb-6 text-foreground">Service Categories</h2>
               <div className="space-y-3">
                 {categories.map((category) => (
