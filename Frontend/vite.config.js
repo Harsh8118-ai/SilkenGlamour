@@ -1,48 +1,34 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
+// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
       output: {
         manualChunks(id) {
-          // Split vendor (node_modules) into separate chunks
           if (id.includes('node_modules')) {
-            if (id.includes('react') || id.includes('react-dom')) {
-              return 'react-vendor'; // Separate React libraries
-            }
-            if (id.includes('lucide-react')) {
-              return 'icons'; // Split icons
-            }
-            if (id.includes('framer-motion')) {
-              return 'motion'; // Split framer-motion
-            }
-            if (id.includes('recharts')) {
-              return 'charts'; // Split charts
-            }
-            return 'vendor'; // Everything else
+            return 'vendor';  // Separate chunk for vendor libraries
           }
-
-          // App-specific chunks
           if (id.includes('/components/Service/')) {
-            return 'service';
+            return 'service';  // Separate chunk for service-related components
           }
           if (id.includes('/components/Contact/')) {
-            return 'contact';
+            return 'contact';  // Separate chunk for contact-related components
           }
           if (id.includes('/components/Profile/')) {
-            return 'profile';
+            return 'profile';  // Separate chunk for profile-related components
           }
           if (id.includes('/components/FAQ/')) {
-            return 'faq';
+            return 'faq';  // Separate chunk for FAQ-related components
           }
           if (id.includes('/components/Blog')) {
-            return 'blog';
+            return 'blog';  // Separate chunk for FAQ-related components
           }
-        },
-      },
-    },
-    chunkSizeWarningLimit: 1000, // Increase limit so warnings don't spam
-  },
+          // Add more manual chunking logic if necessary
+        }
+      }
+    }
+  }
 });
