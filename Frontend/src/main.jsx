@@ -132,14 +132,6 @@ const router = createBrowserRouter(
           </Suspense>
         }
       />
-      {/* <Route
-        path="admin"
-        element={
-          <Suspense fallback={<div className='bg-MainBGColorYellow h-screen w-full'></div>}>
-            <AdminDashboard />
-          </Suspense>
-        }
-      /> */}
       <Route
         path="my-order"
         element={
