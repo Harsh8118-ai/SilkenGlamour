@@ -110,7 +110,7 @@ export default function Header() {
                       }  border-gray-600  lg:hover:bg-transparent  hover:text-black font-bold lg:p-0`
                     }
                   >
-                    FAQ
+                    ChatBot
                   </NavLink>
                 </li>
               </ul>

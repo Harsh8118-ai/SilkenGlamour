@@ -219,7 +219,7 @@ export default function Home() {
                         `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-gray-900" : "text-black"}  border-gray-600  lg:hover:bg-transparent  hover:text-[#635a4f] hover:scale-105 font-bold lg:p-0`
                       }
                     >
-                      FAQ
+                      ChatBot
                     </NavLink>
                   </li>
                 </ul>
